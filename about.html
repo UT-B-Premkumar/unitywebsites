@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/about.css">
+</head>
+<body>
+    <script>
+       tsParticles.load("tsparticles", {
+  fpsLimit: 60,
+  particles: {
+    number: {
+      value: 0,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: {
+      value: "#ffff00"
+    },
+    shape: {
+      type: "circle"
+    },
+    opacity: {
+      value: 1,
+      random: false,
+      animation: {
+        enable: true,
+        speed: 0.5,
+        minimumValue: 0,
+        sync: false
+      }
+    },
+    size: {
+      value: 8,
+      random: { enable: true, minimumValue: 4 },
+      animation: {
+        enable: false,
+        speed: 20,
+        minimumValue: 4,
+        sync: false
+      }
+    },
+    move: {
+      enable: true,
+      gravity: {
+        enable: true,
+        acceleration: -0.5
+      },
+      speed: 5,
+      direction: "top",
+      random: false,
+      straight: false,
+      outModes: {
+        default: "destroy",
+        bottom: "none"
+      },
+      attract: {
+        enable: true,
+        distance: 300,
+        rotate: {
+          x: 600,
+          y: 1200
+        }
+      }
+    }
+  },
+  interactivity: {
+    detectsOn: "canvas",
+    events: {
+      resize: true
+    }
+  },
+  detectRetina: true,
+  background: {
+    color: "#000000"
+  },
+  emitters: [
+    {
+      direction: "top",
+      particles: {
+        color: "#f00"
+      },
+      rate: {
+        quantity: 1,
+        delay: 0.1
+      },
+      size: {
+        width: 100,
+        height: 10
+      },
+      position: {
+        x: 50,
+        y: 100
+      }
+    },
+    {
+      direction: "top",
+      particles: {
+        color: "#0f0"
+      },
+      rate: {
+        quantity: 1,
+        delay: 0.1
+      },
+      size: {
+        width: 100,
+        height: 10
+      },
+      position: {
+        x: 50,
+        y: 100
+      }
+    }
+  ]
+});
+
+    </script>
+    <section id="about-1" class="about-1">
+<div class="container">
+  <div class="row bg-top-row">
+    <div class="col-md-6">
+        <img src="./assets/img/top-left-bg.svg" alt="tl-bg" class="top-left-bg">
+    </div> 
+    <div class="col-md-6">
+        <img src="./assets/img/top-right.svg" alt="tr-bg" class="top-right-bg">
+    </div>
+  </div>
+    <img src="./assets/img/bottom-banner.svg" alt="top-bg" class="top-bg">
+   <div class="row">
+    <div class="col">
+        <button>
+            Talk to Us
+        </button>
+    </div>
+    <div class="col">
+        <h6 class="img-center-about">
+            <img src="./assets/img/about-banner-icon.png" alt="center-icon">
+        </h6>
+     
+    </div>
+    <img src="./assets/img/bottom-banner.svg" alt="top-bg" class="bottom-bg">
+   </div>
+
+</div>
+    </section>
+    <div id="tsparticles"></div>
+</body>
+</html>
