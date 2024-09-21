@@ -1,0 +1,199 @@
+
+
+:root{
+    --gray:#1F1F1F;
+    --unity_green:#66BE53;
+    --white:#fff;
+}
+
+.font-8 {
+  font-size: 8px !important;
+}
+.font-9 {
+  font-size: 9px !important;
+}
+.font-10 {
+  font-size: 10px !important;
+}
+.font-11 {
+  font-size: 11px !important;
+}
+.font-12 {
+  font-size: 12px !important;
+}
+.font-13 {
+  font-size: 13px !important;
+}
+.font-14 {
+  font-size: 14px !important;
+}
+.font-15 {
+  font-size: 15px !important;
+}
+.font-16 {
+  font-size: 16px !important;
+}
+.font-17 {
+  font-size: 17px !important;
+}
+.font-18 {
+  font-size: 18px !important;
+}
+.font-19 {
+  font-size: 19px !important;
+}
+.font-20 {
+  font-size: 20px !important;
+}
+.font-21 {
+  font-size: 21px !important;
+}
+.font-22 {
+  font-size: 22px !important;
+}
+.font-23 {
+  font-size: 23px !important;
+}
+.font-24 {
+  font-size: 24px !important;
+}
+.font-25 {
+  font-size: 25px !important;
+}
+.font-26 {
+  font-size: 26px !important;
+}
+.font-27 {
+  font-size: 27px !important;
+}
+.font-28 {
+  font-size: 28px !important;
+}
+.font-29 {
+  font-size: 29px !important;
+}
+.font-30 {
+  font-size: 30px !important;
+}
+.font-31 {
+  font-size: 31px !important;
+}
+.font-32 {
+  font-size: 32px !important;
+}
+.font-33 {
+  font-size: 33px !important;
+}
+.font-34 {
+  font-size: 34px !important;
+}
+.font-35 {
+  font-size: 35px !important;
+}
+
+.font-200 {
+  font-weight: 200 !important;
+}
+.font-300 {
+  font-weight: 300 !important;
+}
+.font-400 {
+  font-weight: 400 !important;
+}
+.font-500 {
+  font-weight: 500 !important;
+}
+.font-600 {
+  font-weight: 600 !important;
+}
+.font-700 {
+  font-weight: 700 !important;
+}
+.font-800 {
+  font-weight: 800 !important;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+
+
+/* Start .btn-1 1 */
+.btn-1 {
+    padding: 8px 20px;
+    background: transparent;
+    border: 2px solid var(--unity_green);
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .btn-1:hover {
+    color: #0c071e;
+  }
+  
+  .btn-1 span {
+    transition: all 0.5s;
+    z-index: -1;
+  }
+  
+  .btn-1 span:nth-child(1), 
+  .btn-1 span:nth-child(2), 
+  .btn-1 span:nth-child(3), 
+  .btn-1 span:nth-child(4) {
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    background-color: var(--unity_green)
+  }
+  
+  .btn-1 span:nth-child(1) {
+    top: -100%;
+    left: 0%;
+    right: 0;
+  }
+  
+  .btn-1:hover span:nth-child(1) {
+    top: 0%;
+  }
+  
+  .btn-1 span:nth-child(2) {
+    top: 10px;
+    right: 100%;
+  }
+  
+  .btn-1:hover span:nth-child(2) {
+    right: 0;
+  }
+  
+  .btn-1 span:nth-child(3) {
+    top: 20px;
+    left: 100%;
+    right: 0;
+  }
+  
+  .btn-1:hover span:nth-child(3) {
+    left: 0;
+  }
+  
+  .btn-1 span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+  }
+  
+  .btn-1:hover span:nth-child(4) {
+    bottom: 0;
+  }
+  
+  /* End .btn-1 1 */
