@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Unity Technology</title>
     <link rel="stylesheet" href="./assets/css/about.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/common.css" />
@@ -50,12 +50,12 @@
                 <a href="./about.html">About</a>
               </li>
               <li>
-                <a href="#">Services</a>
-                <a href="#">Services</a>
+                <a href="./services.html">Services</a>
+                <a href="./services.html">Services</a>
               </li>
               <li>
-                <a href="#">OUR SPECIALITY</a>
-                <a href="#">OUR SPECIALITY</a>
+                <a href="./ourspecality.html">OUR SPECIALITY</a>
+                <a href="./ourspecality.html">OUR SPECIALITY</a>
               </li>
               <li>
                 <a href="#" class="btn-1 px-4">
@@ -81,7 +81,7 @@
     </header>
 
     <section id="about-1" class="about-1">
-      <div class="container">
+      <div class="container container-about">
         <div class="row bg-top-row">
           <div class="col-md-6">
             <img
@@ -107,7 +107,7 @@
         <img src="./assets/img/bottom-banner.svg" alt="top-bg" class="top-bg" />
         <div class="row row-content-about">
           <div class="col-4 arrow-left-content">
-            <button class="about-banner-btn">Talk To Us</button>
+            <button class="about-banner-btn">Our Story</button>
             <h6>
               <img
                 src="./assets/img/left.png"
@@ -162,14 +162,13 @@
                 class="right-up-arrow"
               />
             </h6>
-            <button class="about-banner-btn">Email Us</button>
+            <button class="about-banner-btn">Our Values</button>
           </div>
         </div>
-        <br>
-        <br>
+        <br />
         <div class="row row-content-about">
           <div class="col-3 arrow-left-content-1">
-            <button class="about-banner-btn">Feedback</button>
+            <button class="about-banner-btn">Our Mission</button>
             <h6>
               <img
                 src="./assets/img/left.png"
@@ -187,7 +186,7 @@
                 class="right-up-arrow"
               />
             </h6>
-            <button class="about-banner-btn">Help</button>
+            <button class="about-banner-btn">Our Vision</button>
           </div>
         </div>
         <h1
@@ -198,6 +197,7 @@
         >
           ABOUT US
         </h1>
+        <br />
         <h4
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
@@ -226,6 +226,43 @@
           <div class="col-md-2"></div>
         </div>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h6 class="text-end">
+              <img src="./assets/img/plus.png" alt="plus-bg" class="plus-bg" />
+            </h6>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+
+      <section id="about-2" class="about-2">
+        <div class="container">
+          <h1 class="our-services">OUR SERVICES</h1>
+          <img
+            src="./assets/img/underline.png"
+            alt="header-underline"
+            class="header-underline"
+          />
+          <div class="container card-bg-about mt-0">
+            <div class="row">
+              <div class="col">
+                <h6>
+                  <img
+                    src="./assets/img/scroll.png"
+                    alt="scroll-gif"
+                    class="scroll-bg"
+                  />
+                </h6>
+              </div>
+              <div class="col">
+                <h1 class="text-heading padding-head">Making technology that exceeds expectations</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
       <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -274,7 +311,7 @@
               random: true,
               anim: {
                 enable: false,
-                speed: 0.439022217182483,
+                speed: 0.00139022217182483,
                 size_min: 0.1,
                 sync: false,
               },
@@ -288,7 +325,7 @@
             },
             move: {
               enable: true,
-              speed: 1,
+              speed: 0.1,
               direction: "top",
               random: false,
               straight: false,
@@ -366,12 +403,63 @@
       </script>
     </section>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $(function(){
-    $("#about-1").load("home-banner.html");
-  });
-</script> -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-between">
+          <!-- Logo and Description -->
+          <div class="col-lg-4 col-md-6">
+            <div class="logo">
+              <img src="./assets/img/unity-logo.svg" alt="Logo" />
+              <p>
+                The goal of our highly trained, experienced team is to deliver
+                great user experiences for mobile and web apps.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./ourspecality.html">Our Specialty</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Policy Links -->
+          <div class="col-lg-2 col-md-6">
+            <h5>Policy</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Address Section -->
+          <div class="col-lg-3 col-md-6">
+            <h5>Address</h5>
+            <p class="address">
+              Unity Technologies Private Limited<br />
+              2-21a, Kanjialodi, Adloor, Mangaluru,<br />
+              Dakshina Kannada, Karnataka, 574165
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".hamburger").click(function () {
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
