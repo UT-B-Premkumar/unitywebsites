@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unity Technologies</title>
-    <link rel="stylesheet" href="assets/css/ourspecality.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/ourspecality.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,18 +19,24 @@
       rel="stylesheet"
     />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
       body {
         background-color: #0c0c0c;
         color: rgb(230, 230, 230);
+        font-family: "Barlow", sans-serif;
       }
+
       .section-title {
         font-size: 1.5rem;
         font-weight: bold;
         color: #79ff2a;
       }
+
       .highlight {
         color: #a6ff00;
       }
+
       .feature-box {
         background-color: #000;
         padding: 20px;
@@ -35,28 +46,140 @@
         color: white;
         margin-bottom: 20px;
       }
+
       .feature-box i {
         font-size: 30px;
         margin-right: 15px;
       }
+
       .feature-box:hover {
         background-color: #252525;
       }
+
       .image-box {
         border: 2px solid #79ff2a;
         border-radius: 10px;
         padding: 0;
         margin-bottom: 20px;
       }
+
       .section-padding {
         padding: 40px 0;
       }
-      .video-file{
-        padding: 2px;
+
+      .video-file {
+        padding: 10px;
+      }
+      .business-section {
+        background-color: #1e1e1e; /* Dark background */
+        color: #fff;
+        text-align: center;
+        padding: 25px 0;
+      }
+
+      .business-section h1 {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+      .business-section h1 span {
+        color: #9bff00; /* Highlighted text in green */
+      }
+
+      .btn-join {
+        border: 2px solid #9bff00; /* Green border */
+        color: #9bff00;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-join:hover {
+        background-color: #9bff00;
+        color: #000;
+      }
+      .business-section p {
+        margin: 20px 0;
+        color: #ccc;
+        font-size: 1rem;
+        padding: 0 288px !important;
+      }
+      @media (max-width: 768px) {
+        .business-section h1 {
+          font-size: 1.5rem;
+        }
+
+        .btn-join {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+        }
+        .business-section p {
+          padding: 0 0px !important;
+        }
+      }
+
+      .business-section {
+        padding: 50px 0;
+      }
+      .business-section a {
+        width: fit-content;
+        margin: 0 auto;
+        text-decoration: none;
       }
     </style>
   </head>
+
   <body>
+    <header>
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="./assets/img/unity-logo.svg" alt=""
+            /></a>
+          </div>
+          <nav class="desktop">
+            <ul>
+              <li>
+                <a href="index.html" class="active"> Home </a>
+                <a href="index.html"> Home </a>
+              </li>
+              <li>
+                <a href="#">About</a>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">OUR SPECIALITY</a>
+                <a href="#">OUR SPECIALITY</a>
+              </li>
+              <li>
+                <a href="#" class="btn-1 px-4">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="mobile-nav hamburger">
+            <button>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- Section 1: Fantasy Sport App Development -->
     <div class="container section-padding">
       <div class="row">
@@ -66,7 +189,9 @@
           </h2>
           <p class="pe-5">
             Our company is known for developing innovative fantasy sports apps
-            that can make a lasting impression on existing markets.
+            that can make a lasting impression on existing markets. Our fantasy
+            sports app development services are tailored to meet client needs
+            entering the fantasy sports market.
           </p>
           <div class="row">
             <div class="col-md-6">
@@ -85,15 +210,15 @@
                 <span>Scalable Infrastructure with Robust Security</span>
               </div>
               <div class="feature-box">
-                <i class="fas fa-chart-line"></i> 
+                <i class="fas fa-chart-line"></i>
                 <span>Designed for Cross-Platform Compatibility</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 video-file">
           <div class="image-box">
-            <video class="img-fluid video-file" autoplay muted loop>
+            <video class="img-fluid" autoplay muted loop>
               <source src="assets/img/fantacy sport.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -105,7 +230,7 @@
     <!-- Section 2: E-Commerce & Retail -->
     <div class="container section-padding">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 video-file">
           <div class="image-box">
             <video class="img-fluid video-file" autoplay muted loop>
               <source src="assets/img/ecommerce_video.mp4" type="video/mp4" />
@@ -181,7 +306,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 video-file">
           <div class="image-box">
             <video class="img-fluid video-file" autoplay muted loop>
               <source src="assets/img/banking.mp4" type="video/mp4" />
@@ -191,8 +316,79 @@
         </div>
       </div>
     </div>
+    <section class="">
+      <div class="container business-section">
+        <h1>Shaking Up the <span>Way</span> You Do Business</h1>
+        <p>
+          A defined plan and quantifiable goals are the foundation of every
+          successful project. We create a website that works for your company in
+          order to maximize your return on investment.
+        </p>
+        <a href="#" class="btn-1 px-4">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Contact
+        </a>
+      </div>
+    </section>
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="row justify-content-between">
+          <!-- Logo and Description -->
+          <div class="col-lg-4 col-md-6">
+            <div class="logo">
+              <img src="./assets/img/unity-logo.svg" alt="Logo" />
+              <p>
+                The goal of our highly trained, experienced team is to deliver
+                great user experiences for mobile and web apps.
+              </p>
+            </div>
+          </div>
 
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="ourspecality.html">Our Specialty</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Policy Links -->
+          <div class="col-lg-2 col-md-6">
+            <h5>Policy</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Address Section -->
+          <div class="col-lg-3 col-md-6">
+            <h5>Address</h5>
+            <p class="address">
+              Unity Technologies Private Limited<br />
+              2-21a, Kanjialodi, Adloor, Mangaluru,<br />
+              Dakshina Kannada, Karnataka, 574165
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".hamburger").click(function () {
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
   </body>
 </html>
