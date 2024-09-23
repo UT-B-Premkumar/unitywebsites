@@ -138,3 +138,6 @@ nav ul li:nth-child(5) a {
   right: 0;
   transform: rotate(-40deg) translate(3px, -4px);
 }
+.highlight{
+  color: #fff !important;
+}
