@@ -154,7 +154,9 @@ form .card {
   .icon {
     color: #b8ff00; /* Neon green for icons */
   }
-  
+  .contact-icons{
+    width: 35px !important;
+  }
 @media (max-width: 768px) {
   .form-section {
     flex-direction: column;
