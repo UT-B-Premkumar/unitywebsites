@@ -40,24 +40,73 @@ body{
     height: auto;
     display: block;
 }
-.img-center-about{
+/* .img-center-about{
     text-align: center;
-}
+} */
 .about-1:hover{
 
 }
-button{
-    
+
+.about-banner-btn{
+    background-color: #191919;
+    border: 2px solid #1E1E1E;
+    color: #fff !important;
+    border-radius: 8px;
+    padding: 4px 8px 4px 8px;
 }
-canvas {
-    display: block;
-    vertical-align: bottom;
+.row-content-about{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+   height: 75px;
+}
+.arrow-right-content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    width: 12%;
+}
+.arrow-left-content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    width: 12%;
+}
+.arrow-space-center{
+    visibility: hidden !important;
+    width: 29%;
+}
+.about-head{
+    text-align: center;
+    color: #fff;
+    font-size: 58px;
+}
+
+.img-particles-container {
+    position: relative;
   }
-  /* ---- tsparticles container ---- */
-  #tsparticles {
-    position: fixed;
+  
+  #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 1; /* Behind the image */
+  }
+  
+  .img-center-about img {
+    position: relative;
+    z-index: 2; /* In front of particles */
+    display: block;
+    margin: 0 auto;
   }
   
