@@ -38,8 +38,9 @@
 }
 
 .footer .address {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
+    font-weight: 500;
 }
 .footer .logo {
     max-width: 300px;
