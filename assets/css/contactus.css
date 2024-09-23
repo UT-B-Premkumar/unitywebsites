@@ -34,6 +34,7 @@ form .card {
   border-radius: 5px;
   background: black;
   border: 1px solid #3f433f;
+  color: white !important;
 }
 .form-group input::placeholder {
   /* Most modern browsers support this now. */
@@ -45,14 +46,7 @@ form .card {
   color: #fff !important;
   font-size: small;
 }
-#center {
-  text-align: center;
-}
-.fa-star {
-  font-size: 16px;
-  cursor: pointer;
-  color: gray;
-}
+
 .form-group textarea {
   background-color: #121212;
   border: 1px solid #3f433f;
@@ -68,9 +62,20 @@ form .card {
     border: 1px solid #dcfc36;
     background-color: #121212;
   }
-.checked {
-  color: orange;
-}
+  #center {
+    text-align: center;
+  }
+  
+  .fa-star {
+    font-size: 16px;
+    cursor: pointer;
+    color: gray;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
 .form-section {
   border: 1px solid #3f433f;
   border-radius: 10px;
@@ -121,6 +126,35 @@ form .card {
     color: #fff !important;
 
 }
+.contact-card .card {
+    border-radius: 15px;
+    background-color: rgb(31, 31, 31) !important; /* Dark background */
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .email-btn a, .phone-btn a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .email-btn a i, .phone-btn a i {
+    margin-left: 10px;
+  }
+  
+  .icon {
+    color: #b8ff00; /* Neon green for icons */
+  }
+  
 @media (max-width: 768px) {
   .form-section {
     flex-direction: column;
@@ -144,3 +178,4 @@ form .card {
     opacity: 0.8;
   }
 }
+
