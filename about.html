@@ -228,7 +228,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-5">
             <h6 class="text-end">
               <img src="./assets/img/plus.png" alt="plus-bg" class="plus-bg" />
             </h6>
@@ -239,28 +239,74 @@
 
       <section id="about-2" class="about-2">
         <div class="container">
-          <h1 class="our-services">OUR SERVICES</h1>
+          <h1 class="our-services">ABOUT US</h1>
           <img
             src="./assets/img/underline.png"
             alt="header-underline"
             class="header-underline"
           />
           <div class="container card-bg-about mt-0">
-            <div class="row">
+            <div class="row card-bg-about-1">
               <div class="col">
-                <h6>
-                  <img
-                    src="./assets/img/scroll.png"
-                    alt="scroll-gif"
-                    class="scroll-bg"
-                  />
-                </h6>
+                <h6 class="scroll-container" data-aos="fade-down">
+                    <img src="./assets/img/scroll-project 2.png" alt="project-image" class="project-img" />
+                    <img
+                      src="./assets/img/3-scroll.png"
+                      alt="scroll-gif"
+                      class="scroll-bg position-absolute"
+                    />
+                  </h6>
+                  
               </div>
-              <div class="col">
-                <h1 class="text-heading padding-head">Making technology that exceeds expectations</h1>
+              <div class="col" data-aos="fade-up"
+              data-aos-duration="1500">
+                <h1 class="text-heading padding-head" data-aos="fade-left">Making technology that exceeds expectations</h1>
+                <p class="padding-head pt-2">
+                    Unity is a provider of comprehensive business technology solutions focusing on bespoke software development and business process automation. Small companies to large corporations rely on the software we develop and administer to handle billions of dollars yearly. We set out to automate enterprises to aid in their scalability and efficiency.
+                </p>
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-dot" viewBox="0 0 16 16">
+                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                          </svg>     We always stay ahead of industry trends and emerging technologies to create unique and innovative gaming experiences.
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-dot" viewBox="0 0 16 16">
+                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                          </svg>  We work closely with our clients to understand their vision and deliver solutions that exceed expectations.
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-dot" viewBox="0 0 16 16">
+                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                          </svg> Our team is composed of avid gamers and creative professionals who love what they do, ensuring every project is filled with passion and creativity.
+                    </li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+           
+          </div>
+          <div class="col-md-6">
+            <h6 class="text-end">
+                <img src="./assets/img/plus.png" alt="plus-bg" class="plus-bg-1" />
+              </h6>
+          </div>
+        </div>
+      </div>
+     
+      <section id="about-2" class="about-2">
+        <div class="container">
+          <h1 class="our-services-1">Unity craves the path of creativity</h1>
+          <img
+            src="./assets/img/underline.png"
+            alt="header-underline"
+            class="header-underline-1"
+          />
         </div>
       </section>
 
@@ -463,6 +509,21 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script>
+document.querySelector('.card-bg-about-1').addEventListener('mouseover', function() {
+    const scrollImage = document.querySelector('.scroll-bg');
+    scrollImage.src = './assets/img/scroll gif.gif';
+    scrollImage.style.zIndex = 1; // Ensure it stays above other elements
+});
+
+document.querySelector('.card-bg-about-1').addEventListener('mouseout', function() {
+    const scrollImage = document.querySelector('.scroll-bg');
+    scrollImage.src = './assets/img/3-scroll.png';
+    scrollImage.style.zIndex = 0; // Reset zIndex
+});
+
     </script>
   </body>
 </html>
