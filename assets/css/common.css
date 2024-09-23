@@ -4,6 +4,8 @@
     --gray:#1F1F1F;
     --unity_green:#66BE53;
     --white:#fff;
+    --theme_black:#121212;
+    --unity_yellow: rgb(202, 254, 21);
 }
 
 .font-8 {
@@ -195,5 +197,21 @@
   .btn-1:hover span:nth-child(4) {
     bottom: 0;
   }
+.yellow{
+  color: var(--unity_yellow);
+}
   
+.title2{
+  position: relative;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.title2 img{
+  position: absolute;
+  left: -29px;
+  width: 126px;
+  bottom: -10px;
+}
   /* End .btn-1 1 */
