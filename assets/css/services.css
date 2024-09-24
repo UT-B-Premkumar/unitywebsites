@@ -1,0 +1,9 @@
+.services-1{
+    background: url(/unitywebsites/assets/img/services-1-bg.png);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 110px;
+    padding-top: 70px;
+}
