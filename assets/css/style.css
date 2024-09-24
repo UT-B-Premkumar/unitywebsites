@@ -355,13 +355,14 @@ body {
 
 .our_service-card .bg-img
 {
-    height: 401px;
+    height: 500px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: -1;
     width: calc(100% + 1);
+    background: url(/unitywebsites/assets/img/border-about.svg);
 }
 .our_service-card .bg-img img
 {
