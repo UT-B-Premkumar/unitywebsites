@@ -1,0 +1,667 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background: #121212;
+}
+.about-1 {
+  margin-left: -13px;
+  background: #000 !important;
+  margin-bottom: -10px;
+}
+.container-about {
+  position: relative;
+  overflow: hidden !important;
+  max-width: 100%;
+}
+
+.top-left-bg {
+  left: 0 !important;
+  top: 0 !important;
+  margin-top: -100px !important;
+}
+
+.top-right-bg {
+  right: 0 !important;
+  top: 0 !important;
+  margin-top: -100px !important;
+
+}
+
+.bg-top-row {
+  position: absolute !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+
+.top-bg {
+  margin-right: -13px !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin-top: -20px;
+  transform: rotate(180deg);
+}
+.bottom-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.about-1:hover {
+}
+
+.about-banner-btn {
+  border: 2px solid #1e1e1e !important;
+  color: #edeef0 !important;
+  font-family: "Barlow", sans-serif;
+  border-radius: 8px !important;
+  padding: 4px 8px !important;
+  margin-top: 70px;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  text-wrap: nowrap;
+  width: fit-content;
+  background-color: #191919; /* Background color */
+  opacity: 0.5;
+}
+
+.about-banner-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: radial-gradient(
+    circle,
+    #ffffff 10%,
+    rgba(255, 255, 255, 0.063) 50%
+  );
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 1;
+  animation: moveFog 3s infinite linear;
+  transform: translateY(-50%);
+}
+.about-banner-btn {
+    border: 2px solid #1e1e1e !important;
+    color: #edeef0 !important; /* Initial text color */
+    font-family: "Barlow", sans-serif;
+    border-radius: 8px !important;
+    padding: 4px 8px !important;
+    margin-top: 70px;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    text-wrap: nowrap;
+    width: fit-content;
+    background-color: #191919; /* Background color */
+    opacity: 0.5;
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Smooth transition for text color and font weight */
+  }
+  
+  .about-banner-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background: radial-gradient(
+      circle,
+      #ffffff 15%,
+      rgba(255, 255, 255, 0.063) 50%
+    );
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 1;
+    animation: moveFog 6s infinite linear;
+    transform: translateY(-50%);
+  }
+  
+  @keyframes moveFog {
+    0% {
+      left: -20%; /* Start position off-screen to the left */
+      opacity: 1; /* Fully visible */
+    }
+    30% {
+      left: 0%; /* Circle reaches text */
+      opacity: 1;
+      font-weight: 400;
+    }
+    50% {
+      left: 50%; /* Center position */
+      color: #fff; /* Change text color */
+      font-weight: 900; /* Change font weight to bold */
+      opacity: 1;
+    }
+    100% {
+      left: 120%; /* End position off-screen to the right */
+      opacity: 0; /* Fade out */
+    }
+  }
+  
+
+.row-content-about {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-content: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 50px !important;
+  height: 75px !important;
+}
+.arrow-right-content {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-content: center !important;
+  justify-content: center !important;
+  align-items: flex-end;
+  width: 10% !important;
+}
+.arrow-right-content-1 {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-content: center !important;
+  justify-content: center !important;
+  align-items: flex-end;
+  width: 14% !important;
+}
+.arrow-left-content {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-content: center !important;
+  justify-content: center !important;
+  align-items: flex-end !important;
+  width: 10% !important;
+  text-wrap: nowrap;
+}
+.arrow-left-content-1 {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-content: center !important;
+  justify-content: center !important;
+  align-items: flex-end !important;
+  width: 14% !important;
+  text-wrap: nowrap;
+}
+.arrow-space-center {
+  visibility: hidden !important;
+  width: 29% !important;
+  text-wrap: nowrap;
+}
+.about-head {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Barlow", sans-serif;
+  font-size: 58px;
+  margin-top: -20px;
+  text-wrap: nowrap;
+}
+
+.img-particles-container {
+  position: relative !important;
+  width: 300px !important;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1 !important; /* Behind the image */
+}
+
+.img-center-about img {
+  position: relative !important;
+  z-index: 2 !important; /* In front of particles */
+  display: block !important;
+  margin: 0 auto !important;
+  padding-top: 30px;
+}
+.right-up-arrow {
+  margin-top: -39px !important;
+}
+.left-up-arrow {
+  margin-top: -39px !important;
+}
+.about-1 h4 {
+  font-size: 44px;
+  background: linear-gradient(270.23deg, #c7fb15 0%, #ccff14 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+}
+.about-1 p {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  padding: 0px 30px 0px 30px;
+  font-weight: 400 !important;
+}
+.bottom-bg {
+  background: url("/unitywebsites/assets/img/bottom-banner.svg") no-repeat
+    center center;
+  background-size: cover;
+  height: 150px;
+}
+.our-services {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  color: #ffffff;
+  margin-top: -100px;
+}
+.about-2 .header-underline {
+  margin-top: -40px;
+  margin-left: -40px;
+}
+.about-2 .card-bg-about {
+  background: url(/unitywebsites/assets/img/about-2-bg.png);
+  /* border-image: url(/unitywebsites/assets/img/scroll-project.png); */
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 110px;
+  padding-top: 70px;
+  margin-top: -55px !important;
+}
+.about-2 .scroll-bg {
+  /* height: 600px !important; */
+  /* padding: 70px 5px 0px 30px; */
+  width: 500px;
+  border-radius: 25px !important;
+}
+.about-2 .text-heading {
+  font-size: 40px;
+  font-family: "Barlow", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+}
+.about-2 .padding-head {
+  padding: 60px 85px 0px 10px;
+  font-family: "Barlow", sans-serif;
+}
+.about-2 p {
+  text-align: left !important;
+}
+.about-2 ul li {
+  font-family: "Barlow", sans-serif;
+  padding: 0px 50px 0px 0px;
+  color: #ffffff;
+  list-style: none;
+}
+.card-bg-about {
+  position: relative;
+  overflow: hidden; /* Ensure no overflow */
+  /* Add other styles as needed */
+}
+.card-bg-about-1 h6 {
+  margin: 0px 0px 30px 30px;
+}
+
+.card-bg-about:hover img.scroll-bg {
+  /* background: url(/unitywebsites/assets/img/scroll-gif.gif) no-repeat center center; */
+  background-size: cover;
+  /* height: 500px !important; */
+  width: 500px;
+  padding: 50px 20px 0px 0px;
+  border-image: linear-gradient(270.23deg, #c7fb15 0%, #ccff14 100%);
+}
+
+.card-bg-about:hover {
+}
+
+.about-2 .header-underline-1 {
+  margin-top: -40px;
+  margin-left: -30px;
+}
+.our-services-1 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  color: #ffffff;
+  margin-top: -120px;
+}
+.scroll-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.project-img {
+  position: absolute;
+  /* left: 10%; */
+  z-index: 2;
+  width: 500px;
+  height: 533px;
+  padding: 50px 20px 0px 0px;
+}
+
+.scroll-bg {
+  position: absolute;
+  top: 0;
+  /* padding: 70px 25px 0px 25px; */
+  left: 0;
+  width: 100%; /* Ensure it covers the entire container */
+  z-index: 1;
+  width: 480px;
+  height: 533px !important; /* Layer it behind the project image */
+  padding: 50px 20px 0px 0px;
+}
+.plus-bg-1 {
+}
+.believe-h1 {
+  color: #ffffff;
+  font-family: "Barlow", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+.believe-h1 span {
+  color: #cafe15;
+  font-family: "Barlow", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+.circle-services {
+  width: auto; /* Set the width */
+  height: 700px; /* Set the height */
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease-in-out; /* Smooth transition */
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+}
+
+.circle-services:hover {
+}
+/* .card-believe{
+    background: url(/unitywebsites/assets/img/services-bg-1.png) !important;
+    height: 200px;
+    background-size: 100%;
+    padding: 20px 0px;
+    background-repeat: no-repeat;
+  } */
+
+.services-bg {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust based on content */
+}
+
+.services-bg-image {
+    width: 100%;
+    height: auto; /* Keep the image responsive */
+    object-fit: cover;
+    
+}
+
+.image-container-card {
+    position: absolute;
+    top: 20%; /* Adjust to position this as per your design */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-circle {
+    position: absolute;
+    width: 100px;  /* Adjust the size of the green circle */
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bow-arrow {
+    position: absolute;
+    width: 50px;  /* Adjust the size of the bow-arrow */
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Position the text absolutely below the image container */
+.mission {
+    font-size: 24px;
+    color: #66BE53;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mission-text {
+    position: absolute;
+    margin: 0;
+    color: #ffffff;
+    top: 55%;
+    font-size: 16px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    font-weight: 400 !important;
+}
+.img-container img {
+    position: absolute;
+}
+    .our_service-about {
+        position: relative;
+        cursor: pointer;
+        padding: 15px;
+        overflow: hidden;
+        border-radius: 27px;
+        z-index: 2;
+    }
+    
+    .our_service-about .bg-img {
+        position: relative;
+        z-index: 1;
+    }
+    .our_service-about .believe-content{
+        position: absolute;
+        z-index: 7;
+        top: 0;
+    }
+    .our_service-about .bg-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .our_service-title{
+        padding-top: 30px;
+    }
+    .our_service-about img {
+        transition: ease 1s;
+        position: absolute;
+        width: 100%;
+        object-fit: contain;
+        left: 0;
+        height: 100%;
+        top: 0;
+        position: relative;
+    }
+    
+    .our_service-about > div {
+        text-align: center;
+        margin: 0 auto;
+        /* width: 90%;
+        position: relative;
+        z-index: 10; */
+    }
+    
+    /* Handle hover effects */
+    .our_service-about img:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .our_service-about:hover img:nth-child(1) {
+        opacity: 0;
+    }
+    
+    .our_service-about:hover img:nth-child(2) {
+        opacity: 1;
+    }
+    
+    .our_service-about ul {
+        padding-left: 45px;
+        margin-bottom: 50px;
+        z-index: 10;
+        position: relative;
+    }
+    
+    .our_service-about li {
+        font-size: 18px;
+        padding: 10px 0;
+        line-height: 28px;
+    }
+    
+    .our_service-about .bg-img img:nth-child(2) {
+        display: none;
+    }
+    
+    /* Make the second bg image visible on hover */
+    .our_service-about:hover .bg-img img:nth-child(1) {
+        display: none;
+    }
+    
+    .our_service-about:hover .bg-img img:nth-child(2) {
+        display: block;
+    }
+    
+
+@media screen and (min-width: 0px) and (max-width: 810px) {
+  .about-banner-btn {
+    display: none !important;
+  }
+  .right-up-arrow {
+    display: none !important;
+  }
+  .left-up-arrow {
+    display: none !important;
+  }
+  .particles {
+    display: none !important;
+  }
+  .top-bg {
+    height: 130px !important;
+  }
+  .bottom-bg {
+    display: none;
+  }
+  .top-right-bg {
+    height: 130px;
+  }
+  .top-left-bg {
+    height: 180px;
+  }
+  .img-center-about {
+    margin-top: 150px;
+  }
+  .about-head {
+    margin-top: 30px !important;
+  }
+  .about-1 h4 {
+    font-size: 24px !important;
+    background: linear-gradient(270.23deg, #c7fb15 0%, #ccff14 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    padding: 0px 5px 0px 5px;
+  }
+  .about-head {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Barlow", sans-serif;
+    font-size: 32px !important;
+    margin-top: -20px;
+    text-wrap: nowrap;
+  }
+  .plus-bg {
+    display: none !important;
+  }
+  .about-1 .card-bg-about {
+    margin-top: 30px !important;
+  }
+  .about-1 p {
+    font-size: 14px !important;
+  }
+  .our-services {
+    margin-top: 0px !important;
+    text-align: center !important;
+  }
+  .about-2 .header-underline {
+    margin-top: 0px !important;
+    text-align: center;
+    justify-content: center;
+  }
+  .about-2 h6 {
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 40px;
+  }
+  .plus-bg-1 {
+    display: none;
+  }
+  .circle-services {
+  display: none;
+}
+.about-2 .header-underline-1 {
+    width: 100% !important;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.our-services-1 {
+    margin-top: 0px !important;
+    text-align: center !important;
+  }
+  .believe-h1{
+    font-size: 24px !important;
+    text-align: center;
+  }
+  .believe-h1 span{
+    font-size: 24px !important;
+    text-align: center;
+  }
+  .about-2 .card-bg-about {
+    background: #000;
+    /* border-image: url(/unitywebsites/assets/img/scroll-project.png); */
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 110px;
+    padding-top: 70px;
+    margin-top: -55px !important;
+  }
+  .circle-tab{
+    display: none;
+  }
+}
+
+@media screen and (min-width:810px) and (max-width:2000px) {
+    .circle-services{
+display:block  !important;
+width: 100%;
+    }
+    .circle-mob{
+        display: none !important;
+    }
+    .circle-tab{
+        display: none;
+    }
+}
