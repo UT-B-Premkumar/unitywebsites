@@ -129,7 +129,7 @@
     border: 2px solid var(--unity_green);
     font-size: 15px;
     font-weight: bold;
-    color: #ffffff;
+    color: var(--unity_green);
     border-radius: 6px;
     cursor: pointer;
     position: relative;
@@ -142,7 +142,7 @@
   }
   
   .btn-1:hover {
-    color: #0c071e;
+    color: #fff;
   }
   
   .btn-1 span {
