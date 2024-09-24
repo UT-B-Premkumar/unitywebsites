@@ -6,6 +6,7 @@ body{
 .about-1{
     margin-left: -13px;
     background: #000 !important;
+    margin-bottom: -10px;
 }
 .container-about {
     position: relative;
@@ -315,3 +316,32 @@ font-weight: 400 !important;
   .plus-bg-1{
 
   }
+.believe-h1{
+    color: #ffffff;
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.believe-h1 span{
+    color: #CAFE15;
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.card{
+    height: 400px !important;
+    background: #000 !important;
+}
+.circle-services {
+    width: auto; /* Set the width */
+    height: 700px; /* Set the height */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out; /* Smooth transition */
+    padding-top: 80px !important; 
+    padding-bottom: 80px !important;
+  }
+  
+  .circle-services:hover {
+  }
+  
