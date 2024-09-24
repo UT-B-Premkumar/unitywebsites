@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
   background-color: #121212 !important;
   font-family: "Barlow", sans-serif;
-
+  overflow-x: hidden;
 }
 .section-title {
   font-size: 1.5rem;
@@ -15,7 +15,7 @@ body {
 
 .feature-box {
   background-color: #000;
-  padding: 20px;
+  padding: 5px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -27,16 +27,12 @@ body {
   font-size: 30px;
   margin-right: 15px;
 }
-
-.feature-box:hover {
-  background-color: #252525;
-}
-
 .image-box {
-  border: 2px solid #dcfc36;
-  border-radius: 10px;
+  border: 3px solid #dcfc36;
+  border-radius: 6px;
   padding: 0;
   margin-bottom: 20px;
+  height: 360px;
 }
 
 .section-padding {
@@ -46,7 +42,15 @@ body {
   color: #fff;
 }
 .video-file {
-  padding: 10px;
+  padding: 30px;
+  overflow: hidden;
+}
+.fluid-video {
+  max-width: 100% !important;
+  height: 100% !important;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
 }
 .business-section {
   background-color: #1e1e1e; /* Dark background */
@@ -59,7 +63,9 @@ body {
   font-weight: bold;
   font-size: 2rem;
 }
-
+.specializations {
+  margin-top: 50px !important;
+}
 .business-section h1 span {
   color: #dcfc36; /* Highlighted text in green */
 }
@@ -84,20 +90,6 @@ body {
   font-size: 1rem;
   padding: 0 288px !important;
 }
-@media (max-width: 768px) {
-  .business-section h1 {
-    font-size: 1.5rem;
-  }
-
-  .btn-join {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-  .business-section p {
-    padding: 0 0px !important;
-  }
-}
-
 .business-section {
   padding: 50px 0;
 }
@@ -105,4 +97,53 @@ body {
   width: fit-content;
   margin: 0 auto;
   text-decoration: none;
+}
+.feature-box img {
+  width: 50px;
+}
+.feature-box p {
+  font-size: 16px;
+  opacity: 0.6;
+}
+.first-point {
+  padding-right: 44px !important;
+}
+.first-points {
+  padding-right: 93px !important;
+}
+.special-content {
+  padding-right: 3rem !important;
+}
+.speciality-text p{
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .image-box {
+    height: 100%;
+  }
+  .specializations{
+    margin-top: 0;
+  }
+  .speciality-text {
+    text-align: center;
+  }
+  .business-section h1 {
+    font-size: 1.5rem;
+  }
+  .first-point {
+    padding-right: 0 !important;
+  }
+  .btn-join {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .business-section p {
+    padding: 0 0px !important;
+  }
+  .first-points {
+    padding-right: 0px !important;
+  }
+  .special-content {
+    padding-right: 0rem !important;
+  }
 }

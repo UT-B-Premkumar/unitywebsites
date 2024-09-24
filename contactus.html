@@ -19,6 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -102,7 +103,7 @@
           />
           <div class="row row-content-about">
             <div class="col-4 arrow-left-content">
-              <button class="about-banner-btn">Our Story</button>
+              <button class="about-banner-btn">Talk To Us</button>
               <h6>
                 <img
                   src="./assets/img/left.png"
@@ -157,13 +158,13 @@
                   class="right-up-arrow"
                 />
               </h6>
-              <button class="about-banner-btn">Our Values</button>
+              <button class="about-banner-btn">Email Us</button>
             </div>
           </div>
           <br />
           <div class="row row-content-about">
             <div class="col-3 arrow-left-content-1">
-              <button class="about-banner-btn">Our Mission</button>
+              <button class="about-banner-btn">Feedback</button>
               <h6>
                 <img
                   src="./assets/img/left.png"
@@ -181,7 +182,7 @@
                   class="right-up-arrow"
                 />
               </h6>
-              <button class="about-banner-btn">Our Vision</button>
+              <button class="about-banner-btn">Help</button>
             </div>
           </div>
           <h1
@@ -190,7 +191,7 @@
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="1500"
           >
-            ABOUT US
+            CONTACT US
           </h1>
           <br />
           <h4
@@ -364,14 +365,62 @@
         <div class="container">
           <div class="row d-flex align-items-center">
             <div class="col-md-6 align-items-center left-contact-section">
-              <h6>DECODE YOUR THOUGHTS WITH US NOW</h6>
+              <h6>
+                <span data-aos="fade-right" data-aos-delay="200">DECODE</span>
+                <span data-aos="fade-right" data-aos-delay="300">YOUR</span>
+                <span data-aos="fade-right" data-aos-delay="400">THOUGHTS</span>
+                <span
+                  data-aos="fade-right"
+                  data-aos-delay="500"
+                  class="highlight"
+                  >WITH</span
+                >
+                <span data-aos="fade-right" data-aos-delay="600">US</span>
+                <span data-aos="fade-right" data-aos-delay="700">NOW</span>
+              </h6>
               <h2>
-                Call <span class="highlighted-text">The Future</span> To Make
-                Present Memorable
+                <span data-aos="fade-up" data-aos-delay="200">Call</span>
+                <span class="highlighted-text"
+                  ><span data-aos="fade-right" data-aos-delay="300">The</span>
+                  <span data-aos="fade-right" data-aos-delay="400"
+                    >Future</span
+                  ></span
+                >
+                <span data-aos="fade-right" data-aos-delay="500">To</span>
+                <span data-aos="fade-right" data-aos-delay="600">Make</span>
+                <span data-aos="fade-right" data-aos-delay="600">Present</span>
+                <span data-aos="fade-right" data-aos-delay="700"
+                  >Memorable</span
+                >
               </h2>
               <p class="contact-left-content">
-                We provide comprehensive web development services to companies
-                with brilliant business concepts under one roof.
+                <span data-aos="fade-right" data-aos-delay="100">We</span>
+                <span data-aos="fade-right" data-aos-delay="200">provide</span>
+                <span data-aos="fade-right" data-aos-delay="300"
+                  >comprehensive</span
+                >
+                <span data-aos="fade-right" data-aos-delay="400">web</span>
+                <span data-aos="fade-right" data-aos-delay="500"
+                  >development</span
+                >
+                <span data-aos="fade-right" data-aos-delay="600">services</span>
+                <span data-aos="fade-right" data-aos-delay="700">to</span>
+                <span data-aos="fade-right" data-aos-delay="800"
+                  >companies</span
+                >
+                <span data-aos="fade-right" data-aos-delay="900">with</span>
+                <span data-aos="fade-right" data-aos-delay="1000"
+                  >brilliant</span
+                >
+                <span data-aos="fade-right" data-aos-delay="1100"
+                  >business</span
+                >
+                <span data-aos="fade-right" data-aos-delay="1200"
+                  >concepts</span
+                >
+                <span data-aos="fade-right" data-aos-delay="1300">under</span>
+                <span data-aos="fade-right" data-aos-delay="1400">one</span>
+                <span data-aos="fade-right" data-aos-delay="1500">roof.</span>
               </p>
             </div>
             <div class="col-md-6 contact-us-form">
@@ -454,6 +503,17 @@
                         <span class="fa fa-star mx-2" id="star4"></span>
                         <span class="fa fa-star mx-2" id="star5"></span>
                       </div>
+                      <a
+                        href="#"
+                        class="btn-1 px-4 submit-btn text-center mt-3"
+                        style="display: block; width: 90%; padding: 5px 20px"
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="text-center">Submit</span>
+                      </a>
                     </div>
                   </div>
                 </form>
@@ -466,41 +526,70 @@
         <div class="container my-5">
           <div class="row text-center">
             <!-- Message Us Section -->
-            <div class="col-md-4 mb-4 contact-card">
+            <div
+              class="col-md-4 mb-4 contact-card"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <div class="card p-3 h-100 shadow-sm text-light bg-dark">
                 <div class="card-body">
-                  <div class="icon mb-3 d-flex justify-content-start">
-                    <img
-                      src="assets/img/icon/messages.svg"
-                      class="contact-icons"
-                    />
+                  <div
+                    class="icon mb-3 d-flex justify-content-start icon-rotate"
+                  >
+                    <style>
+                      .moving {
+                        display: flex;
+                        /* width: 30px; */
+                        overflow: hidden;
+                        height: 36px;
+                        flex-direction: column;
+                        gap: 5px;
+                      }
+                      .contact-card:hover .moving img {
+                        transform: translateY(-25px);
+                      }
+                    </style>
+                    <div class="moving">
+                      <img
+                        src="assets/img/icon/messages.svg"
+                        class="contact-icons"
+                      /><img
+                        src="assets/img/icon/messages.svg"
+                        class="contact-icons"
+                      />
+                    </div>
                     <h6 class="card-title mt-2 ms-2">Message us</h6>
                   </div>
 
-                  <p class="card-text text-left" style="text-align: left;font-size: 12px;opacity: 0.5;">
+                  <p
+                    class="card-text text-left"
+                    style="text-align: left; font-size: 12px; opacity: 0.5"
+                  >
                     Message us using our online chat system for quick and
                     efficient support.
                   </p>
-                  <div class="email-btn mt-3 d-flex justify-content-start" >
-                    <a
-                      href="mailto:support@theunitytech.com"
-                      class="btn btn-dark border border-secondary rounded-pill px-4 py-2"
-                      style="text-align: left;font-size: 12px;"
-                    >
-                      Email:
-                      <span style="color: #b8ff00"
-                        >support@theunitytech.com</span
-                      >
-                      <!-- <i class="fas fa-arrow-right" style="color: #b8ff00"></i> -->
-                       <img src="assets/img/icon/right-arrow.svg" alt="">
-                    </a>
+                  <div
+                    class="d-flex justify-content-start email-btn-content py-1"
+                  >
+                    <p class="mt-2 pe-3 ps-3 mb-1">
+                      Email: support@theunitytech.com
+                    </p>
+                    <img
+                      src="assets/img/icon/arrow_with_bg.svg"
+                      alt="arrow"
+                      class="rocket-arrow"
+                    />
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- Call Us Section -->
-            <div class="col-md-4 mb-4 contact-card">
+            <div
+              class="col-md-4 mb-4 contact-card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
               <div class="card p-3 h-100 shadow-sm text-light bg-dark">
                 <div class="card-body">
                   <div class="icon mb-3 d-flex justify-content-start">
@@ -510,40 +599,47 @@
                     />
                     <h6 class="card-title mt-2 ms-2">Call us</h6>
                   </div>
-                  <p class="card-text" style="text-align: left;font-size: 12px;opacity: 0.6;">
+                  <p
+                    class="card-text"
+                    style="text-align: left; font-size: 12px; opacity: 0.6"
+                  >
                     Let's have a chat – there's nothing quite like talking to
                     another person.
                   </p>
-                  <div class="phone-btn mt-3 d-flex justify-content-start">
-                    <a
-                      href="tel:+14380000000"
-                      class="btn btn-dark border border-secondary rounded-pill px-4 py-2"
-                      style="text-align: left;font-size: 12px;"
-                    >
-                      +1 (438) 000-0000
-                      <!-- <i class="fas fa-arrow-right" style="color: #b8ff00"></i> -->
-                      <img src="assets/img/icon/right-arrow.svg" alt="">
-                    </a>
+                  <div
+                    class="d-flex justify-content-start email-btn-mobile py-1"
+                  >
+                    <p class="mt-2 mb-1 ps-2 pe-1">+1(438) 000-0000</p>
+                    <img src="assets/img/icon/arrow_with_bg.svg" alt="" />
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- Address Section -->
-            <div class="col-md-4 mb-4 contact-card">
+            <div
+              class="col-md-4 mb-4 contact-card"
+              data-aos="fade-up"
+              data-aos-duration="900"
+            >
               <div class="card p-3 h-100 shadow-sm text-light bg-dark">
                 <div class="card-body">
-                    <div class="icon mb-3 d-flex justify-content-start">
-                        <img
-                          src="assets/img/icon/address.svg"
-                          class="contact-icons"
-                        />
-                        <h6 class="card-title mt-2 ms-2">Address</h6>
-                      </div>
-                  <p class="card-text" style="text-align: left;font-size: 12px;opacity: 0.6;">
+                  <div class="icon mb-3 d-flex justify-content-start">
+                    <img
+                      src="assets/img/icon/address.svg"
+                      class="contact-icons"
+                    />
+                    <h6 class="card-title mt-2 ms-2">Address</h6>
+                  </div>
+                  <p
+                    class="card-text"
+                    style="text-align: left; font-size: 12px; opacity: 0.6"
+                  >
                     We'd be delighted to welcome you to our Head Office.
                   </p>
-                  <address style="text-align: left;font-size: 12px;">
+                  <address
+                    style="text-align: left; font-size: 12px; opacity: 0.6"
+                  >
                     2-21 A, Unity Technologies Private Limited,<br />
                     Kanjilakodi, Addoor, Mangaluru, Dakshina Kannada, Karnataka,
                     574145.
@@ -619,6 +715,15 @@
             }
           });
         });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      // Initialize AOS with 'once' set to true so the animation happens only once
+
+      AOS.init({
+        once: true, // restrict animation to single load
       });
     </script>
   </body>
