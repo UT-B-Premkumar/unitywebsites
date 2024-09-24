@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./home-banner.html" />
     <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/services.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -80,7 +81,7 @@
       </div>
     </header>
 
-    <section id="about-1" class="about-1">
+    <section id="services-1" class="about-1">
       <div class="container container-about">
         <div class="row bg-top-row">
           <div class="col-md-6">
@@ -226,143 +227,162 @@
         </div>
       </div>
 
-      <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-      <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-      <!-- stats.js lib -->
-      <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-      <script>
-        particlesJS("particles-js", {
-          particles: {
-            number: {
-              value: 1000,
-              density: {
-                enable: true,
-                value_area: 500,
-              },
-            },
-            color: {
-              value: "#dcfc36",
-            },
-            shape: {
-              type: "circle",
-              stroke: {
-                width: 0,
-                color: "#dcfc36",
-              },
-              polygon: {
-                nb_sides: 1,
-              },
-              image: {
-                src: "img/github.svg",
-                width: 0.1,
-                height: 0.1,
-              },
-            },
-            opacity: {
-              value: 0.5517792882846864,
-              random: false,
-              anim: {
-                enable: false,
-                speed: 0.01,
-                opacity_min: 0.01,
-                sync: false,
-              },
-            },
-            size: {
-              value: 1.998400639744104,
-              random: true,
-              anim: {
-                enable: false,
-                speed: 0.00139022217182483,
-                size_min: 0.1,
-                sync: false,
-              },
-            },
-            line_linked: {
-              enable: false,
-              distance: 0,
-              color: "#ffffff",
-              opacity: 0.4,
-              width: 1,
-            },
-            move: {
+      <section id="about-2" class="services-1">
+        <div class="container">
+         
+          <div class="container card-bg-about mt-0">
+            <div class="row card-bg-about-1">
+              <div class="col-md-6">
+
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-duration="1500">
+                <img
+                src="./assets/img/programming-background-services.png"
+                alt="programming-background-services"
+                class="services-1"
+              />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 1000,
+            density: {
               enable: true,
-              speed: 0.1,
-              direction: "top",
-              random: false,
-              straight: false,
-              out_mode: "out",
-              bounce: false,
-              attract: {
-                enable: false,
-                rotateX: 600,
-                rotateY: 1200,
-              },
+              value_area: 500,
             },
           },
-          interactivity: {
-            detect_on: "canvas",
-            events: {
-              onhover: {
-                enable: false,
-                mode: "repulse",
-              },
-              onclick: {
-                enable: true,
-                mode: "push",
-              },
-              resize: true,
+          color: {
+            value: "#dcfc36",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#dcfc36",
             },
-            modes: {
-              grab: {
-                distance: 100,
-                line_linked: {
-                  opacity: 1,
-                },
-              },
-              bubble: {
-                distance: 10,
-                size: 1,
-                duration: 1,
-                opacity: 5,
-                speed: 0.01,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-              push: {
-                particles_nb: 4,
-              },
-              remove: {
-                particles_nb: 2,
-              },
+            polygon: {
+              nb_sides: 1,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 0.1,
+              height: 0.1,
             },
           },
-          retina_detect: true,
-        });
-        var count_particles, stats, update;
-        stats = new Stats();
-        stats.setMode(0);
-        stats.domElement.style.position = "absolute";
-        stats.domElement.style.left = "0px";
-        stats.domElement.style.top = "0px";
-        document.body.appendChild(stats.domElement);
-        count_particles = document.querySelector(".js-count-particles");
-        update = function () {
-          stats.begin();
-          stats.end();
-          if (
-            window.pJSDom[0].pJS.particles &&
-            window.pJSDom[0].pJS.particles.array
-          ) {
-            count_particles.innerText =
-              window.pJSDom[0].pJS.particles.array.length;
-          }
-          requestAnimationFrame(update);
-        };
+          opacity: {
+            value: 0.5517792882846864,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 0.01,
+              opacity_min: 0.01,
+              sync: false,
+            },
+          },
+          size: {
+            value: 1.998400639744104,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 0.00139022217182483,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: false,
+            distance: 0,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 0.1,
+            direction: "top",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: false,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 100,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 10,
+              size: 1,
+              duration: 1,
+              opacity: 5,
+              speed: 0.01,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+      var count_particles, stats, update;
+      stats = new Stats();
+      stats.setMode(0);
+      stats.domElement.style.position = "absolute";
+      stats.domElement.style.left = "0px";
+      stats.domElement.style.top = "0px";
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector(".js-count-particles");
+      update = function () {
+        stats.begin();
+        stats.end();
+        if (
+          window.pJSDom[0].pJS.particles &&
+          window.pJSDom[0].pJS.particles.array
+        ) {
+          count_particles.innerText =
+            window.pJSDom[0].pJS.particles.array.length;
+        }
         requestAnimationFrame(update);
-      </script>
+      };
+      requestAnimationFrame(update);
+    </script>
     </section>
 
     <footer class="footer">
