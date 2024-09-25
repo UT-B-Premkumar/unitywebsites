@@ -70,9 +70,8 @@ form .card {
   cursor: pointer;
   color: gray;
 }
-
 .checked {
-  color: orange;
+  color: #83f545;
 }
 
 .form-section {
@@ -176,7 +175,11 @@ form .card {
   font-size: 1.25rem;
   color: #c6ff00; /* Neon yellow */
 }
-
+.icon img{
+  background-color: #121212;
+  padding: 6px;
+  border-radius: 6px;
+}
 .arrow-icon i:hover {
   color: #fff;
 }
@@ -186,7 +189,8 @@ form .card {
   /* border: 1px solid white; */
   background-color: #121212;
   border-radius: 30px;
-  width: 280px;
+  width: 221px;
+  font-size: 10px;
 }
 .email-btn-mobile {
   color: #b8ff00;
@@ -211,6 +215,28 @@ form .card {
 }
 .icon img:hover {
   transform: rotateX(360deg);
+}
+.moving {
+  display: flex;
+  /* width: 30px; */
+  overflow: hidden;
+  height: 36px;
+  flex-direction: column;
+  gap: 5px;
+}
+.contact-card:hover .moving img {
+  transform: translateY(-40px);
+}
+.moving2 {
+  display: flex;
+  /* width: 30px; */
+  overflow: hidden;
+  height: 36px;
+  flex-direction: column;
+  gap: 5px;
+}
+.contact-card:hover .moving2 .rocket-arrow {
+  transform: translate(30px,-30px,);
 }
 @media (max-width: 768px) {
   .email-button {
@@ -259,3 +285,91 @@ form .card {
     opacity: 0.8;
   }
 }
+@media (min-width: 768px) and (max-width: 997px) {
+  .email-btn-content {
+    position: relative;
+    left: -36px;
+  }
+}
+@media (min-width: 998px) and (max-width: 1200px) {
+  /* .tab-view{
+    display: flex;
+    justify-content: center;
+  }
+  .contact-card{
+    width: 50%;
+  } */
+}
+/* .moving2 img{
+  transition: ease 1s;
+}
+
+.moving2:hover img:nth-child(2){
+  transform: translate(25px ,-59px );
+
+}
+
+.moving2:hover img:nth-child(1){
+  transform: translate(0 ,0 );
+
+}
+.moving2:hover img:nth-child(1){
+  transform: translate(59px, -25px)
+
+}
+
+
+.moving2 img:nth-child(2){
+  transform: translate(-23px ,0 );
+}
+.rocket-arrow{
+  background-color: #121212;
+  border-radius: 50%;
+  padding: 5px;
+
+} */
+.moving2 {
+  display: flex;
+  overflow: hidden;
+  height: 36px;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+
+.rocket-arrow {
+  transition: none; /* We'll control animation with keyframes */
+}
+
+.contact-card:hover .moving2 .rocket-arrow {
+  animation: rocketTakeoff 1.5s ease-in-out infinite; /* Faster animation (0.8s) */
+}
+
+@keyframes rocketTakeoff {
+  0% {
+    transform: translateX(0) translateY(0); /* Initial state */
+    opacity: 1; /* Fully visible */
+  }
+  30% {
+    transform: translateX(30px) translateY(-30px); /* Move diagonally */
+    opacity: 1; /* Still visible */
+  }
+  40% {
+    opacity: 0; /* Start disappearing */
+  }
+  41% {
+    transform: translateX(0) translateY(0); /* Reset position */
+    opacity: 0; /* Invisible while resetting */
+  }
+  42% {
+    opacity: 1; /* Reappear quickly */
+  }
+  100% {
+    transform: translateX(0) translateY(0); /* Back at the starting point */
+    opacity: 1; /* Fully visible */
+  }
+}
+.about-banner-btn {
+  padding: 4px 2px !important;
+}
+

@@ -64,7 +64,7 @@ body {
   font-size: 2rem;
 }
 .specializations {
-  margin-top: 50px !important;
+  margin-top: 35px !important;
 }
 .business-section h1 span {
   color: #dcfc36; /* Highlighted text in green */
@@ -114,14 +114,25 @@ body {
 .special-content {
   padding-right: 3rem !important;
 }
-.speciality-text p{
+.speciality-text p {
   opacity: 0.5;
 }
-@media (max-width: 768px) {
+.your-buisness{
+  display: block;
+}
+.normal{
+  display: inline-block !important;
+  margin-left: 345px;
+}
+.responsive{
+  display: none !important;
+  margin-left: 0px;
+}
+@media (max-width: 767px) {
   .image-box {
     height: 100%;
   }
-  .specializations{
+  .specializations {
     margin-top: 0;
   }
   .speciality-text {
@@ -145,5 +156,78 @@ body {
   }
   .special-content {
     padding-right: 0rem !important;
+  }
+  .video-file {
+    order: 10;
+  }
+  .specializations{
+    order: 1;
+  }
+  .normal{
+    display: none !important;
+    margin-left: 0px;
+  }
+  .responsive{
+    display: block !important;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 997px) {
+  .image-box {
+    height: 393px;
+  }
+  .first-point {
+    padding-right: 80px !important;
+  }
+  .first-points {
+    padding-right: 124px !important;
+  }
+  .business-section p {
+    margin: 20px 0;
+    color: #ccc !important;
+    font-size: 1rem;
+    padding: 0 0px !important;
+  }
+  .video-file {
+    order: 10;
+  }
+  .specializations{
+    order: 1;
+  }
+  .normal{
+    display: none !important;
+    margin-left: 0px;
+  }
+  .responsive{
+    display: block !important;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 998px) and (max-width: 1200px) {
+  .contact-card .card-body {
+    width: 100%;
+  }
+  .image-box {
+    height: 100%;
+  }
+  .first-point {
+    padding-right: 80px !important;
+  }
+  .first-points {
+    padding-right: 124px !important;
+  }
+    .video-file {
+    order: 10;
+  }
+  .specializations{
+    order: 1;
+  }
+  .normal{
+    display: none !important;
+    margin-left: 0px;
+  }
+  .responsive{
+    display: block !important;
+    margin-left: 0px;
   }
 }
