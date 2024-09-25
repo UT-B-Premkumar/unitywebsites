@@ -726,18 +726,42 @@ display: inline;
   background-color: #050505cc;
   padding: 20px 40px;
   border-bottom: 1px solid #050505cc;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 500;
+
+  background: rgb(20, 255, 135);
+  background: linear-gradient(
+    326deg,
+    rgba(20, 255, 135, 1) 72%,
+    rgba(202, 254, 21, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.8;
 }
+.working-process .accordion-item .accordion-button.collapsed {
+  color: var(--white) !important;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    326deg,
+    rgb(255, 255, 255) 72%,
+    rgb(255, 255, 255) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 .working-process .accordion-item .accordion-collapse.collapse.show,
 .working-process .accordion-item .accordion-collapse.collapse.show {
-  background-color: var(--primary-color);
   transition: all 0.2s ease-in-out;
 }
 
 .working-process .accordion-item .accordion-button:not(.collapsed) {
   color: #cccccc;
   transition: all 0.2s ease-in-out;
-  background-color: var(--primary-color) !important;
+
   box-shadow: none;
 }
 
@@ -750,10 +774,14 @@ display: inline;
 }
 
 .working-process .accordion-item .accordian-numbers {
-  font-size: 44px;
-  padding-right: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 35px;
 }
-
+.working-process .accordion-body {
+  color: white;
+  text-align: left;
+}
 .accordion-button::after {
   background-image: none;
   font-family: "Font Awesome 6 Free";
@@ -766,10 +794,12 @@ display: inline;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 1px solid var(--secondary-color);
-  background-color: var(--body-color);
+
   color: #cccccc;
   background-image: none !important;
+  border: solid 1px #2d2d2dde;
+  padding: 15px;
+  background-color: #111111;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -780,5 +810,59 @@ display: inline;
 .working-process .accordion-item .collapsing {
   transition: all 0.3s ease-in-out;
 }
+.customer_care {
+  color: var(--white);
+}
 
+.customer_care img {
+  padding: 30px 0;
+}
+
+.customer_care_content {
+  text-align: center;
+  background: #212121;
+  border-radius: 20px;
+  padding-bottom: 30px;
+}
+
+.customer_care_content h5 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.customer_care_content p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.customer_care_content button {
+  margin: 0 auto;
+  margin-top: 25px;
+}
 /* faq end */
+
+
+/* service game_section  */
+
+.services_games  .title2 img{
+  left: 0;
+  width: 185px;
+}
+.services_games {
+  color: var(--white);
+}
+.ss-content-6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ss-content-6 h4{
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-weight:600 ;
+}
+  .services_games img{
+    height: 800px;
+  }
