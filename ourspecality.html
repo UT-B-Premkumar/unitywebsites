@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/ourspecality.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -18,6 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -68,45 +70,362 @@
         </div>
       </div>
     </header>
+    <section id="about-1" class="about-1">
+      <div class="container container-about">
+        <div class="row bg-top-row">
+          <div class="col-md-6">
+            <img
+              src="./assets/img/top-left-bg.svg"
+              alt="tl-bg"
+              class="top-left-bg"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            />
+          </div>
+          <div class="col-md-6 text-end">
+            <img
+              src="./assets/img/top-right.svg"
+              alt="tr-bg"
+              class="top-right-bg"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            />
+          </div>
+        </div>
+        <img src="./assets/img/bottom-banner.svg" alt="top-bg" class="top-bg" />
+        <div class="row row-content-about">
+          <div class="col-4 arrow-left-content">
+            <button class="about-banner-btn">Talk To Us</button>
+            <h6>
+              <img
+                src="./assets/img/left.png"
+                alt="left-arrow-up"
+                class="left-up-arrow"
+              />
+            </h6>
+          </div>
+          <div class="col-4 img-particles-container">
+            <h6
+              class="img-center-about"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500"
+            >
+              <img
+                src="./assets/img/about-banner-icon.png"
+                alt="center-icon"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1500"
+              />
+            </h6>
+            <!-- particles.js container -->
+            <div
+              id="particles-js"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500"
+            ></div>
+            <!-- stats - count particles -->
+            <div
+              class="count-particles"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500"
+            >
+              <span
+                class="js-count-particles"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1500"
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-4 arrow-right-content">
+            <h6>
+              <img
+                src="./assets/img/right.png"
+                alt="right-arrow-up"
+                class="right-up-arrow"
+              />
+            </h6>
+            <button class="about-banner-btn">Email Us</button>
+          </div>
+        </div>
+        <br />
+        <div class="row row-content-about">
+          <div class="col-3 arrow-left-content-1">
+            <button class="about-banner-btn">Feedback</button>
+            <h6>
+              <img
+                src="./assets/img/left.png"
+                alt="left-arrow-up"
+                class="left-up-arrow"
+              />
+            </h6>
+          </div>
+          <div class="col-6 arrow-space-center"></div>
+          <div class="col-3 arrow-right-content-1">
+            <h6>
+              <img
+                src="./assets/img/right.png"
+                alt="right-arrow-up"
+                class="right-up-arrow"
+              />
+            </h6>
+            <button class="about-banner-btn">Help</button>
+          </div>
+        </div>
+        <h1
+          class="about-head"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="1500"
+        >
+          OUR SPECIALITY
+        </h1>
+        <br />
+        <h4
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="1500"
+          class="normal"
+        >
+          Offering solutions to revitalize<br/> your business.
+        </h4>
+        <h4
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="1500"
+        class="responsive"
+      >
+        Offering solutions to revitalize your business.
+      </h4>
+        <div class="row justify-content-center d-flex bottom-bg">
+          <div class="col-md-2"></div>
+          <div
+            class="col-md-6"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="1500"
+          >
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500"
+            >
+              We revolutionize the world of creativity with intricate detailing
+              and ingenious technology that makes for an ultimate gaming
+              experience
+            </p>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+
+      <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+      <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <!-- stats.js lib -->
+      <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+      <script>
+        particlesJS("particles-js", {
+          particles: {
+            number: {
+              value: 1000,
+              density: {
+                enable: true,
+                value_area: 500,
+              },
+            },
+            color: {
+              value: "#dcfc36",
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 0,
+                color: "#dcfc36",
+              },
+              polygon: {
+                nb_sides: 1,
+              },
+              image: {
+                src: "img/github.svg",
+                width: 0.1,
+                height: 0.1,
+              },
+            },
+            opacity: {
+              value: 0.5517792882846864,
+              random: false,
+              anim: {
+                enable: false,
+                speed: 0.01,
+                opacity_min: 0.01,
+                sync: false,
+              },
+            },
+            size: {
+              value: 1.998400639744104,
+              random: true,
+              anim: {
+                enable: false,
+                speed: 0.00139022217182483,
+                size_min: 0.1,
+                sync: false,
+              },
+            },
+            line_linked: {
+              enable: false,
+              distance: 0,
+              color: "#ffffff",
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 0.1,
+              direction: "top",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200,
+              },
+            },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: false,
+                mode: "repulse",
+              },
+              onclick: {
+                enable: true,
+                mode: "push",
+              },
+              resize: true,
+            },
+            modes: {
+              grab: {
+                distance: 100,
+                line_linked: {
+                  opacity: 1,
+                },
+              },
+              bubble: {
+                distance: 10,
+                size: 1,
+                duration: 1,
+                opacity: 5,
+                speed: 0.01,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+              push: {
+                particles_nb: 4,
+              },
+              remove: {
+                particles_nb: 2,
+              },
+            },
+          },
+          retina_detect: true,
+        });
+        var count_particles, stats, update;
+        stats = new Stats();
+        stats.setMode(0);
+        stats.domElement.style.position = "absolute";
+        stats.domElement.style.left = "0px";
+        stats.domElement.style.top = "0px";
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector(".js-count-particles");
+        update = function () {
+          stats.begin();
+          stats.end();
+          if (
+            window.pJSDom[0].pJS.particles &&
+            window.pJSDom[0].pJS.particles.array
+          ) {
+            count_particles.innerText =
+              window.pJSDom[0].pJS.particles.array.length;
+          }
+          requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+      </script>
+    </section>
+    <section>
     <!-- Section 1: Fantasy Sport App Development -->
     <div class="container section-padding">
       <div class="row">
-        <div class="col-lg-6">
-          <h2 class="section-title">
-            Fantasy Sport <span class="highlight">App Development</span>
-          </h2>
-          <p class="pe-5">
-            Our company is known for developing innovative fantasy sports apps
-            that can make a lasting impression on existing markets. Our fantasy
-            sports app development services are tailored to meet client needs
-            entering the fantasy sports market.
-          </p>
+        <div class="col-xl-6 col-lg-12 col-md-12 specializations">
+          <div class="speciality-text">
+            <h2 class="section-title" data-aos="fade-up">
+              Fantasy Sport <span class="highlight">App Development</span>
+            </h2>
+            <p class="special-content" data-aos="fade-up" style="opacity: 0.7;">
+              Our company is known for developing innovative fantasy sports apps
+              that can make a lasting impression on existing markets. Our
+              fantasy sports app development services are tailored to meet
+              client needs entering the fantasy sports market.
+            </p>
+          </div>
           <div class="row">
-            <div class="col-md-6">
-              <div class="feature-box">
-                <i class="fas fa-chart-line"></i>
-                <span>Customizable User Experience</span>
-              </div>
-              <div class="feature-box">
-                <i class="fas fa-chart-line"></i>
-                <span>Advanced Analytics & Real-Time Updates</span>
+            <div class="col-md-6 ">
+              <div class="d-flex justify-content-start feature-box " data-aos="fade-up">
+                <img
+                  src="assets/img/icon/user_experience.svg"
+                  alt="user_experience"
+                  class="px-2"
+                />
+                <p class="mt-3 first-point">Customizable User Experience</p>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="feature-box">
-                <i class="fas fa-chart-line"></i>
-                <span>Scalable Infrastructure with Robust Security</span>
+              <div class="d-flex justify-content-start feature-box" data-aos="fade-up">
+                <img
+                  src="assets/img/icon/advance_analytics.svg"
+                  alt="user_experience"
+                  class="px-2"
+                />
+                <p class="mt-3">Advanced Analytics & Real-Time Updates</p>
               </div>
-              <div class="feature-box">
-                <i class="fas fa-chart-line"></i>
-                <span>Designed for Cross-Platform Compatibility</span>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex justify-content-start feature-box" data-aos="fade-up">
+                <img
+                  src="assets/img/icon/scalable.svg"
+                  alt="user_experience"
+                  class="px-2"
+                />
+                <p class="mt-3">Scalable infrastructure with robust security</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex justify-content-start feature-box" data-aos="fade-up">
+                <img
+                  src="assets/img/icon/cross_platform.svg"
+                  alt="user_experience"
+                  class="px-2"
+                />
+                <p class="mt-3">Designed for Cross-Platform Compatibility</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 video-file">
+        <div class="col-xl-6 col-lg-12 col-md-12 video-file" data-aos="fade-up">
           <div class="image-box">
-            <video class="img-fluid" autoplay muted loop>
+            <video class="img-fluid fluid-video" autoplay muted loop>
               <source src="assets/img/fantacy sport.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -118,45 +437,67 @@
     <!-- Section 2: E-Commerce & Retail -->
     <div class="container section-padding">
       <div class="row">
-        <div class="col-lg-6 video-file">
+        <div class="col-xl-6 col-lg-12 col-md-12 video-file" data-aos="fade-up">
           <div class="image-box">
-            <video class="img-fluid video-file" autoplay muted loop>
+            <video class="img-fluid fluid-video" autoplay muted loop>
               <source src="assets/img/ecommerce_video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
         </div>
-        <div class="col-lg-6">
-          <h2 class="section-title">
-            E-Commerce <span class="highlight">&</span> Retail
-          </h2>
-          <p>
-            Our e-commerce store solutions are known for their world-class
-            quality at an affordable price. With our Omnichannel shopping
-            portals, you can serve your customers to the best of your ability
-            and dominate the digital world. (Website name) offers
-            business-centric app development services to address and solve
-            complex industry-specific problems.
-          </p>
+        <div class="col-xl-6 col-lg-12 col-md-12 specializations">
+          <div class="speciality-text" >
+            <h2 class="section-title" data-aos="fade-up">
+              E-Commerce <span class="highlight">&</span> Retail
+            </h2>
+            <p data-aos="fade-up" style="opacity: 0.6;">
+              Our e-commerce store solutions are known for their world-class
+              quality at an affordable price. With our Omnichannel shopping
+              portals, you can serve your customers to the best of your ability
+              and dominate the digital world. (Website name) offers
+              business-centric app development services to address and solve
+              complex industry-specific problems.
+            </p>
+          </div>
           <div class="row">
-            <div class="col-md-6">
-              <div class="feature-box">
-                <i class="fas fa-credit-card"></i>
-                <span>Seamless Payment Integration</span>
-              </div>
-              <div class="feature-box">
-                <i class="fas fa-shipping-fast"></i>
-                <span>Personalized Shopping Experience</span>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="d-flex justify-content-start feature-box">
+                <img
+                  src="assets/img/icon/user_experience.svg"
+                  alt="user_experience"
+                  class="px-2"
+                />
+                <p class="mt-3 first-point">Seamless Payment Integration</p>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="feature-box">
-                <i class="fas fa-dollar-sign"></i>
-                <span>World-Class Quality at an Affordable Price</span>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="d-flex justify-content-start feature-box">
+                <img
+                  src="assets/img/icon/advance_analytics.svg"
+                  alt="user_experience"
+                  class="px-2"
+                />
+                <p class="mt-3 first-point">Personalized Shopping Experience</p>
               </div>
-              <div class="feature-box">
-                <i class="fas fa-mobile-alt"></i>
-                <span>Seamless Shopping on Any Device</span>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="d-flex justify-content-start feature-box">
+                <img
+                  src="assets/img/icon/quality.svg"
+                  alt="user_experience"
+                  class="px-2"
+                />
+                <p class="mt-3">World-class Quality at An Affordable Price</p>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="d-flex justify-content-start feature-box">
+                <img
+                  src="assets/img/icon/cross_platform.svg"
+                  alt="user_experience"
+                  class="px-2"
+                />
+                <p class="mt-3 first-point">Seamless Shopping On Any Device</p>
               </div>
             </div>
           </div>
@@ -166,44 +507,69 @@
 
     <div class="container section-padding">
       <div class="row">
-        <div class="col-lg-6">
-          <h2 class="section-title">
-            Banking <span class="highlight">&</span> Finance
-          </h2>
-          <p>
-            Unity provides a comprehensive range of banking and financing apps
-            to help businesses surpass their market competitors. With an
-            e-wallet app, we increase customer engagement and return on
-            investment, and we work closely with our developers and UX/UI
-            designers to design and develop responsive, scalable and interactive
-            banking portals.
-          </p>
+        <div class="col-xl-6 col-lg-12 col-md-12 specializations">
+          <div class="speciality-text">
+            <h2 class="section-title" data-aos="fade-up">
+              Banking <span class="highlight">&</span> Finance
+            </h2>
+            <p data-aos="fade-up" style="opacity: 0.7;">
+              Unity provides a comprehensive range of banking and financing apps
+              to help businesses surpass their market competitors. With an
+              e-wallet app, we increase customer engagement and return on
+              investment, and we work closely with our developers and UX/UI
+              designers to design and develop responsive, scalable and
+              interactive banking portals.
+            </p>
+          </div>
+
           <div class="row">
-            <div class="col-md-6">
-              <div class="feature-box">
-                <i class="fas fa-user-check"></i>
-                <span>Customizable User Experience</span>
-              </div>
-              <div class="feature-box">
-                <i class="fas fa-chart-line"></i>
-                <span>Advanced Analytics & Real-Time Updates</span>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="d-flex justify-content-start feature-box">
+                <img
+                  src="assets/img/icon/authentication.svg"
+                  alt="user_experience"
+                  class="px-2"
+                />
+                <p class="mt-3 first-point">
+                  Advanced Encryption and Multi-factor Authentication
+                </p>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="feature-box">
-                <i class="fas fa-lock"></i>
-                <span>Scalable Infrastructure with Robust Security</span>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="d-flex justify-content-start feature-box">
+                <img
+                  src="assets/img/icon/payment_systems.svg"
+                  alt="user_experience"
+                  class="px-2"
+                />
+                <p class="mt-3">Integrated Seamless Digital Payment Systems</p>
               </div>
-              <div class="feature-box">
-                <i class="fas fa-laptop"></i>
-                <span>Designed for Cross-Platform Compatibility</span>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="d-flex justify-content-start feature-box">
+                <img
+                  src="assets/img/icon/data.svg"
+                  alt="user_experience"
+                  class="px-2"
+                />
+                <p class="mt-3 first-points">Real-time Data Insights</p>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="d-flex justify-content-start feature-box">
+                <img
+                  src="assets/img/icon/standards.svg"
+                  alt="user_experience"
+                  class="px-2"
+                />
+                <p class="mt-3">Meets Industry Regulations and Standards</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 video-file">
+        <div class="col-xl-6 col-lg-12 col-md-12 video-file" data-aos="fade-up">
           <div class="image-box">
-            <video class="img-fluid video-file" autoplay muted loop>
+            <video class="img-fluid fluid-video" autoplay muted loop>
               <source src="assets/img/banking.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -211,15 +577,18 @@
         </div>
       </div>
     </div>
+    </section>
+
+
     <section class="">
       <div class="container business-section">
-        <h1>Shaking Up the <span>Way</span> You Do Business</h1>
-        <p>
+        <h1 data-aos="fade-up">Shaking Up the <span>Way</span> You Do Business</h1>
+        <p data-aos="fade-up" style="opacity: 0.7;">
           A defined plan and quantifiable goals are the foundation of every
           successful project. We create a website that works for your company in
           order to maximize your return on investment.
         </p>
-        <a href="#" class="btn-1 px-4">
+        <a href="#" class="btn-1 px-4" data-aos="fade-up">
           <span></span>
           <span></span>
           <span></span>
@@ -283,6 +652,15 @@
         $(".hamburger").click(function () {
           $(this).toggleClass("active");
         });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      // Initialize AOS with 'once' set to true so the animation happens only once
+
+      AOS.init({
+        once: true, // restrict animation to single load
       });
     </script>
   </body>
