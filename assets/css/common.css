@@ -124,11 +124,11 @@
 
 /* Start .btn-1 1 */
 .btn-1 {
-    padding: 8px 20px;
+    padding: 5px 20px;
     background: transparent;
     border: 2px solid var(--unity_green);
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--unity_green);
     border-radius: 6px;
     cursor: pointer;
@@ -214,4 +214,17 @@
   width: 126px;
   bottom: -10px;
 }
+
+.fadep {
+ opacity: 0;
+ transition: ease .5s;
+}
+.fadep.active{
+  opacity: 1;
+}
+
+.innovation_section span {
+  display: inline-block; 
+}
+
   /* End .btn-1 1 */
