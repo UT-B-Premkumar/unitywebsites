@@ -467,7 +467,9 @@ body {
         border-radius: 27px;
         z-index: 2;
     }
-    
+    .believe-content > div{
+        position: relative !important;
+    }
     .our_service-about .bg-img {
         position: relative;
         z-index: 1;
@@ -484,6 +486,12 @@ body {
     }
     .our_service-title{
         padding-top: 30px;
+        transform: scale(1) !important;
+        position: absolute !important;
+    }
+    .our_service-about:hover .our_service-title{
+        padding-top: 0px;
+        transform: scale(1) !important;
     }
     .our_service-about img {
         transition: ease 1s;
@@ -502,6 +510,53 @@ body {
         /* width: 90%;
         position: relative;
         z-index: 10; */
+    }
+    
+    .our_service-about {
+        position: relative;
+        overflow: hidden; /* Ensure child elements stay within bounds */
+    }
+    
+    .bg-img {
+        position: relative;
+        z-index: 1; /* Ensure it's on top of the background circle */
+    }
+    
+    .bg-img::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px; /* Initial size of the circle */
+        height: 100px;
+        background: radial-gradient(
+          circle,
+          rgba(143, 254, 21, 0.625) 31%,
+          rgba(20, 255, 135, 0.81) 94%
+        );
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0); /* Center and scale down */
+        opacity: 0; /* Start invisible */
+        transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth animation */
+        z-index: 6; /* Ensure it's behind the content */
+        overflow: hidden;
+    }
+    
+    .our_service-about:hover .bg-img::after {
+        transform: translate(-50%, -50%) scale(5); /* Expand the circle on hover */
+        opacity: 0.5; /* Adjust the opacity for hover effect */
+    }
+    
+    .our_service-title {
+        position: relative;
+        transform: scale(1) !important;
+        z-index: 2; /* Ensure it's above the background circle */
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+    
+    .our_service-about:hover .our_service-title {
+        transform: translate(0,0) scale(0.7) !important;
+        opacity: 0.8; /* Reduce opacity slightly for blending */
     }
     
     /* Handle hover effects */
@@ -542,7 +597,10 @@ body {
     .our_service-about:hover .bg-img img:nth-child(2) {
         display: block;
     }
-    
+    .believe-content p{
+        text-align: center !important;
+        padding: 0px 40px 0px 40px !important;
+    }
 
 @media screen and (min-width: 0px) and (max-width: 810px) {
   .about-banner-btn {
