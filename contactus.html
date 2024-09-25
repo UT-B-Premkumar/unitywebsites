@@ -39,16 +39,16 @@
                   <a href="index.html"> Home </a>
                 </li>
                 <li>
-                  <a href="/about.html">About</a>
-                  <a href="/about.html">About</a>
+                  <a href="about.html">About</a>
+                  <a href="about.html">About</a>
                 </li>
                 <li>
-                  <a href="/services.html">Services</a>
-                  <a href="/services.html">Services</a>
+                  <a href="services.html">Services</a>
+                  <a href="services.html">Services</a>
                 </li>
                 <li>
-                  <a href="/ourspecality.html">OUR SPECIALITY</a>
-                  <a href="/ourspecality.html">OUR SPECIALITY</a>
+                  <a href="ourspecality.html">OUR SPECIALITY</a>
+                  <a href="ourspecality.html">OUR SPECIALITY</a>
                 </li>
                 <li>
                   <a href="contactus.html" class="btn-1 px-4">
@@ -102,7 +102,12 @@
             class="top-bg"
           />
           <div class="row row-content-about">
-            <div class="col-4 arrow-left-content">
+            <div
+              class="col-4 arrow-left-content pe-0"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1000"
+            >
               <button class="about-banner-btn">Talk To Us</button>
               <h6>
                 <img
@@ -120,7 +125,7 @@
                 data-aos-duration="1500"
               >
                 <img
-                  src="./assets/img/about-banner-icon.png"
+                  src="./assets/img/icon/contact_us.svg"
                   alt="center-icon"
                   data-aos="fade-up"
                   data-aos-anchor-placement="center-bottom"
@@ -156,6 +161,9 @@
                   src="./assets/img/right.png"
                   alt="right-arrow-up"
                   class="right-up-arrow"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
+                  data-aos-duration="1000"
                 />
               </h6>
               <button class="about-banner-btn">Email Us</button>
@@ -163,7 +171,12 @@
           </div>
           <br />
           <div class="row row-content-about">
-            <div class="col-3 arrow-left-content-1">
+            <div
+              class="col-3 arrow-left-content-1"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1000"
+            >
               <button class="about-banner-btn">Feedback</button>
               <h6>
                 <img
@@ -174,7 +187,12 @@
               </h6>
             </div>
             <div class="col-6 arrow-space-center"></div>
-            <div class="col-3 arrow-right-content-1">
+            <div
+              class="col-3 arrow-right-content-1"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1000"
+            >
               <h6>
                 <img
                   src="./assets/img/right.png"
@@ -198,6 +216,7 @@
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="1500"
+            style="font-size: 39px;"
           >
             Designing the Realm of Imagination
           </h4>
@@ -474,7 +493,7 @@
                             class="form-control email-input"
                             id="exampleInputEmail1"
                             aria-describedby="emailHelp"
-                            placeholder="E Mail"
+                            placeholder="Email Address"
                           />
                         </div>
                       </div>
@@ -746,5 +765,19 @@
         once: true, // restrict animation to single load
       });
     </script>
+    <script>
+      const rocketArrows = document.querySelectorAll('.rocket-arrow');
+    
+      rocketArrows.forEach((arrow) => {
+        arrow.addEventListener('mouseover', function () {
+          // Remove and re-add the class to restart the animation
+          arrow.style.animation = 'none'; // Reset the animation
+          setTimeout(() => {
+            arrow.style.animation = ''; // Reapply the animation so it runs again
+          }, 10); // Small delay to allow for reset
+        });
+      });
+    </script>
+    
   </body>
 </html>

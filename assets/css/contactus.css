@@ -328,7 +328,7 @@ form .card {
   padding: 5px;
 
 } */
-.moving2 {
+/* .moving2 {
   display: flex;
   overflow: hidden;
   height: 36px;
@@ -338,38 +338,88 @@ form .card {
 }
 
 .rocket-arrow {
-  transition: none; /* We'll control animation with keyframes */
+  transition: none; 
+  position: relative; 
+  opacity: 1; 
 }
 
 .contact-card:hover .moving2 .rocket-arrow {
-  animation: rocketTakeoff 1.5s ease-in-out infinite; /* Faster animation (0.8s) */
+  animation: rocketTakeoff 2s ease-in-out forwards; 
+}
+
+.contact-card .moving2 .rocket-arrow:not(:hover) {
+  animation: returnToStart 2s ease-in-out forwards;
 }
 
 @keyframes rocketTakeoff {
   0% {
-    transform: translateX(0) translateY(0); /* Initial state */
+    transform: translate(0, 0); 
+    opacity: 1; 
+  }
+  30% {
+    transform: translate(30px, -50px);
+    opacity: 1; 
+  }
+  40% {
+    opacity: 0; 
+  }
+  100% {
+    transform: translate(0, 0); 
+    opacity: 0; 
+  }
+}
+
+@keyframes returnToStart {
+  0% {
+    transform: translate(-50px, 50px); 
+    opacity: 0; 
+  }
+  100% {
+    transform: translate(0, 0); 
+    opacity: 1; 
+  }
+} */
+.rocket-arrow {
+  position: relative;
+  opacity: 1;
+  animation-play-state: paused; /* Initially paused, animation won't run on page load */
+}
+
+.contact-card:hover .moving2 .rocket-arrow {
+  animation: rocketTakeoff 2s ease-in-out forwards; /* Run animation on hover */
+  animation-play-state: running; /* Start the animation on hover */
+}
+
+.contact-card .moving2 .rocket-arrow:not(:hover) {
+  animation: returnToStart 2s ease-in-out forwards; /* Run return animation after hover ends */
+}
+
+@keyframes rocketTakeoff {
+  0% {
+    transform: translate(0, 0); /* Initial position */
     opacity: 1; /* Fully visible */
   }
   30% {
-    transform: translateX(30px) translateY(-30px); /* Move diagonally */
+    transform: translate(30px, -50px); /* Move diagonally (northeast) */
     opacity: 1; /* Still visible */
   }
   40% {
     opacity: 0; /* Start disappearing */
   }
-  41% {
-    transform: translateX(0) translateY(0); /* Reset position */
-    opacity: 0; /* Invisible while resetting */
-  }
-  42% {
-    opacity: 1; /* Reappear quickly */
-  }
   100% {
-    transform: translateX(0) translateY(0); /* Back at the starting point */
-    opacity: 1; /* Fully visible */
+    transform: translate(0, 0); /* Reset to the initial position */
+    opacity: 0; /* Fully invisible */
   }
 }
-.about-banner-btn {
-  padding: 4px 2px !important;
+
+@keyframes returnToStart {
+  0% {
+    transform: translate(-50px, 50px); /* Start from bottom-left */
+    opacity: 0; /* Fully invisible */
+  }
+  100% {
+    transform: translate(0, 0); /* End at the original position */
+    opacity: 1; /* Fully visible */
+  }
 }
 
