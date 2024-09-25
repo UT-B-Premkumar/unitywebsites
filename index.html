@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/common.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
     <link
       rel="SHORTCUT ICON"
       href="./assets/img/unity-logo.svg"
@@ -31,6 +32,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -65,7 +67,7 @@
                   <span></span>
                   <span></span>
                   <span></span>
-                  Contact
+                  Contact US
                 </a>
               </li>
             </ul>
@@ -109,15 +111,70 @@
         <div class="container mt-3">
           <div class="row">
             <div class="col-md-6 position-relative">
-              <h4 class="underline_title title">
-                SENSE TECH
+              <h4 class="underline_title title flip-text">
+                <span class="flip-letter">S</span>
+                <span class="flip-letter">E</span>
+                <span class="flip-letter">N</span>
+                <span class="flip-letter">S</span>
+                <span class="flip-letter">E</span>
+                <span class="flip-letter">&nbsp;</span>
+                <span class="flip-letter">T</span>
+                <span class="flip-letter">E</span>
+                <span class="flip-letter">C</span>
+                <span class="flip-letter">H</span>
                 <img src="./assets/img/underline.svg" alt="" />
               </h4>
+
+              <h2 class="d-none">
+                <span class="wave-text">
+                  <span class="wave-letter">L</span>
+                  <span class="wave-letter">e</span>
+                  <span class="wave-letter">t</span>
+                  <span class="wave-letter">'</span>
+                  <span class="wave-letter">s</span>
+                  <span class="wave-letter">&nbsp;</span>
+                  <span class="wave-letter">h</span>
+                  <span class="wave-letter">e</span>
+                  <span class="wave-letter">l</span>
+                  <span class="wave-letter">p</span>
+                  <span class="wave-letter">&nbsp;</span>
+                  <span class="wave-letter">t</span>
+                  <span class="wave-letter">e</span>
+                  <span class="wave-letter">c</span>
+                  <span class="wave-letter">h</span>
+                  <span class="wave-letter">n</span>
+                  <span class="wave-letter">o</span>
+                  <span class="wave-letter">l</span>
+                  <span class="wave-letter">o</span>
+                  <span class="wave-letter">g</span>
+                  <span class="wave-letter">y</span>
+                  <span class="wave-letter">&nbsp;</span>
+                  <span class="wave-letter">m</span>
+                  <span class="wave-letter">e</span>
+                  <span class="wave-letter">e</span>
+                  <span class="wave-letter">t</span>
+                  <span class="wave-letter">&nbsp;</span>
+                </span>
+                <span class="text-gradient wave-text">
+                  <span class="wave-letter">i</span>
+                  <span class="wave-letter">n</span>
+                  <span class="wave-letter">n</span>
+                  <span class="wave-letter">o</span>
+                  <span class="wave-letter">v</span>
+                  <span class="wave-letter">a</span>
+                  <span class="wave-letter">t</span>
+                  <span class="wave-letter">i</span>
+                  <span class="wave-letter">o</span>
+                  <span class="wave-letter">n</span>
+                  <span class="wave-letter">s</span>
+                </span>
+              </h2>
               <h2>
                 Let's help technology meet
                 <span class="text-gradient">innovations</span>
               </h2>
-              <p>
+
+              <p class="fadep">
                 Technology empowers people, and they can be creative and
                 productive. People can learn things they might not have thought
                 possible; it's all about potential.
@@ -129,7 +186,7 @@
                 class="bounce-2"
               />
 
-              <a href="" class="btn-1">
+              <a href="" class="btn-1 fadep">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -137,11 +194,12 @@
                 EXPLORE
               </a>
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-md-6 text-end">
               <img
                 src="./assets/img/banner-right.svg"
                 alt=""
                 class="img-fluid baner-right"
+                data-aos="fade-left"
               />
             </div>
           </div>
@@ -152,13 +210,47 @@
         <div class="container">
           <h4 class="underline_title title">
             <h3 class="title2">
-              ABOUT
+              <span
+                data-aos="fade-right"
+                data-aos="fade-right"
+                data-aos-delay="50"
+              >
+                A</span
+              >
+              <span
+                data-aos="fade-right"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
+                B</span
+              >
+              <span
+                data-aos="fade-right"
+                data-aos="fade-right"
+                data-aos-delay="150"
+              >
+                O</span
+              >
+              <span
+                data-aos="fade-right"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
+                U</span
+              >
+              <span
+                data-aos="fade-right"
+                data-aos="fade-right"
+                data-aos-delay="250"
+              >
+                T</span
+              >
               <img src="./assets/img/underline.svg" alt="" />
             </h3>
           </h4>
           <div class="row bg-about">
             <div class="col-md-6 position-relative">
-              <div class="about-main">
+              <div class="about-main" data-aos="fade-down">
                 <img
                   src="./assets/img/about-left.svg"
                   alt=""
@@ -170,7 +262,7 @@
                   class="img-fluid"
                 />
               </div>
-              <div class="team-strenth">
+              <div class="team-strenth" data-aos="fade-down">
                 <img
                   src="./assets/img/white-border.png"
                   alt=""
@@ -184,8 +276,12 @@
               </div>
             </div>
             <div class="col-md-6 about-right">
-              <div>
-                <h3>Together, we can conquer any challenge</h3>
+              <div data-aos="fade-up">
+                <h3 class="shake-about">
+                  <span class="shaking-text">Together we can </span>
+
+                  <span class="shaking-text"> conquer any challenge </span>
+                </h3>
                 <p>
                   Our team of highly-trained, experienced developers delivers
                   great user experiences on mobile and web apps. Through the
@@ -217,16 +313,98 @@
       <section class="our_service_section">
         <div class="container">
           <h4 class="title2 underline_title">
-            OUR SERVICES
+            <!-- OUR SERVICES -->
+
+            <span
+              data-aos="fade-right"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              O</span
+            >
+            <span
+              data-aos="fade-right"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
+              U</span
+            >
+            <span
+              data-aos="fade-right"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              R</span
+            >
+            <span>&nbsp;</span>
+            <span
+              data-aos="fade-right"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
+              S</span
+            >
+
+            <span
+              data-aos="fade-right"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            >
+              E</span
+            >
+            <span
+              data-aos="fade-right"
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
+              R</span
+            >
+            <span
+              data-aos="fade-right"
+              data-aos="fade-right"
+              data-aos-delay="700"
+            >
+              V</span
+            >
+            <span
+              data-aos="fade-right"
+              data-aos="fade-right"
+              data-aos-delay="800"
+            >
+              I</span
+            >
+            <span
+              data-aos="fade-right"
+              data-aos="fade-right"
+              data-aos-delay="900"
+            >
+              C</span
+            >
+            <span
+              data-aos="fade-right"
+              data-aos="fade-right"
+              data-aos-delay="1000"
+            >
+              E</span
+            >
+            <span
+              data-aos="fade-right"
+              data-aos="fade-right"
+              data-aos-delay="1100"
+            >
+              S</span
+            >
             <img src="./assets/img/underline.svg" alt="" />
           </h4>
 
-          <h3 class="">
-            New Branding <span class="text-gradient">Services</span>
+          <h3 class="shake-services">
+            <span class="shaking-text">
+              New Branding <span class="text-gradient">Services</span>
+            </span>
           </h3>
           <div class="row">
             <div class="col-md-12 col-lg-4">
-              <div class="our_service-card">
+              <div class="our_service-card our_service-card1">
                 <div class="bg-img">
                   <img src="./assets/img/servicebg-1.svg" alt="" />
                   <!-- <img src="./assets/img/servicebg-1.svg" alt=""> -->
@@ -256,7 +434,7 @@
               </div>
             </div>
             <div class="col-md-12 col-lg-4">
-              <div class="our_service-card">
+              <div class="our_service-card our_service-card2">
                 <div class="bg-img">
                   <img src="./assets/img/servicebg-1.svg" alt="" />
                   <!-- <img src="./assets/img/servicebg-1.svg" alt=""> -->
@@ -286,7 +464,7 @@
               </div>
             </div>
             <div class="col-md-12 col-lg-4">
-              <div class="our_service-card">
+              <div class="our_service-card our_service-card3">
                 <div class="bg-img">
                   <img src="./assets/img/servicebg-1.svg" alt="" />
                   <!-- <img src="./assets/img/servicebg-1.svg" alt=""> -->
@@ -337,14 +515,23 @@
             >
               <div>
                 <h6 class="title2 underline_title mt-0">
-                  Blaze a trail to creative success
+                  <span data-aos="fade-left" data-aos-delay="100"> Blaze</span>
+                  <span data-aos="fade-left" data-aos-delay="200"> a</span>
+                  <span data-aos="fade-left" data-aos-delay="300"> trail</span>
+                  <span data-aos="fade-left" data-aos-delay="400">
+                    to creative</span
+                  >
+                  <span data-aos="fade-left" data-aos-delay="500">
+                    success</span
+                  >
+
                   <img src="./assets/img/underline.svg" alt="" />
                 </h6>
-                <h4>
+                <h4  data-aos="fade-up" data-aos-delay="300">
                   Build the <span class="text-gradient">innovative</span> road
                   of success
                 </h4>
-                <p>
+                <p data-aos="fade-up" data-aos-delay="300">
                   Unity is the world's leading web development company committed
                   to providing clients with the best, most scalable, secure, and
                   unique web development services. Our team of seasoned web
@@ -352,7 +539,7 @@
                   PHP, Laravel, Drupal, CakePHP, WordPress, JavaScript, Node.Js,
                   Angular.Js, Vue.Js, React.Js, HTML5, CSS3, Magento, and more.
                 </p>
-                <a href="" class="btn-1 width-fit text-decoration-none">
+                <a href="" class="btn-1 width-fit text-decoration-none" data-aos="fade-up" data-aos-delay="700">
                   <span></span>
                   <span></span>
                   <span></span>
@@ -365,28 +552,33 @@
         </div>
       </section>
 
-      <section class="services_games ">
+      <section class="services_games">
         <div class="container">
-        
           <div class="row">
             <div class="col-lg-6 ss-content-6">
-             <div class="ss-content">
-              <h3 class="title2 underline_title mb-5">
-                OUR SERVICES
-                <img src="./assets/img/underline.svg" alt="" />
-              </h3>
-              <h4><span class="text-gradient">Game</span> development</h4>
-              <p>
-                We transform ideas into immersive gaming experiences. Offering
-                world-class game development services, we bring your vision to
-                life with cutting-edge technology, stunning visuals, and
-                seamless gameplay. Whether it's mobile, console, or online
-                games, we craft captivating worlds that keep players hooked and
-                coming back for more.
-              </p>
-             </div>
+              <div class="ss-content">
+                <h3 class="title2 underline_title mb-5">
+                  OUR SERVICES
+                  <img src="./assets/img/underline.svg" alt="" />
+                </h3>
+                <h4><span class="text-gradient">Game</span> development</h4>
+                <p>
+                  We transform ideas into immersive gaming experiences. Offering
+                  world-class game development services, we bring your vision to
+                  life with cutting-edge technology, stunning visuals, and
+                  seamless gameplay. Whether it's mobile, console, or online
+                  games, we craft captivating worlds that keep players hooked
+                  and coming back for more.
+                </p>
+              </div>
             </div>
-         <div class="col-lg-6 text-end">  <img src="./assets/img/animate-circle.svg" alt="" class="img-fluid"></div>
+            <div class="col-lg-6 text-end animate-img">
+              <img
+                src="./assets/img/animate-circle.svg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -427,6 +619,8 @@
             >
               <div>
                 <h6 class="title2 underline_title mt-0">
+
+
                   Unity Empowers you to excel everywhere
                   <img src="./assets/img/underline.svg" alt="" />
                 </h6>
@@ -994,6 +1188,60 @@
             },
           ],
         });
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- text animation part -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const letters = document.querySelectorAll(".flip-letter");
+
+        letters.forEach((letter, index) => {
+          setTimeout(() => {
+            letter.classList.add("show");
+          }, 300); // Delay the flip of each letter by 100ms
+        });
+      });
+
+      $(window).on("load", function () {
+        setTimeout(() => {
+          $(".fadep").addClass("active");
+        }, 1000);
+      });
+
+      $(window).on("scroll", function () {
+        // Get the scroll position of the window
+        var scrollPosition = $(this).scrollTop();
+        console.log(scrollPosition);
+
+        if (scrollPosition > 500) {
+          $(".shake-about").addClass("active");
+        }
+        if (scrollPosition > 1200) {
+          $(".shake-services").addClass("active");
+        }
+        if (scrollPosition > 1200) {
+          var delay = 200; // Base delay in milliseconds
+          var cardCount = $(".our_service-card").length; // Total number of cards
+
+          // Loop through each card and apply the flip class with a delay
+          $(".our_service-card").each(function (index) {
+            var card = $(this); // Get the current card
+
+            // Set a timeout to add the 'flip' class with a staggered delay
+            setTimeout(function () {
+              card.addClass("flip");
+            }, delay * index); // Multiply delay by the index to stagger
+          });
+        }
+
+        // Check if the scroll position has reached the scroll point
       });
     </script>
   </body>

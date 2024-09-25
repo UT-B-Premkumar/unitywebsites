@@ -33,8 +33,9 @@ body {
 }
 .landing h4 img {
   position: absolute;
-  left: -55px;
+  left: 0;
   bottom: -5px;
+  width: 187px;
 }
 
 .landing p {
@@ -125,7 +126,7 @@ body {
   transform: translate(0, 0);
 }
 
-.text-gradient {
+.text-gradient , .text-gradient span {
   background: rgb(20, 255, 135);
   background: linear-gradient(
     326deg,
@@ -216,13 +217,15 @@ body {
 
 /* about end  */
 /* our_service_section start  */
-
+.our_service_section .title2  {
+  letter-spacing: -2px;
+}
 .our_service_section {
   color: white;
 }
 
 .our_service_section .title2 img {
-  left: -34px;
+  left: -24px;
   width: 228px;
   bottom: -14px;
 }
@@ -241,7 +244,24 @@ body {
   cursor: pointer;
   padding: 15px;
   border: solid var(--theme_black) 1px;
+  transform: rotateY(90deg);
+  
 }
+.our_service-card1.flip{
+  transition: ease .1s;
+  transform: rotateY(0deg);
+
+}
+.our_service-card2.flip{
+  transition: ease .1s;
+  transform: rotateY(0deg);
+}
+.our_service-card3.flip{
+  transition: ease .1s;
+  transform: rotateY(0deg);
+}
+
+
 .our_service-card img {
   transition: ease 1s;
   position: absolute;
@@ -270,7 +290,7 @@ body {
 }
 
 .our_service-card {
-  padding: 18px 20px;
+  padding: 18.5px 20px;
 
   overflow: hidden;
   border-radius: 27px;
@@ -331,7 +351,7 @@ body {
 }
 
 .our_service-card .bg-img {
-  height: 401px;
+  height: 402px;
   position: absolute;
   top: 0;
   left: 0;
@@ -341,6 +361,7 @@ body {
 }
 .our_service-card .bg-img img {
   width: 100%;
+  height: 402px;
 }
 /* our_service_section end  */
 /* INNOVATION start  */
@@ -863,6 +884,6 @@ display: inline;
   margin-bottom: 20px;
   font-weight:600 ;
 }
-  .services_games img{
+  .services_games .animate-img{
     height: 800px;
   }
