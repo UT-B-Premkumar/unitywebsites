@@ -8,6 +8,15 @@ body {
   background: #000 !important;
   margin-bottom: -10px;
 }
+.card-believe{
+  background: #121212 !important; 
+}
+.about-2{
+  background: #121212 !important; 
+}
+.bg-background{
+  background: #121212 !important; 
+}
 .container-about {
   position: relative;
   overflow: hidden !important;
@@ -89,7 +98,7 @@ body {
 }
 .about-banner-btn {
     border: 2px solid #1e1e1e !important;
-    color: #edeef0 !important; /* Initial text color */
+    color: #edeef081 !important; /* Initial text color */
     font-family: "Barlow", sans-serif;
     border-radius: 8px !important;
     padding: 4px 8px !important;
@@ -101,7 +110,7 @@ body {
     text-wrap: nowrap;
     width: fit-content;
     background-color: #191919; /* Background color */
-    opacity: 0.5;
+    opacity: 0.5 !important;
     transition: color 0.3s ease, font-weight 0.3s ease; /* Smooth transition for text color and font weight */
   }
   
@@ -110,18 +119,19 @@ body {
     position: absolute;
     top: 50%;
     left: 0;
-    width: 35px;
+    width: 45px;
     height: 35px;
     background: radial-gradient(
       circle,
       #ffffff 15%,
       rgba(255, 255, 255, 0.063) 50%
     );
-    border-radius: 50%;
+    border-radius: 55%;
     z-index: 1;
     opacity: 1;
     animation: moveFog 6s infinite linear;
     transform: translateY(-50%);
+    color: #fff !important;
   }
   
   @keyframes moveFog {
@@ -248,6 +258,9 @@ body {
   text-align: center;
   padding: 0px 30px 0px 30px;
   font-weight: 400 !important;
+}
+.para-banner{
+  padding: 0px 100px 0px 100px !important;
 }
 .bottom-bg {
   background: url("/unitywebsites/assets/img/bottom-banner.svg") no-repeat
@@ -465,7 +478,7 @@ body {
         padding: 15px;
         overflow: hidden;
         border-radius: 27px;
-        z-index: 2;
+        z-index: -100;
     }
     .believe-content > div{
         position: relative !important;
@@ -485,16 +498,15 @@ body {
         height: 100%;
     }
     .our_service-title{
-        padding-top: 30px;
+        transition: ease .5s;
         transform: scale(1) !important;
         position: absolute !important;
     }
     .our_service-about:hover .our_service-title{
-        padding-top: 0px;
         transform: scale(1) !important;
     }
     .our_service-about img {
-        transition: ease 1s;
+        /* transition: ease 1s; */
         position: absolute;
         width: 100%;
         object-fit: contain;
@@ -519,43 +531,61 @@ body {
     
     .bg-img {
         position: relative;
+        overflow: hidden;
         z-index: 1; /* Ensure it's on top of the background circle */
+        /* border-radius: 27px; */
     }
     
+    .our_service-about:hover .bg-img{
+     border-radius: 20px !important;
+    z-index: -100;
+
+  }
+
+    .our_service-about:hover .bg-img::after{
+        width: 200px;
+        height: 200px;
+        border-top-right-radius: 70px !important;
+        overflow: hidden;
+    }
+
     .bg-img::after {
         content: "";
         position: absolute;
-        top: 50%;
+        top: 16%;
         left: 50%;
-        width: 100px; /* Initial size of the circle */
-        height: 100px;
+        width: 80px; /* Initial size of the circle */
+        height: 80px;
         background: radial-gradient(
           circle,
           rgba(143, 254, 21, 0.625) 31%,
           rgba(20, 255, 135, 0.81) 94%
         );
-        border-radius: 50%;
+      
         transform: translate(-50%, -50%) scale(0); /* Center and scale down */
         opacity: 0; /* Start invisible */
-        transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth animation */
+        transition: transform 0.5s ease, opacity 0.5s ease; 
         z-index: 6; /* Ensure it's behind the content */
         overflow: hidden;
+       border-radius: 50%;
+      
     }
     
     .our_service-about:hover .bg-img::after {
         transform: translate(-50%, -50%) scale(5); /* Expand the circle on hover */
         opacity: 0.5; /* Adjust the opacity for hover effect */
+        border-top-right-radius: 70px !important;
     }
     
     .our_service-title {
         position: relative;
         transform: scale(1) !important;
         z-index: 2; /* Ensure it's above the background circle */
-        transition: transform 0.5s ease, opacity 0.5s ease;
+        /* transition: transform 0.5s ease, opacity 0.5s ease; */
     }
     
     .our_service-about:hover .our_service-title {
-        transform: translate(0,0) scale(0.7) !important;
+        transform: translate(0,0) scale(1) !important;
         opacity: 0.8; /* Reduce opacity slightly for blending */
     }
     
@@ -572,19 +602,6 @@ body {
         opacity: 1;
     }
     
-    .our_service-about ul {
-        padding-left: 45px;
-        margin-bottom: 50px;
-        z-index: 10;
-        position: relative;
-    }
-    
-    .our_service-about li {
-        font-size: 18px;
-        padding: 10px 0;
-        line-height: 28px;
-    }
-    
     .our_service-about .bg-img img:nth-child(2) {
         display: none;
     }
@@ -597,12 +614,69 @@ body {
     .our_service-about:hover .bg-img img:nth-child(2) {
         display: block;
     }
+
     .believe-content p{
         text-align: center !important;
         padding: 0px 40px 0px 40px !important;
+        color: #fff;
+        opacity: .6;
     }
+    .our_service-about:hover    .believe-content p {
+      color: #fff;
+      opacity: 1;
 
-@media screen and (min-width: 0px) and (max-width: 810px) {
+  }
+  .bg-img:hover{
+border-top-right-radius: 40px !important;
+  }
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .para-banner {
+    padding: 0px 20px 0px 20px !important;
+}
+.project-img {
+  position: absolute;
+  z-index: 2;
+  width: 100% !important;
+  height: auto !important;
+  padding: 0px 10px 0px 10px;
+}
+.about-2 .scroll-bg {
+  width: 100% !important;
+  border-radius: 25px !important;
+}
+.scroll-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  z-index: 1;
+  height: auto !important;
+  padding: 0px 10px 0px 10px;
+}
+.about-2 h6 {
+  text-align: center !important;
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+}
+.card-bg-about:hover img.scroll-bg {
+  /* background: url(/unitywebsites/assets/img/scroll-gif.gif) no-repeat center center; */
+  background-size: cover;
+  height: auto !important;
+  width: 100% !important;
+  padding: 0px 10px 0px 10px !important;
+  border-image: linear-gradient(270.23deg, #c7fb15 0%, #ccff14 100%);
+}
+.about-2 .card-bg-about {
+  background: #121212 !important;
+  /* border-image: url(/unitywebsites/assets/img/scroll-project.png); */
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 110px !important;
+  padding-top: 10px !important;
+  margin-top: 30px !important;
+}
   .about-banner-btn {
     display: none !important;
   }
@@ -641,23 +715,22 @@ body {
     text-align: center;
     font-family: "Barlow", sans-serif;
     font-weight: 700;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 10px 0px 10px;
   }
   .about-head {
-    text-align: center;
+    text-align: center !important;
     color: #fff;
     font-weight: 700;
     font-family: "Barlow", sans-serif;
     font-size: 32px !important;
     margin-top: -20px;
     text-wrap: nowrap;
+   
   }
   .plus-bg {
     display: none !important;
   }
-  .about-1 .card-bg-about {
-    margin-top: 30px !important;
-  }
+
   .about-1 p {
     font-size: 14px !important;
   }
@@ -698,18 +771,27 @@ body {
     font-size: 24px !important;
     text-align: center;
   }
-  .about-2 .card-bg-about {
-    background: #000;
-    /* border-image: url(/unitywebsites/assets/img/scroll-project.png); */
+ .about-2 .card-bg-about-1 {
+  background-image: linear-gradient(to right, #172211, #010C12) !important;
+    padding: 30px 0px 10px 10px;
+    margin-left: 10px;
+    border: 2px solid green;
+    border-radius: 25px;
     width: auto;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-bottom: 110px;
-    padding-top: 70px;
-    margin-top: -55px !important;
-  }
+  } 
   .circle-tab{
     display: none;
+  }
+  .project-img {
+    position: relative !important;
+  }
+  .about-2 .padding-head{
+    text-align: center !important;
+    padding: 0px 10px 0px 10px !important;
+  }
+  .mobile-reverse{
+    display: flex;
+    flex-direction: column-reverse !important;
   }
 }
 
