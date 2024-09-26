@@ -810,7 +810,7 @@ display: inline;
   text-align: left;
 }
 .accordion-button::after {
-  background-image: none;
+  /* background-image: none;
   font-family: "Font Awesome 6 Free";
   content: "\F4FE" !important;
 
@@ -826,12 +826,29 @@ display: inline;
   background-image: none !important;
   border: solid 1px #2d2d2dde;
   padding: 15px;
-  background-color: #111111;
+  background-color: #111111; */
+
+  background-image: none;
+  font-family: "Font Awesome 6 Free";
+  content: "\f067" !important;
+  height: 35px;
+  width: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--body-color);
+  color: #CCCCCC;
+  background-image: none !important;
+
+
 }
 
 .accordion-button:not(.collapsed)::after {
   background-image: none !important;
-  content: "\F4FE" !important;
+  content: "\f068" !important;
 }
 
 .working-process .accordion-item .collapsing {

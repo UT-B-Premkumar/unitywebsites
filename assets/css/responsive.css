@@ -429,7 +429,8 @@
         right: 20px;
     }
     .bg-about{
-        padding: 62px 0px;
+        padding: 116px 0px;
+        background-size: 100%;
     }
     .about-conntainer img{
         width: 50px;
@@ -440,4 +441,15 @@
     .our_service-card li{
         line-height: 20px;
     } */
+}
+
+@media (min-width: 1025px) and (max-width:1200px) {
+    div.bg-about{
+
+        padding: 66px 0;
+    }
+}
+
+@media (min-width: 1025px) and (max-width:1300px) {
+
 }
