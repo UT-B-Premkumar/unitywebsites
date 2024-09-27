@@ -13,12 +13,12 @@ body {
   color: #dcfc36;
 }
 .left-contact-section .contact-left-content {
-  font-size: 12px;
-  padding-right: 267px !important;
+  font-size: 14px;
+  padding-right: 180px !important;
   color: #fff;
   opacity: 0.8;
 }
-.left-contact-section h2 {
+.left-contact-section h3 {
   font-weight: 700;
 }
 form .card {
@@ -29,26 +29,30 @@ form .card {
   opacity: 0.6 !important;
   font-size: 10px;
 }
-.form-group input {
-  padding: 1px 2px 1px 5px;
+.form-group input,.form-group textarea {
+  padding: 1px 2px 5px 5px;
   border-radius: 5px;
-  background: black;
+  background: #161616;
   border: 1px solid #3f433f;
   color: white !important;
 }
-.form-group input::placeholder {
+.form-group input::placeholder,.form-group textarea::placeholder {
   /* Most modern browsers support this now. */
   color: #fff !important;
   opacity: 0.4;
   font-size: 10px;
+  padding-left: 8px;
+}
+.form-group textarea::placeholder{
+  padding-top: 8px;
 }
 .experience-font p {
   color: #fff !important;
-  font-size: small;
+  font-size: 12px;
 }
 
 .form-group textarea {
-  background-color: #121212;
+  /* background-color: #121212; */
   border: 1px solid #3f433f;
 }
 .form-group textarea::placeholder {
@@ -56,107 +60,214 @@ form .card {
   color: #fff !important;
   opacity: 0.4;
   font-size: 10px;
-
 }
-.form-group input[type=text]:focus {
-    border: 1px solid #dcfc36;
-    background-color: #121212;
-  }
-  #center {
-    text-align: center;
-  }
+.form-group input[type="text"]:focus {
+  border: 1px solid #dcfc36;
+  background-color: #121212;
+}
+#center {
+  text-align: center;
   
-  .fa-star {
-    font-size: 16px;
-    cursor: pointer;
-    color: gray;
-  }
-  
-  .checked {
-    color: orange;
-  }
-  
+}
+
+.fa-star {
+  font-size: 16px;
+  cursor: pointer;
+  color: gray;
+}
+.checked {
+  color: #83f545;
+}
+
 .form-section {
   border: 1px solid #3f433f;
   border-radius: 10px;
 }
 /* First Name Field: Focus and active state */
-.first-name-input:focus   {
-    background-color: #121212 !important; /* Light red background */
-    border-color: #dcfc36 !important;     /* Dark red border */
-    outline: none !important;
-    box-shadow: none !important;
+.first-name-input:focus {
+  background-color: #121212 !important; /* Light red background */
+  border-color: #dcfc36 !important; /* Dark red border */
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /* Last Name Field: Focus and active state */
 .last-name-input:focus {
-    background-color: #121212 !important; /* Light blue background */
-    border-color: #dcfc36 !important;     /* Dark blue border */
-     outline: none !important;
-    box-shadow: none !important;
-    color: #fff !important;
+  background-color: #121212 !important; /* Light blue background */
+  border-color: #dcfc36 !important; /* Dark blue border */
+  outline: none !important;
+  box-shadow: none !important;
+  color: #fff !important;
 }
 
 /* Phone Number Field: Focus and active state */
 .phone-number-input:focus {
-    background-color: #121212 !important; /* Light purple background */
-    border-color: #dcfc36 !important;     /* Purple border */
-     outline: none !important;
-    box-shadow: none !important;
-    color: #fff !important;
-
+  background-color: #121212 !important; /* Light purple background */
+  border-color: #dcfc36 !important; /* Purple border */
+  outline: none !important;
+  box-shadow: none !important;
+  color: #fff !important;
 }
 
 /* Email Field: Focus and active state */
 .email-input:focus {
-    background-color: #121212 !important;  /* Light green background */
-    border-color: #dcfc36 !important;     /* Green border */
-     outline: none !important;
-    box-shadow: none !important;
-    color: #fff !important;
-
+  background-color: #121212 !important; /* Light green background */
+  border-color: #dcfc36 !important; /* Green border */
+  outline: none !important;
+  box-shadow: none !important;
+  color: #fff !important;
 }
 
 /* Message Field: Focus and active state */
 .message-textarea:focus {
-    background-color: #121212 !important; /* Light orange background */
-    border-color: #dcfc36 !important;     /* Orange border */
-    outline: none !important;
-    box-shadow: none !important;
-    color: #fff !important;
-
+  background-color: #121212 !important; /* Light orange background */
+  border-color: #dcfc36 !important; /* Orange border */
+  outline: none !important;
+  box-shadow: none !important;
+  color: #fff !important;
 }
 .contact-card .card {
-    border-radius: 15px;
-    background-color: rgb(31, 31, 31) !important; /* Dark background */
+  border-radius: 15px;
+  background-color: rgb(31, 31, 31) !important; /* Dark background */
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.email-btn a,
+.phone-btn a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.email-btn a i,
+.phone-btn a i {
+  margin-left: 10px;
+}
+
+.icon {
+  color: #b8ff00; /* Neon green for icons */
+}
+.icon h6 {
+  color: #fff !important;
+}
+.contact-icons {
+  width: 35px !important;
+}
+.email-button {
+  background-color: #222;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: #c6ff00;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.email-button span {
+  color: #c6ff00; /* Neon yellow */
+}
+
+.arrow-icon i {
+  font-size: 1.25rem;
+  color: #c6ff00; /* Neon yellow */
+}
+.icon img{
+  background-color: #121212;
+  padding: 6px;
+  border-radius: 6px;
+}
+.arrow-icon i:hover {
+  color: #fff;
+}
+.email-btn-content {
+  color: #b8ff00;
+  font-size: small;
+  /* border: 1px solid white; */
+  background-color: #121212;
+  border-radius: 30px;
+  width: 221px;
+  font-size: 10px;
+}
+.email-btn-mobile {
+  color: #b8ff00;
+  font-size: 10px;
+  font-weight: 500;
+  /* border: 1px solid white; */
+  background-color: #121212;
+  border-radius: 30px;
+  width: 150px;
+}
+.left-contact-section h2 {
+  padding-right: 3rem !important;
+}
+
+.submit-btn {
+  width: fit-content;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+}
+.icon img {
+  transition: transform 0.5s ease-in-out;
+}
+.icon img:hover {
+  transform: rotateX(360deg);
+}
+.moving {
+  display: flex;
+  /* width: 30px; */
+  overflow: hidden;
+  height: 36px;
+  flex-direction: column;
+  gap: 5px;
+}
+.contact-card:hover .moving img {
+  transform: translateY(-40px);
+}
+.moving2 {
+  display: flex;
+  /* width: 30px; */
+  overflow: hidden;
+  height: 36px;
+  flex-direction: column;
+  gap: 5px;
+}
+.contact-card:hover .moving2 .rocket-arrow {
+  transform: translate(30px,-30px,);
+}
+@media (max-width: 768px) {
+  .email-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
-  
-  .card-body {
-    text-align: center;
+
+  .arrow-icon i {
+    font-size: 1rem;
   }
-  
-  .card-title {
-    font-weight: bold;
-    margin-bottom: 15px;
+  .left-contact-section h2 {
+    padding-right: 0rem !important;
   }
-  
-  .email-btn a, .phone-btn a {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
+}
+
+@media (max-width: 576px) {
+  .email-button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
   }
-  
-  .email-btn a i, .phone-btn a i {
-    margin-left: 10px;
+
+  .arrow-icon i {
+    font-size: 0.9rem;
   }
-  
-  .icon {
-    color: #b8ff00; /* Neon green for icons */
-  }
-  .contact-icons{
-    width: 35px !important;
-  }
+}
 @media (max-width: 768px) {
   .form-section {
     flex-direction: column;
@@ -178,6 +289,143 @@ form .card {
     padding-right: 0px !important;
     color: #fff;
     opacity: 0.8;
+  }
+}
+@media (min-width: 768px) and (max-width: 997px) {
+  .email-btn-content {
+    position: relative;
+    left: -36px;
+  }
+}
+@media (min-width: 998px) and (max-width: 1200px) {
+  /* .tab-view{
+    display: flex;
+    justify-content: center;
+  }
+  .contact-card{
+    width: 50%;
+  } */
+}
+/* .moving2 img{
+  transition: ease 1s;
+}
+
+.moving2:hover img:nth-child(2){
+  transform: translate(25px ,-59px );
+
+}
+
+.moving2:hover img:nth-child(1){
+  transform: translate(0 ,0 );
+
+}
+.moving2:hover img:nth-child(1){
+  transform: translate(59px, -25px)
+
+}
+
+
+.moving2 img:nth-child(2){
+  transform: translate(-23px ,0 );
+}
+.rocket-arrow{
+  background-color: #121212;
+  border-radius: 50%;
+  padding: 5px;
+
+} */
+/* .moving2 {
+  display: flex;
+  overflow: hidden;
+  height: 36px;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+
+.rocket-arrow {
+  transition: none; 
+  position: relative; 
+  opacity: 1; 
+}
+
+.contact-card:hover .moving2 .rocket-arrow {
+  animation: rocketTakeoff 2s ease-in-out forwards; 
+}
+
+.contact-card .moving2 .rocket-arrow:not(:hover) {
+  animation: returnToStart 2s ease-in-out forwards;
+}
+
+@keyframes rocketTakeoff {
+  0% {
+    transform: translate(0, 0); 
+    opacity: 1; 
+  }
+  30% {
+    transform: translate(30px, -50px);
+    opacity: 1; 
+  }
+  40% {
+    opacity: 0; 
+  }
+  100% {
+    transform: translate(0, 0); 
+    opacity: 0; 
+  }
+}
+
+@keyframes returnToStart {
+  0% {
+    transform: translate(-50px, 50px); 
+    opacity: 0; 
+  }
+  100% {
+    transform: translate(0, 0); 
+    opacity: 1; 
+  }
+} */
+.rocket-arrow {
+  position: relative;
+  opacity: 1;
+  animation-play-state: paused; /* Initially paused, animation won't run on page load */
+}
+
+.contact-card:hover .moving2 .rocket-arrow {
+  animation: rocketTakeoff 2s ease-in-out forwards; /* Run animation on hover */
+  animation-play-state: running; /* Start the animation on hover */
+}
+
+.contact-card .moving2 .rocket-arrow:not(:hover) {
+  animation: returnToStart 2s ease-in-out forwards; /* Run return animation after hover ends */
+}
+
+@keyframes rocketTakeoff {
+  0% {
+    transform: translate(0, 0); /* Initial position */
+    opacity: 1; /* Fully visible */
+  }
+  30% {
+    transform: translate(30px, -50px); /* Move diagonally (northeast) */
+    opacity: 1; /* Still visible */
+  }
+  40% {
+    opacity: 0; /* Start disappearing */
+  }
+  100% {
+    transform: translate(0, 0); /* Reset to the initial position */
+    opacity: 0; /* Fully invisible */
+  }
+}
+
+@keyframes returnToStart {
+  0% {
+    transform: translate(-50px, 50px); /* Start from bottom-left */
+    opacity: 0; /* Fully invisible */
+  }
+  100% {
+    transform: translate(0, 0); /* End at the original position */
+    opacity: 1; /* Fully visible */
   }
 }
 

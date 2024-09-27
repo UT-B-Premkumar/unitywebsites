@@ -32,11 +32,12 @@ body {
   text-transform: uppercase;
 
   margin: 20px 0;
+  margin-top: 0;
 }
 .landing h4 img {
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: 0px;
   width: 187px;
 }
 
@@ -48,7 +49,7 @@ body {
 .landing a {
   width: fit-content;
   padding: 10px 30px;
-  color: var(--white) !important;
+  /* color: var(--white) !important; */
   text-decoration: none;
 }
 
@@ -129,7 +130,7 @@ body {
 }
 
 .text-gradient,
-.text-gradient span {
+.text-gradient span  , .testimoniel_section h4 span:nth-child(2) , .testimoniel_section h4 span:nth-child(6){
   background: rgb(20, 255, 135);
   background: linear-gradient(
     326deg,
@@ -188,7 +189,7 @@ body {
 .bg-about {
   background: url("../img/about-bg.svg") no-repeat;
   background-size: contain;
-  padding: 110px 0px;
+  padding: 115px 0px;
   margin-top: -25px !important;
 }
 
@@ -198,7 +199,7 @@ body {
 .about-right h3 {
   font-size: 40px;
   font-weight: 700;
-  max-width: 400px;
+  max-width: 450px;
   margin-bottom: 20px;
 }
 
@@ -228,13 +229,13 @@ body {
 }
 
 .our_service_section .title2 img {
-  left: -24px;
-  width: 228px;
+  left: -17px;
+  width: 185px;
   bottom: -14px;
 }
 
 .our_service_section h3 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 35px;
   margin: 30px 0 40px 0;
 }
@@ -319,11 +320,8 @@ body {
   width: 1000px;
   height: 1000px;
   transition: transform 0.5s ease, opacity 0.5s ease; /* Animate transform and opacity */
-  background: radial-gradient(
-    circle,
-    rgba(143, 254, 21, 0.6251750700280112) 31%,
-    rgba(20, 255, 135, 0.8100490196078431) 94%
-  );
+  background: rgb(20,255,135);
+  background: linear-gradient(277deg, rgba(20,255,135,1) 60%, rgba(202,254,21,1) 98%);
   border-radius: 50%;
   transform: translate(27%, 26%); /* Starting position */
   z-index: -100;
@@ -377,12 +375,13 @@ body {
 .innovation_section h6 {
   padding: 5px 0;
   margin: 30px 0;
+  font-size: 20px;
 }
 
 .innovation_section h4 {
   font-size: 30px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 700;
+  text-transform: capitalize;
   margin-bottom: 15px;
 }
 
@@ -459,16 +458,18 @@ body {
 }
 
 .faster_section .title2 img {
-  width: 79%;
+  width: 500px;
 }
 .faster_section h6 {
   padding: 10px 0;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .faster_section h4 {
   margin: 26px 0;
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 .faster_section p {
   opacity: 0.7;
@@ -541,6 +542,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
   margin-bottom: 15px;
+  font-size: 20px;
 
   text-transform: uppercase;
 }
@@ -550,7 +552,7 @@ body {
   max-width: 516px;
   margin: 0 auto;
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: capitalize;
   padding-bottom: 80px;
 }
@@ -646,12 +648,14 @@ display: inline;
 }
 .testimoniel_section h4 {
   font-size: 34px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   max-width: 500px;
   margin: 0 auto;
   text-transform: uppercase;
+  text-transform: capitalize;
 }
+
 .testimoniel_section p {
   padding: 20px 0;
   text-align: center;
@@ -702,7 +706,26 @@ display: inline;
   position: absolute;
   bottom: -60px;
   cursor: pointer;
+  background: transparent;
+    border: 0;
+    outline: 0;
+    width: 50px;
+    height: 50px;
 }
+.slider-section .slick-arrow img {
+  width: 48px;
+  height: 45px;
+}
+.slick-arrow img:nth-child(1){
+  display: none;
+}
+.slick-arrow:hover img:nth-child(1){
+display: inline;
+}
+.slick-arrow:hover img:nth-child(2){
+  display: none;
+  }
+
 .slider-section {
   padding: 10px 0;
 }
@@ -728,8 +751,8 @@ display: inline;
 }
 
 .faq_section h2 {
-  font-size: 35px;
-  font-weight: 600;
+  font-size: 34px;
+  font-weight: 700;
 }
 
 .faq_section p {
@@ -746,6 +769,15 @@ display: inline;
   /* padding: 20px; */
   background-color: #050505cc;
 }
+.accordion-button::before{
+  content: "";
+  height: 1px;
+  width: calc(100% - 86px);
+  background-color: #2a2a2aa3;
+  position: absolute;
+  left: 3%;
+  bottom: 0;
+}
 
 .working-process .accordion-item .accordion-button {
   background-color: #050505cc;
@@ -753,17 +785,12 @@ display: inline;
   border-bottom: 1px solid #050505cc;
   color: var(--white);
   font-size: 18px;
-  font-weight: 500;
-
-  background: rgb(20, 255, 135);
-  background: linear-gradient(
-    326deg,
-    rgba(20, 255, 135, 1) 72%,
-    rgba(202, 254, 21, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.8;
+  font-weight: 600;
+position: relative;
+color: var(--unity_green) !important;
+}
+.working-process .accordion-item .accordion-button.collapsed::before{
+  display: none;
 }
 .working-process .accordion-item .accordion-button.collapsed {
   color: var(--white) !important;
@@ -775,6 +802,7 @@ display: inline;
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* border-bottom: transparent 1px solid; */
 }
 
 .working-process .accordion-item .accordion-collapse.collapse.show,
@@ -885,9 +913,10 @@ display: inline;
 
 .services_games {
   color: var(--white);
+  padding: 50px 0;
 }
 .services_games_card {
-  border: dashed 1px #2d2d2d;
+  border: dashed 1px #373737;
   border-top:1px solid transparent;
   border-left:1px solid transparent;
   text-align: center;
@@ -901,14 +930,18 @@ display: inline;
 .services_games_card h6 {
   font-size: 20px;
   font-weight: 600;
+    margin: 15px 0;
+}
+.services_games_card img{
+  width: 53px;
 }
 
 .services_games_card:hover{
-  border:2px solid #CAFE15;
+  border:1px solid #CAFE15;
   /* border-left:1px solid #CAFE15; */
 
 
-  box-shadow : #CAFE15 1px 3px 5px;
+  box-shadow :   #CAFE15 1px 3px 3.5px;
 }
 .services_games p {
   font-weight: 400;
@@ -927,7 +960,7 @@ display: inline;
 }
 .services_games h3{
   position: relative;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--white);
   text-align: center;
@@ -936,8 +969,8 @@ display: inline;
 
 .services_games h4{
   font-size: 30px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 700;
+  text-transform: capitalize;
   margin-bottom: 15px;
   text-align: center;
   padding-bottom: 50px;
@@ -953,4 +986,13 @@ display: inline;
   font-size: 35px;
   margin-bottom: 20px;
   font-weight: 600;
+}
+.about-section h3 {
+
+  letter-spacing: -1px;
+}
+
+.about-section h3 img{
+  left: 15px;
+
 }

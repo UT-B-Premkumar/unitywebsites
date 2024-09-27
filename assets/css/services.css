@@ -1,9 +1,400 @@
-.services-1{
-    background: url(/unitywebsites/assets/img/services-1-bg.png);
-    height: 500px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-bottom: 110px;
-    padding-top: 70px;
+.computer_section{
+    background-color: #121212;
 }
+.computer_section_bg{
+    background: url(/unitywebsites/assets/img/rectangle-service-bg.svg) !important;
+    height: 494px !important;
+    width: 100% !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    padding: 20px;
+}
+.computer_section_bg_2{
+    background: url(/unitywebsites/assets/img/rectangle-service-bg.svg) !important;
+    height: 494px !important;
+    width: 100% !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    padding: 20px;
+}
+.computer_section_bg_3{
+    background: url(/unitywebsites/assets/img/rectangle-service-bg.svg) !important;
+    height: 494px !important;
+    width: 100% !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    padding: 20px;
+}
+.computer_section{
+    padding: 10px 0px 0px 0px !important;
+}
+.computer_section .left-content{
+    padding: 100px 10px 10px 0px !important;
+}
+.computer_section .right-content{
+    padding: 40px 30px 10px 30px !important;
+}
+
+.computer_section .left-content h1{
+    padding: 0px 30px 0px 30px;
+}
+.computer_section .left-content-system{
+  padding: 100px 10px 10px 0px !important;
+}
+.computer_section .right-content-system{
+  padding: 50px 60px 10px 30px !important;
+}
+
+.computer_section .left-content-system h1{
+  padding: 0px 30px 0px 30px;
+}
+/* .green-box-service {
+  width: 100%;
+  height: 100%;
+  background: #14ff87;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: 2;
+  transform: rotate(1deg) !important;
+  transition: ease 0.3s;
+  border-radius: 25px;
+}
+.yellow-box-service {
+  width: 100%;
+  height: 100%;
+  background: #cafe15;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  z-index: 1;
+  transform: rotate(-1deg) !important;
+  transition: ease 0.3s;
+  border-radius: 25px;
+} */
+.desk-img {
+  border: 2px solid;
+  border-top-color:  #cafe15;
+  border-right-color:  #cafe15;
+  border-bottom-color: #14ff87;
+  border-left-color: #14ff87;
+  border-radius: 25px;
+}
+
+.img-container-service:hover .green-box-service {
+  height: 367px;
+  width: 463px;
+    background: #14ff87;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: rotate(3deg) !important;
+    transition: ease 0.3s;
+    border-radius: 25px;
+  }
+  .img-container-service:hover .yellow-box-service {
+    height: 367px;
+    width: 463px;
+    background: #cafe15;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: rotate(-3deg) !important;
+    transition: ease 0.3s;
+    border-radius: 25px;
+  }
+  
+  .img-container-service {
+    position: relative;
+    max-height: 500px;
+    height: 400px;
+    cursor: pointer;
+  }
+  .img-container-mobile {
+    position: relative;
+    max-height: 500px;
+    height: 400px;
+    cursor: pointer;
+  }
+  .img-container-mobile img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: auto !important;
+    left: auto !important;
+
+  }
+  .img-container-service img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  .img-container-service:hover .yellow-box-service {
+    transform: rotate(5deg);
+  }
+  .img-container-service:hover .green-box-service {
+    transform: rotate(-5deg);
+  }
+  .innovation_right-service {
+    padding-left: 70px !important;
+  }
+  /* Initially show the default image and hide the hover image */
+.computer-img-hover {
+    display: none;
+  }
+  
+  .computer_section_bg:hover .computer-img {
+    display: none;
+  }
+  
+  .computer_section_bg:hover .computer-img-hover {
+    display: block;
+    height: 367px;
+    width: 463px;
+    border-radius: 25px;
+  }
+  .computer_section_bg_2:hover .computer-img {
+    display: block;
+  }
+  
+  .computer_section_bg_2:hover .computer-img-hover {
+    display: block;
+  }
+  .service-computer-para{
+    text-align: left !important;
+    font-size: 16px !important;
+    font-family: "Barlow", sans-serif !important;
+    font-weight: 400 !important;
+    color: #ffffff !important;
+    opacity: 0.8;
+  }
+  .service-computer-para-2{
+    text-align: left !important;
+    font-size: 16px !important;
+    font-family: "Barlow", sans-serif !important;
+    font-weight: 400 !important;
+    color: #CAFE15 !important;
+    opacity: 0.8;
+  }
+  .service-computer-para-1{
+    text-align: left !important;
+    font-size: 20px !important;
+    font-family: "Barlow", sans-serif !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    opacity: 0.8;
+  }
+  .web-text{
+    background: linear-gradient(to right, #14ff87c2 14.87%, #cafe15 86.68%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+  }
+  .img-container-service {
+    position: relative; /* To position the child elements absolutely within this container */
+  }
+  
+  .star-bottom-img {
+    position: absolute !important;
+    right: -20px !important;
+    bottom: -5px !important;
+    width: 110px !important; /* Adjust size as needed */
+    height: auto !important;
+    transform: rotate(-3deg);
+    z-index: 2;
+  }
+  .mobile-star {
+    position: relative !important;
+  }
+  .right-content-mobile p{
+    padding: 0px 30px 0px 0px !important;
+}
+.right-content-mobile {
+    padding: 100px 0px 0px 0px !important;
+}
+.right-content-mobile .para-service-2-1{
+  padding: 0px 230px 0px 0px !important;
+}
+.mobile-star img {
+    transition: transform 3s ease-in-out; /* Smooth transition */
+  }
+  
+  .img-container-mobile:hover .star-bottom-img {
+    transform: rotate(360deg); 
+    opacity: 1;
+
+  }
+.left-content-mobile{
+    padding-top: 20px !important;
+}
+.starwidmob{
+    opacity: .6;
+}
+.img-container-mobile:hover .starwidmob{
+    opacity: 1 !important;
+}
+/* Ensure the parent container has relative positioning */
+.img-container-system {
+    position: relative;
+    width: 100%; /* Adjust width as per your layout */
+    height: 100%; /* Adjust height based on the content */
+  }
+  
+  /* Triangle Image (Top-Left Corner) */
+  .triangle-img {
+    position: absolute;
+    top: -30px;
+    left: -40px; /* Adjust the size as needed */
+    z-index: 1;
+  }
+  .computerwidsp{
+    opacity: .6 !important;
+  }
+  .star-img-3 {
+    position: absolute;
+    bottom: 5px;
+    right: -56px;
+    width: 150px;
+    z-index: 5 !important;
+    opacity: .6 !important;
+  }
+  /* Computer Image (Position it normally) */
+  .computer-img {
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    z-index: 2; /* Ensure the computer is below the other images */
+    height: 370px !important;
+  }
+  
+  .triangle-img-green{
+    position: absolute;
+    top: 52px;
+    left: -50px; /* Adjust the size as needed */
+    z-index: 1;
+  }
+  .right-content-system:hover .triangle-img {
+    transform: rotate(270deg); /* Rotates the yellow triangle by 45 degrees */
+    position: absolute;
+    top: -9px;
+    left: -30px; /* Adjust the size as needed */
+    z-index: 1;
+  }
+  .right-content-system:hover .star-img-3 {
+    z-index: 1;
+    opacity: 1 !important;
+  }
+ @media  screen and (min-width:0px) and (max-width:900px) {
+  .computer_section_bg{
+    /* background: url(/unitywebsites/assets/img/mobile-bg-h-650.svg) !important; */
+    background-image: linear-gradient(to right, #232921, #202220) !important;
+    border:2px solid #343734;
+    border-radius: 25px;
+    height: 700px !important;
+    width: auto !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    padding: 20px;
+}
+.computer_section_bg_2{
+  /* background: url(/unitywebsites/assets/img/mobile-bg-h-650.svg) !important; */
+  background-image: linear-gradient(to right, #232921, #202220) !important;
+  border:2px solid #343734;
+  border-radius: 25px;
+  height: 686px !important;
+  width: auto !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  padding: 20px;
+}
+.computer_section_bg_2.row{
+  display: flex;
+  flex-direction: column-reverse !important;
+}
+.computer_section_bg_3{
+  /* background: url(/unitywebsites/assets/img/mobile-bg-h-650.svg) !important; */
+  background-image: linear-gradient(to right, #232921, #202220) !important;
+  border:2px solid #343734;
+  border-radius: 25px;
+  height: 666px !important;
+  width: auto !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  padding: 20px;
+}
+.computer_section {
+  padding: 10px 10px 10px 20px !important;
+}
+.computer_section .left-content {
+  padding: 10px 10px 10px 10px !important;
+}
+.computer_section .right-content{
+  padding: 0px 10px 10px 10px !important;
+}
+.computer_section .left-content p{
+  text-align: center !important;
+}
+
+.computer_section .left-content-system {
+  padding: 10px 10px 10px 10px !important;
+}
+.computer_section .right-content-system{
+  padding: 0px 10px 10px 10px !important;
+}
+.computer_section .left-content-system p{
+  text-align: center !important;
+}
+
+.left-content-mobile {
+  padding: 0px 10px 10px 10px !important;
+}
+.right-content-mobile{
+  padding: 10px 10px 10px 10px !important;
+}
+.left-content-mobile p{
+  text-align: center !important;
+  padding: 0px 30px 0px 30px !important;
+  font-size: 14px !important;
+} 
+.right-content-mobile p {
+  padding: 0px 30px 0px 30px !important;
+  text-align: center !important;
+}
+.service-computer-para-1{
+  text-align: center !important;
+  font-size: 20px !important;
+  font-family: "Barlow", sans-serif !important;
+  font-weight: 500 !important;
+  color: #ffffff !important;
+  opacity: .8 !important;
+
+}
+.star-bottom-img {
+  position: absolute !important;
+  right: -10px !important;
+  bottom: 43px !important;
+  width: 70px !important;
+  height: auto !important;
+  transform: rotate(-3deg);
+  z-index: 2;
+}
+.right-content-mobile .para-service-2-1 {
+  padding: 0px 30px 0px 30px !important;
+}
+.computer_section .left-content h1 {
+  padding: 0px;
+}
+.computer_section .left-content-system h1 {
+  padding: 0px;
+}
+ }
+ @media screen and (min-width:900px) and (max-width:2000px)  {
+  .mobile-view{
+    display: none !important;
+  }
+ }

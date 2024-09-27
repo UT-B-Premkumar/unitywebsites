@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #000 !important;
+        }
+        .our_service-card {
+  position: relative;
+  cursor: pointer;
+  padding: 15px;
+  border: solid var(--theme_black) 1px;
+  transform: rotateY(90deg);
+  
+}
+.our_service-card1.flip{
+  transition: ease .1s;
+  transform: rotateY(0deg);
+
+}
+.our_service-card2.flip{
+  transition: ease .1s;
+  transform: rotateY(0deg);
+}
+.our_service-card3.flip{
+  transition: ease .1s;
+  transform: rotateY(0deg);
+}
+
+
+.our_service-card img {
+  transition: ease 1s;
+  position: absolute;
+  width: 100%;
+  object-fit: contain;
+  left: 0;
+  height: 100%;
+  top: 0;
+}
+.our_service-card > div {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  z-index: 10;
+}
+
+.our_service-card img:nth-child(2) {
+  opacity: 0;
+}
+.our_service-card:hover img:nth-child(1) {
+  opacity: 0;
+}
+.our_service-card:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+.our_service-card {
+  padding: 18.5px 20px;
+
+  overflow: hidden;
+  border-radius: 27px;
+  z-index: 2;
+  transition: ease 0.5s;
+}
+
+.our_service-card ul {
+  padding-left: 45px;
+  margin-bottom: 50px;
+  z-index: 10;
+  position: relative;
+}
+
+.our_service-card li {
+  font-size: 18px;
+  padding: 10px 0;
+  line-height: 28px;
+}
+
+.our_service-card::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 1000px;
+  height: 1000px;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Animate transform and opacity */
+  background: radial-gradient(
+    circle,
+    rgba(143, 254, 21, 0.6251750700280112) 31%,
+    rgba(20, 255, 135, 0.8100490196078431) 94%
+  );
+  border-radius: 50%;
+  transform: translate(27%, 26%); /* Starting position */
+  z-index: -100;
+  opacity: 1; /* Initial opacity */
+}
+
+.our_service-card:hover::after {
+  transform: translate(-16%, -13%); /* New position on hover */
+  opacity: 0.3; /* You can change opacity if needed */
+}
+
+/* Optional: Transition back smoothly when hover ends */
+.our_service-card {
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Make the card smoothly transition */
+}
+.our_service-card .bg-img img:nth-child(2) {
+  display: none;
+}
+
+.our_service-card:hover .bg-img img:nth-child(1) {
+  display: none;
+}
+.our_service-card:hover .bg-img img:nth-child(2) {
+  display: block;
+}
+
+.our_service-card .bg-img {
+  height: 402px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  width: calc(100% + 1);
+}
+.our_service-card .bg-img img {
+  width: 100%;
+  height: 402px;
+}
+    </style>
+</head>
+<body>
+    <div class="row magap20 desktop-show">
+        <div class="col-md-12 col-lg-4">
+          <div class="our_service-card our_service-card1">
+            <div class="bg-img">
+              <img src="./assets/img/servicebg-1.svg" alt="" />
+              <!-- <img src="./assets/img/servicebg-1.svg" alt=""> -->
+              <img src="./assets/img/servicebg-2.svg" alt="" />
+            </div>
+            <div style="height: 85px">
+              <img
+                src="./assets/img/agile2.svg"
+                alt=""
+                class="our_service-title img-fluid"
+              />
+              <img
+                src="./assets/img/agile.svg"
+                alt=""
+                class="our_service-title img-fluid"
+              />
+            </div>
+            <ul>
+              <li>
+                Transparency in tech means providing precise information.
+              </li>
+              <li>Security audits can demonstrate transparency.</li>
+              <li>
+                Transparency can increase user engagement and loyalty.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="our_service-card our_service-card2">
+            <div class="bg-img">
+              <img src="./assets/img/servicebg-1.svg" alt="" />
+              <!-- <img src="./assets/img/servicebg-1.svg" alt=""> -->
+              <img src="./assets/img/servicebg-2.svg" alt="" />
+            </div>
+            <div style="height: 85px">
+              <img
+                src="./assets/img/trans-1.svg"
+                alt=""
+                class="our_service-title img-fluid"
+              />
+              <img
+                src="./assets/img/trans-2.svg"
+                alt=""
+                class="our_service-title img-fluid"
+              />
+            </div>
+            <ul>
+              <li>
+                Transparency in tech means providing precise information.
+              </li>
+              <li>Security audits can demonstrate transparency.</li>
+              <li>
+                Transparency can increase user engagement and loyalty.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="our_service-card our_service-card3">
+            <div class="bg-img">
+              <img src="./assets/img/servicebg-1.svg" alt="" />
+              <!-- <img src="./assets/img/servicebg-1.svg" alt=""> -->
+              <img src="./assets/img/servicebg-2.svg" alt="" />
+            </div>
+            <div style="height: 85px">
+              <img
+                src="./assets/img/user-friendly1.svg"
+                alt=""
+                class="our_service-title img-fluid"
+              />
+              <img
+                src="./assets/img/user-friendly2.svg"
+                alt=""
+                class="our_service-title img-fluid"
+              />
+            </div>
+            <ul>
+              <li>
+                Transparency in tech means providing precise information.
+              </li>
+              <li>Security audits can demonstrate transparency.</li>
+              <li>
+                Transparency can increase user engagement and loyalty.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
