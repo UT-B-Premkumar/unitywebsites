@@ -29,17 +29,17 @@ body {
   margin-right: 15px;
   padding: 1px;
   margin-left: 13px;
-
 }
 .image-box {
   /* background-color: rgb(99, 242, 91); */
   border: 3px solid #cafe15;
+  /* border-image: linear-gradient(270.23deg, #C7FB15 0%, #CCFF14 100%) !important; */
   /* background: linear-gradient(
     302deg,
     var(--token-9c84d6ae-8e13-4694-8100-b9a50faaffa2, #cafe15) 0%,
     var(--token-8ba7e453-40da-4bbd-8367-83c5e27ec517, rgb(99, 242, 91)) 100%
   ); */
-  border-radius: 6px;
+  border-radius: 12px;
   padding: 0;
   margin-bottom: 20px;
   height: 360px;
@@ -61,6 +61,7 @@ body {
   position: relative;
   top: 0px;
   bottom: 0px;
+  border-radius: 8px;
 }
 .business-section {
   background-color: #212121; /* Dark background */
@@ -121,7 +122,7 @@ body {
   /* font-size: 14px; */
 }
 .first-point {
-  padding-right: 44px !important;
+  padding-right: 32px !important;
 }
 .first-points {
   padding-right: 93px !important;
@@ -141,7 +142,7 @@ body {
 .your-buisness {
   display: block;
 }
-.business-section{
+.business-section {
   border-radius: 14px !important;
 }
 .normal {
