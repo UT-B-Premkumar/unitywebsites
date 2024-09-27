@@ -89,6 +89,7 @@ nav ul li:nth-child(5) a {
 
 .hamburger {
   display: none;
+  position: relative;
 }
 @media screen and (max-width: 900px) {
   .desktop {
@@ -144,3 +145,44 @@ nav ul li:nth-child(5) a {
 .highlight{
   color: #fff !important;
 }
+
+.mobile-nav-container{
+  position: absolute;
+  right: 0;
+  top: 46px;
+  z-index: 10;
+  background: rgb(18, 18, 18);
+  padding: 15px 20px;
+  border-radius: 10px;
+  min-width: 220px;
+  display: none;
+
+}
+nav.mobile-nav-container ul{
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  align-items: flex-start;
+}
+
+.mobile-nav-container li a.active{
+  background: rgb(20, 255, 135);
+  background: linear-gradient(
+    326deg,
+    rgba(20, 255, 135, 1) 72%,
+    rgba(202, 254, 21, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav.mobile-nav-container ul img{
+width: 30px;
+margin-right: 10px;
+}
+
+.mobile-nav-container li{
+  padding: 10px  0;
+  height: fit-content !important;
+}
+

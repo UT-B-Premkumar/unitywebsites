@@ -128,7 +128,8 @@ body {
   transform: translate(0, 0);
 }
 
-.text-gradient , .text-gradient span {
+.text-gradient,
+.text-gradient span {
   background: rgb(20, 255, 135);
   background: linear-gradient(
     326deg,
@@ -219,7 +220,7 @@ body {
 
 /* about end  */
 /* our_service_section start  */
-.our_service_section .title2  {
+.our_service_section .title2 {
   letter-spacing: -2px;
 }
 .our_service_section {
@@ -247,22 +248,19 @@ body {
   padding: 15px;
   border: solid var(--theme_black) 1px;
   transform: rotateY(90deg);
-  
 }
-.our_service-card1.flip{
-  transition: ease .1s;
-  transform: rotateY(0deg);
-
-}
-.our_service-card2.flip{
-  transition: ease .1s;
+.our_service-card1.flip {
+  transition: ease 0.1s;
   transform: rotateY(0deg);
 }
-.our_service-card3.flip{
-  transition: ease .1s;
+.our_service-card2.flip {
+  transition: ease 0.1s;
   transform: rotateY(0deg);
 }
-
+.our_service-card3.flip {
+  transition: ease 0.1s;
+  transform: rotateY(0deg);
+}
 
 .our_service-card img {
   transition: ease 1s;
@@ -456,7 +454,7 @@ body {
   padding: 100px 0;
 }
 
-.faster_section .title2 span{
+.faster_section .title2 span {
   display: inline-block;
 }
 
@@ -779,7 +777,6 @@ display: inline;
   -webkit-text-fill-color: transparent;
 }
 
-
 .working-process .accordion-item .accordion-collapse.collapse.show,
 .working-process .accordion-item .accordion-collapse.collapse.show {
   transition: all 0.2s ease-in-out;
@@ -810,7 +807,7 @@ display: inline;
   text-align: left;
 }
 .accordion-button::after {
-  background-image: none;
+  /* background-image: none;
   font-family: "Font Awesome 6 Free";
   content: "\F4FE" !important;
 
@@ -820,18 +817,33 @@ display: inline;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 50%; */
 
   color: #cccccc;
   background-image: none !important;
   border: solid 1px #2d2d2dde;
   padding: 15px;
   background-color: #111111;
+
+  background-image: none;
+  font-family: "Font Awesome 6 Free";
+  content: "\f067" !important;
+  height: 35px;
+  width: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--body-color);
+  color: #cccccc;
+  background-image: none !important;
 }
 
 .accordion-button:not(.collapsed)::after {
   background-image: none !important;
-  content: "\F4FE" !important;
+  content: "\f068" !important;
 }
 
 .working-process .accordion-item .collapsing {
@@ -869,27 +881,76 @@ display: inline;
 }
 /* faq end */
 
-
 /* service game_section  */
 
-.services_games  .title2 img{
-  left: 0;
-  width: 185px;
-}
 .services_games {
   color: var(--white);
 }
-.ss-content-6{
+.services_games_card {
+  border: dashed 1px #2d2d2d;
+  border-top:1px solid transparent;
+  border-left:1px solid transparent;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: ease .5s;
+  height: 100%;
+  /* border-bottom-right-radius: 5px; */
+}
+
+.services_games_card h6 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.services_games_card:hover{
+  border:2px solid #CAFE15;
+  /* border-left:1px solid #CAFE15; */
+
+
+  box-shadow : #CAFE15 1px 3px 5px;
+}
+.services_games p {
+  font-weight: 400;
+  padding: 0;
+  font-size: 16px;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+
+}
+.services_games_col{
+  transition: ease .5s;
+  padding: 0 !important;
+}
+.services_games h3{
+  position: relative;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services_games h4{
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.ss-content-6 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.ss-content-6 h4{
+.ss-content-6 h4 {
   font-size: 35px;
   margin-bottom: 20px;
-  font-weight:600 ;
+  font-weight: 600;
 }
-  .services_games .animate-img{
-    height: 800px;
-  }
