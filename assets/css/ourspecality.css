@@ -63,7 +63,7 @@ body {
   bottom: 0px;
 }
 .business-section {
-  background-color: #1e1e1e; /* Dark background */
+  background-color: #212121; /* Dark background */
   color: #fff !important;
   text-align: center;
   padding: 25px 0;
@@ -140,6 +140,9 @@ body {
 }
 .your-buisness {
   display: block;
+}
+.business-section{
+  border-radius: 14px !important;
 }
 .normal {
   display: inline-block !important;
