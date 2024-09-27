@@ -2,7 +2,7 @@
     background-color: #121212;
 }
 .computer_section_bg{
-    background: url(/unitywebsites/assets/img/bg-rect-services.svg) !important;
+    background: url(/unitywebsites/assets/img/rectangle-service-bg.svg) !important;
     height: 494px !important;
     width: 100% !important;
     background-size: cover !important;
@@ -10,7 +10,7 @@
     padding: 20px;
 }
 .computer_section_bg_2{
-    background: url(/unitywebsites/assets/img/bg-rect-services.svg) !important;
+    background: url(/unitywebsites/assets/img/rectangle-service-bg.svg) !important;
     height: 494px !important;
     width: 100% !important;
     background-size: cover !important;
@@ -18,7 +18,7 @@
     padding: 20px;
 }
 .computer_section_bg_3{
-    background: url(/unitywebsites/assets/img/bg-rect-services.svg) !important;
+    background: url(/unitywebsites/assets/img/rectangle-service-bg.svg) !important;
     height: 494px !important;
     width: 100% !important;
     background-size: cover !important;
@@ -29,14 +29,24 @@
     padding: 10px 0px 0px 0px !important;
 }
 .computer_section .left-content{
-    padding: 100px 10px 10px 30px !important;
+    padding: 100px 10px 10px 0px !important;
 }
 .computer_section .right-content{
-    padding: 40px 10px 10px 30px !important;
+    padding: 40px 30px 10px 30px !important;
 }
 
 .computer_section .left-content h1{
     padding: 0px 30px 0px 30px;
+}
+.computer_section .left-content-system{
+  padding: 100px 10px 10px 0px !important;
+}
+.computer_section .right-content-system{
+  padding: 50px 60px 10px 30px !important;
+}
+
+.computer_section .left-content-system h1{
+  padding: 0px 30px 0px 30px;
 }
 /* .green-box-service {
   width: 100%;
@@ -72,8 +82,8 @@
 }
 
 .img-container-service:hover .green-box-service {
-    width: 100%;
-    height: 100%;
+  height: 367px;
+  width: 463px;
     background: #14ff87;
     position: absolute;
     top: 0;
@@ -84,8 +94,8 @@
     border-radius: 25px;
   }
   .img-container-service:hover .yellow-box-service {
-    width: 100%;
-    height: 100%;
+    height: 367px;
+    width: 463px;
     background: #cafe15;
     position: absolute;
     top: 0;
@@ -144,6 +154,9 @@
   
   .computer_section_bg:hover .computer-img-hover {
     display: block;
+    height: 367px;
+    width: 463px;
+    border-radius: 25px;
   }
   .computer_section_bg_2:hover .computer-img {
     display: block;
@@ -154,7 +167,7 @@
   }
   .service-computer-para{
     text-align: left !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
     font-family: "Barlow", sans-serif !important;
     font-weight: 400 !important;
     color: #ffffff !important;
@@ -162,7 +175,7 @@
   }
   .service-computer-para-2{
     text-align: left !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
     font-family: "Barlow", sans-serif !important;
     font-weight: 400 !important;
     color: #CAFE15 !important;
@@ -170,9 +183,9 @@
   }
   .service-computer-para-1{
     text-align: left !important;
-    font-size: 24px !important;
+    font-size: 20px !important;
     font-family: "Barlow", sans-serif !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     color: #ffffff !important;
     opacity: 0.8;
   }
@@ -188,7 +201,7 @@
   
   .star-bottom-img {
     position: absolute !important;
-    right: 40px !important;
+    right: -20px !important;
     bottom: -5px !important;
     width: 110px !important; /* Adjust size as needed */
     height: auto !important;
@@ -199,10 +212,13 @@
     position: relative !important;
   }
   .right-content-mobile p{
-  padding: 0px 30px 0px 0px !important;
+    padding: 0px 30px 0px 0px !important;
 }
 .right-content-mobile {
-    padding-top: 50px !important;
+    padding: 100px 0px 0px 0px !important;
+}
+.right-content-mobile .para-service-2-1{
+  padding: 0px 230px 0px 0px !important;
 }
 .mobile-star img {
     transition: transform 3s ease-in-out; /* Smooth transition */
@@ -233,7 +249,7 @@
   .triangle-img {
     position: absolute;
     top: -30px;
-    left: -20px; /* Adjust the size as needed */
+    left: -40px; /* Adjust the size as needed */
     z-index: 1;
   }
   .computerwidsp{
@@ -242,8 +258,8 @@
   .star-img-3 {
     position: absolute;
     bottom: 5px;
-    right: 3px;
-    width: 150px; /* Adjust the size as needed */
+    right: -56px;
+    width: 150px;
     z-index: 5 !important;
     opacity: .6 !important;
   }
@@ -259,17 +275,17 @@
   .triangle-img-green{
     position: absolute;
     top: 52px;
-    left: 0px; /* Adjust the size as needed */
+    left: -50px; /* Adjust the size as needed */
     z-index: 1;
   }
-  .right-content:hover .triangle-img {
+  .right-content-system:hover .triangle-img {
     transform: rotate(270deg); /* Rotates the yellow triangle by 45 degrees */
     position: absolute;
-    top: -28px;
-    left: 20px; /* Adjust the size as needed */
+    top: -9px;
+    left: -30px; /* Adjust the size as needed */
     z-index: 1;
   }
-  .right-content:hover .star-img-3 {
+  .right-content-system:hover .star-img-3 {
     z-index: 1;
     opacity: 1 !important;
   }
@@ -279,7 +295,7 @@
     background-image: linear-gradient(to right, #232921, #202220) !important;
     border:2px solid #343734;
     border-radius: 25px;
-    height: 833px !important;
+    height: 700px !important;
     width: auto !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -290,7 +306,7 @@
   background-image: linear-gradient(to right, #232921, #202220) !important;
   border:2px solid #343734;
   border-radius: 25px;
-  height: 833px !important;
+  height: 686px !important;
   width: auto !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
@@ -305,7 +321,7 @@
   background-image: linear-gradient(to right, #232921, #202220) !important;
   border:2px solid #343734;
   border-radius: 25px;
-  height: 833px !important;
+  height: 666px !important;
   width: auto !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
@@ -324,12 +340,21 @@
   text-align: center !important;
 }
 
+.computer_section .left-content-system {
+  padding: 10px 10px 10px 10px !important;
+}
+.computer_section .right-content-system{
+  padding: 0px 10px 10px 10px !important;
+}
+.computer_section .left-content-system p{
+  text-align: center !important;
+}
 
 .left-content-mobile {
   padding: 0px 10px 10px 10px !important;
 }
 .right-content-mobile{
-  padding: 0px 10px 10px 10px !important;
+  padding: 10px 10px 10px 10px !important;
 }
 .left-content-mobile p{
   text-align: center !important;
@@ -342,7 +367,7 @@
 }
 .service-computer-para-1{
   text-align: center !important;
-  font-size: 24px !important;
+  font-size: 20px !important;
   font-family: "Barlow", sans-serif !important;
   font-weight: 500 !important;
   color: #ffffff !important;
@@ -357,6 +382,15 @@
   height: auto !important;
   transform: rotate(-3deg);
   z-index: 2;
+}
+.right-content-mobile .para-service-2-1 {
+  padding: 0px 30px 0px 30px !important;
+}
+.computer_section .left-content h1 {
+  padding: 0px;
+}
+.computer_section .left-content-system h1 {
+  padding: 0px;
 }
  }
  @media screen and (min-width:900px) and (max-width:2000px)  {

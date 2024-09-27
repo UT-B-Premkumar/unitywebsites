@@ -21,18 +21,22 @@ body {
   position: relative;
   overflow: hidden !important;
   max-width: 100%;
+  margin-top: -20px !important;
 }
 
 .top-left-bg {
   left: 0 !important;
   top: 0 !important;
   margin-top: -100px !important;
+  opacity: 1;
 }
 
 .top-right-bg {
   right: 0 !important;
   top: 0 !important;
   margin-top: -100px !important;
+  opacity: 1;
+  /* transform: rotate(90deg) !important; */
 
 }
 
@@ -83,12 +87,12 @@ body {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   background: radial-gradient(
     circle,
-    #ffffff 10%,
-    rgba(255, 255, 255, 0.063) 50%
+    #edefff 10%,
+    /* rgba(255, 255, 255, 0.063) 50% */
   );
   border-radius: 50%;
   z-index: 1;
@@ -277,12 +281,13 @@ body {
 }
 .about-2 .header-underline {
   margin-top: -40px;
-  margin-left: -40px;
+  margin-left: -10px;
 }
 .about-2 .card-bg-about {
-  background: url(/unitywebsites/assets/img/about-2-bg.png);
+  background: url(/unitywebsites/assets/img/bg-about-page.svg);
   /* border-image: url(/unitywebsites/assets/img/scroll-project.png); */
   width: auto;
+  height: 650px !important;
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 110px;
@@ -296,7 +301,7 @@ body {
   border-radius: 25px !important;
 }
 .about-2 .text-heading {
-  font-size: 40px;
+  font-size: 38px;
   font-family: "Barlow", sans-serif;
   color: #ffffff;
   font-weight: 600;
@@ -328,7 +333,7 @@ body {
   background-size: cover;
   /* height: 500px !important; */
   width: 500px;
-  padding: 50px 20px 0px 0px;
+  padding: 40px 20px 0px 0px;
   border-image: linear-gradient(270.23deg, #c7fb15 0%, #ccff14 100%);
 }
 
@@ -337,10 +342,17 @@ body {
 
 .about-2 .header-underline-1 {
   margin-top: -40px;
-  margin-left: -30px;
+  margin-left: -20px;
+  width: 680px;
+}
+.about-2 .header-underline-2 {
+  margin-top: -40px;
+  margin-left: -20px;
+  width: 550px;
+
 }
 .our-services-1 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   font-family: "Barlow", sans-serif;
   color: #ffffff;
@@ -359,7 +371,7 @@ body {
   z-index: 2;
   width: 500px;
   height: 533px;
-  padding: 50px 20px 0px 0px;
+  padding: 40px 20px 0px 0px;
 }
 
 .scroll-bg {
@@ -371,20 +383,21 @@ body {
   z-index: 1;
   width: 480px;
   height: 533px !important; /* Layer it behind the project image */
-  padding: 50px 20px 0px 0px;
+  padding: 40px 20px 0px 0px;
 }
 .plus-bg-1 {
 }
 .believe-h1 {
   color: #ffffff;
   font-family: "Barlow", sans-serif;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
 }
 .believe-h1 span {
   color: #cafe15;
   font-family: "Barlow", sans-serif;
-  font-size: 40px;
+  font-size: 36px;
+  text-transform: capitalize !important;
   font-weight: bold;
 }
 .circle-services {
@@ -491,8 +504,9 @@ body {
         position: absolute;
         z-index: 7;
         top: 0;
-        padding-top: 30px;
+        padding-top: 80px;
     }
+
     .our_service-about .bg-img img {
         width: 100%;
         height: 100%;
@@ -501,9 +515,11 @@ body {
         transition: ease .5s;
         transform: scale(1) !important;
         position: absolute !important;
+        height: 85px;
     }
     .our_service-about:hover .our_service-title{
         transform: scale(1) !important;
+        height: 85px;
     }
     .our_service-about img {
         /* transition: ease 1s; */
@@ -511,7 +527,7 @@ body {
         width: 100%;
         object-fit: contain;
         left: 0;
-        height: 100%;
+        height: 85px;
         top: 0;
         position: relative;
     }
@@ -587,6 +603,7 @@ body {
     .our_service-about:hover .our_service-title {
         transform: translate(0,0) scale(1) !important;
         opacity: 0.8; /* Reduce opacity slightly for blending */
+        height: 85px;
     }
     
     /* Handle hover effects */
@@ -631,6 +648,29 @@ border-top-right-radius: 40px !important;
   }
 
 @media screen and (min-width: 0px) and (max-width: 900px) {
+  .our-services-1 {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Barlow", sans-serif;
+    color: #ffffff;
+    margin-top: -120px;
+  }
+  .bottom-bg {
+    background: url(/unitywebsites/assets/img/bottom-banner.svg) no-repeat center center;
+    background-size: cover;
+    height: 100px !important;
+}
+  .about-2 ul li {
+    font-family: "Barlow", sans-serif;
+    padding: 0px 50px 0px 0px;
+    color: #ffffff;
+    font-size: 12px !important;
+    list-style: none !important;
+    text-align: center;
+}
+.bi-dot{
+  display: none;
+}
   .para-banner {
     padding: 0px 20px 0px 20px !important;
 }
@@ -665,7 +705,7 @@ border-top-right-radius: 40px !important;
   height: auto !important;
   width: 100% !important;
   padding: 0px 10px 0px 10px !important;
-  border-image: linear-gradient(270.23deg, #c7fb15 0%, #ccff14 100%);
+  /* border-image: linear-gradient(270.23deg, #c7fb15 0%, #ccff14 100%); */
 }
 .about-2 .card-bg-about {
   background: #121212 !important;
@@ -687,8 +727,17 @@ border-top-right-radius: 40px !important;
     display: none !important;
   }
   .particles {
-    display: none !important;
+    display: block !important;
   }
+  #particles-js {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 55% !important;
+    margin-top: 130px;
+    z-index: 1 !important;
+}
   .top-bg {
     height: 130px !important;
   }
@@ -696,7 +745,8 @@ border-top-right-radius: 40px !important;
     display: none;
   }
   .top-right-bg {
-    height: 130px;
+    height: 180px;
+    /* transform: rotate(90deg); */
   }
   .top-left-bg {
     height: 180px;
@@ -715,7 +765,7 @@ border-top-right-radius: 40px !important;
     text-align: center;
     font-family: "Barlow", sans-serif;
     font-weight: 700;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 30px 0px 30px;
   }
   .about-head {
     text-align: center !important;
@@ -739,9 +789,12 @@ border-top-right-radius: 40px !important;
     text-align: center !important;
   }
   .about-2 .header-underline {
-    margin-top: 0px !important;
-    text-align: center;
-    justify-content: center;
+      margin-top: -35px !important;
+      text-align: center;
+      width: 200px;
+      justify-content: center;
+      margin-left: 25px;
+  
   }
   .about-2 h6 {
     text-align: center;
@@ -763,22 +816,22 @@ border-top-right-radius: 40px !important;
     margin-top: 0px !important;
     text-align: center !important;
   }
-  .believe-h1{
-    font-size: 24px !important;
+  .believe-h1 {
+    font-size: 20px !important;
     text-align: center;
-  }
+}
   .believe-h1 span{
     font-size: 24px !important;
     text-align: center;
   }
- .about-2 .card-bg-about-1 {
+ /* .about-2 .card-bg-about-1 {
   background-image: linear-gradient(to right, #172211, #010C12) !important;
     padding: 30px 0px 10px 10px;
     margin-left: 10px;
     border: 2px solid green;
     border-radius: 25px;
     width: auto;
-  } 
+  }  */
   .circle-tab{
     display: none;
   }
@@ -788,11 +841,18 @@ border-top-right-radius: 40px !important;
   .about-2 .padding-head{
     text-align: center !important;
     padding: 0px 10px 0px 10px !important;
+    font-size: 12px;
   }
   .mobile-reverse{
     display: flex;
     flex-direction: column-reverse !important;
   }
+  .about-2 .text-heading {
+    font-size: 20px;
+    font-family: "Barlow", sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+}
 }
 
 @media screen and (min-width:810px) and (max-width:2000px) {

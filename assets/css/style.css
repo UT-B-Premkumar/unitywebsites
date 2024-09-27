@@ -558,7 +558,6 @@ body {
 .development_section .icons {
   display: flex;
   gap: 20px;
-  /* padding-top: 20px; */
 }
 .development_section .icons img {
   width: 35px;
