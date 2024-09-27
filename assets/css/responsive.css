@@ -60,7 +60,7 @@
   }
   .about-section .title2 img {
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0) !important;
   }
   .team-strenth {
     width: 60px;
@@ -461,6 +461,13 @@
   }
 }
 
+@media  (min-width: 1300px) {
+
+ .services_games_col:nth-child(4)  .services_games_card,
+  .services_games_col:nth-child(8)  .services_games_card{
+    border-right:0px  ;
+  }
+}
 @media (min-width: 1025px) and (max-width: 1350px) {
   .our_service-card li {
     font-size: 16px;

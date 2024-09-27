@@ -8,7 +8,7 @@
 .flip-letter {
   display: inline-block;
   font-size: 24px; /* Adjust font size to match your needs */
-  font-weight: bold;
+  font-weight: 600;
   color: white;
   perspective: 1000px; /* Enables 3D effect */
 }
