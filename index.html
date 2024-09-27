@@ -453,7 +453,7 @@
             >
               S</span
             >
-            <img src="./assets/img/underline.svg"  data-aos="fade-left" data-aos-delay="100" alt="" />
+            <img src="./assets/img/underline.svg"  data-aos="fade-left" data-aos-delay="700" alt="" class="d-inline"/>
           </h4>
 
           <h3 class="shake-services">
@@ -554,26 +554,29 @@
             </div>
           </div>
           <div class="mobile-show">
-            <div class="row magap20">
-              <div class="col-md-12 col-lg-4">
+            <div class="row magap30">
+              <div class="col-md-12 col-lg-4 d-block text-center">
                 <img
                   src="./assets/img/card_1_agile.webp"
                   alt=""
                   class="img-fluid w-100"
+                  data-aos="flip-left" data-aos-delay="50"
                 />
               </div>
-              <div class="col-md-12 col-lg-4">
+              <div class="col-md-12 col-lg-4 text-center">
                 <img
                   src="./assets/img/our_service_new.webp"
                   alt=""
                   class="img-fluid w-100"
+                  data-aos="flip-left" data-aos-delay="150"
                 />
               </div>
-              <div class="col-md-12 col-lg-4">
+              <div class="col-md-12 col-lg-4 text-center">
                 <img
                   src="./assets/img/user_friendly.webp"
                   alt=""
                   class="img-fluid w-100"
+                  data-aos="flip-left" data-aos-delay="200"
                 />
               </div>
             </div>
@@ -1453,9 +1456,10 @@
           // autoplay: true, // Enable autoplay
           autoplaySpeed: 2000, // Autoplay speed (2 seconds)
           prevArrow:
-            "<img src='assets/img/icon/prev.svg' class='slick-arrow slick-prev'>",
+          "<button type='button' class='slick-prev '><img src='assets/img/prev2.svg' class=''> <img src='assets/img/icon/prev.svg' class=''></button>",
+            // "",
           nextArrow:
-            "<img class='slick-arrow  slick-next'src='assets/img/icon/next.svg'>",
+            "<button type='button' class='slick-next pull-right'><img class=''src='assets/img/next2.svg'><img src='assets/img/icon/next.svg' class=''></button> ",
           responsive: [
             {
               breakpoint: 1008,
@@ -1512,7 +1516,7 @@
 
           setTimeout(function () {
             $(".shake-services").addClass("active");
-            }, 2000);
+            }, 1500);
 
           
         }
