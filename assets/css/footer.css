@@ -45,3 +45,30 @@
 .footer .logo {
     max-width: 300px;
 }
+
+@media screen and (max-width:900px) {
+    
+.footer .logo{
+    text-align: center;
+    max-width: 100%;
+}
+.footer-row > div:nth-child(2), 
+    .footer-row > div:nth-child(3)  {
+    width: 50% !important;
+}
+
+.footer-row > div:nth-child(3){
+    text-align: right;
+}
+.footer-row > div:nth-child(4){
+text-align: center;
+}
+.footer .address{
+    font-size: 16px;
+}
+
+.footer .footer-links li{
+    font-size: 16px;
+}
+}
+
