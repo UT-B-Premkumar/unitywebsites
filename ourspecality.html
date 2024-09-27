@@ -37,16 +37,16 @@
                 <a href="index.html"> Home </a>
               </li>
               <li>
-                <a href="#">About</a>
-                <a href="#">About</a>
+                <a href="./about.html">About US</a>
+                <a href="./about.html">About US</a>
               </li>
               <li>
-                <a href="#">Services</a>
-                <a href="#">Services</a>
+                <a href="./services.html">Services</a>
+                <a href="./services.html">Services</a>
               </li>
               <li>
-                <a href="#">OUR SPECIALITY</a>
-                <a href="#">OUR SPECIALITY</a>
+                <a href="/ourspecality.html">OUR SPECIALITY</a>
+                <a href="ourspecality.html">OUR SPECIALITY</a>
               </li>
               <li>
                 <a href="contactus.html" class="btn-1 px-4">
@@ -54,18 +54,51 @@
                   <span></span>
                   <span></span>
                   <span></span>
-                  Contact us
+                  Contact US
                 </a>
               </li>
             </ul>
           </nav>
-
           <div class="mobile-nav hamburger">
             <button>
               <span></span>
               <span></span>
               <span></span>
             </button>
+            <nav class="mobile-nav-container">
+              <ul>
+                <li>
+                  <a href="index.html" class="active">
+                    <img src="./assets/img/icon/mob_home.png" alt="" />
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="./about.html">
+                    <img src="./assets/img/icon/about_mobile.png" alt="" />
+                    About US</a
+                  >
+                </li>
+                <li>
+                  <a href="./services.html">
+                    <img src="./assets/img/icon/service.png" alt="" />
+                    Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/img/icon/our_speciality.png" alt="" />
+                    OUR SPECIALITY</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="">
+                    <img src="./assets/img/icon/contact_us.png" alt="" />
+                    Contact US
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -718,5 +751,17 @@
         once: true, // restrict animation to single load
       });
     </script>
+     <script>
+      // jQuery ready function
+      $(document).ready(function() {
+      });
+    </script>
+    <script>
+      $(".hamburger").click(function () {
+          $(this).toggleClass("active");
+          $(".mobile-nav-container").toggle();
+        });
+    </script>
+
   </body>
 </html>
