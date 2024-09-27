@@ -30,19 +30,22 @@ body {
   padding: 1px;
   margin-left: 13px;
 }
-.image-box {
-  /* background-color: rgb(99, 242, 91); */
-  border: 3px solid #cafe15;
-  /* border-image: linear-gradient(270.23deg, #C7FB15 0%, #CCFF14 100%) !important; */
-  /* background: linear-gradient(
-    302deg,
-    var(--token-9c84d6ae-8e13-4694-8100-b9a50faaffa2, #cafe15) 0%,
-    var(--token-8ba7e453-40da-4bbd-8367-83c5e27ec517, rgb(99, 242, 91)) 100%
-  ); */
-  border-radius: 12px;
-  padding: 0;
-  margin-bottom: 20px;
-  height: 360px;
+
+.fluid-video {
+  width: 100%;  /* Ensure the video takes up the full width of the container */
+  height: auto !important; /* Maintain aspect ratio */
+  display: block; /* Removes any default margins */
+  border: 3px solid #cafe15; /* Set your desired border size and color */
+  box-sizing: border-box; /* Include the border in the element’s total width and height */
+}
+
+.fluid-video source {
+  display: block;
+}
+
+.video-container {
+  overflow: hidden; /* Ensure the video doesn't overflow */
+  max-width: 100%;  /* Ensure the video scales properly */
 }
 
 .section-padding {
@@ -153,40 +156,37 @@ body {
   display: none !important;
   margin-left: 0px;
 }
-@media (max-width: 320px) {
-  .image-box {
-    height: 87% !important;
-    background: linear-gradient(
-      302deg,
-      var(--token-9c84d6ae-8e13-4694-8100-b9a50faaffa2, #cafe15) 0%,
-      var(--token-8ba7e453-40da-4bbd-8367-83c5e27ec517, rgb(99, 242, 91)) 100%
-    );
-    border: 0px solid rgb(99, 242, 91) !important;
-    padding: 0.21rem !important;
-  }
-}
-@media (max-width: 425px) {
-  .image-box {
-    height: 87% !important;
-    background: linear-gradient(
-      302deg,
-      var(--token-9c84d6ae-8e13-4694-8100-b9a50faaffa2, #cafe15) 0%,
-      var(--token-8ba7e453-40da-4bbd-8367-83c5e27ec517, rgb(99, 242, 91)) 100%
-    );
-    border: 0px solid rgb(99, 242, 91) !important;
-    padding: 0.21rem !important;
-  }
-}
+
 @media (max-width: 767px) {
+  .fluid-video {
+    width: 100%;  /* Ensure the video takes up the full width of the container */
+    height: auto !important; /* Maintain aspect ratio */
+    display: block; /* Removes any default margins */
+    border: 2px solid #cafe15; /* Set your desired border size and color */
+    box-sizing: border-box; /* Include the border in the element’s total width and height */
+
+  }
+  .section-padding{
+    padding: 0px 0px !important;
+  }
+  .fluid-video source {
+    display: block;
+  }
+  
+  .video-container {
+    overflow: hidden; /* Ensure the video doesn't overflow */
+    max-width: 100%;  /* Ensure the video scales properly */
+  }
+  
   .image-box {
-    height: 89% !important;
-    background: linear-gradient(
+    /* height: 90% !important; */
+    /* background: linear-gradient(
       302deg,
       var(--token-9c84d6ae-8e13-4694-8100-b9a50faaffa2, #cafe15) 0%,
-      var(--token-8ba7e453-40da-4bbd-8367-83c5e27ec517, rgb(99, 242, 91)) 100%
-    );
-    border: 1px solid rgb(99, 242, 91) !important;
-    padding: 0.25rem !important;
+      var(--token-8ba7e453-40da-4bbd-8367-83c5e27ec517, #cafe15) 100%
+    ); */
+    /* border: 3px solid #cafe15 !important;
+    padding: 0.25rem !important; */
   }
   .specializations {
     margin-top: 0;
@@ -229,13 +229,7 @@ body {
   }
 }
 @media (min-width: 768px) and (max-width: 997px) {
-  .image-box {
-    border: 1px solid #cafe15 !important;
-    border-radius: 6px;
-    padding: 0;
-    margin-bottom: 20px;
-    height: 398px !important;
-  }
+
   .first-point {
     padding-right: 60px !important;
   }
@@ -267,18 +261,23 @@ body {
   .contact-card .card-body {
     width: 100%;
   }
-  .image-box {
-    background: linear-gradient(
-      302deg,
-      var(--token-9c84d6ae-8e13-4694-8100-b9a50faaffa2, #cafe15) 0%,
-      var(--token-8ba7e453-40da-4bbd-8367-83c5e27ec517, rgb(99, 242, 91)) 100%
-    );
-    border: 1px solid #cafe15 !important;
-    border-radius: 6px;
-    padding: 0;
-    margin-bottom: 20px;
-    height: 528px !important;
+  .fluid-video {
+    width: 100%;  /* Ensure the video takes up the full width of the container */
+    height: auto !important; /* Maintain aspect ratio */
+    display: block; /* Removes any default margins */
+    border: 5px solid rgb(99, 242, 91); /* Set your desired border size and color */
+    box-sizing: border-box; /* Include the border in the element’s total width and height */
   }
+  
+  .fluid-video source {
+    display: block;
+  }
+  
+  .video-container {
+    overflow: hidden; /* Ensure the video doesn't overflow */
+    max-width: 100%;  /* Ensure the video scales properly */
+  }
+  
   .first-point {
     padding-right: 80px !important;
   }
