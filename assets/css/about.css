@@ -857,8 +857,8 @@ border-top-right-radius: 40px !important;
 
 @media screen and (min-width:810px) and (max-width:2000px) {
     .circle-services{
-display:block  !important;
-width: 100%;
+    display:block  !important;
+    width: 100%;
     }
     .circle-mob{
         display: none !important;
