@@ -43,8 +43,12 @@
     .img-container-system img{
   display: none;
     }
-    .img-container-service  .desktop {
-        display: block;
+    .last-img{
+        display: block !important;
+        margin: 10px 30px 0px 30px !important;
+    }
+    .img-container-service {
+        display: block !important;
         margin: 10px 30px 0px 30px !important;
     }
     .img-container-service img {
@@ -79,6 +83,59 @@
         transition: ease 0.3s;
         border-radius: 25px;
     }
+    .mobile-star{
+        display:  block !important;
+    }
+    .star-bottom-img {
+        position: absolute !important;
+        right: 50px !important;
+        bottom: -11px !important;
+        width: 100px !important;
+        height: auto !important;
+        /* padding-bottom: 20px; */
+        transform: rotate(-3deg);
+        z-index: 2;
+    }
+    .computer_section_bg_2 {
+        /* background: url(/unitywebsites/assets/img/mobile-bg-h-650.svg) !important; */
+        background-image: linear-gradient(to right, #232921, #202220) !important;
+        border: 2px solid #343734;
+        border-radius: 25px;
+        height: 715px !important;
+        width: auto !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        padding: 20px;
+    }
+    .computer_section_bg_3 {
+        /* background: url(/unitywebsites/assets/img/mobile-bg-h-650.svg) !important; */
+        background-image: linear-gradient(to right, #232921, #202220) !important;
+        border: 2px solid #343734;
+        border-radius: 25px;
+        height: 745px !important;
+        width: auto !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        padding: 20px;
+    }
+    .img-container-system img{
+        height: 445px !important;
+        width: 100% !important;
+    }
+    .mobile-view{
+        display: none;
+    }
+    .desktop{
+        display: block !important;
+    }
+    .about-2 .card-bg-about-1 {
+        background-image: linear-gradient(to right, #172211, #010C12) !important;
+          padding: 30px 0px 10px 10px;
+          margin-left: 10px;
+          border: 2px solid green;
+          border-radius: 25px;
+          width: auto;
+        } 
 }
 
 @media (min-width: 1025px) and (max-width: 1400px) {
