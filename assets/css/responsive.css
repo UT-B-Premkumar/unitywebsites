@@ -100,7 +100,7 @@
     height: 50px !important;
   }
   .about-right {
-    padding: 30px 15px 0px 15px !important;
+    padding: 60px 15px 0px 15px !important;
     text-align: center;
   }
   .about-right h3 {
@@ -172,7 +172,7 @@
     display: none;
   }
   .innovation_section {
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 0;
     text-align: center;
   }
@@ -244,11 +244,15 @@
   }
   .faster_section .img-container {
     height: 300px;
+    margin-top: 40px;
   }
 
   /* faster end */
 
   /* development_section start */
+  .development_section .row.magap20 {
+    gap: 40px;
+  }
   .development_section {
     padding-top: 50px;
   }
@@ -312,6 +316,9 @@
   section {
     overflow: hidden;
   }
+  .accordion-button::before {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -327,15 +334,15 @@
   .desktop-show {
     display: none !important;
   }
-  .mobile-show img{
+  .mobile-show img {
     width: 90% !important;
     margin: 0 auto;
   }
-  .mobile-show .row{ 
-    gap: 40px  !important;
+  .mobile-show .row {
+    gap: 41px !important;
     margin-top: 40px;
   }
-  .landing-right{
+  .landing-right {
     margin-top: 20px;
   }
 }
@@ -346,10 +353,9 @@
     -webkit-line-clamp: 2;
     overflow: hidden;
   }
-  .services_games_col .services_games_card{
-        border-right: transparent !important;
+  .services_games_col .services_games_card {
+    border-right: transparent !important;
   }
-
 }
 @media screen and (min-width: 980px) {
   .learn-more {
@@ -375,7 +381,6 @@
   .services_games_col:nth-child(8) .services_games_card {
     border-bottom: transparent !important ;
   }
-  
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -475,11 +480,10 @@
   }
 }
 
-@media  (min-width: 1300px) {
-
- .services_games_col:nth-child(4)  .services_games_card,
-  .services_games_col:nth-child(8)  .services_games_card{
-    border-right:0px  ;
+@media (min-width: 1300px) {
+  .services_games_col:nth-child(4) .services_games_card,
+  .services_games_col:nth-child(8) .services_games_card {
+    border-right: 0px;
   }
 }
 @media (min-width: 1025px) and (max-width: 1350px) {
