@@ -179,6 +179,7 @@ body {
   }
   
   .image-box {
+    padding: 0 2px 0 11px;
     /* height: 90% !important; */
     /* background: linear-gradient(
       302deg,
@@ -229,6 +230,9 @@ body {
   }
 }
 @media (min-width: 768px) and (max-width: 997px) {
+  .image-box{
+    padding: 0 2px 0 11px;
+  }
 
   .first-point {
     padding-right: 60px !important;
