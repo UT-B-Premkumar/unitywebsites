@@ -1,0 +1,98 @@
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 575px) {
+
+
+}
+@media screen and (min-width: 980px) {
+
+}
+@media screen and (min-width: 1025px) {
+
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about-2 .card-bg-about {
+        background: #121212 !important;
+        /* border-image: url(/unitywebsites/assets/img/scroll-project.png); */
+        width: auto;
+        height: auto !important;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-bottom: 110px !important;
+        padding-top: 10px !important;
+        margin-top: 30px !important;
+      }
+      .computer_section_bg {
+        /* background: url(/unitywebsites/assets/img/mobile-bg-h-650.svg) !important; */
+        background-image: linear-gradient(to right, #232921, #202220) !important;
+        border: 2px solid #343734;
+        border-radius: 25px;
+        height: 810px !important;
+        width: auto !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        padding: 20px;
+    }
+    .img-container-system img{
+  display: none;
+    }
+    .img-container-service  .desktop {
+        display: block;
+        margin: 10px 30px 0px 30px !important;
+    }
+    .img-container-service img {
+        position: absolute;
+        width: 100% !important;
+        height: 100% !important;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+    .img-container-service:hover .green-box-service {
+        height: 100% !important;
+        width: 100% !important;
+        background: #14ff87;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        transform: rotate(3deg) !important;
+        transition: ease 0.3s;
+        border-radius: 25px;
+    }
+    .img-container-service:hover .yellow-box-service {
+        height: 100% !important;
+        width: 100% !important;
+        background: #cafe15;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transform: rotate(-3deg) !important;
+        transition: ease 0.3s;
+        border-radius: 25px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+}
+
+@media  (min-width: 1300px) {
+
+
+}
+@media (min-width: 1025px) and (max-width: 1350px) {
+
+}
