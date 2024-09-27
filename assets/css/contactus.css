@@ -428,4 +428,8 @@ form .card {
     opacity: 1; /* Fully visible */
   }
 }
+.submit-button-hover:hover{
+  background-color: #83f545 !important;
+  
+}
 
