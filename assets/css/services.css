@@ -244,7 +244,11 @@
     width: 100%; /* Adjust width as per your layout */
     height: 100%; /* Adjust height based on the content */
   }
-  
+  .img-container-system-last {
+    position: relative;
+    width: 100%; /* Adjust width as per your layout */
+    height: 100%; /* Adjust height based on the content */
+  }
   /* Triangle Image (Top-Left Corner) */
   .triangle-img {
     position: absolute;
@@ -398,3 +402,4 @@
     display: none !important;
   }
  }
+ 
