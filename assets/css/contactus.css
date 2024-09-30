@@ -182,7 +182,7 @@ form .card {
 }
 .icon img{
   background-color: #121212;
-  padding: 6px;
+  padding: 8px;
   border-radius: 6px;
 }
 .arrow-icon i:hover {
@@ -206,8 +206,8 @@ form .card {
   border-radius: 30px;
   width: 150px;
 }
-.left-contact-section h2 {
-  padding-right: 101px !important;
+.left-contact-section h3 {
+  padding-right: 105px !important;
 }
 
 .submit-btn {
@@ -260,6 +260,14 @@ form .card {
 .contact-card .card{
   height: 100% !important;
 }
+.submit-button{
+  width: 93% !important;
+  text-decoration: none;
+  margin-left: 1.5rem !important;
+}
+.sub-btn{
+  margin: 0 auto;
+}
 @media (max-width: 768px) {
   .email-button {
     padding: 8px 16px;
@@ -269,7 +277,7 @@ form .card {
   .arrow-icon i {
     font-size: 1rem;
   }
-  .left-contact-section h2 {
+  .left-contact-section h3 {
     padding-right: 0rem !important;
   }
   .email-btn p{
@@ -292,6 +300,11 @@ form .card {
 
   .arrow-icon i {
     font-size: 0.9rem;
+  }
+  .submit-button{
+    width: 93% !important;
+    text-decoration: none;
+    margin-left: .5rem !important;
   }
 
 }
@@ -359,7 +372,7 @@ form .card {
 
 
 .moving2 img:nth-child(2){
-  transform: translate(-14px ,-2px );
+  transform: translate(-23px ,0 );
 }
 .rocket-arrow{
   /* background-color: #121212; */
