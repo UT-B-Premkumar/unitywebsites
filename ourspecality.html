@@ -607,12 +607,14 @@
           $(this).toggleClass("active");
           $(".mobile-nav-container").toggle();
         });
+
         $(".hamburger").on("focusout", function () {
           setTimeout(() => {
             $(this).removeClass("active");
             $(".mobile-nav-container").hide();
           }, 100);
         });
+       
       });
     </script>
 
@@ -627,12 +629,7 @@
       // jQuery ready function
       $(document).ready(function () {});
     </script>
-    <script>
-      $(".hamburger").click(function () {
-        $(this).toggleClass("active");
-        $(".mobile-nav-container").toggle();
-      });
-    </script>
+   
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
     <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
     <script src="./assets/js/particles.min.js"></script>
