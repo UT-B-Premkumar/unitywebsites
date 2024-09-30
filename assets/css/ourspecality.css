@@ -228,12 +228,17 @@ body {
     display: block !important;
     margin-left: 0px;
   }
+  .feature-box-margin{
+    margin-left: 1px !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 997px) {
   .image-box{
     padding: 0 2px 0 11px;
   }
-
+  .feature-box-margin{
+    margin-left: 1px !important;
+  }
   .first-point {
     padding-right: 60px !important;
   }
