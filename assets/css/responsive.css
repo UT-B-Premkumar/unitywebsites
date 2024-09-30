@@ -18,8 +18,14 @@
   .landing-title-col {
     text-align: center;
   }
-  .landing h2 {
+  .landing h2  {
     font-size: 27px;
+  }
+  .landing h2:nth-child(3){
+    display: block !important;
+  }
+  .landing h2.d-h2{
+    display: none !important;
   }
   .landing p {
     font-size: 13px;
@@ -65,16 +71,18 @@
   .team-strenth {
     width: 100px;
     right: 35px;
+    display: none;
     top: 29px;
   }
   .about-main img {
     height: auto;
     width: 100%;
   }
-  .about-main img:nth-child(1) {
-    display: none;
+  .about-main img:nth-child(1) ,  
+    .about-main img:nth-child(2)  {
+    display: none !important;
   }
-  .about-main img:nth-child(2) {
+  .about-main img:nth-child(3) {
     display: block;
   }
   .bg-about:hover .team-strenth {
@@ -242,9 +250,13 @@
     display: block;
     height: auto;
   }
+
   .faster_section .img-container {
-    height: 300px;
+    height: auto;
     margin-top: 40px;
+  }
+  .faster_section .img-container img {
+    position: relative;
   }
 
   /* faster end */
@@ -319,6 +331,10 @@
   .accordion-button::before {
     display: none;
   }
+  .services_games_card:hover {
+    box-shadow: none;
+    border: transparent;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -345,6 +361,9 @@
   .landing-right {
     margin-top: 20px;
   }
+  .faq_section {
+    padding: 0 10px;
+  }
 }
 @media screen and (max-width: 575px) {
   .testimoniel_section .slider-content p {
@@ -355,6 +374,9 @@
   }
   .services_games_col .services_games_card {
     border-right: transparent !important;
+  }
+  .services_games {
+    padding: 0;
   }
 }
 @media screen and (min-width: 980px) {
@@ -380,6 +402,11 @@
   .services_games_col:nth-child(7) .services_games_card,
   .services_games_col:nth-child(8) .services_games_card {
     border-bottom: transparent !important ;
+  }
+  .text-gradient.wave-text{
+    transform: translate(10px, -28px);
+    letter-spacing: -2px;
+    font-weight: 700;
   }
 }
 
