@@ -799,7 +799,140 @@
         </div>
       </section>
 
-      <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+  
+    </section>
+    <footer class="footer mt-0">
+      <div class="container">
+        <div class="row justify-content-between">
+          <!-- Logo and Description -->
+          <div class="col-lg-4 col-md-6">
+            <div class="logo">
+              <img src="./assets/img/unity-logo.svg" alt="Logo" />
+              <p>
+                The goal of our highly trained, experienced team is to deliver
+                great user experiences for mobile and web apps.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./ourspecality.html">Our Specialty</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Policy Links -->
+          <div class="col-lg-2 col-md-6">
+            <h5>Policy</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Address Section -->
+          <div class="col-lg-3 col-md-6">
+            <h5>Address</h5>
+            <p class="address">
+              Unity Technologies Private Limited<br />
+              2-21a, Kanjialodi, Adloor, Mangaluru,<br />
+              Dakshina Kannada, Karnataka, 574165
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".hamburger").click(function () {
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      document
+        .querySelector(".card-bg-about-1")
+        .addEventListener("mouseover", function () {
+          const scrollImage = document.querySelector(".scroll-bg");
+          scrollImage.src = "./assets/img/scroll gif.gif";
+          scrollImage.style.zIndex = 1; // Ensure it stays above other elements
+        });
+
+      document
+        .querySelector(".card-bg-about-1")
+        .addEventListener("mouseout", function () {
+          const scrollImage = document.querySelector(".scroll-bg");
+          scrollImage.src = "./assets/img/3-scroll.png";
+          scrollImage.style.zIndex = 0; // Reset zIndex
+        });
+    </script>
+    <script>
+      // Get the image element by its ID
+      const serviceImage = document.getElementById("serviceImage");
+
+      // When mouse hovers over the image, change the src to the new image
+      serviceImage.addEventListener("mouseover", () => {
+        serviceImage.src = "./assets/img/circle-services-2.png";
+      });
+
+      // When the mouse leaves the image, revert it back to the original image
+      serviceImage.addEventListener("mouseout", () => {
+        serviceImage.src = "./assets/img/circle-services.png";
+      });
+    </script>
+        <script>
+          $(document).ready(function () {
+            $(".hamburger").click(function () {
+              $(this).toggleClass("active");
+              $(".mobile-nav-container").toggle();
+            });
+            $(".slider-section").slick({
+              dots: false, // Display navigation dots
+              infinite: true, // Infinite loop sliding
+              speed: 300, // Transition speed
+              slidesToShow: 3, // Number of slides to show
+              slidesToScroll: 1, // Number of slides to scroll at a time
+              // autoplay: true, // Enable autoplay
+              autoplaySpeed: 2000, // Autoplay speed (2 seconds)
+              prevArrow:
+              "<button type='button' class='slick-prev '><img src='assets/img/prev2.svg' class=''> <img src='assets/img/icon/prev.svg' class=''></button>",
+                // "",
+              nextArrow:
+                "<button type='button' class='slick-next pull-right'><img class=''src='assets/img/next2.svg'><img src='assets/img/icon/next.svg' class=''></button> ",
+              responsive: [
+                {
+                  breakpoint: 1008,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                  },
+                },
+                {
+                  breakpoint: 800,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  },
+                },
+              ],
+            });
+          });
+        </script>
+            <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
       <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
       <!-- stats.js lib -->
       <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
@@ -936,137 +1069,5 @@
         };
         requestAnimationFrame(update);
       </script>
-    </section>
-    <footer class="footer mt-0">
-      <div class="container">
-        <div class="row justify-content-between">
-          <!-- Logo and Description -->
-          <div class="col-lg-4 col-md-6">
-            <div class="logo">
-              <img src="./assets/img/unity-logo.svg" alt="Logo" />
-              <p>
-                The goal of our highly trained, experienced team is to deliver
-                great user experiences for mobile and web apps.
-              </p>
-            </div>
-          </div>
-
-          <!-- Quick Links -->
-          <div class="col-lg-2 col-md-6">
-            <h5>Quick Links</h5>
-            <ul class="list-unstyled footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./services.html">Services</a></li>
-              <li><a href="./ourspecality.html">Our Specialty</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-
-          <!-- Policy Links -->
-          <div class="col-lg-2 col-md-6">
-            <h5>Policy</h5>
-            <ul class="list-unstyled footer-links">
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="#">Refund Policy</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
-
-          <!-- Address Section -->
-          <div class="col-lg-3 col-md-6">
-            <h5>Address</h5>
-            <p class="address">
-              Unity Technologies Private Limited<br />
-              2-21a, Kanjialodi, Adloor, Mangaluru,<br />
-              Dakshina Kannada, Karnataka, 574165
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".hamburger").click(function () {
-          $(this).toggleClass("active");
-        });
-      });
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-
-    <script>
-      document
-        .querySelector(".card-bg-about-1")
-        .addEventListener("mouseover", function () {
-          const scrollImage = document.querySelector(".scroll-bg");
-          scrollImage.src = "./assets/img/scroll gif.gif";
-          scrollImage.style.zIndex = 1; // Ensure it stays above other elements
-        });
-
-      document
-        .querySelector(".card-bg-about-1")
-        .addEventListener("mouseout", function () {
-          const scrollImage = document.querySelector(".scroll-bg");
-          scrollImage.src = "./assets/img/3-scroll.png";
-          scrollImage.style.zIndex = 0; // Reset zIndex
-        });
-    </script>
-    <script>
-      // Get the image element by its ID
-      const serviceImage = document.getElementById("serviceImage");
-
-      // When mouse hovers over the image, change the src to the new image
-      serviceImage.addEventListener("mouseover", () => {
-        serviceImage.src = "./assets/img/circle-services-2.png";
-      });
-
-      // When the mouse leaves the image, revert it back to the original image
-      serviceImage.addEventListener("mouseout", () => {
-        serviceImage.src = "./assets/img/circle-services.png";
-      });
-    </script>
-        <script>
-          $(document).ready(function () {
-            $(".hamburger").click(function () {
-              $(this).toggleClass("active");
-              $(".mobile-nav-container").toggle();
-            });
-            $(".slider-section").slick({
-              dots: false, // Display navigation dots
-              infinite: true, // Infinite loop sliding
-              speed: 300, // Transition speed
-              slidesToShow: 3, // Number of slides to show
-              slidesToScroll: 1, // Number of slides to scroll at a time
-              // autoplay: true, // Enable autoplay
-              autoplaySpeed: 2000, // Autoplay speed (2 seconds)
-              prevArrow:
-              "<button type='button' class='slick-prev '><img src='assets/img/prev2.svg' class=''> <img src='assets/img/icon/prev.svg' class=''></button>",
-                // "",
-              nextArrow:
-                "<button type='button' class='slick-next pull-right'><img class=''src='assets/img/next2.svg'><img src='assets/img/icon/next.svg' class=''></button> ",
-              responsive: [
-                {
-                  breakpoint: 1008,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                  },
-                },
-                {
-                  breakpoint: 800,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                  },
-                },
-              ],
-            });
-          });
-        </script>
   </body>
 </html>
