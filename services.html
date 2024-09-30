@@ -44,15 +44,15 @@
           <nav class="desktop">
             <ul>
               <li>
-                <a href="index.html" class="active"> Home </a>
+                <a href="index.html" > Home </a>
                 <a href="index.html"> Home </a>
               </li>
               <li>
-                <a href="./about.html">About US</a>
+                <a href="./about.html" >About US</a>
                 <a href="./about.html">About US</a>
               </li>
               <li>
-                <a href="./services.html">Services</a>
+                <a href="./services.html" class="active">Services</a>
                 <a href="./services.html">Services</a>
               </li>
               <li>
@@ -80,7 +80,7 @@
             <nav class="mobile-nav-container">
               <ul>
                 <li>
-                  <a href="index.html" class="active">
+                  <a href="index.html">
                     <img src="./assets/img/icon/mob_home.png" alt="" />
                     Home
                   </a>
@@ -93,7 +93,7 @@
                   >
                 </li>
                 <li>
-                  <a href="./services.html">
+                  <a href="./services.html" class="active">
                     <img src="./assets/img/icon/service.png" alt="" />
 
                     Services</a
@@ -620,5 +620,43 @@
     <script>
       AOS.init();
     </script>
+        <script>
+          $(document).ready(function () {
+            $(".hamburger").click(function () {
+              $(this).toggleClass("active");
+              $(".mobile-nav-container").toggle();
+            });
+            $(".slider-section").slick({
+              dots: false, // Display navigation dots
+              infinite: true, // Infinite loop sliding
+              speed: 300, // Transition speed
+              slidesToShow: 3, // Number of slides to show
+              slidesToScroll: 1, // Number of slides to scroll at a time
+              // autoplay: true, // Enable autoplay
+              autoplaySpeed: 2000, // Autoplay speed (2 seconds)
+              prevArrow:
+              "<button type='button' class='slick-prev '><img src='assets/img/prev2.svg' class=''> <img src='assets/img/icon/prev.svg' class=''></button>",
+                // "",
+              nextArrow:
+                "<button type='button' class='slick-next pull-right'><img class=''src='assets/img/next2.svg'><img src='assets/img/icon/next.svg' class=''></button> ",
+              responsive: [
+                {
+                  breakpoint: 1008,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                  },
+                },
+                {
+                  breakpoint: 800,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  },
+                },
+              ],
+            });
+          });
+        </script>
   </body>
 </html>

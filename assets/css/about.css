@@ -3,6 +3,7 @@
 body {
   background: #121212;
 }
+
 .about-1 {
   margin-left: -13px;
   background: #000 !important;
@@ -91,6 +92,7 @@ body {
   height: 35px;
   background: radial-gradient(
     circle,
+    transparent
     #edefff 10%,
     /* rgba(255, 255, 255, 0.063) 50% */
   );
@@ -756,11 +758,14 @@ border-top-right-radius: 40px !important;
     display: none;
   }
   .top-right-bg {
-    height: 180px;
+    height: 130px;
+    margin-left: 65% !important;
+    margin-top: -150px !important;
     /* transform: rotate(90deg); */
   }
   .top-left-bg {
     height: 180px;
+    margin-left: -60px !important;
   }
   .img-center-about {
     margin-top: 150px;
@@ -871,6 +876,13 @@ border-top-right-radius: 40px !important;
 }
 
 @media screen and (min-width:810px) and (max-width:2000px) {
+  .top-right-bg {
+    right: 0 !important;
+    top: 0 !important;
+    margin-top: -150px !important;
+    opacity: 1;
+    /* transform: rotate(90deg) !important; */
+}
   .card-about-mobile img{
     margin-top: 20px !important;
   }
