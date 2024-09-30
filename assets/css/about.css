@@ -485,14 +485,14 @@ body {
 .img-container img {
     position: absolute;
 }
-    .our_service-about {
-        position: relative;
-        cursor: pointer;
-        padding: 15px;
-        overflow: hidden;
-        border-radius: 27px;
-        z-index: -100;
-    }
+.our_service-about {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-top-right-radius: 47px; /* Rounded top-right corner */
+  z-index: -100; /* Adjusted stacking order */
+}
+
     .believe-content > div{
         position: relative !important;
     }
@@ -561,14 +561,19 @@ body {
     .our_service-about:hover .bg-img::after{
         width: 200px;
         height: 200px;
-        border-top-right-radius: 70px !important;
         overflow: hidden;
+        background-image: linear-gradient(to right, rgba(143, 254, 21, 0.625) 31%,
+        rgba(20, 255, 135, 0.81) 94%) !important;
+        z-index: -100;
+        border:2px solid #191919 !important;
+        
+  border-top-right-radius: 47px !important; /* Rounded top-right corner */
     }
 
     .bg-img::after {
         content: "";
         position: absolute;
-        top: 16%;
+        top: 27%;
         left: 50%;
         width: 80px; /* Initial size of the circle */
         height: 80px;
@@ -646,7 +651,13 @@ body {
   .bg-img:hover{
 border-top-right-radius: 40px !important;
   }
-
+.our_service-about:hover .mission {
+  font-size: 24px;
+  color: #66BE53;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
 @media screen and (min-width: 0px) and (max-width: 900px) {
   .our-services-1 {
     font-size: 17px;
@@ -853,13 +864,30 @@ border-top-right-radius: 40px !important;
     color: #ffffff;
     font-weight: 600;
 }
+.card-about-desktop{
+  display: none !important;
+
+}
 }
 
 @media screen and (min-width:810px) and (max-width:2000px) {
-    .circle-services{
+  .card-about-mobile img{
+    margin-top: 20px !important;
+  }
+  .mobile-view-card1{
+    display: none !important;
+  }
+  .card-about-mobile{
+    display: none !important;
+  }
+        .card-about-desktop{
+        display: flex !important;
+
+      }
+    /* .circle-services{
     display:block  !important;
     width: 100%;
-    }
+    } */
     .circle-mob{
         display: none !important;
     }
