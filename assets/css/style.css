@@ -508,6 +508,7 @@ body {
 }
 .faster_section .img-container:hover .img-container-2 img:nth-child(2) {
   display: inline-block;
+  opacity: 0.9;
 }
 .faster_section .img-container:hover .img-container-2 img:nth-child(1) {
   display: none;
@@ -953,6 +954,7 @@ color: var(--unity_green) !important;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+  opacity: 0.6;
 
 }
 .services_games_col{
@@ -993,6 +995,9 @@ color: var(--unity_green) !important;
   letter-spacing: -1px;
 }
 
+.about-main img:nth-child(3) {
+  display: none;
+}
 .about-section h3 img{
   left: 15px;
 
