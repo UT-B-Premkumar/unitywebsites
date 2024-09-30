@@ -156,7 +156,12 @@ body {
   display: none !important;
   margin-left: 0px;
 }
-
+@media (max-width: 766px){
+  .speciality-text p{
+    padding: 0 10px 0 10px;
+    /* text-align: center; */
+  }
+}
 @media (max-width: 767px) {
   .fluid-video {
     width: 100%;  /* Ensure the video takes up the full width of the container */
@@ -166,6 +171,7 @@ body {
     box-sizing: border-box; /* Include the border in the element’s total width and height */
 
   }
+ 
   .section-padding{
     padding: 0px 0px !important;
   }
