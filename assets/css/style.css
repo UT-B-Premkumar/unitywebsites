@@ -872,6 +872,7 @@ color: var(--unity_green) !important;
 .accordion-button:not(.collapsed)::after {
   background-image: none !important;
   content: "\f068" !important;
+  color: var(--unity_green);
 }
 
 .working-process .accordion-item .collapsing {
