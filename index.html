@@ -1450,8 +1450,8 @@
         });
         $(".hamburger").on("focusout", function () {
           setTimeout(() => {
-            $(this).toggleClass("active");
-            $(".mobile-nav-container").toggle();
+            $(this).removeClass("active");
+            $(".mobile-nav-container").hide();
           }, 100);
         });
         $(".slider-section").slick({
@@ -1511,6 +1511,9 @@
         }, 1000);
       });
 
+      
+
+     
       $(window).on("scroll", function () {
         // Get the scroll position of the window
         var scrollPosition = $(this).scrollTop();
