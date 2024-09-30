@@ -400,21 +400,8 @@
                     technologies to create unique and innovative gaming
                     experiences.
                   </li>
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="#ffffff"
-                      class="bi bi-dot"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
-                    </svg>
-                    We work closely with our clients to understand their vision
-                    and deliver solutions that exceed expectations.
-                  </li>
-                  <li>
+
+                  <li class="mt-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -1069,5 +1056,57 @@
         };
         requestAnimationFrame(update);
       </script>
+          <script>
+            // Animate function
+            function stepAnimateText(element, animationIn, animationOut, delay) {
+              var text = $(element).text();
+              var curr = '';
+              for (var i = 0; i < text.length; i++) {
+                var character = text.charAt(i);
+                $(element).html(curr + '<span class="' + animationIn + '" style="-webkit-animation-delay: ' + i * delay + 's; animation-delay: ' + i * delay + 's">' + character + '</span>');
+                curr = $(element).html();
+              }
+              
+              // Remove glow (unglow) after the animationIn is complete
+              setTimeout(function() {
+                $(element).find('span').each(function(index) {
+                  $(this).removeClass(animationIn).addClass(animationOut);
+                });
+              }, text.length * delay * 1000 + 1000); // Start unglow after full glow is done
+            }
+      
+            // Init on load
+            stepAnimateText('.fade', 'glow-in', 'glow-out', 0.1);
+      
+            // Buttons
+            $('.button.button-fadeindown').click(function() {
+              var delay = $('select').val();
+              stepAnimateText('.fade', 'glow-in', 'glow-out', delay);
+              return false;
+            });
+            
+            $('.button.button-bounceindown').click(function() {
+              var delay = $('select').val();
+              stepAnimateText('.fade', 'glow-in', 'glow-out', delay);
+              return false;
+            });
+            
+            $('.fade-container').click(function() {
+              var delay = $('select').val();
+              stepAnimateText('.fade', 'glow-in', 'glow-out', delay);
+              return false;
+            });
+          </script>
+          <script>
+            $(window).on("scroll", function () {
+        var scrollPosition = $(this).scrollTop();
+        if (scrollPosition > 140) {
+          $("header").addClass("fixed");
+        }
+        if (scrollPosition < 140) {
+          $("header").removeClass("fixed");
+        }
+      })
+          </script>
   </body>
 </html>
