@@ -35,7 +35,7 @@
             <nav class="desktop">
               <ul>
                 <li>
-                  <a href="index.html" class="active"> Home </a>
+                  <a href="index.html" > Home </a>
                   <a href="index.html"> Home </a>
                 </li>
                 <li>
@@ -71,7 +71,7 @@
               <nav class="mobile-nav-container">
                 <ul>
                   <li>
-                    <a href="index.html" class="active">
+                    <a href="index.html">
                       <img src="./assets/img/icon/mob_home.png" alt="" />
                       Home
                     </a>
@@ -649,6 +649,7 @@
           </div>
         </div>
       </section>
+      
       <footer class="footer">
         <div class="container">
           <div class="footer-row">
@@ -720,7 +721,18 @@
     </script>
     <script>
       // jQuery ready function
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        $(".hamburger").click(function () {
+          $(this).toggleClass("active");
+          $(".mobile-nav-container").toggle();
+        });
+        $(".hamburger").on("focusout", function () {
+          setTimeout(() => {
+            $(this).removeClass("active");
+            $(".mobile-nav-container").hide();
+          }, 100);
+        });
+      });
     </script>
     <script>
       $(".hamburger").click(function () {
