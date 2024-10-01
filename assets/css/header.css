@@ -155,31 +155,39 @@ nav ul li:nth-child(5) a {
 .mobile-nav-container{
   position: absolute;
   right: 0;
-  top: 46px;
+  top: 62px;
   z-index: 10;
-  background: rgb(18, 18, 18);
-  padding: 15px 20px;
+  background: black;
+  padding:  20px;
   border-radius: 10px;
-  min-width: 220px;
+  min-width: 280px;
   display: none;
+  border: solid 1px rgb(202, 254, 21);
 
 }
 nav.mobile-nav-container ul{
   flex-direction: column;
-  gap: 20px;
+  gap: 0;
   padding: 0;
+ 
   align-items: flex-start;
 }
 
+.mobile-nav-container ul li {
+  width: 100%;
+  padding: 5px 0;
+}
+.mobile-nav-container ul a {
+padding: 10px;
+  
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
 .mobile-nav-container li a.active{
-  background: rgb(20, 255, 135);
-  background: linear-gradient(
-    326deg,
-    rgba(20, 255, 135, 1) 72%,
-    rgba(202, 254, 21, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: rgba(204, 255, 20, 0.2);
+  color: var(--white);
 }
 
 nav.mobile-nav-container ul img{
