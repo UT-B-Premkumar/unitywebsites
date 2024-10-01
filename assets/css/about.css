@@ -650,8 +650,8 @@ border-top-right-radius: 40px !important;
 .bi-dot{
   display: none;
 }
-  .para-banner {
-    padding: 0px 20px 0px 20px !important;
+.para-banner {
+  padding: 0px 20px 0px 50px !important;
 }
 .project-img {
   position: absolute;
