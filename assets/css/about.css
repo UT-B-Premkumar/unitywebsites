@@ -551,6 +551,7 @@ body {
         z-index: -100;
         border:2px solid #191919 !important;
         border-top-right-radius: 47px !important; /* Rounded top-right corner */
+        transition: ease .5s;
     }
 
     .bg-img::after {
