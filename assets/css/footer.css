@@ -53,6 +53,38 @@
 .footer h5{
     text-transform: uppercase;
   }
+  /* Back to Top Button Styles */
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px; /* Adjust based on your image size */
+  height: 50px;
+  display: none; /* Hidden by default */
+  z-index: 1000; /* Ensure it stays on top */
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+.back-to-top img.arrow-active {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.back-to-top:hover img.arrow-inactive {
+  display: none;
+}
+
+.back-to-top:hover img.arrow-active {
+  display: block;
+}
 @media screen and (max-width: 900px) {
   .footer .logo {
     text-align: center;

@@ -12,14 +12,26 @@
     <link rel="stylesheet" href="./assets/css/about.css" />
 
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      href="./assets/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    <link href="./assets/css/aos.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papGZHVYVtGk2r8jGxGwlIup0m+lKCtYIh7XVUWeq7k+puZIBWg6X4x4fJqOe6d7oLZ3qB/FlE3V5yxX4Xc6lw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Your existing CSS files -->
+  <link rel="stylesheet" href="path/to/your/styles.css">
+
   </head>
 
   <body>
@@ -306,19 +318,7 @@
             <div
               class="col-xl-6 col-lg-12 col-md-12 align-items-center left-contact-section"
             >
-              <h6 class="mb-3">
-                <span data-aos="fade-right" data-aos-delay="200">DECODE</span>
-                <span data-aos="fade-right" data-aos-delay="300">YOUR</span>
-                <span data-aos="fade-right" data-aos-delay="400">THOUGHTS</span>
-                <span
-                  data-aos="fade-right"
-                  data-aos-delay="500"
-                  class="highlight"
-                  >WITH</span
-                >
-                <span data-aos="fade-right" data-aos-delay="600">US</span>
-                <span data-aos="fade-right" data-aos-delay="700">NOW</span>
-              </h6>
+             
               <h3 class="mb-3">
                 <span data-aos="fade-up" data-aos-delay="200">Call</span>
                 <span class="highlighted-text"
@@ -334,6 +334,19 @@
                   >Memorable</span
                 >
               </h3>
+              <h6 class="mb-3">
+                <span data-aos="fade-right" data-aos-delay="200">DECODE</span>
+                <span data-aos="fade-right" data-aos-delay="300">YOUR</span>
+                <span data-aos="fade-right" data-aos-delay="400">THOUGHTS</span>
+                <span
+                  data-aos="fade-right"
+                  data-aos-delay="500"
+                  class="highlight"
+                  >WITH</span
+                >
+                <span data-aos="fade-right" data-aos-delay="600">US</span>
+                <span data-aos="fade-right" data-aos-delay="700">NOW</span>
+              </h6>
               <p class="contact-left-content">
                 <span data-aos="fade-right" data-aos-delay="100">We</span>
                 <span data-aos="fade-right" data-aos-delay="200">provide</span>
@@ -463,12 +476,12 @@
 
                       <a
                         href="#"
-                        class="btn-1 px-4 text-center mt-3 py-1 text-center submit-button"
+                        class="px-4 text-center mt-3 py-1 text-center submit-button"
                       >
+                        <!-- <span></span>
                         <span></span>
                         <span></span>
-                        <span></span>
-                        <span></span>
+                        <span></span> -->
                         <span class="text-center sub-btn">Submit</span>
                       </a>
                     </div>
@@ -698,10 +711,23 @@
           </div>
         </div>
       </footer>
+      <!-- <a href="#" class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+        <i class="fa fa-chevron-up"></i>
+      </a> -->
+      <!-- Back to Top Button -->
+<a href="#" class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+  <img src="assets/img/icon/arrow_inactive.svg" alt="Back to Top Inactive" class="arrow-inactive">
+  <img src="assets/img/icon/arrow_active.svg" alt="Back to Top Active" class="arrow-active">
+</a>
+
     </div>
     <script src="./assets/js/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+   <!-- Back to Top Button Script -->
+   <script src="assets/js/backtotop.js"></script>
+
+    
 
     <script>
       const stars = document.querySelectorAll(".fa-star");
@@ -770,13 +796,13 @@
             },
           },
           color: {
-            value: "#dcfc36",
+            value: "#DCFC36",
           },
           shape: {
             type: "circle",
             stroke: {
               width: 0,
-              color: "#dcfc36",
+              color: "#DCFC36",
             },
             polygon: {
               nb_sides: 1,
@@ -792,7 +818,7 @@
             random: false,
             anim: {
               enable: false,
-              speed: 0.01,
+              speed:.3,
               opacity_min: 0.01,
               sync: false,
             },
@@ -802,7 +828,7 @@
             random: true,
             anim: {
               enable: false,
-              speed: 0.00139022217182483,
+              speed:.3,
               size_min: 0.1,
               sync: false,
             },
@@ -810,13 +836,13 @@
           line_linked: {
             enable: false,
             distance: 0,
-            color: "#ffffff",
+            color: "#FFFFFF",
             opacity: 0.4,
             width: 1,
           },
           move: {
             enable: true,
-            speed: 0.1,
+            speed:.3,
             direction: "top",
             random: false,
             straight: false,
@@ -854,7 +880,7 @@
               size: 1,
               duration: 1,
               opacity: 5,
-              speed: 0.01,
+              speed:.3,
             },
             repulse: {
               distance: 200,
