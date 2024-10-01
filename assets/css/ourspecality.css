@@ -156,13 +156,12 @@ body {
   display: none !important;
   margin-left: 0px;
 }
-@media (max-width: 766px){
-  .speciality-text p{
-    padding: 0 10px 0 10px;
-    /* text-align: center; */
-  }
+.designing-fonts{
+  font-size: 40px !important;
+  padding: 0 368px !important;
 }
-@media (max-width: 767px) {
+
+@media (max-width: 768px) {
   .fluid-video {
     width: 100%;  /* Ensure the video takes up the full width of the container */
     height: auto !important; /* Maintain aspect ratio */
@@ -194,6 +193,10 @@ body {
     ); */
     /* border: 3px solid #cafe15 !important;
     padding: 0.25rem !important; */
+  }
+  .designing-fonts{
+    /* font-size: 40px !important; */
+    padding: 0px 0px !important;
   }
   .specializations {
     margin-top: 0;
@@ -236,6 +239,16 @@ body {
   }
   .feature-box-margin{
     margin-left: 1px !important;
+  }
+}
+@media (max-width: 766px){
+  .speciality-text p{
+    padding: 0 10px 0 10px;
+    /* text-align: center; */
+  }
+  .designing-fonts{
+    font-size: 40px !important;
+    padding: 0 16px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 997px) {
@@ -282,6 +295,10 @@ body {
     display: block; /* Removes any default margins */
     border: 5px solid rgb(99, 242, 91); /* Set your desired border size and color */
     box-sizing: border-box; /* Include the border in the element’s total width and height */
+  }
+  .designing-fonts{
+    font-size: 40px !important;
+    padding: 0 278px !important;
   }
   
   .fluid-video source {

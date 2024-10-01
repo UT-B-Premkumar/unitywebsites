@@ -268,6 +268,9 @@ form .card {
 .sub-btn{
   margin: 0 auto;
 }
+.designing-font{
+  font-size: 40px !important;
+}
 @media (max-width: 768px) {
   .email-button {
     padding: 8px 16px;
