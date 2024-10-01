@@ -442,55 +442,33 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".hamburger").click(function () {
+<script>
+  $(".hamburger").click(function () {
           $(this).toggleClass("active");
+          $(".mobile-nav-container").toggle();
         });
-      });
-    </script>
+        $(".hamburger").on("focusout", function () {
+          setTimeout(() => {
+            $(this).removeClass("active");
+            $(".mobile-nav-container").hide();
+          }, 100);
+        });
+</script>
+<script>
+  $(window).on("scroll", function () {
+    var scrollPosition = $(this).scrollTop();
+    if (scrollPosition > 140) {
+      $("header").addClass("fixed");
+    }
+    if (scrollPosition < 140) {
+      $("header").removeClass("fixed");
+    }
+  })
+ </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-        <script>
-          $(document).ready(function () {
-            $(".hamburger").click(function () {
-              $(this).toggleClass("active");
-              $(".mobile-nav-container").toggle();
-            });
-            $(".slider-section").slick({
-              dots: false, // Display navigation dots
-              infinite: true, // Infinite loop sliding
-              speed: 300, // Transition speed
-              slidesToShow: 3, // Number of slides to show
-              slidesToScroll: 1, // Number of slides to scroll at a time
-              // autoplay: true, // Enable autoplay
-              autoplaySpeed: 2000, // Autoplay speed (2 seconds)
-              prevArrow:
-              "<button type='button' class='slick-prev '><img src='assets/img/prev2.svg' class=''> <img src='assets/img/icon/prev.svg' class=''></button>",
-                // "",
-              nextArrow:
-                "<button type='button' class='slick-next pull-right'><img class=''src='assets/img/next2.svg'><img src='assets/img/icon/next.svg' class=''></button> ",
-              responsive: [
-                {
-                  breakpoint: 1008,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                  },
-                },
-                {
-                  breakpoint: 800,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                  },
-                },
-              ],
-            });
-          });
-        </script>
            <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
       <script src="./assets/js/particles.min.js"></script>
       <!-- stats.js lib -->
@@ -519,8 +497,8 @@
               },
               image: {
                 src: "img/github.svg",
-                width: 0.1,
-                height: 0.1,
+                width: 0.001,
+                height: 0.001,
               },
             },
             opacity: {
@@ -528,7 +506,7 @@
               random: false,
               anim: {
                 enable: false,
-                speed: 0.01,
+                speed:.3,
                 opacity_min: 0.01,
                 sync: false,
               },
@@ -538,7 +516,7 @@
               random: true,
               anim: {
                 enable: false,
-                speed: 0.00139022217182483,
+                speed:.3,
                 size_min: 0.1,
                 sync: false,
               },
@@ -552,7 +530,7 @@
             },
             move: {
               enable: true,
-              speed: 0.1,
+              speed:.3,
               direction: "top",
               random: false,
               straight: false,
@@ -590,7 +568,7 @@
                 size: 1,
                 duration: 1,
                 opacity: 5,
-                speed: 0.01,
+                speed:.3,
               },
               repulse: {
                 distance: 200,

@@ -31,18 +31,19 @@
     gap: 20px;
 }
 .about-2 .header-underline-2 {
-    margin-top: -40px !important;
-    width: 100%;
-  
-  }
+    margin-top: -20px !important;
+    width: 270px;
+    margin-left: 20px !important;
+}
   .about-2 .card-bg-about {
     height: auto !important;
   }
   .our-services-1 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     font-family: "Barlow", sans-serif;
     color: #ffffff;
+    letter-spacing: -2px;
 }
 .circle-mob{
     width: 100% !important;
@@ -332,6 +333,7 @@
 }
 .our-services-1{
     text-align: center !important;
+    letter-spacing: -2px;
 }
 .about-2 .header-underline-2{
     margin-left: 22% !important;
@@ -401,6 +403,7 @@
     font-family: "Barlow", sans-serif;
     color: #ffffff;
     margin-top: 0px !important;
+    letter-spacing: -2px;
 }
 .about-2 .header-underline-1 {
     margin-top: -40px;
@@ -464,6 +467,7 @@
 }
 .our-services-1{
     text-align: center !important;
+    letter-spacing: -2px;
 }
 .about-2 .header-underline-2{
     margin-left: 22% !important;
@@ -533,6 +537,7 @@
     font-family: "Barlow", sans-serif;
     color: #ffffff;
     margin-top: 0px !important;
+    letter-spacing: -2px;
 }
 .about-2 .header-underline-1 {
     margin-top: -40px;
