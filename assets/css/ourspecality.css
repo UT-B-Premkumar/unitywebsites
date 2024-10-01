@@ -298,7 +298,7 @@ body {
   }
   .designing-fonts{
     font-size: 40px !important;
-    padding: 0 278px !important;
+    /* padding: 0 278px !important; */
   }
   
   .fluid-video source {
