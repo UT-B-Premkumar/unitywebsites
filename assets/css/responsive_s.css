@@ -1,5 +1,6 @@
 @media screen and (max-width: 1024px) {
-
+    .logo img {        width: 150px;
+    }
 }
 @media screen and (max-width: 768px) {
 
@@ -30,18 +31,22 @@
     gap: 20px;
 }
 .about-2 .header-underline-2 {
-    margin-top: -40px !important;
-    width: 100%;
-  
-  }
+    margin-top: -20px !important;
+    width: 270px;
+    margin-left: 20px !important;
+}
   .about-2 .card-bg-about {
     height: auto !important;
   }
   .our-services-1 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     font-family: "Barlow", sans-serif;
     color: #ffffff;
+    letter-spacing: -2px;
+}
+.circle-mob{
+    width: 100% !important;
 }
 }
 @media screen and (min-width: 980px) {
@@ -65,9 +70,19 @@
     }
     .circle-tab{
         display: block !important;
+        width: 100% !important;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    .para-banner{
+        padding: 0px !important;
+    }
+    .bottom-bg .col-md-6 {
+        flex: 0 0 auto;
+        width: 56% !important;
+    }
+
     .card-about-mobile .col{
         margin-top: 20px !important;
     }
@@ -79,6 +94,7 @@
     }
     .circle-tab{
         display: block !important;
+        width: 100% !important;
     }
 
     .bg-background .row .col-md-5{
@@ -317,6 +333,7 @@
 }
 .our-services-1{
     text-align: center !important;
+    letter-spacing: -2px;
 }
 .about-2 .header-underline-2{
     margin-left: 22% !important;
@@ -386,6 +403,7 @@
     font-family: "Barlow", sans-serif;
     color: #ffffff;
     margin-top: 0px !important;
+    letter-spacing: -2px;
 }
 .about-2 .header-underline-1 {
     margin-top: -40px;
@@ -449,6 +467,7 @@
 }
 .our-services-1{
     text-align: center !important;
+    letter-spacing: -2px;
 }
 .about-2 .header-underline-2{
     margin-left: 22% !important;
@@ -518,6 +537,7 @@
     font-family: "Barlow", sans-serif;
     color: #ffffff;
     margin-top: 0px !important;
+    letter-spacing: -2px;
 }
 .about-2 .header-underline-1 {
     margin-top: -40px;
