@@ -156,10 +156,18 @@ body {
   display: none !important;
   margin-left: 0px;
 }
+.designing-fonts{
+  font-size: 40px !important;
+  padding: 0 368px !important;
+}
 @media (max-width: 766px){
   .speciality-text p{
     padding: 0 10px 0 10px;
     /* text-align: center; */
+  }
+  .designing-fonts{
+    font-size: 40px !important;
+    padding: 0 0px !important;
   }
 }
 @media (max-width: 767px) {
@@ -194,6 +202,10 @@ body {
     ); */
     /* border: 3px solid #cafe15 !important;
     padding: 0.25rem !important; */
+  }
+  .designing-fonts{
+    /* font-size: 40px !important; */
+    padding: 0px 0px !important;
   }
   .specializations {
     margin-top: 0;
