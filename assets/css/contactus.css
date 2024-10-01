@@ -29,28 +29,30 @@ form .card {
   opacity: 0.6 !important;
   font-size: 12px;
 }
-.form-group input,.form-group textarea {
+.form-group input,
+.form-group textarea {
   padding: 1px 2px 5px 5px;
   border-radius: 5px;
   background: #161616;
   border: 1px solid #3f433f;
   color: white !important;
 }
-.form-group input::placeholder,.form-group textarea::placeholder {
+.form-group input::placeholder,
+.form-group textarea::placeholder {
   /* Most modern browsers support this now. */
   color: #fff !important;
   opacity: 0.4;
   font-size: 12px;
   padding-left: 8px;
 }
-.form-group textarea::placeholder{
+.form-group textarea::placeholder {
   padding-top: 8px;
 }
 .experience-font p {
   color: #fff !important;
   font-size: 12px;
 }
-.phone-mob{
+.phone-mob {
   padding-right: 50px;
 }
 .form-group textarea {
@@ -69,7 +71,6 @@ form .card {
 }
 #center {
   text-align: center;
-  
 }
 
 .fa-star {
@@ -182,7 +183,7 @@ form .card {
   font-size: 1.25rem;
   color: #c6ff00; /* Neon yellow */
 }
-.icon img{
+.icon img {
   background-color: #121212;
   padding: 8px;
   border-radius: 6px;
@@ -208,7 +209,6 @@ form .card {
   border-radius: 30px;
   width: 150px;
 }
-
 
 .submit-btn {
   width: fit-content;
@@ -242,55 +242,67 @@ form .card {
   gap: 5px;
 }
 .contact-card:hover .moving2 .rocket-arrow {
-  transform: translate(30px,-30px,);
+  transform: translate(30px, -30px);
 }
-.email-btn{
+.email-btn {
   background-color: #121212;
   color: #b8ff00;
   width: fit-content;
   border-radius: 20px;
 }
-.email-btn p{
+.email-btn p {
   font-size: 10px;
   margin: 0;
   text-wrap: nowrap;
-  margin-right: .5rem !important;
-   margin-left: .5rem !important;
+  margin-right: 0.5rem !important;
+  margin-left: 0.5rem !important;
 }
-.contact-card .card{
+.contact-card .card {
   height: 100% !important;
 }
-.submit-button{
+.submit-button {
   width: 93% !important;
   text-decoration: none;
   margin-left: 1.5rem !important;
-  border: 1px solid #66BE53;
-  color:  #66BE53;
+  border: 1px solid #66be53;
+  color: #66be53;
   border-radius: 5px;
   font-weight: 600;
 }
-.submit-button:hover{
-  background-color: #66BE53;
-  border: 1px solid #66BE53;
+.submit-button:hover {
+  background-color: #66be53;
+  border: 1px solid #66be53;
   color: #fff;
   /* font-weight: 600; */
   text-shadow: #fff;
 }
-.sub-btn{
+.sub-btn {
   margin: 0 auto;
 }
-.designing-font{
+.designing-font {
   font-size: 40px !important;
+}
+@media (max-width: 1024px) {
+  .email-btns {
+    margin-top: 36px !important;
+    
+  }
+  .phone-mob {
+    padding-right: 0px;
+  }
 }
 @media (max-width: 768px) {
   .email-button {
     padding: 8px 16px;
     font-size: 0.9rem;
   }
-  .phone-text{
+  .email-btns {
+    margin-top: 0px !important;
+  }
+  .phone-text {
     padding-right: 3px !important;
   }
-  .phone-mob{
+  .phone-mob {
     padding-right: 0px;
   }
   .arrow-icon i {
@@ -299,14 +311,14 @@ form .card {
   .left-contact-section h3 {
     padding-right: 0rem !important;
   }
-  .email-btn p{
+  .email-btn p {
     font-size: 10px;
     margin: 0;
     text-wrap: nowrap;
     margin-right: 0rem !important;
-     margin-left: 0rem !important;
+    margin-left: 0rem !important;
   }
-  .contact-card .card{
+  .contact-card .card {
     height: 90% !important;
   }
 }
@@ -320,12 +332,11 @@ form .card {
   .arrow-icon i {
     font-size: 0.9rem;
   }
-  .submit-button{
+  .submit-button {
     width: 93% !important;
     text-decoration: none;
-    margin-left: .5rem !important;
+    margin-left: 0.5rem !important;
   }
-
 }
 @media (max-width: 768px) {
   .form-section {
@@ -336,12 +347,12 @@ form .card {
     text-align: center;
     font-size: 1.5rem;
   }
- .email-btn p{
+  .email-btn p {
     font-size: 10px;
     margin: 0;
     text-wrap: nowrap;
     margin-right: 0rem !important;
-     margin-left: 0rem !important;
+    margin-left: 0rem !important;
   }
   .form-box {
     margin-top: 20px;
@@ -371,41 +382,36 @@ form .card {
     width: 50%;
   } */
 }
- .moving2 img{
+.moving2 img {
   transition: ease 1s;
 }
 
-.moving2:hover img:nth-child(2){
-  transform: translate(0px ,-28px );
-
+.moving2:hover img:nth-child(2) {
+  transform: translate(0px, -28px);
 }
 
-.moving2:hover img:nth-child(1){
-  transform: translate(0 ,0 );
-
+.moving2:hover img:nth-child(1) {
+  transform: translate(0, 0);
 }
-.moving2:hover img:nth-child(1){
-  transform: translate(59px, -25px)
-
+.moving2:hover img:nth-child(1) {
+  transform: translate(59px, -25px);
 }
 
-
-.moving2 img:nth-child(2){
-  transform: translate(-23px ,0 );
+.moving2 img:nth-child(2) {
+  transform: translate(-23px, 0);
 }
-.rocket-arrow{
+.rocket-arrow {
   /* background-color: #121212; */
   border-radius: 50%;
   padding: 5px;
-
-} 
- .email-btn p{
-    font-size: 10px;
-    margin: 0;
-    text-wrap: nowrap;
-    margin-right: 0rem !important;
-     margin-left: 0rem !important;
-  }
+}
+.email-btn p {
+  font-size: 10px;
+  margin: 0;
+  text-wrap: nowrap;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
 /* .moving2 {
   display: flex;
   overflow: hidden;
@@ -500,17 +506,13 @@ form .card {
     opacity: 1;
   }
 } */
- .submit-btn{
+.submit-btn {
   color: #83f545;
   border: 1px solid #83f545;
   background-color: #1f1f1f;
   border-radius: 5px;
- }
-.submit-btn:hover{
+}
+.submit-btn:hover {
   background-color: #83f545 !important;
   color: white !important;
-} 
-
-
-
-
+}
