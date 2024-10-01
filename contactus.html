@@ -21,6 +21,16 @@
     />
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
     <link href="./assets/css/aos.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papGZHVYVtGk2r8jGxGwlIup0m+lKCtYIh7XVUWeq7k+puZIBWg6X4x4fJqOe6d7oLZ3qB/FlE3V5yxX4Xc6lw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Your existing CSS files -->
+  <link rel="stylesheet" href="path/to/your/styles.css">
 
   </head>
 
@@ -701,10 +711,23 @@
           </div>
         </div>
       </footer>
+      <!-- <a href="#" class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+        <i class="fa fa-chevron-up"></i>
+      </a> -->
+      <!-- Back to Top Button -->
+<a href="#" class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+  <img src="assets/img/icon/arrow_inactive.svg" alt="Back to Top Inactive" class="arrow-inactive">
+  <img src="assets/img/icon/arrow_active.svg" alt="Back to Top Active" class="arrow-active">
+</a>
+
     </div>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
+   <!-- Back to Top Button Script -->
+   <script src="assets/js/backtotop.js"></script>
+
+    
 
     <script>
       const stars = document.querySelectorAll(".fa-star");
