@@ -8,6 +8,9 @@
     background-size: cover !important;
     background-repeat: no-repeat !important;
     padding: 20px;
+    background-image: linear-gradient(to right, #232921, #202220) !important;
+    border: 2px solid #343734;
+    border-radius: 25px;
 }
 .computer_section_bg_2{
     background: url(/unitywebsites/assets/img/rectangle-service-bg.svg) !important;
@@ -16,6 +19,9 @@
     background-size: cover !important;
     background-repeat: no-repeat !important;
     padding: 20px;
+    background-image: linear-gradient(to right, #232921, #202220) !important;
+    border: 2px solid #343734;
+    border-radius: 25px;
 }
 .computer_section_bg_3{
     background: url(/unitywebsites/assets/img/rectangle-service-bg.svg) !important;
@@ -24,6 +30,9 @@
     background-size: cover !important;
     background-repeat: no-repeat !important;
     padding: 20px;
+    background-image: linear-gradient(to right, #232921, #202220) !important;
+    border: 2px solid #343734;
+    border-radius: 25px;
 }
 .computer_section{
     padding: 10px 0px 0px 0px !important;
@@ -108,8 +117,7 @@
   
   .img-container-service {
     position: relative;
-    max-height: 500px;
-    height: 400px;
+  height: auto !important;
     cursor: pointer;
   }
   .img-container-mobile {
@@ -201,7 +209,7 @@
   
   .star-bottom-img {
     position: absolute !important;
-    right: -20px !important;
+    right: -15px !important;
     bottom: -5px !important;
     width: 110px !important; /* Adjust size as needed */
     height: auto !important;
@@ -295,7 +303,7 @@
     background-image: linear-gradient(to right, #232921, #202220) !important;
     border:2px solid #343734;
     border-radius: 25px;
-    height: 700px !important;
+    height: auto !important;
     width: auto !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -306,7 +314,7 @@
   background-image: linear-gradient(to right, #232921, #202220) !important;
   border:2px solid #343734;
   border-radius: 25px;
-  height: 686px !important;
+  height: auto !important;
   width: auto !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
@@ -321,7 +329,7 @@
   background-image: linear-gradient(to right, #232921, #202220) !important;
   border:2px solid #343734;
   border-radius: 25px;
-  height: 666px !important;
+  height: auto !important;
   width: auto !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
