@@ -43,6 +43,9 @@
     font-family: "Barlow", sans-serif;
     color: #ffffff;
 }
+.circle-mob{
+    width: 100% !important;
+}
 }
 @media screen and (min-width: 980px) {
 
@@ -65,9 +68,18 @@
     }
     .circle-tab{
         display: block !important;
+        width: 100% !important;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+    .para-banner{
+        padding: 0px !important;
+    }
+    .bottom-bg .col-md-6 {
+        flex: 0 0 auto;
+        width: 56% !important;
+    }
+
     .card-about-mobile .col{
         margin-top: 20px !important;
     }
@@ -79,6 +91,7 @@
     }
     .circle-tab{
         display: block !important;
+        width: 100% !important;
     }
 
     .bg-background .row .col-md-5{
