@@ -304,6 +304,7 @@ body {
   font-size: 18px;
   padding: 10px 0;
   line-height: 28px;
+  opacity: .6;
 }
 
 .our_service-card::after {
@@ -589,6 +590,7 @@ body {
   margin: 15px 0;
   /* line-height: 34px; */
   font-size: 16px;
+  opacity: .6;
 }
 
 /* .development_card:hover .top img:nth-child(2){
@@ -658,6 +660,7 @@ display: inline;
   max-width: 600px;
   font-size: 18px;
   font-weight: 400;
+  opacity: .6 !important; 
 }
 .star-container {
   margin: 0 auto;
@@ -818,6 +821,7 @@ color: #C7FB15 !important;
 
 .working-process .accordion-item .accordion-collapse .accordion-body {
   padding: 20px 40px;
+  opacity: .6;
 }
 
 .working-process .accordion-item .accordian-numbers {

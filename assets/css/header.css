@@ -63,8 +63,38 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: var(--unity_green);
+  color: #C7FB15;
 }
+nav ul li a.active {
+
+  background-image: linear-gradient(
+    90deg,
+    #C7FB15 45%, /* font color */
+    #ffffff 100%,
+    #C7FB15 45% /* font color */
+  );
+  background-size: 500% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shine 3s infinite;
+  /* text-shadow: -2px 0px 1px #600303; */
+
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100% 50%;
+    
+  }
+  100% {
+    background-position: 0% 50%;
+
+
+  }
+  }
+
+
 
 /* Apply transform and transition to all li elements */
 nav ul li a {
@@ -199,4 +229,6 @@ margin-right: 10px;
   padding: 10px  0;
   height: fit-content !important;
 }
+
+
 
