@@ -14,9 +14,9 @@ body {
 }
 .left-contact-section .contact-left-content {
   font-size: 14px;
-  padding-right: 180px !important;
+  padding-right: 180px;
   color: #fff;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .left-contact-section h3 {
   font-weight: 700;
@@ -81,7 +81,7 @@ form .card {
   color: gray;
 }
 .checked {
-  color: #83f545;
+  color: #C7FB15;
 }
 
 .form-section {
@@ -91,7 +91,7 @@ form .card {
 /* First Name Field: Focus and active state */
 .first-name-input:focus {
   background-color: #121212 !important; /* Light red background */
-  border-color: #dcfc36 !important; /* Dark red border */
+  border-color: #C7FB15 !important; /* Dark red border */
   outline: none !important;
   box-shadow: none !important;
 }
@@ -99,7 +99,7 @@ form .card {
 /* Last Name Field: Focus and active state */
 .last-name-input:focus {
   background-color: #121212 !important; /* Light blue background */
-  border-color: #dcfc36 !important; /* Dark blue border */
+  border-color: #C7FB15 !important; /* Dark blue border */
   outline: none !important;
   box-shadow: none !important;
   color: #fff !important;
@@ -108,7 +108,7 @@ form .card {
 /* Phone Number Field: Focus and active state */
 .phone-number-input:focus {
   background-color: #121212 !important; /* Light purple background */
-  border-color: #dcfc36 !important; /* Purple border */
+  border-color: #C7FB15 !important; /* Purple border */
   outline: none !important;
   box-shadow: none !important;
   color: #fff !important;
@@ -117,7 +117,7 @@ form .card {
 /* Email Field: Focus and active state */
 .email-input:focus {
   background-color: #121212 !important; /* Light green background */
-  border-color: #dcfc36 !important; /* Green border */
+  border-color: #C7FB15 !important; /* Green border */
   outline: none !important;
   box-shadow: none !important;
   color: #fff !important;
@@ -126,7 +126,7 @@ form .card {
 /* Message Field: Focus and active state */
 .message-textarea:focus {
   background-color: #121212 !important; /* Light orange background */
-  border-color: #dcfc36 !important; /* Orange border */
+  border-color: #C7FB15 !important; /* Orange border */
   outline: none !important;
   box-shadow: none !important;
   color: #fff !important;
@@ -267,17 +267,17 @@ form .card {
   width: 93% !important;
   text-decoration: none;
   margin-left: 1.5rem !important;
-  border: 1px solid #66BE53;
-  color:  #66BE53;
+  border: 1px solid #C7FB15;
+  color:  #C7FB15;
   border-radius: 5px;
   font-weight: 600;
 }
 .submit-button:hover{
-  background-color: #66BE53;
-  border: 1px solid #66BE53;
-  color: #fff;
+  background-color: #C7FB15;
+  border: 1px solid #C7FB15;
+  color: #000;
   /* font-weight: 600; */
-  text-shadow: #fff;
+  /* text-shadow: #000; */
 }
 .sub-btn{
   margin: 0 auto;
@@ -285,18 +285,52 @@ form .card {
 .designing-font{
   font-size: 40px !important;
 }
+@media (max-width: 820px){
+.tab-cards{
+  margin-bottom: 1rem !important;
+
+}
+}
 @media (max-width: 1024px){
+  section.contact-last{
+    padding: 0px;
+  }
+  
 .tab-cards{
   padding-right: 0 !important;
+
 }
 .contact-card:hover .moving img {
   transform: translateY(0px);
+}
+.address-section{
+  font-size: 9px !important;
+}
+/* .contact-left-content {
+  font-size: 14px;
+  padding: 0 !important;
+  color: #fff;
+  opacity: 0.6;
+  text-align: center !important;
+} */
+.left-contact-section{
+  text-align: center !important;
+}
+.left-contact-section .contact-left-content {
+  font-size: 14px;
+  padding: 0px 60px !important;
+  color: #fff;
+  opacity: 0.6;
 }
 }
 @media (max-width: 768px) {
   .email-button {
     padding: 8px 16px;
     font-size: 0.9rem;
+  }
+  .tab-cards{
+    margin-bottom: 0rem !important;
+  
   }
   .phone-text{
     padding-right: 3px !important;
@@ -320,6 +354,13 @@ form .card {
   .contact-card .card{
     height: 90% !important;
   }
+  .left-contact-section p {
+    font-size: 14px;
+    /* padding-right: 0px 60px 0 60px !important; */
+    padding-right: 0 60px !important;
+    color: #fff;
+    opacity: 0.6;
+  }
 }
 
 @media (max-width: 576px) {
@@ -335,6 +376,9 @@ form .card {
     width: 93% !important;
     text-decoration: none;
     margin-left: .5rem !important;
+  }
+  .email-btn{
+    margin-bottom: 10px;
   }
 
 }
@@ -364,7 +408,8 @@ form .card {
     font-size: 12px;
     padding-right: 0px !important;
     color: #fff;
-    opacity: 0.8;
+    opacity: 0.6;
+    text-align: center !important;
   }
 }
 @media (min-width: 768px) and (max-width: 997px) {
@@ -521,6 +566,8 @@ form .card {
   color: white !important;
 } 
 
-
+.contact-last{
+  padding: 50px 0;
+}
 
 

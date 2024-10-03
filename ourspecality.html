@@ -593,7 +593,8 @@
       <img src="assets/img/icon/arrow_inactive.svg" alt="Back to Top Inactive" class="arrow-inactive">
       <img src="assets/img/icon/arrow_active.svg" alt="Back to Top Active" class="arrow-active">
     </a>
-    <script src="assets/js/backtotop.js"></script>
+    <!-- <script src="assets/js/backtotop.js"></script> -->
+    
 
     <!-- Bootstrap JS -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
@@ -603,31 +604,11 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      $(window).on("scroll", function () {
-        var scrollPosition = $(this).scrollTop();
-        if (scrollPosition > 140) {
-          $("header").addClass("fixed");
-        }
-        if (scrollPosition < 140) {
-          $("header").removeClass("fixed");
-        }
-      });
+   
     </script>
     <script>
       // jQuery ready function
-      $(document).ready(function () {
-        $(".hamburger").click(function () {
-          $(this).toggleClass("active");
-          $(".mobile-nav-container").toggle();
-        });
-
-        $(".hamburger").on("focusout", function () {
-          setTimeout(() => {
-            $(this).removeClass("active");
-            $(".mobile-nav-container").hide();
-          }, 100);
-        });
-      });
+  
     </script>
 
     <script>
@@ -641,6 +622,8 @@
       // jQuery ready function
       $(document).ready(function () {});
     </script>
+    <script src="assets/js/common.js"></script>
+
 
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
     <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
