@@ -680,5 +680,18 @@
 @media (min-width: 900px) and (max-width: 990px) {
   nav ul {
     gap: 15px;
+    align-items: center;
   }
+  nav ul li {
+    align-items: center;
+    height: 35px;
+  }
+  .desktop ul  li:last-child a{
+    padding:  5px !important ;
+  }
+  
+  .container, .container-md, .container-sm{
+    max-width: 800px !important;
+  }
+ 
 }

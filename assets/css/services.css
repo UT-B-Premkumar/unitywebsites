@@ -6,12 +6,13 @@
     /* background: url(/unitywebsites/assets/img/rectangle-service-bg.svg) !important; */
     background: #1C1C1C !important;
     background-size: cover !important;
+    border:2px solid #404040;
+    border-radius: 25px;
     background-repeat: no-repeat !important;
     padding: 20px;
     height: 400px !important;
     /* background-image: linear-gradient(to right, #232921, #202220) !important; */
-    border:2px solid #404040;
-    border-radius: 25px;
+    
 }
 .computer_section{
     padding: 10px 0px 0px 0px !important;
@@ -35,7 +36,11 @@
 }
 .div_img{
   position: relative;
-  top: 10%;
+  top: 15%;
+}
+.div_img_mob{
+  position: relative;
+  top: 15%;
 }
 .minute-hand { 
   height: auto;
@@ -73,31 +78,33 @@
   transition: opacity 0.3s ease;
 }
 
-.icon-bg:hover .minute-hand {
-  opacity: 0;
+.computer_section_bg_3:hover .minute-hand{
+  display: none !important;
 }
 
-.icon-bg:hover .circle {
+.computer_section_bg_3:hover .circle {
   animation: wave 1s ease-in-out infinite;
 }
 
 .div_img {
   position: relative;
 }
-
+.div_img_mob {
+  position: relative;
+}
 .minute-hand {
   height: auto;
   position: absolute;
-  top: 25%;
+  top: -25px;
   left: 30%;
-  transform: translate(-50%, -50%);
+  transform: translate(150%, 30%);
   animation: rotateIcon 25s linear infinite;
 }
 
 .icon-service {
   position: absolute;
   height: auto;
-  top: 0;
+  top: -25px;
   left: 0;
   transform: translate(150%, 30%);
   z-index: 3;
@@ -108,15 +115,35 @@
   z-index: 4;
   top: 50%;
 }
+.computer_section_bg_3 .circle, 
+.computer_section_bg_3 .delay1, 
+.computer_section_bg_3 .delay2, 
+.computer_section_bg_3 .delay3, 
+.computer_section_bg_3 .delay4 {
+  animation-play-state: paused; /* Prevent animation from running initially */
+}
+
+.computer_section_bg_3:hover .circle, 
+.computer_section_bg_3:hover .delay1, 
+.computer_section_bg_3:hover .delay2, 
+.computer_section_bg_3:hover .delay3, 
+.computer_section_bg_3:hover .delay4 {
+  animation-play-state: running; /* Start the animation only on hover */
+}
 /* Circle and delay positioning */
-.div_img:hover .icon-service {
+.computer_section_bg_3:hover .icon-service {
   position: absolute;
   height: auto;
   top: -25px;
   left: 0;
   transform: translate(150%, 30%);
 }
-.div_img .circle, .div_img .delay1, .div_img .delay2, .div_img .delay3, .div_img .delay4  {
+
+.computer_section_bg_3 .circle, 
+.computer_section_bg_3 .delay1, 
+.computer_section_bg_3 .delay2, 
+.computer_section_bg_3 .delay3, 
+.computer_section_bg_3 .delay4 {
   position: absolute;
   border-radius: 50%;
   top: 50%;
@@ -128,46 +155,45 @@
   border: 2px solid yellow;
   z-index: 1;
   opacity: 0; /* Hidden initially */
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0s ease-in-out;
 }
-.bg-yellowish{
+
+.bg-yellowish {
   position: absolute;
-  top: 0;
+  top: -25px;
   left: 20%;
   transform: translate(0, -20%);
-  z-index: -1; /* Highest z-index so it's in front of everything */
+  z-index: -1; /* Highest z-index so it's behind everything */
   height: auto;
 }
-.div_img:hover .delay1 {
-  animation-delay: 0s;
+
+.computer_section_bg_3:hover .delay1 {
+  animation: waves 2s linear infinite;
+    animation-delay: .1s;
   visibility: hidden;
   top: 70%;
   left: 35%;
-  /* transform: translate(-50%, -50%); */
 }
 
-.div_img:hover .delay2 {
-  animation-delay: 0.2s;
+.computer_section_bg_3:hover .delay2 {
+  animation: waves 2s linear .7s infinite forwards;
   top: 70%;
   left: 35%;
-  /* transform: translate(-50%, -50%); */
 }
 
-.div_img:hover .delay3 {
-  animation-delay: 0.4s;
+.computer_section_bg_3:hover .delay3 {
+  animation: waves 2s linear 1.3s infinite forwards;
   top: 70%;
   left: 35%;
-  /* transform: translate(-50%, -50%); */
 }
 
-.div_img:hover .delay4 {
-  animation-delay: 0.6s;
+.computer_section_bg_3:hover .delay4 {
+  animation: waves 2s linear 1.9s infinite forwards;
   top: 70%;
   left: 35%;
-  /* transform: translate(-50%, -50%); */
 }
 
-@keyframes wave {
+@keyframes waves {
   0% {
     transform: scale(1);
     opacity: 0.5;
@@ -228,10 +254,48 @@
 }
 .card-row-align{
   display: flex !important;
-  column-gap: 5px;
+  column-gap: 15px;
   flex-wrap: nowrap !important;
 }
  @media  screen and (min-width:0px) and (max-width:900px) {
+  .text-content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 40px;
+    z-index: 5;
+    position: relative;
+}
+.icon-bg {
+  position: relative;
+  z-index: 4;
+  top: 50%;
+}
+
+  .div_img_mob{
+    display: block !important;
+  }
+  .div_img{
+    display: none;
+  }
+  .div_img:hover .circle{
+   display:none;
+  }
+  .div_img:hover .minute-hand { 
+  display: block !important;
+  }
+  .card-row-align{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15px;
+}
  
 .computer_section_bg_3{
   /* background: url(/unitywebsites/assets/img/mobile-bg-h-650.svg) !important; */
@@ -241,13 +305,62 @@
   border-radius: 25px;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  padding: 20px;
+  padding: 10px;
+  height: 450px !important;
 }
 .computer_section {
   padding: 10px 10px 10px 20px !important;
 }
+.mobile-view-root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.mobile-view-root > div{
+  height: 200px;
+  width:  200px;
+  top: 0 !important;
+}
+.mobile-view-root > div .bg-yellowish{
+  top: -98px;
+  left: -17px;
+  transform: translate(0);
+}
+.mobile-view-root > div .minute-hand{
+  top: -59px;
+  left: 25px;
+  transform: translate(0);
+}
+
+.mobile-view-root > div .icon-service{
+  top: -28px;
+  left: 53px;
+  transform: translate(0);
+}
+.service-para {
+  color: #ffffff;
+  opacity: .8;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 10px 0px 10px !important;
+  flex-direction: column;
+}
+
+
+
+
 
  }
  @media screen and (min-width:900px) and (max-width:2000px)  {
-
+.div_img_mob{
+  display: none !important;
+}
+.icon-bg:hover .minute-hand {
+  opacity: 0;
+}
  }
