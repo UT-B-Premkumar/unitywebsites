@@ -61,6 +61,44 @@
 
 }
 @media screen and (min-width: 820px) and (max-width: 1180px) {
+    .mobile-view-root{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+      }
+      .mobile-view-root > div{
+        height: 200px;
+        width:  200px;
+        top: 0 !important;
+      }
+      .mobile-view-root > div .bg-yellowish{
+        top: -98px;
+        left: -12px;
+        transform: translate(0);
+      }
+      .mobile-view-root > div .minute-hand{
+        top: -59px !important;
+        left: 25px !important;
+        transform: translate(0) !important;
+      }
+      
+      .mobile-view-root > div .icon-service{
+        top: -28px;
+        left: 53px;
+        transform: translate(0);
+      }
+    .text-content {
+        padding: 20px 150px 20px 150px;
+     } 
+    .card-row-align{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
     .mobile-view-card1{
         display: none !important;
       }
@@ -79,6 +117,9 @@
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+     .text-content {
+        padding: 20px 150px 20px 150px;
+     } 
     .believe-h1 span {
         font-size: 40px !important;
         text-align: center;
@@ -381,6 +422,36 @@
 
 }
 @media (min-width: 1024px) and (max-width: 1370px) {
+    .mobile-view-root{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+      }
+      .mobile-view-root > div{
+        height: 200px;
+        width:  200px;
+        top: 0 !important;
+      }
+      .mobile-view-root > div .bg-yellowish{
+        top: -98px;
+        left: -12px;
+        transform: translate(0);
+      }
+      .mobile-view-root > div .minute-hand{
+        top: -59px;
+        left: 25px;
+        transform: translate(0);
+      }
+      
+      .mobile-view-root > div .icon-service{
+        top: -28px;
+        left: 53px;
+        transform: translate(0);
+      }
+    .text-content {
+        padding: 20px 150px 20px 150px;
+     } 
     .about-2 .card-bg-about-1 {
         background-image: linear-gradient(to right, #172211, #010C12) !important;
         padding: 30px 0px 40px 10px !important;
@@ -485,6 +556,42 @@
 }
  }
  @media (min-width: 912px) and (max-width: 1368px) {
+    .div_img{
+        display: none !important;
+    }
+    .div_img_mob{
+        display: block !important;
+    }
+    .mobile-view-root{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+      }
+      .mobile-view-root > div{
+        height: 200px;
+        width:  200px;
+        top: 0 !important;
+      }
+      .mobile-view-root > div .bg-yellowish{
+        top: -98px;
+        left: -12px;
+        transform: translate(0);
+      }
+      .mobile-view-root > div .minute-hand{
+        top: -59px !important;
+        left: 25px !important;
+        transform: translate(0) !important;
+      }
+      
+      .mobile-view-root > div .icon-service{
+        top: -28px;
+        left: 53px;
+        transform: translate(0);
+      }
+    .text-content {
+        padding: 20px 150px 20px 150px;
+     } 
     .computer_section_bg_3 {
         /* background: url(/unitywebsites/assets/img/mobile-bg-h-650.svg) !important; */
         background-image: linear-gradient(to right, #232921, #202220) !important;
