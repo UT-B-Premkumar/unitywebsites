@@ -1613,6 +1613,23 @@
             $(".shake-services").addClass("active");
           }, 1500);
         }
+
+        console.log(scrollPosition);
+        
+        if (scrollPosition > 8800 && screen.width < 1024) {
+          $(".faq_section").addClass("active");
+        }
+        if (scrollPosition > 4870 && screen.width > 1300) {
+          $(".faq_section").addClass("active");
+        }
+        if (scrollPosition > 9121 && screen.width < 1024) {
+          $(".customer_care").addClass("active");
+        }
+        if (scrollPosition > 5400 && screen.width > 1300) {
+          $(".customer_care").addClass("active");
+        }
+       
+        
         if (scrollPosition > 1200) {
           var delay = 200; // Base delay in milliseconds
           var cardCount = $(".our_service-card").length; // Total number of cards
