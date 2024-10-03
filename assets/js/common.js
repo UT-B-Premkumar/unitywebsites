@@ -52,21 +52,21 @@
         },
       },
       color: {
-        value: "#DCFC36",
+        value: "#dcfc36",
       },
       shape: {
         type: "circle",
         stroke: {
           width: 0,
-          color: "#DCFC36",
+          color: "#dcfc36",
         },
         polygon: {
           nb_sides: 1,
         },
         image: {
           src: "img/github.svg",
-          width: 0.1,
-          height: 0.1,
+          width: 0.001,
+          height: 0.001,
         },
       },
       opacity: {
@@ -92,7 +92,7 @@
       line_linked: {
         enable: false,
         distance: 0,
-        color: "#FFFFFF",
+        color: "#ffffff",
         opacity: 0.4,
         width: 1,
       },
