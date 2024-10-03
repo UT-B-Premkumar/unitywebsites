@@ -77,12 +77,10 @@ nav ul li a.active {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: shine 3s infinite;
-  /* text-shadow: -2px 0px 1px #600303; */
-
+  animation: shine 5s infinite;
 }
 
-@keyframes shine {
+/* @keyframes shine {
   0% {
     background-position: 100% 50%;
     
@@ -92,7 +90,7 @@ nav ul li a.active {
 
 
   }
-  }
+  } */
 
 
 
