@@ -132,15 +132,8 @@ body {
 
 .text-gradient,
 .text-gradient span  , .testimoniel_section h4 span:nth-child(2) , .testimoniel_section h4 span:nth-child(6){
-  background: rgb(20, 255, 135);
-  background: linear-gradient(
-    326deg,
-    rgba(20, 255, 135, 1) 72%,
-    rgba(202, 254, 21, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.8;
+  color: #C7FB15;
+  
 }
 
 /* home page  end */
@@ -789,7 +782,7 @@ display: inline;
   font-size: 18px;
   font-weight: 600;
 position: relative;
-color: var(--unity_green) !important;
+color: #C7FB15 !important;
 }
 .working-process .accordion-item .accordion-button.collapsed::before{
   display: none;
@@ -851,7 +844,7 @@ color: var(--unity_green) !important;
 
   color: #cccccc;
   background-image: none !important;
-  border: solid 1px #2d2d2dde;
+  border: solid 1px #2d2d2dde !important;
   padding: 15px;
   background-color: #111111;
 
@@ -874,7 +867,7 @@ color: var(--unity_green) !important;
 .accordion-button:not(.collapsed)::after {
   background-image: none !important;
   content: "\f068" !important;
-  color: var(--unity_green);
+  color: #C7FB15;
 }
 
 .working-process .accordion-item .collapsing {

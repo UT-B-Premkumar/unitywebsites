@@ -18,13 +18,13 @@
   .landing-title-col {
     text-align: center;
   }
-  .landing h2  {
+  .landing h2 {
     font-size: 27px;
   }
-  .landing h2:nth-child(3){
+  .landing h2:nth-child(3) {
     display: block !important;
   }
-  .landing h2.d-h2{
+  .landing h2.d-h2 {
     display: none !important;
   }
   .landing p {
@@ -78,8 +78,8 @@
     height: auto;
     width: 100%;
   }
-  .about-main img:nth-child(1) ,  
-    .about-main img:nth-child(2)  {
+  .about-main img:nth-child(1),
+  .about-main img:nth-child(2) {
     display: none !important;
   }
   .about-main img:nth-child(3) {
@@ -115,6 +115,7 @@
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
+    letter-spacing: -1px;
   }
   .about-right p {
     font-size: 12px;
@@ -333,7 +334,6 @@
   }
   .services_games_card:hover {
     box-shadow: none;
-    border: transparent;
   }
 }
 
@@ -378,17 +378,17 @@
   .services_games {
     padding: 0;
   }
-  .about-section{
+  .about-section {
     padding: 40px 0 !important;
   }
-  .innovation_section{
+  .innovation_section {
     padding-top: 40px;
   }
-  .services_games{
+  .services_games {
     margin-top: -75px;
   }
-  .testimoniel_section{
-    padding-top: 40px ;
+  .testimoniel_section {
+    padding-top: 40px;
   }
 }
 @media screen and (min-width: 980px) {
@@ -415,14 +415,14 @@
   .services_games_col:nth-child(8) .services_games_card {
     border-bottom: transparent !important ;
   }
-  .text-gradient.wave-text{
+  .text-gradient.wave-text {
     transform: translate(10px, -28px);
     letter-spacing: -2px;
     font-weight: 700;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1024px) {
   .m-rev {
     flex-direction: column-reverse;
   }
@@ -482,6 +482,87 @@
   .services_games_col:nth-child(8) .services_games_card {
     border-right: transparent !important ;
   }
+
+  .landing h2:nth-child(3) {
+    font-size: 40px;
+  }
+  .landing p {
+    font-size: 18px;
+  }
+  .logo img {
+    width: 200px;
+  }
+  .landing {
+    padding: 80px 50px 0 50px;
+  }
+  .baner-right {
+    width: 100%;
+    height: 600px !important;
+  }
+  .about-section {
+    padding-bottom: 40px;
+  }
+  .mobile-show {
+    padding: 0 60px;
+    margin-top: 50px;
+  }
+  .mobile-show img {
+    height: 500px;
+  }
+  .about-right h3 {
+    font-size: 30px;
+  }
+  .about-right p {
+    font-size: 16px;
+  }
+  .about-right .about-conntainer span {
+    font-size: 20px;
+  }
+
+  /* .services_games_card:hover , .services_games_card:hover{
+    border: dashed 1px #373737;
+  } */
+  .services_games_col:nth-child(even)  .services_games_card:hover {
+    border-left: dashed 1px #373737 !important;
+    border-bottom: dashed 1px #373737 !important; 
+    border-top: dashed 1px transparent !important; 
+  }
+  .services_games_col:nth-child(odd)  .services_games_card:hover {
+    border-left: transparent 1px  !important;
+    border-right: dashed 1px #373737 !important;
+    border-bottom: dashed 1px #373737 !important; 
+    border-top: dashed 1px transparent !important; 
+  }
+  .faster_section .img-container{
+    max-height: max-content;
+  }
+  .innovation_right h6{
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .innovation_right h4{
+    margin-top: 0;
+  }
+  .innovation_right p{
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .development_section{
+    padding:0  80px ;
+  }
+  .accordion-button::before {
+    display: block;
+    left: 6%;
+  }
+  /* .innovation_section  .img-container img:nth-child(4){
+    display: block !important;
+  } */
+  /* .innovation_section.active  .img-container img:nth-child(){
+    display: none !important;
+  }
+  .innovation_section.active  .img-container img:nth-child(1){
+    display: none;
+  } */
 }
 
 @media (min-width: 1025px) and (max-width: 1400px) {
@@ -556,7 +637,7 @@
 }
 
 @media (min-width: 900px) and (max-width: 990px) {
-  nav ul{
+  nav ul {
     gap: 15px;
   }
 }
