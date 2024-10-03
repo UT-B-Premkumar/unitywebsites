@@ -274,19 +274,31 @@
 .customer_care img {
   transform: translate(0, 70%);
   transition: ease 0.3s;
+  opacity: 0;
 }
 .customer_care p {
   transform: translate(0, 70%);
   transition: ease 0.7s;
+  opacity: 0;
+
 }
 .customer_care h5 {
   transition: ease 0.5s;
   transform: translate(0, 70%);
+  opacity: 0;
+
 }
 .customer_care.active img,
 .customer_care.active h5,
 .customer_care.active p {
   transform: translate(0);
+  opacity: 1;
+
 }
+
+
+/* .innovation_section.active  .img-container img:nth-child(1){
+  display: none;
+} */
 
 /* text-shaking  end */
