@@ -1,5 +1,6 @@
 @media screen and (max-width: 1024px) {
     .logo img {        width: 150px;
+        
     }
 }
 @media screen and (max-width: 768px) {
@@ -117,6 +118,16 @@
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+    .about-1 h4 {
+        font-size: 44px !important;
+        background: linear-gradient(270.23deg, #c7fb15 0%, #ccff14 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+        padding: 0px !important;
+      }
      .text-content {
         padding: 20px 150px 20px 150px;
      } 
@@ -422,6 +433,16 @@
 
 }
 @media (min-width: 1024px) and (max-width: 1370px) {
+    .about-1 h4 {
+        font-size: 44px !important;
+        background: linear-gradient(270.23deg, #c7fb15 0%, #ccff14 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+        padding: 0px !important;
+      }
     .mobile-view-root{
         display: flex;
         justify-content: center;
