@@ -614,11 +614,17 @@
           <div class="row m-rev">
             <div class="col-md-12 col-lg-5">
               <div class="img-container">
-                <img
+                <!-- <img
+                  src="./assets/img/img_hover2.png"
+                  alt=""
+                  class="mobile-img img-fluid px-2"
+                /> -->
+                <!-- <img
                   src="./assets/img/img_hover.webp"
                   alt=""
                   class="mobile-img img-fluid px-2"
-                />
+                /> -->
+                
                 <div class="green-box"></div>
                 <div class="yellow-box"></div>
                 <img
@@ -1616,9 +1622,19 @@
 
         console.log(scrollPosition);
         
+        if (scrollPosition > 3700 && (screen.width < 1024 && screen.width > 760)) {
+          $(".innovation_section").addClass("active");
+        }
+        if (scrollPosition > 2975 && (screen.width < 575 )) {
+          $(".innovation_section").addClass("active");
+        }
         if (scrollPosition > 8800 && screen.width < 1024) {
           $(".faq_section").addClass("active");
         }
+        if (scrollPosition > 7400 && screen.width < 575) {
+          $(".faq_section").addClass("active");
+        }
+       
         if (scrollPosition > 4870 && screen.width > 1300) {
           $(".faq_section").addClass("active");
         }
@@ -1626,6 +1642,9 @@
           $(".customer_care").addClass("active");
         }
         if (scrollPosition > 5400 && screen.width > 1300) {
+          $(".customer_care").addClass("active");
+        }
+        if (scrollPosition > 8500 && screen.width < 575) {
           $(".customer_care").addClass("active");
         }
        

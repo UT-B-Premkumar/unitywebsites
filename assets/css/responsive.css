@@ -210,6 +210,32 @@
     margin-bottom: 20px;
   }
 
+
+  /* for scroll animation  */
+
+  .innovation_section  .img-container .green-box{
+    transform: rotate(-3deg);
+    transition: ease .5s;
+  
+  }
+  .innovation_section  .img-container .yellow-box{
+    transform: rotate(5deg);
+    transition: ease .5s;
+  
+  
+  }
+  
+  
+  .innovation_section.active  .img-container .green-box{
+    transform: rotate(5deg);
+  }
+  .innovation_section.active  .img-container .yellow-box{
+    transform: rotate(-3deg);
+  }
+
+
+  /* animation end  */
+
   /* innovation section  end*/
   /* innovation section  start*/
 
@@ -240,7 +266,7 @@
   .innovation_section .img-container img,
   .green-box,
   .yellow-box {
-    display: none;
+    /* display: none; */
   }
   .faster_section .img-container img,
   .gradient_box,
@@ -335,6 +361,9 @@
   .services_games_card:hover {
     box-shadow: none;
   }
+  .faq_section  h2{
+    font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -364,6 +393,8 @@
   .faq_section {
     padding: 0 10px;
   }
+ 
+
 }
 @media screen and (max-width: 575px) {
   .testimoniel_section .slider-content p {
@@ -385,10 +416,20 @@
     padding-top: 40px;
   }
   .services_games {
-    margin-top: -75px;
+    margin-top: 50px;
   }
   .testimoniel_section {
     padding-top: 40px;
+  }
+  .innovation_section {
+    padding: 0 10px;
+  }
+
+  .innovation_section .img-container{
+    height: 280px;
+  }
+  .innovation_section .yellow-box , .innovation_section .green-box{
+    height: 270px;
   }
 }
 @media screen and (min-width: 980px) {
