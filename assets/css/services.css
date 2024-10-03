@@ -8,6 +8,7 @@
     background-size: cover !important;
     background-repeat: no-repeat !important;
     padding: 20px;
+    height: 400px !important;
     /* background-image: linear-gradient(to right, #232921, #202220) !important; */
     border:2px solid #404040;
     border-radius: 25px;
@@ -34,22 +35,28 @@
 }
 .div_img{
   position: relative;
+  top: 10%;
 }
-.bg-service-icon { 
+.minute-hand { 
   height: auto;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: rotateIcon 25s linear infinite; /* Rotate infinitely every 3 seconds */
 }
 
 .icon-service {
   position: absolute;
-  top: 0; /* Adjust the position as needed */
- /* Adjust size if necessary */
   height: auto;
-  transform: translate(-170%, 70%);
+  top: 0;
+  left: 0;
+  transform: translate(150%, 30%);
+  z-index: 2;
 }
 .icon-bg {
   position: relative;
-
+  z-index: 3;
+  top: 50%;
 }
 
 @keyframes rotateIcon {
@@ -62,11 +69,11 @@
 }
 
 /* wave animation */
-.bg-service-icon {
+.minute-hand{
   transition: opacity 0.3s ease;
 }
 
-.icon-bg:hover .bg-service-icon {
+.icon-bg:hover .minute-hand {
   opacity: 0;
 }
 
@@ -74,30 +81,90 @@
   animation: wave 1s ease-in-out infinite;
 }
 
-.circle {
+.div_img {
+  position: relative;
+}
+
+.minute-hand {
+  height: auto;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  animation: rotateIcon 25s linear infinite;
+}
+
+.icon-service {
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 0;
+  transform: translate(150%, 30%);
+  z-index: 3;
+}
+
+.icon-bg {
+  position: relative;
+  z-index: 4;
+  top: 50%;
+}
+/* Circle and delay positioning */
+.div_img:hover .icon-service {
+  position: absolute;
+  height: auto;
+  top: -25px;
+  left: 0;
+  transform: translate(150%, 30%);
+}
+.div_img .circle, .div_img .delay1, .div_img .delay2, .div_img .delay3, .div_img .delay4  {
   position: absolute;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 110px;
+  width: 110px;
   background-color: transparent;
   border: 2px solid yellow;
-  opacity: 0;
+  z-index: 1;
+  opacity: 0; /* Hidden initially */
+  transition: opacity 0.3s ease-in-out;
 }
-
-.delay1 {
+.bg-yellowish{
+  position: absolute;
+  top: 0;
+  left: 20%;
+  transform: translate(0, -20%);
+  z-index: -1; /* Highest z-index so it's in front of everything */
+  height: auto;
+}
+.div_img:hover .delay1 {
   animation-delay: 0s;
+  visibility: hidden;
+  top: 70%;
+  left: 35%;
+  /* transform: translate(-50%, -50%); */
 }
 
-.delay2 {
+.div_img:hover .delay2 {
   animation-delay: 0.2s;
+  top: 70%;
+  left: 35%;
+  /* transform: translate(-50%, -50%); */
 }
 
-.delay3 {
+.div_img:hover .delay3 {
   animation-delay: 0.4s;
+  top: 70%;
+  left: 35%;
+  /* transform: translate(-50%, -50%); */
 }
 
-.delay4 {
+.div_img:hover .delay4 {
   animation-delay: 0.6s;
+  top: 70%;
+  left: 35%;
+  /* transform: translate(-50%, -50%); */
 }
 
 @keyframes wave {
@@ -113,6 +180,56 @@
     transform: scale(2);
     opacity: 0;
   }
+}
+
+.text-content{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  top: 60%;
+  z-index: 5;
+  position: relative;
+}
+.text-content h1{
+  font-size: 24px !important;
+}
+.text-content h1 span{
+  font-size: 24px !important;
+}
+.service-para{
+  color:#ffffff;
+  opacity: .8;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.service-para span{
+  color:#ffffff;
+  opacity: .8;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+}
+.text-content p{
+  color:#ffffff;
+  opacity: .8;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Barlow", sans-serif;
+  padding: 5px 20px 20px 20px;
+}
+.card-row-align{
+  display: flex !important;
+  column-gap: 5px;
+  flex-wrap: nowrap !important;
 }
  @media  screen and (min-width:0px) and (max-width:900px) {
  
