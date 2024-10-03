@@ -62,11 +62,8 @@
   letter-spacing: -2px;
   /* Start fully blurred */
   opacity: 0;
-  animation: wave .5s ease forwards; /* Run animation */
+  animation: wave 0.5s ease forwards; /* Run animation */
 }
-
-
-   
 
 /* Keyframes for the wave */
 @keyframes wave {
@@ -76,13 +73,10 @@
     transform: scale(2);
     will-change: opacity filter transform;
   }
-  50%{
+  50% {
     transform: scale(1.2);
     opacity: 1;
     will-change: opacity filter transform;
-
-
-
   }
   100% {
     opacity: 1;
@@ -172,49 +166,49 @@
   animation-delay: 1.2s;
 }
 
- .wave-letter:nth-child(27) {
+.wave-letter:nth-child(27) {
   animation-delay: 1.35s;
 }
- .wave-letter:nth-child(28) {
+.wave-letter:nth-child(28) {
   animation-delay: 1.4s;
 }
- .wave-letter:nth-child(29) {
+.wave-letter:nth-child(29) {
   animation-delay: 1.45s;
 }
- .wave-letter:nth-child(30) {
+.wave-letter:nth-child(30) {
   animation-delay: 1.5s;
 }
- .wave-letter:nth-child(31) {
+.wave-letter:nth-child(31) {
   animation-delay: 1.55s;
 }
- .wave-letter:nth-child(32) {
+.wave-letter:nth-child(32) {
   animation-delay: 1.6s;
 }
- .wave-letter:nth-child(33) {
+.wave-letter:nth-child(33) {
   animation-delay: 1.65s;
 }
- .wave-letter:nth-child(34) {
+.wave-letter:nth-child(34) {
   animation-delay: 1.7s;
 }
- .wave-letter:nth-child(35) {
+.wave-letter:nth-child(35) {
   animation-delay: 1.75s;
 }
- .wave-letter:nth-child(36) {
+.wave-letter:nth-child(36) {
   animation-delay: 1.8s;
 }
- .wave-letter:nth-child(37) {
+.wave-letter:nth-child(37) {
   animation-delay: 1.85s;
 }
- .wave-letter:nth-child(38) {
+.wave-letter:nth-child(38) {
   animation-delay: 1.9s;
 }
- .wave-letter:nth-child(39) {
+.wave-letter:nth-child(39) {
   animation-delay: 1.95s;
 }
- .wave-letter:nth-child(40) {
+.wave-letter:nth-child(40) {
   animation-delay: 2s;
 }
- .wave-letter:nth-child(41) {
+.wave-letter:nth-child(41) {
   animation-delay: 2.05s;
 }
 
@@ -257,6 +251,42 @@
   75% {
     transform: translateX(7px);
   }
+}
+
+.faq_section {
+  overflow: hidden;
+}
+.faq_section > h2 {
+  transform: translate(100%, 0px);
+  transition: ease 0.5s;
+}
+.faq_section.active > h2 {
+  transform: translate(0px, 0px);
+}
+.faq_section > p {
+  transform: translate(100%, 0);
+  transition: ease 0.8s;
+}
+.faq_section.active > p {
+  transform: translate(0px, 0px);
+}
+
+.customer_care img {
+  transform: translate(0, 70%);
+  transition: ease 0.3s;
+}
+.customer_care p {
+  transform: translate(0, 70%);
+  transition: ease 0.7s;
+}
+.customer_care h5 {
+  transition: ease 0.5s;
+  transform: translate(0, 70%);
+}
+.customer_care.active img,
+.customer_care.active h5,
+.customer_care.active p {
+  transform: translate(0);
 }
 
 /* text-shaking  end */
