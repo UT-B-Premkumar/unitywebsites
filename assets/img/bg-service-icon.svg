@@ -1,0 +1,54 @@
+<svg width="245" height="245" viewBox="0 0 245 245" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.25">
+<rect x="244.315" y="36.4946" width="211" height="211" rx="105.5" transform="rotate(99.96 244.315 36.4946)" fill="url(#paint0_radial_1704_7475)"/>
+</g>
+<g clip-path="url(#clip0_1704_7475)">
+<rect width="2.00085" height="8.00166" transform="translate(137.045 200.765) rotate(169.992)" fill="#CAFE15"/>
+<rect width="1.99912" height="8.00166" transform="translate(110.635 51.0845) rotate(169.992)" fill="#CAFE15"/>
+</g>
+<g clip-path="url(#clip1_1704_7475)">
+<rect width="2.00262" height="8.00362" transform="translate(148.574 46.6348) rotate(19.992)" fill="#CAFE15"/>
+<rect width="2.00262" height="8.00362" transform="translate(96.6045 189.475) rotate(19.992)" fill="#CAFE15"/>
+</g>
+<g clip-path="url(#clip2_1704_7475)">
+<rect width="1.99482" height="7.99978" transform="translate(182.795 69.9648) rotate(49.992)" fill="#CAFE15"/>
+<rect width="2.00125" height="7.99212" transform="translate(66.3647 167.685) rotate(49.992)" fill="#CAFE15"/>
+</g>
+<g clip-path="url(#clip3_1704_7475)">
+<rect width="2.00085" height="7.99181" transform="translate(200.764 107.275) rotate(79.992)" fill="#CAFE15"/>
+<rect width="2.00085" height="8.00166" transform="translate(51.0845 133.685) rotate(79.992)" fill="#CAFE15"/>
+</g>
+<g clip-path="url(#clip4_1704_7475)">
+<rect width="1.99324" height="8.00362" transform="translate(197.684 148.575) rotate(109.992)" fill="#CAFE15"/>
+<rect width="2.00262" height="8.00362" transform="translate(54.8442 96.6045) rotate(109.992)" fill="#CAFE15"/>
+</g>
+<g clip-path="url(#clip5_1704_7475)">
+<rect width="1.99482" height="7.99978" transform="translate(174.355 182.795) rotate(139.992)" fill="#CAFE15"/>
+<rect width="2.00125" height="7.99978" transform="translate(76.6348 66.3647) rotate(139.992)" fill="#CAFE15"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_1704_7475" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(349.815 141.995) scale(105.5)">
+<stop stop-color="#CAFE15"/>
+<stop offset="0.50103" stop-color="#D0FA39" stop-opacity="0.3"/>
+<stop offset="1" stop-color="#CAFE15" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_1704_7475">
+<rect width="2" height="160" fill="white" transform="translate(137.045 200.765) rotate(169.992)"/>
+</clipPath>
+<clipPath id="clip1_1704_7475">
+<rect width="2" height="160" fill="white" transform="translate(148.574 46.6348) rotate(19.992)"/>
+</clipPath>
+<clipPath id="clip2_1704_7475">
+<rect width="2.00001" height="160" fill="white" transform="translate(182.795 69.9648) rotate(49.992)"/>
+</clipPath>
+<clipPath id="clip3_1704_7475">
+<rect width="2" height="160" fill="white" transform="translate(200.764 107.275) rotate(79.992)"/>
+</clipPath>
+<clipPath id="clip4_1704_7475">
+<rect width="2" height="160" fill="white" transform="translate(197.684 148.575) rotate(109.992)"/>
+</clipPath>
+<clipPath id="clip5_1704_7475">
+<rect width="2.00001" height="160" fill="white" transform="translate(174.355 182.795) rotate(139.992)"/>
+</clipPath>
+</defs>
+</svg>
