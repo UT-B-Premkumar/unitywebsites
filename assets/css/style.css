@@ -1000,3 +1000,79 @@ color: #C7FB15 !important;
   left: 0;
 
 }
+
+
+
+/* terms and condition  */
+
+
+.terms-banner{
+  padding-bottom: 100px;
+}
+.content-main{
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+}
+.content-main h2{
+  font-weight: 700;
+  font-size: 26px;
+  padding: 10px 0;
+}
+.content-main p{
+  line-height: 25px;
+}
+.content-main{
+  background: var(--white);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 100px  0 ;
+  position: relative;
+}
+.content-main
+   .term-img {
+
+     position: absolute;
+   }
+
+.term-img:nth-child(1){
+  top: -100px;
+}
+.term-img:nth-child(2){
+  top: 10%;
+  right: 0px;
+
+}
+.term-img:nth-child(3){
+  top: 15%;
+  left: 0px;
+  height: 400px;
+
+}
+
+.term-img:nth-child(4){
+  top: 40%;
+  right: 0px;
+
+}
+
+.term-img:nth-child(5){
+  top: 50%;
+  left: 0px;
+  height: 250px;
+
+}
+
+.term-img:nth-child(6){
+  bottom: 30%;
+  right:  0px;
+
+}
+
+.term-img:nth-child(7){
+  bottom: -200px;
+  right: 0;
+  width: 200px;
+
+}

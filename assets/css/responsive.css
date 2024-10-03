@@ -210,29 +210,23 @@
     margin-bottom: 20px;
   }
 
-
   /* for scroll animation  */
 
-  .innovation_section  .img-container .green-box{
+  .innovation_section .img-container .green-box {
     transform: rotate(-3deg);
-    transition: ease .5s;
-  
+    transition: ease 0.5s;
   }
-  .innovation_section  .img-container .yellow-box{
+  .innovation_section .img-container .yellow-box {
     transform: rotate(5deg);
-    transition: ease .5s;
-  
-  
-  }
-  
-  
-  .innovation_section.active  .img-container .green-box{
-    transform: rotate(5deg);
-  }
-  .innovation_section.active  .img-container .yellow-box{
-    transform: rotate(-3deg);
+    transition: ease 0.5s;
   }
 
+  .innovation_section.active .img-container .green-box {
+    transform: rotate(5deg);
+  }
+  .innovation_section.active .img-container .yellow-box {
+    transform: rotate(-3deg);
+  }
 
   /* animation end  */
 
@@ -361,9 +355,15 @@
   .services_games_card:hover {
     box-shadow: none;
   }
-  .faq_section  h2{
+  .faq_section h2 {
     font-size: 24px;
-    }
+  }
+  .about-conntainer .content-main p {
+    font-size: 16px;
+  }
+  .content-main h2 {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -393,8 +393,6 @@
   .faq_section {
     padding: 0 10px;
   }
- 
-
 }
 @media screen and (max-width: 575px) {
   .testimoniel_section .slider-content p {
@@ -425,10 +423,11 @@
     padding: 0 10px;
   }
 
-  .innovation_section .img-container{
+  .innovation_section .img-container {
     height: 280px;
   }
-  .innovation_section .yellow-box , .innovation_section .green-box{
+  .innovation_section .yellow-box,
+  .innovation_section .green-box {
     height: 270px;
   }
 }
@@ -563,33 +562,33 @@
   /* .services_games_card:hover , .services_games_card:hover{
     border: dashed 1px #373737;
   } */
-  .services_games_col:nth-child(even)  .services_games_card:hover {
+  .services_games_col:nth-child(even) .services_games_card:hover {
     border-left: dashed 1px #373737 !important;
-    border-bottom: dashed 1px #373737 !important; 
-    border-top: dashed 1px transparent !important; 
+    border-bottom: dashed 1px #373737 !important;
+    border-top: dashed 1px transparent !important;
   }
-  .services_games_col:nth-child(odd)  .services_games_card:hover {
-    border-left: transparent 1px  !important;
+  .services_games_col:nth-child(odd) .services_games_card:hover {
+    border-left: transparent 1px !important;
     border-right: dashed 1px #373737 !important;
-    border-bottom: dashed 1px #373737 !important; 
-    border-top: dashed 1px transparent !important; 
+    border-bottom: dashed 1px #373737 !important;
+    border-top: dashed 1px transparent !important;
   }
-  .faster_section .img-container{
+  .faster_section .img-container {
     max-height: max-content;
   }
-  .innovation_right h6{
+  .innovation_right h6 {
     font-size: 20px;
     margin-bottom: 0;
   }
-  .innovation_right h4{
+  .innovation_right h4 {
     margin-top: 0;
   }
-  .innovation_right p{
+  .innovation_right p {
     font-size: 18px;
     margin-bottom: 0;
   }
-  .development_section{
-    padding:0  80px ;
+  .development_section {
+    padding: 0 80px;
   }
   .accordion-button::before {
     display: block;
@@ -686,12 +685,13 @@
     align-items: center;
     height: 35px;
   }
-  .desktop ul  li:last-child a{
-    padding:  5px !important ;
+  .desktop ul li:last-child a {
+    padding: 5px !important ;
   }
-  
-  .container, .container-md, .container-sm{
+
+  .container,
+  .container-md,
+  .container-sm {
     max-width: 800px !important;
   }
- 
 }
