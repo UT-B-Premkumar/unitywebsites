@@ -594,13 +594,13 @@
      } 
     .computer_section_bg_3 {
         /* background: url(/unitywebsites/assets/img/mobile-bg-h-650.svg) !important; */
-        background-image: linear-gradient(to right, #232921, #202220) !important;
-        border: 2px solid #343734;
+        background: #1C1C1C !important;
+        background-size: cover !important;
+        border:2px solid #404040;
         border-radius: 25px;
+        background-repeat: no-repeat !important;
         height: auto !important;
         width: auto !important;
-        background-size: cover !important;
-        background-repeat: no-repeat !important;
         padding: 20px;
     }
     .right-content-mobile {
