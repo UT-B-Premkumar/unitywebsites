@@ -115,6 +115,21 @@
   z-index: 4;
   top: 50%;
 }
+.computer_section_bg_3 .circle, 
+.computer_section_bg_3 .delay1, 
+.computer_section_bg_3 .delay2, 
+.computer_section_bg_3 .delay3, 
+.computer_section_bg_3 .delay4 {
+  animation-play-state: paused; /* Prevent animation from running initially */
+}
+
+.computer_section_bg_3:hover .circle, 
+.computer_section_bg_3:hover .delay1, 
+.computer_section_bg_3:hover .delay2, 
+.computer_section_bg_3:hover .delay3, 
+.computer_section_bg_3:hover .delay4 {
+  animation-play-state: running; /* Start the animation only on hover */
+}
 /* Circle and delay positioning */
 .computer_section_bg_3:hover .icon-service {
   position: absolute;
@@ -153,31 +168,32 @@
 }
 
 .computer_section_bg_3:hover .delay1 {
-  animation-delay: 0s;
+  animation: waves 2s linear infinite;
+    animation-delay: .1s;
   visibility: hidden;
   top: 70%;
   left: 35%;
 }
 
 .computer_section_bg_3:hover .delay2 {
-  animation-delay: 500ms;
+  animation: waves 2s linear .7s infinite forwards;
   top: 70%;
   left: 35%;
 }
 
 .computer_section_bg_3:hover .delay3 {
-  animation-delay: 1000ms;
+  animation: waves 2s linear 1.3s infinite forwards;
   top: 70%;
   left: 35%;
 }
 
 .computer_section_bg_3:hover .delay4 {
-  animation-delay: 1500ms;
+  animation: waves 2s linear 1.9s infinite forwards;
   top: 70%;
   left: 35%;
 }
 
-@keyframes wave {
+@keyframes waves {
   0% {
     transform: scale(1);
     opacity: 0.5;
