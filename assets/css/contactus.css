@@ -399,7 +399,7 @@ form .card {
   }
   .left-contact-section .contact-left-content {
     font-size: 12px;
-    padding-right: 0px !important;
+    padding: 0px !important;
     color: #fff;
     opacity: 0.6;
     text-align: center !important;
