@@ -115,48 +115,7 @@
   z-index: 4;
   top: 50%;
 }
-.computer_section_bg_3 .circle, 
-.computer_section_bg_3 .delay1, 
-.computer_section_bg_3 .delay2, 
-.computer_section_bg_3 .delay3, 
-.computer_section_bg_3 .delay4 {
-  animation-play-state: paused; /* Prevent animation from running initially */
-}
 
-.computer_section_bg_3:hover .circle, 
-.computer_section_bg_3:hover .delay1, 
-.computer_section_bg_3:hover .delay2, 
-.computer_section_bg_3:hover .delay3, 
-.computer_section_bg_3:hover .delay4 {
-  animation-play-state: running; /* Start the animation only on hover */
-}
-/* Circle and delay positioning */
-.computer_section_bg_3:hover .icon-service {
-  position: absolute;
-  height: auto;
-  top: -25px;
-  left: 0;
-  transform: translate(150%, 30%);
-}
-
-.computer_section_bg_3 .circle, 
-.computer_section_bg_3 .delay1, 
-.computer_section_bg_3 .delay2, 
-.computer_section_bg_3 .delay3, 
-.computer_section_bg_3 .delay4 {
-  position: absolute;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 110px;
-  width: 110px;
-  background-color: transparent;
-  border: 2px solid yellow;
-  z-index: 1;
-  opacity: 0; /* Hidden initially */
-  transition: opacity 0s ease-in-out;
-}
 
 .bg-yellowish {
   position: absolute;
@@ -167,43 +126,61 @@
   height: auto;
 }
 
-.computer_section_bg_3:hover .delay1 {
-  animation: waves 2s linear infinite;
-    animation-delay: .1s;
-  visibility: hidden;
-  top: 70%;
-  left: 35%;
+.box {
+  width: 100px;
+  height: 100px;
+  /* background: greenyellow; */
+  border-radius: 50%;
+  transition: ease 0.5s;
+  left: 50%;
+  top: 3px;
+  transform: translate(-58%, 0);
+  position: absolute;
+  z-index: 1;
 }
-
-.computer_section_bg_3:hover .delay2 {
-  animation: waves 2s linear .7s infinite forwards;
-  top: 70%;
-  left: 35%;
+.computer_section_bg_3 .box span {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  left: 55%;
+  top: 25px;
+  transform: translate(-58%, 0);
+  position: absolute;
 }
-
-.computer_section_bg_3:hover .delay3 {
-  animation: waves 2s linear 1.3s infinite forwards;
-  top: 70%;
-  left: 35%;
+.computer_section_bg_3:hover .box span {
+  border: solid #cafe15 .5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  z-index: 1;
 }
-
-.computer_section_bg_3:hover .delay4 {
-  animation: waves 2s linear 1.9s infinite forwards;
-  top: 70%;
-  left: 35%;
+.computer_section_bg_3:hover .box {
+  animation: line 1.5s infinite;
 }
-
-@keyframes waves {
+.box span:nth-child(1) {
+  transform: translate(-57%, 0) scale(1);
+}
+.box span:nth-child(2) {
+  transform: translate(-57%, 0) scale(1.5);
+}
+.box span:nth-child(3) {
+  transform: translate(-57%, 0) scale(2);
+}
+.box span:nth-child(4) {
+  transform: translate(-57%, 0) scale(2.5);
+  /* animation: beat .25s infinite alternate; */
+}
+/* span:hover{
+} */
+@keyframes line {
   0% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 0.2;
+    transform: translate(-58%, 0) scale(0.8);
+    opacity: 1;
   }
   100% {
-    transform: scale(2);
+    transform: translate(-58%, 0) scale(2);
     opacity: 0;
   }
 }
@@ -278,15 +255,21 @@
   .div_img_mob{
     display: block !important;
   }
+
   .div_img{
-    display: none;
+    display: none !important;
   }
-  .div_img:hover .circle{
+  .div_img_mob:hover .circle{
    display:none;
   }
-  .div_img:hover .minute-hand { 
+ .computer_section_bg_3:hover .minute-hand { 
   display: block !important;
   }
+  .computer_section_bg_3:hover .mobile-view-root > div .icon-service {
+    top: -28px;
+    left: 53px;
+    transform: translate(0);
+}
   .card-row-align{
     display: flex;
     flex-direction: column;
