@@ -79,14 +79,14 @@ nav ul li a.active {
   animation: shine 5s infinite;
 }
 
-@keyframes shine {
+/* @keyframes shine {
   0% {
     background-position: 100% 50%;
   }
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 
 /* Apply transform and transition to all li elements */
 nav ul li a {

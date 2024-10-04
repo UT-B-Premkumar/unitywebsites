@@ -1028,12 +1028,16 @@ color: #C7FB15 !important;
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 100px  0 ;
+  overflow: hidden;
   position: relative;
 }
 .content-main
    .term-img {
 
      position: absolute;
+     width: 200px;
+     height: 200px;
+     
    }
 
 .term-img:nth-child(1){
@@ -1046,8 +1050,8 @@ color: #C7FB15 !important;
 }
 .term-img:nth-child(3){
   top: 15%;
-  left: 0px;
-  height: 400px;
+  left: -20px;
+  height: 250px;
 
 }
 
@@ -1066,13 +1070,13 @@ color: #C7FB15 !important;
 
 .term-img:nth-child(6){
   bottom: 30%;
-  right:  0px;
+  right:  -20px;
 
 }
 
 .term-img:nth-child(7){
-  bottom: -200px;
-  right: 0;
+  bottom: -100px;
+  right: -33px;
   width: 200px;
 
 }
