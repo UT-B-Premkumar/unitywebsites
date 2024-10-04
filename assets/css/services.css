@@ -169,7 +169,7 @@
 
 .computer_section_bg_3:hover .delay1 {
   animation: waves 2s linear infinite;
-    animation-delay: .1s;
+    animation-delay: .01s;
   visibility: hidden;
   top: 70%;
   left: 35%;
