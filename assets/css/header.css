@@ -21,13 +21,13 @@ header {
   color: #fff;
   padding: 15px;
   z-index: 100;
-    position: relative;
+  position: relative;
 }
-header.fixed{
-position: fixed;
-left: 0;
-top: 0;
-width: 100%;
+header.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 /* Container for header content */
@@ -63,15 +63,14 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: #C7FB15;
+  color: #c7fb15;
 }
 nav ul li a.active {
-
   background-image: linear-gradient(
     90deg,
-    #C7FB15 45%, /* font color */
-    #ffffff 100%,
-    #C7FB15 45% /* font color */
+    #c7fb15 45%,
+    /* font color */ #ffffff 100%,
+    #c7fb15 45% /* font color */
   );
   background-size: 500% 100%;
   background-clip: text;
@@ -83,16 +82,11 @@ nav ul li a.active {
 /* @keyframes shine {
   0% {
     background-position: 100% 50%;
-    
   }
   100% {
     background-position: 0% 50%;
-
-
   }
-  } */
-
-
+} */
 
 /* Apply transform and transition to all li elements */
 nav ul li a {
@@ -176,28 +170,27 @@ nav ul li:nth-child(5) a {
   right: 0;
   transform: rotate(-40deg) translate(3px, -4px);
 }
-.highlight{
+.highlight {
   color: #fff !important;
 }
 
-.mobile-nav-container{
+.mobile-nav-container {
   position: absolute;
   right: 0;
   top: 62px;
   z-index: 10;
   background: black;
-  padding:  20px;
+  padding: 20px;
   border-radius: 10px;
   min-width: 240px;
   display: none;
   border: solid 1px rgb(202, 254, 21);
-
 }
-nav.mobile-nav-container ul{
+nav.mobile-nav-container ul {
   flex-direction: column;
   gap: 0;
   padding: 0;
- 
+
   align-items: flex-start;
 }
 
@@ -206,27 +199,24 @@ nav.mobile-nav-container ul{
   padding: 5px 0;
 }
 .mobile-nav-container ul a {
-padding: 10px;
-  
-    width: 100%;
-    display: block;
-    border-radius: 5px;
+  padding: 10px;
+
+  width: 100%;
+  display: block;
+  border-radius: 5px;
 }
 
-.mobile-nav-container li a.active{
+.mobile-nav-container li a.active {
   background: rgba(204, 255, 20, 0.2);
   color: var(--white);
 }
 
-nav.mobile-nav-container ul img{
-width: 30px;
-margin-right: 10px;
+nav.mobile-nav-container ul img {
+  width: 30px;
+  margin-right: 10px;
 }
 
-.mobile-nav-container li{
-  padding: 10px  0;
+.mobile-nav-container li {
+  padding: 10px 0;
   height: fit-content !important;
 }
-
-
-
