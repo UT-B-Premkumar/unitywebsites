@@ -185,14 +185,6 @@ body {
   
   .image-box {
     padding: 0 2px 0 11px;
-    /* height: 90% !important; */
-    /* background: linear-gradient(
-      302deg,
-      var(--token-9c84d6ae-8e13-4694-8100-b9a50faaffa2, #cafe15) 0%,
-      var(--token-8ba7e453-40da-4bbd-8367-83c5e27ec517, #cafe15) 100%
-    ); */
-    /* border: 3px solid #cafe15 !important;
-    padding: 0.25rem !important; */
   }
   .designing-fonts{
     /* font-size: 40px !important; */
