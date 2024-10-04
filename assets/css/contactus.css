@@ -302,13 +302,7 @@ form .card {
 .address-section{
   font-size: 9px !important;
 }
-/* .contact-left-content {
-  font-size: 14px;
-  padding: 0 !important;
-  color: #fff;
-  opacity: 0.6;
-  text-align: center !important;
-} */
+
 .left-contact-section{
   text-align: center !important;
 }
@@ -375,6 +369,7 @@ form .card {
   }
   .email-btn{
     margin-bottom: 10px;
+    margin-top: 10px;
   }
 
 }
