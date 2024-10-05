@@ -28,6 +28,9 @@
     }
 }
 @media screen and (max-width: 575px) {
+    .about-banner-btn{
+        display: none !important;
+    }
 .desktop-ss{
     display: none !important;
 }
