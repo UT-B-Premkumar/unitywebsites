@@ -238,4 +238,8 @@
 .opacity6{
   opacity: .6  !important;
 }
+
+.d-inherit{
+  display: inherit !important;
+}
   /* End .btn-1 1 */
