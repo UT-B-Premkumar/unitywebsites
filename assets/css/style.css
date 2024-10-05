@@ -78,6 +78,18 @@ body {
     transform: translatey(0px);
   }
 }
+@keyframes float3 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-35px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
 
 @keyframes float2 {
   0% {
@@ -99,6 +111,17 @@ body {
   transform: translate(10%, 7px);
   animation: float 4s ease-in-out infinite;
 }
+.bounce-small{
+width: 80px;
+height: 80px;
+bottom: -40px;
+right: 60px;
+animation: float3 4s ease-in-out infinite;
+
+
+}
+
+
 
 .bounce-3 {
   width: 100px;
