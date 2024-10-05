@@ -481,7 +481,7 @@
             background-size: cover;
             /* height: 500px !important; */
             width: 500px;
-            padding: 0px !important;
+            /* padding: 0px !important; */
             border-image: linear-gradient(270.23deg, #c7fb15 0%, #ccff14 100%);
       transition: none;
           }

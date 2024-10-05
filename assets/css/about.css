@@ -587,7 +587,7 @@ body {
 .bg-img::after {
   content: "";
   position: absolute;
-  top: 27%;
+  top: 30%;
   left: 50%;
   width: 80px; /* Initial size of the circle */
   height: 80px;
@@ -599,11 +599,10 @@ body {
 
   transform: translate(-50%, -50%) scale(0); /* Center and scale down */
   opacity: 0; /* Start invisible */
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease; 
   z-index: 6; /* Ensure it's behind the content */
   overflow: hidden;
-  border-radius: 50%;
-  transition: ease 2s;
+ border-radius: 50%;
 }
 
 .our_service-about:hover .bg-img::after {
@@ -718,9 +717,9 @@ body {
   100% { transform: translateX(0); }
 }
 
-.believe-h1 {
+/* .believe-h1 {
   display: inline-block;
-}
+} */
 
 .shaking-heading {
   animation: shake 0.5s ease-in-out; /* Duration of the shake animation */
@@ -728,6 +727,7 @@ body {
 }
 
 @media screen and (min-width: 0px) and (max-width: 900px) {
+
   .about-section {
     padding: 35px 0px;
 }
@@ -911,7 +911,7 @@ body {
   }
   .believe-h1 {
     font-size: 20px !important;
-    text-align: center;
+    text-align: center !important;
     padding-left: 25px;
   }
   .believe-h1 span {
