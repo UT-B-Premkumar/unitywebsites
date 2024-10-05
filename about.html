@@ -123,7 +123,7 @@
         <div class="row bg-top-row">
           <div class="col-md-4">
             <img
-              src="./assets/img/top-left-bg.svg"
+              src="./assets/img/left-top-bg-glow.png"
               alt="tl-bg"
               class="top-left-bg"
               data-aos="fade-down"
@@ -335,8 +335,6 @@
               src="./assets/img/underline.png"
               alt="header-underline"
               class="header-underline"
-              data-aos="fade-up"
-              data-aos-duration="1500"
             />
           </h6>
           <div class="container card-bg-about mt-0">
@@ -379,10 +377,10 @@
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
-                <h1 class="text-heading padding-head" data-aos="fade-left">
+                <h1 class="text-heading padding-head shaking-heading opacity-100">
                   Making Technology That Exceeds Expectations
                 </h1>
-                <p class="padding-head pt-2 para-about-ipad">
+                <p class="padding-head pt-2 para-about-ipad mt-0 para-about-top-align">
                   Unity is a provider of comprehensive business technology
                   solutions focusing on bespoke software development and
                   business process automation. Small companies to large
@@ -390,7 +388,7 @@
                   handle billions of dollars yearly. We set out to automate
                   enterprises to aid in their scalability and efficiency.
                 </p>
-                <ul>
+                <ul class="mt-0 para-about-top-align">
                   <li>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -558,14 +556,10 @@
       src="./assets/img/believe.png"
       alt="header-underline"
       class="header-underline-1"
-      data-aos="fade-up"
-      data-aos-duration="1500"
     />
   </h6>
           </h1>
-    <br>
-          <h1 class="believe-h1" data-aos="fade-up"
-          data-aos-duration="100">We <span>Believe </span>In Possibilities</h1>
+          <h1 class="believe-h1 shaking-heading">We <span>Believe </span>In Possibilities</h1>
           <br>
            <br>
           <div class="row card-about-desktop mt-5">
@@ -675,10 +669,7 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
         <div class="container our-services-ideas">
-          <br>
           <h1 class="our-services-1 mt-0">
            <span>
             <span data-aos="fade-right" data-aos-delay="100">
@@ -770,14 +761,10 @@
     src="./assets/img/believe.png"
     alt="header-underline"
     class="header-underline-2"
-    data-aos="fade-up"
-    data-aos-duration="1500"
   />
 </h6>
           </h1>
-      <br>
-          <h1 class="believe-h1" data-aos="fade-up"
-          data-aos-duration="100">
+          <h1 class="believe-h1 shaking-heading">
             Tapping Into The Best Ideas For
             <div>Your <span>Website Redesign </span></div>
           </h1>
@@ -1035,6 +1022,23 @@
             });
           </script>
     <script src="assets/js/common.js"></script>
-    
+    <script>let hasFadedIn = false; // To track if fade-in has already happened
+
+      window.addEventListener('scroll', function() {
+        // Select all elements with the given class names
+        const underlineElements = document.querySelectorAll('.header-underline, .header-underline-1, .header-underline-2');
+        const scrollPosition = window.scrollY;
+        const fadeInPoint = 100; // Adjust this value for when fade-in should happen
+      
+        // Trigger fade-in once when scroll reaches fadeInPoint
+        if (!hasFadedIn && scrollPosition > fadeInPoint) {
+          underlineElements.forEach(underline => {
+            underline.classList.add('fade-in'); // Apply fade-in class to each element
+          });
+          hasFadedIn = true; // Ensure the fade-in happens only once
+        }
+      });
+      
+      </script>
   </body>
 </html>

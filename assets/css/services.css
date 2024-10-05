@@ -119,10 +119,10 @@
 
 .bg-yellowish {
   position: absolute;
-  top: -25px;
-  left: 20%;
+  top: -20px;
+  left: 19%;
   transform: translate(0, -20%);
-  z-index: -1; /* Highest z-index so it's behind everything */
+  z-index: -1;
   height: auto;
 }
 
@@ -143,7 +143,7 @@
   width: 200px;
   display: inline-block;
   left: 55%;
-  top: 25px;
+  top: 27px;
   transform: translate(-58%, 0);
   position: absolute;
 }
@@ -233,6 +233,19 @@
   display: flex !important;
   column-gap: 15px;
   flex-wrap: nowrap !important;
+}
+.believe-h1-service{
+  color: #ffffff;
+  font-family: "Barlow", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+.believe-h1-service span{
+  color: #cafe15;
+  font-family: "Barlow", sans-serif;
+  font-size: 36px;
+  text-transform: capitalize !important;
+  font-weight: bold;
 }
  @media  screen and (min-width:0px) and (max-width:900px) {
   .text-content {
