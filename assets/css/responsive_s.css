@@ -28,6 +28,16 @@
     }
 }
 @media screen and (max-width: 575px) {
+
+    .top-left-bg {
+        height: 130px;
+        left: 0;
+        margin-top: -54px !important;
+        /* transform: rotate(90deg); */
+    }
+    .about-banner-btn{
+        display: none !important;
+    }
 .desktop-ss{
     display: none !important;
 }
@@ -62,6 +72,18 @@
 
 }
 @media screen and (min-width: 820px) and (max-width: 1180px) {
+    .top-left-bg {
+        left: 0 !important;
+        top: 0 !important;
+        margin-top: -100px !important;
+        height: 200px !important;
+        opacity: 1;
+    }
+    .top-right-bg {
+        height: 200px !important;
+        margin-left: 22% !important;
+        margin-top: -110px !important;
+    }
     .right-up-arrow {
         display: block;
     }
@@ -101,11 +123,6 @@
         align-items: flex-end !important;
         width: 17% !important;
         text-wrap: nowrap;
-    }
-    .top-right-bg {
-        height: 200px !important;
-        margin-left: 43%;
-        margin-top: -110px !important;
     }
     .about-banner-btn {
         display: block !important;
@@ -176,6 +193,18 @@
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+    .top-left-bg {
+        left: 0 !important;
+        top: 0 !important;
+        margin-top: -80px !important;
+        height: 200px !important;
+        opacity: 1;
+    }
+    .top-right-bg {
+        height: 200px !important;
+        margin-left: 22% !important;
+        margin-top: -80px !important;
+    }
     .right-up-arrow {
         display: block;
     }
@@ -216,10 +245,7 @@
         width: 17% !important;
         text-wrap: nowrap;
     }
-    .top-right-bg {
-        height: 200px !important;
-        margin-left: 43%;
-    }
+
     .about-banner-btn {
         display: block !important;
     }
@@ -307,45 +333,7 @@
         background-repeat: no-repeat !important;
         padding: 20px;
     }
-    
-    /* .img-container-system img{
-  display: none;
-    } */
-      /* Triangle Image (Top-Left Corner) */
-      .triangle-img {
-        position: absolute;
-        top: -38px;
-        left: 18px;
-        z-index: 1;
-        width: 150px;
-        height: 150px;
-    }
-  .computerwidsp{
-    opacity: .6 !important;
-  }
-  .star-img-3 {
-    position: absolute;
-    bottom: -15px;
-    right: 40px;
-    width: 150px;
-    z-index: 5 !important;
-    opacity: .6 !important;
-}
-  /* Computer Image (Position it normally) */
-  .computer-img {
-    position: relative;
-    display: block;
-    margin: 0 auto; /* Center the image horizontally */
-    z-index: 2; /* Ensure the computer is below the other images */
-    height: 370px !important;
-  }
-  
-  .triangle-img-green{
-    position: absolute;
-    top: 52px;
-    left: 18px !important; /* Adjust the size as needed */
-    z-index: 1;
-  }
+
   .right-content-system:hover .triangle-img {
     transform: rotate(270deg);
     position: absolute;
@@ -493,7 +481,7 @@
             background-size: cover;
             /* height: 500px !important; */
             width: 500px;
-            padding: 0px !important;
+            /* padding: 0px !important; */
             border-image: linear-gradient(270.23deg, #c7fb15 0%, #ccff14 100%);
       transition: none;
           }
@@ -697,6 +685,18 @@
     margin-left: 16% !important;
     width: 680px;
 }
+.top-left-bg {
+    left: 0 !important;
+    top: 0 !important;
+    margin-top: -70px !important;
+    height: 200px !important;
+    opacity: 1;
+}
+.top-right-bg {
+    height: 200px !important;
+    margin-left: 22% !important;
+    margin-top: -70px !important;
+}
  }
  @media (min-width: 912px) and (max-width: 1368px) {
     .card-bg-about-1 h6 {
@@ -705,8 +705,14 @@
     .top-left-bg {
         left: 0 !important;
         top: 0 !important;
-        margin-top: -130px !important;
+        margin-top: -100px !important;
+        height: 200px !important;
         opacity: 1;
+    }
+    .top-right-bg {
+        height: 200px !important;
+        margin-left: 43%;
+        margin-top: -110px !important;
     }
     .div_img{
         display: none !important;
