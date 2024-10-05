@@ -3,10 +3,12 @@
 body {
   background: #121212;
 }
-
+.about-section{
+  padding: 15px 0px;
+}
 .about-1 {
   margin-left: -13px;
-  background: #000 !important;
+  background: #121212 !important;
   margin-bottom: -10px;
 }
 .card-believe {
@@ -62,12 +64,18 @@ body {
   height: auto;
   display: block;
 }
+/* .plus-container{
+  margin-top: -20px;
+  position: absolute;
+  z-index: -1;
+} */
+ .plus-container h6{
+  margin-top: -47px;
+ }
 .about-1:hover {
 }
-
-.about-banner-btn {
-  border: 2px solid #1e1e1e !important;
-  color: #edeef0 !important;
+.about-banner-btn{
+  background: #191919 !important;
   font-family: "Barlow", sans-serif;
   border-radius: 8px !important;
   padding: 4px 8px !important;
@@ -78,23 +86,27 @@ body {
   overflow: hidden;
   text-wrap: nowrap;
   width: fit-content;
-  background-color: #191919; /* Background color */
+  color: #edeef0 !important;
+  border: 2px solid #1e1e1e !important;
+}
+.about-banner-btn > span{
+  font-family: "Barlow", sans-serif;
+  border-radius: 8px !important;
+  padding: 4px 8px !important;
+  margin-top: 70px;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  text-wrap: nowrap;
+  width: fit-content;
+  background-color: #191919 !important; /* Background color */
   /* opacity: 0.5; */
 }
+.about-banner-btn > span{
 
-.about-banner-btn {
-  border: 2px solid #1e1e1e !important;
   color: #edeef081 !important; /* Initial text color */
-  font-family: "Barlow", sans-serif;
-  border-radius: 8px !important;
-  padding: 4px 8px !important;
-  margin-top: 70px;
-  font-size: 14px;
-  font-weight: 500;
-  position: relative;
-  overflow: hidden;
-  text-wrap: nowrap;
-  width: fit-content;
+
   /* opacity: 0.5 !important; */
   cursor: default; /* Default cursor */
   /* text-shadow: 0px 0px 10px #dcdcdc; */
@@ -274,7 +286,7 @@ body {
   font-size: 38px;
   font-family: "Barlow", sans-serif;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: bold;
   opacity: 0.6;
 }
 .about-2 .padding-head {
@@ -647,6 +659,9 @@ body {
   padding-top: 20px;
 }
 @media screen and (min-width: 0px) and (max-width: 900px) {
+  .about-section {
+    padding: 35px 0px;
+}
   .our-services-1 {
     font-size: 17px;
     font-weight: 600;
@@ -676,12 +691,14 @@ body {
   .para-banner {
     padding: 0px 20px 0px 50px !important;
   }
-  .project-img {
+  .mobile-view-card1 .project-img {
     position: absolute;
     z-index: 2;
     width: 100% !important;
     height: auto !important;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px !important;
+    transition: none !important;
+    transform: none !important;
   }
   .about-2 .scroll-bg {
     width: 100% !important;
@@ -708,6 +725,7 @@ body {
     width: 100% !important;
     padding: 0px 10px 0px 10px !important;
     /* border-image: linear-gradient(270.23deg, #c7fb15 0%, #ccff14 100%); */
+    transform: none !important;
   }
   .about-2 .card-bg-about {
     background: #121212 !important;
@@ -718,8 +736,9 @@ body {
     padding-bottom: 110px !important;
     padding-top: 10px !important;
     margin-top: 30px !important;
+    transform: none !important;
   }
-  .about-banner-btn {
+  .about-banner-bt span {
     display: none !important;
   }
   .right-up-arrow {
@@ -753,8 +772,10 @@ body {
     /* transform: rotate(90deg); */
   }
   .top-left-bg {
-    height: 180px;
+    height: 130px;
     margin-left: -60px !important;
+    transform: rotate(180deg);
+    margin-top: -180px;
   }
   .img-center-about {
     margin-top: 150px;
@@ -845,7 +866,7 @@ body {
   .about-2 .padding-head {
     text-align: center !important;
     padding: 0px 10px 0px 10px !important;
-    font-size: 12px;
+    font-size: 14px;
     opacity: 0.6;
   }
   .mobile-reverse {
@@ -856,7 +877,7 @@ body {
     font-size: 20px;
     font-family: "Barlow", sans-serif;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: bold;
     opacity: 0.6;
   }
   .card-about-desktop {
