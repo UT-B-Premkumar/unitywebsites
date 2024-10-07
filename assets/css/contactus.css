@@ -14,7 +14,7 @@ body {
 }
 .left-contact-section .contact-left-content {
   font-size: 14px;
-  padding-right: 180px;
+  padding-right: 198px;
   color: #fff;
   opacity: 0.6;
 }
@@ -29,8 +29,18 @@ form .card {
   opacity: 0.6 !important;
   font-size: 12px;
 }
-.form-group input,.form-group textarea {
-  padding: 1px 2px 5px 5px;
+input[type=text] {
+  padding: 12px 60px !important;
+}
+.form-group input {
+  padding: 3px 0px 5px 7px;
+  border-radius: 5px;
+  background: #161616;
+  border: 1px solid #3f433f;
+  color: white !important;
+}
+.form-group textarea {
+  padding: 1px 0px 5px 7px;
   border-radius: 5px;
   background: #161616;
   border: 1px solid #3f433f;
@@ -41,21 +51,16 @@ form .card {
   color: #fff !important;
   opacity: 0.4;
   font-size: 12px;
-  padding-left: 8px;
+  padding-left: 3px;
 }
 .form-group textarea::placeholder{
-  padding-top: 8px;
+  padding-top: 2px;
 }
 .experience-font p {
   color: #fff !important;
   font-size: 12px;
 }
-.tab-cards{
-  padding-right: 50px;
-}
-.phone-mob{
-  padding-right: 50px ;
-}
+
 .form-group textarea {
   /* background-color: #121212; */
   border: 1px solid #3f433f;
@@ -72,22 +77,18 @@ form .card {
 }
 #center {
   text-align: center;
-  
 }
 
-.fa-star {
-  font-size: 16px;
+.star {
+  width: 24px; /* Adjust size if needed */
   cursor: pointer;
-  color: gray;
-}
-.checked {
-  color: #C7FB15;
 }
 
 .form-section {
   border: 1px solid #3f433f;
   border-radius: 10px;
 }
+
 /* First Name Field: Focus and active state */
 .first-name-input:focus {
   background-color: #121212 !important; /* Light red background */
@@ -144,7 +145,22 @@ form .card {
   font-weight: bold;
   margin-bottom: 15px;
 }
+.custom-row {
+  gap: 5px; /* Controls the space between the columns */
+}
+.no-gutters {
+  padding-left: 2.5px;  /* Half of the total 5px */
+  padding-right: 2.5px; /* Half of the total 5px */
+}
 
+.contact-card {
+  padding-left: 2.5px; /* Half of the total 5px */
+  padding-right: 2.5px; /* Half of the total 5px */
+}
+.contact-card{
+  padding-left: 0 !important;
+  padding-right: 8px !important;
+}
 .email-btn a,
 .phone-btn a {
   display: inline-block;
@@ -165,7 +181,8 @@ form .card {
   color: #fff !important;
 }
 .contact-icons {
-  width: 35px !important;
+  width: 20px ;
+  height: 20px;
 }
 .email-button {
   background-color: #222;
@@ -185,7 +202,7 @@ form .card {
   font-size: 1.25rem;
   color: #c6ff00; /* Neon yellow */
 }
-.icon img{
+.icon .moving{
   background-color: #121212;
   padding: 8px;
   border-radius: 6px;
@@ -227,31 +244,51 @@ form .card {
 }
 .moving {
   display: flex;
-  /* width: 30px; */
   overflow: hidden;
   height: 36px;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 .contact-card:hover .moving img {
   transform: translateY(-40px);
 }
+.contact-card:hover .moving img:nth-child(2){
+  transform: translateY(-30px);
+}
 .moving2 {
   display: flex;
-  /* width: 30px; */
   overflow: hidden;
+  width: 31px;
   height: 36px;
   flex-direction: column;
-  gap: 5px;
+  gap: 14px;
 }
+
 .contact-card:hover .moving2 .rocket-arrow {
   transform: translate(30px,-30px,);
+}
+
+.rocket-arrow{
+  position: relative;
+  top: 4px;
+  left: -4px;
+}
+.round-moving {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: solid #3d3d3d99 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .email-btn{
   background-color: #121212;
   color: #b8ff00;
   width: fit-content;
   border-radius: 20px;
+  align-items: center;
 }
 .email-btn p{
   font-size: 10px;
@@ -442,11 +479,7 @@ form .card {
 .moving2 img:nth-child(2){
   transform: translate(-23px ,0 );
 }
-.rocket-arrow{
-  border-radius: 50%;
-  padding: 5px;
 
-} 
  .email-btn p{
     font-size: 10px;
     margin: 0;
