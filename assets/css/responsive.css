@@ -369,6 +369,13 @@
   .content-main h2 {
     font-size: 22px;
   }
+  .customer_care_content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .working-process .accordion-item .accordian-numbers{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -477,6 +484,9 @@
   .services_games h4{
     font-size: 25px;
   }
+  .slider-section .slick-next {
+    bottom: -55px;
+}
  
 }
 
