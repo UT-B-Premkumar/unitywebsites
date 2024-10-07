@@ -497,6 +497,14 @@
   .development_section .icons img{
     width: 25px;
   }
+  .innovation_section .img-container{
+    margin-top: 30px;
+    height: 255px;
+  }
+  .innovation_section .yellow-box, .innovation_section .green-box{
+    height: 255px;
+
+  }
 }
 @media screen and (min-width: 980px) {
   .learn-more {
