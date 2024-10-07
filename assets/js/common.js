@@ -45,7 +45,7 @@
   particlesJS("particles-js", {
     particles: {
       number: {
-        value:500,
+        value:650,
         density: {
           enable: true,
           value_area: 500,
@@ -65,8 +65,8 @@
         },
         image: {
           src: "img/github.svg",
-          width: 0.0001,
-          height: 0.0001,
+          width: 0.0004,
+          height: 0.0004,
         },
       },
       opacity: {
