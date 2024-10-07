@@ -510,6 +510,7 @@ body {
 .our_service-about .bg-img img {
   width: 100%;
   height: 100%;
+  border-radius: 27px;
 }
 .our_service-title {
   transition: ease 0.5s;
@@ -688,20 +689,27 @@ body {
 
 .header-underline {
   opacity: 0; /* Initially hidden */
-  transition: opacity 2500ms; /* Transition time for the fade-in */
-  animation-duration: 2500ms; /* Duration of the fade-in animation */
+  transition: opacity 1s; /* Transition time for the fade-in */
+
+}
+.header-underline.aos-animate{
+  animation-duration: 1s; /* Duration of the fade-in animation */
   animation-fill-mode: forwards; /* Keeps the element visible after the animation */
 }
 .header-underline-1 {
   opacity: 0; /* Initially hidden */
-  transition: opacity 2500ms; /* Transition time for the fade-in */
-  animation-duration: 2500ms; /* Duration of the fade-in animation */
+  transition: opacity 1s; /* Transition time for the fade-in */
+}
+.header-underline-1.aos-animate{
+  animation-duration: 1s; /* Duration of the fade-in animation */
   animation-fill-mode: forwards; /* Keeps the element visible after the animation */
 }
 .header-underline-2 {
   opacity: 0; /* Initially hidden */
-  transition: opacity 2500ms; /* Transition time for the fade-in */
-  animation-duration: 2500ms; /* Duration of the fade-in animation */
+  transition: opacity 1s; /* Transition time for the fade-in */
+}
+.header-underline-2.aos-animate{
+  animation-duration: 1s; /* Duration of the fade-in animation */
   animation-fill-mode: forwards; /* Keeps the element visible after the animation */
 }
 .fade-in {
@@ -723,8 +731,11 @@ body {
 } */
 
 .shaking-heading {
-  animation: shake 0.5s ease-in-out; /* Duration of the shake animation */
   animation-iteration-count: 1; /* Ensures the animation happens only once */
+}
+.shaking-heading.aos-animate{
+  
+  animation: shake 0.5s ease-in-out; /* Duration of the shake animation */
 }
 
 @media screen and (min-width: 0px) and (max-width: 900px) {
@@ -951,6 +962,9 @@ body {
   }
   .card-about-desktop {
     display: none !important;
+  }
+  .text-align{
+    text-align: center !important;
   }
 }
 
