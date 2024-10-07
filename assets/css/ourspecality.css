@@ -233,9 +233,6 @@ body {
   }
 }
 @media (max-width: 766px) {
-  main{
-    padding: 0  15px 0 10px;
-  }
   .speciality-text p {
     padding: 0 10px 0 10px;
     /* text-align: center; */
