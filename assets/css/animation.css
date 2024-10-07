@@ -253,10 +253,10 @@
 }
 
 .shake-about.active .shaking-text:nth-child(1) {
-  animation: shaking 0.5s ease-in-out;
+  animation: shaking 0.4s ease-in-out;
 }
 .shake-about.active .shaking-text:nth-child(2) {
-  animation: shaking 0.6s ease-in-out;
+  animation: shaking 0.5s ease-in-out;
 
 }
 
