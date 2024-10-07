@@ -31,31 +31,42 @@ body {
   font-size: 68px;
   font-weight: 700;
   text-transform: uppercase;
-
   margin: 20px 0;
   margin-top: 0;
 }
+
 .landing h4 img {
   position: absolute;
   left: 0;
   bottom: 0px;
-  width: 187px;
+  width: 175px;
 }
 
 .landing p {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px;
+  transition: ease 2s;
 }
-.landing a {
+
+.landing a.fadep  {
   width: fit-content;
   padding: 10px 30px;
   /* color: var(--white) !important; */
   text-decoration: none;
+  opacity: 1 !important;
 }
+.floating-container{
+  opacity: 0;
+  transition: ease .5s;
+}
+.floating-container.active{
+  opacity: 1;
 
+}
 .baner-right {
   width: 80%;
+  /* opacity: 0 !important; */
 }
 
 .bounce-1 {
@@ -78,6 +89,18 @@ body {
     transform: translatey(0px);
   }
 }
+@keyframes float3 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-35px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
 
 @keyframes float2 {
   0% {
@@ -98,12 +121,32 @@ body {
   right: 24px;
   transform: translate(10%, 7px);
   animation: float 4s ease-in-out infinite;
+  opacity: 0;
 }
+.bounce-2.visible{
+  opacity: .6;
+}
+.bounce-small{
+width: 80px;
+height: 80px;
+bottom: -40px;
+right: 60px;
+animation: float3 4s ease-in-out infinite;
+opacity: 0.0;
+transition: ease .3s;
+
+
+}
+.bounce-small.visible{
+  opacity: .6;
+}
+
+
 
 .bounce-3 {
   width: 100px;
   position: absolute;
-  top: 35px;
+  top: 0;
   height: 100px;
 
   right: 0;
@@ -115,7 +158,7 @@ body {
   position: absolute;
   top: 34%;
   height: 100px;
-  right: 0;
+  right:-45px;
   transform: translate(0, 0);
 
   animation: float2 4s ease-in-out infinite;
@@ -194,7 +237,8 @@ body {
   font-size: 40px;
   font-weight: 700;
   max-width: 450px;
-  margin-bottom: 20px;
+  margin-bottom: 20px ;
+  margin-top: 10px;
 }
 
 .about-right p {
@@ -369,7 +413,6 @@ body {
 }
 .innovation_section h6 {
   padding: 5px 0;
-  margin: 30px 0;
   font-size: 20px;
 }
 
@@ -377,15 +420,21 @@ body {
   font-size: 30px;
   font-weight: 700;
   text-transform: capitalize;
-  margin-bottom: 15px;
+  padding: 15px 0;
+  
 }
+/* max-height: 36px;
+  overflow: hidden; */
 
 .innovation_section p {
   font-size: 16px;
   font-weight: 400;
-  opacity: 0.7;
+  opacity: 0.6;
   margin-bottom: 20px;
+  transition: ease .5s;
 }
+
+
 
 .innovation_section a {
   padding: 10px 45px;
@@ -998,9 +1047,20 @@ color: #C7FB15 !important;
 }
 .about-section h3 img{
   left: 0;
-
+  width: 117px;
+  opacity: 0;
+  transition: ease .5s;
 }
-
+.fade-img-serv{
+  opacity: 0;
+  transition: ease .3s;
+}
+.fade-img-serv.visible{
+opacity: 1;
+}
+.about-section h3 img.visible{
+ opacity: 1;
+}
 
 
 /* terms and condition  */

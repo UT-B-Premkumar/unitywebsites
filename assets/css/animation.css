@@ -4,7 +4,36 @@
   position: relative;
   gap: 2px;
 }
+.fadep{
+  opacity: 0;
+  visibility: hidden;
+  transition: ease .5s;
+}
 
+.fadep.fadepactive{
+  opacity: 0.6 !important;
+  visibility: visible;
+  transition: ease .5s;
+
+}
+
+.baner-right{
+  position: relative;
+  right: -150%;
+  transition: ease .2s;
+}
+.baner-right.animate
+{
+  right: 0;
+}
+.underline-fade{
+  opacity: 0;
+  transition: ease .2s;
+}
+.underline-fade.visible{
+  opacity: 1;
+
+}
 .flip-letter {
   display: inline-block;
   font-size: 24px; /* Adjust font size to match your needs */
@@ -62,7 +91,10 @@
   letter-spacing: -2px;
   /* Start fully blurred */
   opacity: 0;
+}
+.wave-letter.animate{
   animation: wave 0.5s ease forwards; /* Run animation */
+
 }
 
 /* Keyframes for the wave */
@@ -262,6 +294,16 @@
 }
 .faq_section.active > h2 {
   transform: translate(0px, 0px);
+}
+.faq_section .accordion{
+  transform: translatey(300px);
+  opacity: 0;
+}
+.faq_section.active .accordion{
+  transform: translatey(0);
+  transition: ease 1s;
+  opacity: 1;
+
 }
 .faq_section > p {
   transform: translate(100%, 0);

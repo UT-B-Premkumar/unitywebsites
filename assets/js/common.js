@@ -45,7 +45,7 @@
   particlesJS("particles-js", {
     particles: {
       number: {
-        value: 1000,
+        value:500,
         density: {
           enable: true,
           value_area: 500,
@@ -65,27 +65,27 @@
         },
         image: {
           src: "img/github.svg",
-          width: 0.001,
-          height: 0.001,
+          width: 0.0001,
+          height: 0.0001,
         },
       },
       opacity: {
-        value: 0.5517792882846864,
+        value: 0.8517792882846864,
         random: false,
         anim: {
           enable: false,
           speed:.3,
-          opacity_min: 0.01,
+          opacity_min: 0.0001,
           sync: false,
         },
       },
       size: {
-        value: 1.998400639744104,
+        value: .898400639744104,
         random: true,
         anim: {
           enable: false,
           speed:.3,
-          size_min: 0.1,
+          size_min: 0.0001,
           sync: false,
         },
       },
@@ -93,7 +93,7 @@
         enable: false,
         distance: 0,
         color: "#ffffff",
-        opacity: 0.4,
+        opacity: 0.001,
         width: 1,
       },
       move: {
@@ -173,3 +173,5 @@
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
+
+  
