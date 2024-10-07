@@ -72,6 +72,9 @@
 
 }
 @media screen and (min-width: 820px) and (max-width: 1180px) {
+    .text-align{
+        text-align: center !important;
+      }
     .top-left-bg {
         left: 0 !important;
         top: 0 !important;
@@ -880,12 +883,24 @@
 }
 .about-2 .header-underline-1 {
     margin-top: -40px;
-    margin-left: 4% !important;
+    margin-left: 11% !important;
     width: 680px;
 }
 .about-2 .header-underline-2 {
     margin-top: -40px;
-    margin-left: 13% !important;
+    margin-left: 16% !important;
 
 }
+ }
+ @media screen and (min-width:1024px) and (max-width:1366px) {
+    .about-2 .header-underline-1 {
+        margin-top: -40px;
+        margin-left: 20% !important;
+        width: 680px;
+    }
+    .about-2 .header-underline-2 {
+        margin-top: -40px;
+        margin-left: 25% !important;
+    
+    }
  }
