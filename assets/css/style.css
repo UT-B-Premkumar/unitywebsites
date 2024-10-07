@@ -405,6 +405,7 @@ body {
 .innovation_section {
   color: var(--white);
   padding: 120px 0;
+  padding-top: 150px;
 }
 .innovation_section .title2 img {
   left: 0;

@@ -252,13 +252,11 @@
   display: inline-block !important;
 }
 
-.aos-animate .shaking-text:nth-child(1) {
-  animation: shake 1s ease-in-out;
-  animation-iteration-count: 1;
+.shake-about.active .shaking-text:nth-child(1) {
+  animation: shaking .3s ease;
 }
-.aos-animate .shaking-text:nth-child(2) {
-  animation: shake 1.2s ease-in-out;
-  animation-iteration-count: 1;
+.shake-about.active .shaking-text:nth-child(2) {
+  animation: shaking .5s ease-in-out;
 
 }
 
@@ -267,7 +265,7 @@
 }
 
 .shake-services.active .shaking-text {
-  animation: shake 1s;
+  animation: shaking .5s;
   opacity: 1;
 }
 
@@ -283,11 +281,11 @@
  
 } */
 
-@keyframes shake {
+@keyframes shaking {
   0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
+  25% { transform: translateX(-7px); }
+  50% { transform: translateX(7px); }
+  50% { transform: translateX(-7px); }
   100% { transform: translateX(0); }
 }
 /* .believe-h1 {
