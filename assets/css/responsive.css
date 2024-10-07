@@ -477,6 +477,16 @@
   .services_games h4{
     font-size: 25px;
   }
+ 
+}
+
+@media screen and (max-width:400px) {
+  .development_card_content .top img{
+    width: 35px;
+  }
+  .development_section .icons img{
+    width: 25px;
+  }
 }
 @media screen and (min-width: 980px) {
   .learn-more {
