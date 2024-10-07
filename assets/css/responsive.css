@@ -422,7 +422,7 @@
   .logo img {
     width: 130px;
   }
-  .hamburger img{
+  .hamburger > img{
     height: 45px;
   }
   .testimoniel_section .slider-content p {
@@ -462,6 +462,18 @@
   .innovation_section .yellow-box,
   .innovation_section .green-box {
     height: 270px;
+  }
+    .innovation_right h6{
+    font-size: 14px !important;
+  }
+  .innovation_right h4{
+    font-size: 22px !important;
+  }
+  .development_section h3{
+    font-size: 22px;
+  }
+  .development_section h4{
+    font-size: 15px;
   }
   section.landing,
   .about-section,
@@ -508,6 +520,7 @@
     height: 255px;
 
   }
+
 }
 @media screen and (min-width: 980px) {
   .learn-more {
@@ -684,9 +697,7 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1400px) {
-  .about-right h3 {
-    font-size: 24px;
-  }
+
   .about-right {
     padding-left: 10px !important;
   }
