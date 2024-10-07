@@ -563,21 +563,28 @@ body {
 .our_service-about:hover .bg-img {
   border-radius: 20px !important;
   z-index: -100;
+  background-image: linear-gradient(to right, #000d14a2 , #010100, #141d0f);
+
 }
 .our_service-about:hover {
   margin-top: -15px;
-  transition: ease 0.5s !important;
+  transition: ease 1s !important;
 }
 
 .our_service-about:hover .bg-img::after {
   width: 200px;
   height: 200px;
   overflow: hidden;
-  background-image: linear-gradient(
+  background: radial-gradient(
+    circle at top,  /* Circle shape with gradient starting at the center */
+    #4ca852b6, /* Yellowish-green towards the outer edges */
+    #29642d
+);
+  /* background-image: linear-gradient(
     to bottom,
-    rgba(76, 168, 82, 0.715) 90%,
+    #4ca852b6 90%,
     #29642d 90%
-  ) !important;
+  ) !important; */
   /* background-image: linear-gradient(
     to bottom,
     rgba(76, 168, 82, 0.715) 90%,
@@ -589,7 +596,7 @@ body {
   border-top-left-radius: 20px !important;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
-  transition: ease .3s;
+  transition: ease 1s;
 }
 
 .bg-img::after {
@@ -600,14 +607,13 @@ body {
   width: 80px; /* Initial size of the circle */
   height: 80px;
   background: radial-gradient(
-    circle,
-    rgba(143, 254, 21, 0.625) 31%,
-    rgba(20, 255, 135, 0.81) 94%
-  );
-
+    circle at top,  /* Circle shape with gradient starting at the center */
+    #a1fe37, /* Yellowish-green towards the outer edges */
+    #25c458
+);
   transform: translate(-50%, -50%) scale(0); /* Center and scale down */
   opacity: 0; /* Start invisible */
-  transition: transform 0.5s ease, opacity 0.5s ease; 
+  transition: transform 1s ease, opacity 0.5s ease; 
   z-index: 6; /* Ensure it's behind the content */
   overflow: hidden;
  border-radius: 50%;
@@ -616,12 +622,18 @@ body {
 .our_service-about:hover .bg-img::after {
   transform: translate(-50%, -50%) scale(5); /* Expand the circle on hover */
   opacity: 0.5; /* Adjust the opacity for hover effect */
-  border-top-right-radius: 70px !important;
+  /* border-top-right-radius: 70px !important;
   border-top-left-radius: 20px !important;
   border-bottom-left-radius: 20px !important;
-  border-bottom-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important; */
+  border-radius: 50%;
+  /* height: 880px;
+  width: 880px; */
 }
 
+.our_service-about:hover{
+  background-color: #000507;
+}
 .our_service-title {
   position: relative;
   transform: scale(1) !important;
