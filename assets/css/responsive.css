@@ -150,6 +150,9 @@
   /* section about   end*/
 
   /* our_service_section start */
+  .about-section .aos-animate .shaking-text:nth-child(1){
+      display: block !important;
+  }
   .our_service_section h4,
   .our_service_section h3 {
     text-align: center;
@@ -366,6 +369,13 @@
   .content-main h2 {
     font-size: 22px;
   }
+  .customer_care_content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .working-process .accordion-item .accordian-numbers{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -389,19 +399,29 @@
     gap: 41px !important;
     margin-top: 40px;
   }
-  .landing-right {
+  div.landing-right {
     margin-top: 20px;
+    text-align: center !important;
   }
   .faq_section {
     padding: 0 10px;
   }
-  .services_games_card:hover{
+  .services_games_card:hover {
     border: dashed 1px #373737;
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
   }
 }
 @media screen and (max-width: 575px) {
+  .landing h4 img {
+    position: absolute;
+    left: -8px;
+    bottom: 0px;
+    width: 156px;
+  }
+  .logo img {
+    width: 140px;
+  }
   .testimoniel_section .slider-content p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -415,8 +435,8 @@
     padding: 0;
   }
   .about-section {
-    padding-top: 40px 0 !important;
-    padding-bottom: 40px 0 !important;
+    padding-top: 60px  !important;
+    padding-bottom: 60px !important;
   }
   .innovation_section {
     padding-top: 40px;
@@ -429,6 +449,8 @@
   }
   .innovation_section {
     padding: 0 10px;
+    padding-top: 60px;
+        padding-bottom: 60px;
   }
 
   .innovation_section .img-container {
@@ -438,9 +460,42 @@
   .innovation_section .green-box {
     height: 270px;
   }
-  section.landing , .about-section , .our_service_section  , .innovation_section , .faster_section , .development_section ,.testimoniel_section , .faq_section , .customer_care  {
+  section.landing,
+  .about-section,
+  .our_service_section,
+  .innovation_section,
+  .faster_section,
+  .development_section,
+  .testimoniel_section,
+  .faq_section,
+  .customer_care {
     padding-left: 20px !important;
     padding-right: 20px !important;
+  }
+  .baner-right {
+    width: 90%;
+  }
+  .flip-letter {
+    font-size: 20px;
+  }
+  .services_games h3 {
+    font-size: 18px;
+  }
+  .services_games h4{
+    font-size: 25px;
+  }
+  .slider-section .slick-next {
+    bottom: -55px;
+}
+ 
+}
+
+@media screen and (max-width:400px) {
+  .development_card_content .top img{
+    width: 35px;
+  }
+  .development_section .icons img{
+    width: 25px;
   }
 }
 @media screen and (min-width: 980px) {
@@ -657,10 +712,10 @@
   .services_games_col:nth-child(8) .services_games_card {
     border-right: 0px;
   }
-  .our_service-card{
+  .our_service-card {
     border-bottom-left-radius: 0px;
   }
-  .build-p{
+  .build-p {
     display: block;
     height: 100px;
     margin-bottom: 20px;
@@ -668,7 +723,7 @@
     border-radius: none;
     padding: 3px;
   }
-  .hacker-p{
+  .hacker-p {
     display: block;
     height: 100px;
     margin-bottom: 20px;
@@ -676,7 +731,6 @@
     border-radius: none;
     padding: 3px;
   }
-  
 }
 @media (min-width: 1025px) and (max-width: 1350px) {
   .our_service-card li {

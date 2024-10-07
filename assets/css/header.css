@@ -120,6 +120,9 @@ nav ul li:nth-child(5) a {
 
 
 @media screen and (max-width: 900px) {
+  header{
+    background-color:black;
+  }
   .desktop {
     display: none;
   }
@@ -161,6 +164,16 @@ nav ul li:nth-child(5) a {
   gap: 0;
   justify-content: space-between;
 }
+.mobile-nav img:nth-child(2){
+  display: none;
+}
+.mobile-nav.active img:nth-child(1){
+  display: none;
+}
+.mobile-nav.active img:nth-child(2){
+  display: inline;
+}
+
 
 .mobile-nav.active span:nth-child(1) {
   transform:rotate(38deg) translate(5px, 8px);
