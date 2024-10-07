@@ -87,12 +87,12 @@ body {
   text-wrap: nowrap;
   width: fit-content;
   color: #edeef0 !important;
-  border: 2px solid #1e1e1e !important;
+  border: 1px solid #1e1e1e !important;
 }
 .about-banner-btn > span{
   font-family: "Barlow", sans-serif;
   border-radius: 8px !important;
-  padding: 4px 8px !important;
+  padding: 4px !important;
   margin-top: 70px;
   font-size: 14px;
   font-weight: 500;
@@ -577,8 +577,9 @@ body {
   overflow: hidden;
   background: radial-gradient(
     circle at top,  /* Circle shape with gradient starting at the center */
-    #4ca852b6, /* Yellowish-green towards the outer edges */
     #29642d
+    #62b503, /* Yellowish-green towards the outer edges */
+ 
 );
   /* background-image: linear-gradient(
     to bottom,
