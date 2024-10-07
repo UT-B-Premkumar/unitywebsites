@@ -167,7 +167,7 @@ nav ul li:nth-child(5) a {
 .mobile-nav img:nth-child(2){
   display: none;
 }
-.mobile-nav.active img:nth-child(1){
+.mobile-nav.active >  img:nth-child(1){
   display: none;
 }
 .mobile-nav.active img:nth-child(2){

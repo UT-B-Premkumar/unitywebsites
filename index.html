@@ -1513,17 +1513,17 @@
           $(this).toggleClass("active");
           $(".mobile-nav-container").toggle();
         });
-        $(document).on("click", function (event) {
-          // Check if the click was outside the .hamburger and .mobile-nav-container
-          if (
-            !$(event.target).closest(".hamburger").length &&
-            !$(event.target).closest(".mobile-nav-container").length
-          ) {
-            // Close the menu
-            $(".hamburger").removeClass("active");
-            $(".mobile-nav-container").hide();
-          }
-        });
+        // $(document).on("click", function (event) {
+        //   // Check if the click was outside the .hamburger and .mobile-nav-container
+        //   if (
+        //     !$(event.target).closest(".hamburger").length &&
+        //     !$(event.target).closest(".mobile-nav-container").length
+        //   ) {
+        //     // Close the menu
+        //     $(".hamburger").removeClass("active");
+        //     $(".mobile-nav-container").hide();
+        //   }
+        // });
 
         $(".slider-section").slick({
           dots: false, // Display navigation dots

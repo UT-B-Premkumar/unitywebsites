@@ -422,7 +422,7 @@
   .logo img {
     width: 130px;
   }
-  .hamburger img{
+  .hamburger > img{
     height: 45px;
   }
   .testimoniel_section .slider-content p {
@@ -697,9 +697,7 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1400px) {
-  .about-right h3 {
-    font-size: 24px;
-  }
+
   .about-right {
     padding-left: 10px !important;
   }
