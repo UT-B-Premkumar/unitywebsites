@@ -13,7 +13,7 @@
     bottom: -31px;
   }
   .landing {
-    padding: 80px 0 0 0;
+    padding: 15px 0 0 0;
   }
   .landing-title-col {
     text-align: center;
@@ -50,10 +50,12 @@
   .learn-more {
     text-align: center;
     margin-top: 40px;
+    display: block;
   }
   .learn-more a {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
+    text-decoration: none;
   }
 
   /* section about  */
@@ -393,6 +395,11 @@
   .faq_section {
     padding: 0 10px;
   }
+  .services_games_card:hover{
+    border: dashed 1px #373737;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+  }
 }
 @media screen and (max-width: 575px) {
   .testimoniel_section .slider-content p {
@@ -408,7 +415,8 @@
     padding: 0;
   }
   .about-section {
-    padding: 40px 0 !important;
+    padding-top: 40px 0 !important;
+    padding-bottom: 40px 0 !important;
   }
   .innovation_section {
     padding-top: 40px;
@@ -429,6 +437,10 @@
   .innovation_section .yellow-box,
   .innovation_section .green-box {
     height: 270px;
+  }
+  section.landing , .about-section , .our_service_section  , .innovation_section , .faster_section , .development_section ,.testimoniel_section , .faq_section , .customer_care  {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
 @media screen and (min-width: 980px) {
@@ -648,6 +660,23 @@
   .our_service-card{
     border-bottom-left-radius: 0px;
   }
+  .build-p{
+    display: block;
+    height: 100px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: none;
+    padding: 3px;
+  }
+  .hacker-p{
+    display: block;
+    height: 100px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: none;
+    padding: 3px;
+  }
+  
 }
 @media (min-width: 1025px) and (max-width: 1350px) {
   .our_service-card li {

@@ -250,14 +250,16 @@
 
 .shaking-text {
   display: inline-block !important;
-  transition: ease 0.5s;
 }
 
-.shake-about.active .shaking-text:nth-child(1) {
-  animation: shake 0.4s;
+.aos-animate .shaking-text:nth-child(1) {
+  animation: shake 1s ease-in-out;
+  animation-iteration-count: 1;
 }
-.shake-about.active .shaking-text:nth-child(2) {
-  animation: shake 0.6s;
+.aos-animate .shaking-text:nth-child(2) {
+  animation: shake 1.2s ease-in-out;
+  animation-iteration-count: 1;
+
 }
 
 .shake-services .shaking-text {
@@ -265,35 +267,48 @@
 }
 
 .shake-services.active .shaking-text {
-  animation: shake 0.3s;
+  animation: shake 1s;
   opacity: 1;
 }
 
-@keyframes shake {
+/* @keyframes shake {
   0%,
   100% {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(7px);
+    transform: translateX(5px);
   }
-  50% {
-    transform: translateX(-7px);
-  }
-  75% {
-    transform: translateX(7px);
-  }
+  
+ 
+} */
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
 }
+/* .believe-h1 {
+  display: inline-block;
+} */
+
+
+
+
 
 .faq_section {
   overflow: hidden;
 }
 .faq_section > h2 {
-  transform: translate(100%, 0px);
+  transform: translate(0, 200px);
+  opacity: 0;
   transition: ease 0.5s;
 }
 .faq_section.active > h2 {
   transform: translate(0px, 0px);
+  opacity: 1;
 }
 .faq_section .accordion{
   transform: translatey(300px);
@@ -344,3 +359,16 @@
 } */
 
 /* text-shaking  end */
+
+.fadeup-animation{
+  opacity: 0 !important;
+  transition-delay:  .5s;
+  transform: translate(0) !important;
+
+}
+.fadeup-animation.aos-animate{
+  opacity: 1 !important;
+  transform: translate(0) !important;
+  transition-delay:  .5s;
+
+}

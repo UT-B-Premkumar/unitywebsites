@@ -126,6 +126,10 @@ nav ul li:nth-child(5) a {
   .hamburger.mobile-nav {
     display: inline;
   }
+  nav ul li a{
+    transform: translate(0) !important;
+  }
+  
 }
 .mobile-nav button {
   all: unset;

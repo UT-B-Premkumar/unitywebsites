@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/animation.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
     <link
       rel="SHORTCUT ICON"
       href="./assets/img/unity-logo.svg"
@@ -645,25 +646,27 @@
                 <!-- <div style="max-height: 68px; overflow: hidden;"> -->
                   <h4 class="d-block">
 
-                   <span data-aos="fade-up" data-aos-delay="300" class="d-block">
+                   <span data-aos="fade-up" data-aos-delay="50" class="d-block">
                     Build the <span class="text-gradient">innovative</span> road
                     of success
                    </span>
                   </h4>
                 <!-- </div> -->
-                <p data-aos="fade-up" data-aos-delay="350" class="opacity6">
-                  Unity is the world's leading web development company committed
-                  to providing clients with the best, most scalable, secure, and
-                  unique web development services. Our team of seasoned web
-                  developers is proficient in cutting-edge technologies such as
-                  PHP, Laravel, Drupal, CakePHP, WordPress, JavaScript, Node.Js,
-                  Angular.Js, Vue.Js, React.Js, HTML5, CSS3, Magento, and more.
-                </p>
+                <div class="build-p">
+                  <p data-aos="fade-up" data-aos-delay="350" class="opacity6">
+                    Unity is the world's leading web development company committed
+                    to providing clients with the best, most scalable, secure, and
+                    unique web development services. Our team of seasoned web
+                    developers is proficient in cutting-edge technologies such as
+                    PHP, Laravel, Drupal, CakePHP, WordPress, JavaScript, Node.Js,
+                    Angular.Js, Vue.Js, React.Js, HTML5, CSS3, Magento, and more.
+                  </p>
+                </div>
                 <a
                   href=""
-                  class="btn-1 width-fit text-decoration-none"
+                  class="btn-1 width-fit text-decoration-none fadeup-animation"
                   data-aos="fade-up"
-                  data-aos-delay="700"
+                  data-aos-delay="1200"
                 >
                   <span></span>
                   <span></span>
@@ -679,30 +682,33 @@
 
       <section class="services_games">
         <div class="container">
-          <h3>
-            <span data-aos="fade-left" data-aos-delay="50"> Serving</span>
-            <span data-aos="fade-left" data-aos-delay="150">
+          <!-- <h3>
+            <span data-aos="fade-up" data-aos-delay="50"> Serving</span>
+            <span data-aos="fade-up" data-aos-delay="150">
               the solutions</span
             >
 
-            <span data-aos="fade-left" data-aos-delay="250"> to your</span>
-            <span data-aos="fade-left" data-aos-delay="350">
+            <span data-aos="fade-up" data-aos-delay="250"> to your</span>
+            <span data-aos="fade-up" data-aos-delay="350">
               complications</span
             >
-          </h3>
-          <h4>
-            <span data-aos="fade-left" data-aos-delay="150"> The power</span>
-            <span data-aos="fade-left" data-aos-delay="250"> of</span>
+          </h3> -->
+          <h3 data-aos="fade-up" data-aos-delay="150">Serving the solutions to your complications</h3>
+          
+          <h4 data-aos="fade-up" data-aos-delay="150" >The power of <span class="text-gradient">innovation</span> to extend your reach</h4>
+          <!-- <h4>
+            <span data-aos="fade-up" data-aos-delay="150"> The power</span>
+            <span data-aos="fade-up" data-aos-delay="250"> of</span>
             <span
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="350"
               class="text-gradient"
             >
               innovation</span
             >
-            <span data-aos="fade-left" data-aos-delay="450"> to extend</span>
-            <span data-aos="fade-left" data-aos-delay="550"> your reach</span>
-          </h4>
+            <span data-aos="fade-up" data-aos-delay="450"> to extend</span>
+            <span data-aos="fade-up" data-aos-delay="550"> your reach</span>
+          </h4> -->
           <div class="row">
             <div class="col-md-6 col-lg-3 services_games_col">
               <div class="services_games_card">
@@ -866,13 +872,15 @@
                   Our designs are <span class="text-gradient">Faster</span>,
                   Stronger, and Better than you imagine
                 </h4>
-                <p data-aos="fade-up" data-aos-delay="300" class="opacity6">
-                  Our company has grown steadily over the years, with our
-                  workforce and skills increasing annually to keep pace with the
-                  demands of our clients. Teamwork, transparency, and customer
-                  communication are qualities we strive to achieve when creating
-                  our software products.
-                </p>
+                <div class="hacker-p">
+                  <p data-aos="fade-up" data-aos-delay="300" class="opacity6">
+                    Our company has grown steadily over the years, with our
+                    workforce and skills increasing annually to keep pace with the
+                    demands of our clients. Teamwork, transparency, and customer
+                    communication are qualities we strive to achieve when creating
+                    our software products.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -1442,7 +1450,7 @@
           <div class="customer_care_content">
             <img src="./assets/img/profile3.svg" alt="" />
             <h5>Still have questions?</h5>
-            <p>
+            <p class="opacity6">
               Can’t find the answer you’re looking for? Please chat to our
               friendly team.
             </p>
@@ -1501,6 +1509,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.js"></script>
 
     <script>
       $(document).ready(function () {
@@ -1552,6 +1561,9 @@
         once: true,
       });
     </script>
+    <script>
+      new WOW().init();
+      </script>
 
     <!-- text animation part -->
     <script>
