@@ -253,10 +253,10 @@
 }
 
 .shake-about.active .shaking-text:nth-child(1) {
-  animation: shaking .3s ease;
+  animation: shaking 0.5s ease-in-out;
 }
 .shake-about.active .shaking-text:nth-child(2) {
-  animation: shaking .5s ease-in-out;
+  animation: shaking 0.6s ease-in-out;
 
 }
 
@@ -265,7 +265,7 @@
 }
 
 .shake-services.active .shaking-text {
-  animation: shaking .5s;
+  animation: shaking 0.5s ease-in-out;
   opacity: 1;
 }
 
@@ -275,9 +275,10 @@
   0% { transform: translateX(0); }
   25% { transform: translateX(-7px); }
   50% { transform: translateX(7px); }
-  50% { transform: translateX(-7px); }
+  75% { transform: translateX(-7px); }
   100% { transform: translateX(0); }
 }
+
 /* .believe-h1 {
   display: inline-block;
 } */
