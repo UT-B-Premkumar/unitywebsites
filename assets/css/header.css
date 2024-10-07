@@ -120,6 +120,9 @@ nav ul li:nth-child(5) a {
 
 
 @media screen and (max-width: 900px) {
+  header{
+    background-color:black;
+  }
   .desktop {
     display: none;
   }
