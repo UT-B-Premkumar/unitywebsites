@@ -757,6 +757,10 @@
   .our_service-card {
     border-bottom-left-radius: 0px;
   }
+  .our_service-card:hover li {
+    color: var(--white);
+    opacity: 1;
+  }
   .build-p {
     display: block;
     height: 100px;
