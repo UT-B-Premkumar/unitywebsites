@@ -43,8 +43,8 @@ header.fixed {
   font-size: 1.5em;
   font-weight: bold;
 }
-.logo img{
-  width: 180px ;
+.logo img {
+  width: 180px;
 }
 
 /* Navigation styling */
@@ -69,7 +69,6 @@ nav ul li a.active {
   color: #c7fb15;
 }
 nav ul li a.active {
-
   /* background-size: 500% 100%; */
   /* background-clip: text; */
   /* -webkit-background-clip: text; */
@@ -118,10 +117,9 @@ nav ul li:nth-child(5) a {
   position: relative;
 }
 
-
 @media screen and (max-width: 900px) {
-  header{
-    background-color:black;
+  header {
+    background-color: black;
   }
   .desktop {
     display: none;
@@ -129,10 +127,9 @@ nav ul li:nth-child(5) a {
   .hamburger.mobile-nav {
     display: inline;
   }
-  nav ul li a{
+  nav ul li a {
     transform: translate(0) !important;
   }
-  
 }
 .mobile-nav button {
   all: unset;
@@ -164,19 +161,18 @@ nav ul li:nth-child(5) a {
   gap: 0;
   justify-content: space-between;
 }
-.mobile-nav img:nth-child(2){
+.mobile-nav img:nth-child(2) {
   display: none;
 }
-.mobile-nav.active >  img:nth-child(1){
+.mobile-nav.active > img:nth-child(1) {
   display: none;
 }
-.mobile-nav.active img:nth-child(2){
+.mobile-nav.active img:nth-child(2) {
   display: inline;
 }
 
-
 .mobile-nav.active span:nth-child(1) {
-  transform:rotate(38deg) translate(5px, 8px);
+  transform: rotate(38deg) translate(5px, 8px);
   width: 25.5px;
 }
 .mobile-nav.active span:nth-child(2) {
@@ -238,4 +234,13 @@ nav.mobile-nav-container ul img {
 .mobile-nav-container li {
   padding: 10px 0;
   height: fit-content !important;
+}
+
+@media screen and (max-width: 575px) {
+  .logo img {
+    width: 100px !important;
+  }
+  .hamburger > img {
+    height: 45px;
+  }
 }

@@ -421,12 +421,7 @@
     bottom: 0px;
     width: 156px;
   }
-  .logo img {
-    width: 100px;
-  }
-  .hamburger > img{
-    height: 45px;
-  }
+
   .testimoniel_section .slider-content p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
