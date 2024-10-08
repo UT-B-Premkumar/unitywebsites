@@ -1698,7 +1698,7 @@
             setTimeout(() => {
               $(".shake-about").addClass("active"); // Shake effect on specific element
               $(".about-section h3 img").addClass("visible"); // Make the image visible
-            }, 700);
+            }, 1000);
           }
           if (scrollPos + windowHeight > our_service_sectionOffSet) {
             setTimeout(function () {
@@ -1732,7 +1732,7 @@
             $(".faq_section").addClass("active");
           }
           if (
-            scrollPos + windowHeight > customer_careOffset &&
+            scrollPos + windowHeight > customer_careOffset  + 100 &&
             screen.width > 1300
           ) {
             $(".customer_care").addClass("active");
