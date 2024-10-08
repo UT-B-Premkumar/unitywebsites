@@ -649,8 +649,9 @@ display: inline;
 
 } */
 .development_card:hover .top img {
-  transition: ease 0.5s;
+ backface-visibility: hidden;  /* Hide the back of the element when flipping */
   transform-style: preserve-3d;
+  transition: opacity .5s ease, transform .5s ease;
 }
 
 /* Initial state: The first image is visible, and the second image is hidden */
@@ -662,30 +663,29 @@ display: inline;
   opacity: 1;
   visibility: visible;
   transform: rotateY(0deg);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity .5s ease, transform .5s ease;
   position: absolute;
 }
 
 .development_card .top img:nth-child(2) {
   opacity: 0;
   visibility: hidden;
-  transform: rotateY(180deg);
-  transition: opacity 1s ease, visibility 0s, transform 1s ease;
+  transform: rotateY(0deg);
+  transition: opacity 1s ease, visibility 0s, transform .5s ease;
 }
 
 /* On hover: Hide the first image and show the second image with rotation */
 .development_card:hover .top img:nth-child(1) {
   opacity: 0;
   visibility: hidden;
+  backface-visibility: hidden;
   transform: rotateY(180deg);
-  transition: opacity 01s ease, transform 1s ease;
 }
 
 .development_card:hover .top img:nth-child(2) {
   opacity: 1;
   visibility: visible;
   transform: rotateY(360deg);
-  transition: opacity 1s ease, visibility 0s, transform 1s ease;
 }
 
 /* Development end  */
