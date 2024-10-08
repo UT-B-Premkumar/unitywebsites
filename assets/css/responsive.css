@@ -316,6 +316,8 @@
   .development_card_content .top {
     font-size: 18px;
   }
+
+
   /* development_section end */
   /* testimoniel start */
 
@@ -522,6 +524,16 @@
  }
  .bounce-1{
   width: 80px;
+ }
+ .development_card .top img:nth-child(1) ,  .development_card:hover .top img:nth-child(2) {
+  transform: rotate(0deg) !important;
+ }
+ .development_card .top img:nth-child(2) {
+   visibility: visible !important;
+ }
+ .development_card:hover .top img:nth-child(1) ,  .development_card .top img:nth-child(1){
+   display: none !important; 
+   opacity: 0 !important;
  }
 }
 
