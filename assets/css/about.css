@@ -46,8 +46,8 @@ body {
   position: absolute !important;
   display: flex !important;
   justify-content: space-between !important;
-  width: 100% !important;
-  max-width: 100% !important;
+  width: 100%;
+  max-width: 100%;
   overflow: hidden !important;
 }
 
@@ -264,6 +264,7 @@ body {
 .about-2 .header-underline {
   margin-top: -40px;
   margin-left: -28px;
+  width: 170px;
 }
 .about-2 .card-bg-about {
   background: url(/unitywebsites/assets/img/bg-about-page.svg);
@@ -320,23 +321,22 @@ body {
 .card-bg-about:hover img.scroll-bg {
   /* background: url(/unitywebsites/assets/img/scroll-gif.gif) no-repeat center center; */
   background-size: cover;
-  width: 510px; /* Original width */
+  /* height: 500px !important; */
+  width: 500px;
   padding: 40px 20px 0px 0px;
   border-image: linear-gradient(270.23deg, #c7fb15 0%, #ccff14 100%);
-  transform-origin: center; /* Ensures scaling happens from the center */
+  transform: scale(1.05);
 }
-
 
 .card-bg-about:hover .project-img {
   position: absolute;
   /* left: 10%; */
   z-index: 2;
-  width: 510px;
+  width: 500px;
   height: 533px;
-  padding: 50px 30px 10px 10px;
+  padding: 40px 20px 0px 0px;
   transform: scale(1.05);
 }
-
 .about-2 .header-underline-1 {
   margin-top: -40px;
   margin-left: -20px;
@@ -741,9 +741,9 @@ body {
 
 @keyframes shake {
   0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
+  25% { transform: translateX(-7px); }
+  50% { transform: translateX(7px); }
+  75% { transform: translateX(-7px); }
   100% { transform: translateX(0); }
 }
 
@@ -756,11 +756,18 @@ body {
 }
 .shaking-heading.aos-animate{
   
-  animation: shake 0.5s ease-in-out; /* Duration of the shake animation */
+  animation: shake 0.3s; /* Duration of the shake animation */
 }
 
 @media screen and (min-width: 0px) and (max-width: 900px) {
-
+  .bg-top-row {
+    position: absolute !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    width: auto;
+    max-width: max-content !important;
+    overflow: hidden !important;
+  }
   .about-section {
     padding: 35px 0px;
 }
@@ -776,7 +783,7 @@ body {
     background: url(/unitywebsites/assets/img/bottom-banner.svg) no-repeat
       center center;
     background-size: cover;
-    height: 100px !important;
+    /* height: 100px !important; */
   }
   .about-2 ul li {
     font-family: "Barlow", sans-serif;
@@ -798,7 +805,7 @@ body {
     z-index: 2;
     width: 100% !important;
     height: auto !important;
-    padding: 0px 10px 0px 10px !important;
+    padding: 0px 10px 0px 10px;
     transition: none !important;
     transform: none !important;
   }
@@ -864,9 +871,9 @@ body {
   .top-bg {
     height: 130px !important;
   }
-  .bottom-bg {
+  /* .bottom-bg {
     display: none;
-  }
+  } */
   .top-right-bg {
     height: 160px;
     margin-left: 65%;
@@ -894,6 +901,26 @@ body {
     font-weight: 700;
     padding: 0px 30px 0px 30px;
   }
+  .about-1{
+    overflow: hidden !important;
+  }
+  .about-section{
+    overflow: hidden !important;
+  }
+  .underline_title{
+    text-align: center !important;
+  }
+  .title2 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center !important;
+    color: var(--white);
+}
+.about-section h3 img {
+  left: 0;
+  text-align: center !important;
+}
   .about-head {
     text-align: center !important;
     color: #fff;
@@ -969,6 +996,7 @@ body {
     padding: 0px 10px 0px 10px !important;
     font-size: 14px;
     opacity: 0.6;
+    text-align: center !important;
   }
   .mobile-reverse {
     display: flex;
@@ -980,6 +1008,7 @@ body {
     color: #ffffff;
     font-weight: bold;
     opacity: 0.6;
+    text-align: center !important;
   }
   .card-about-desktop {
     display: none !important;

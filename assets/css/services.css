@@ -1,5 +1,6 @@
 .computer_section{
     background-color: #121212;
+    overflow: hidden;
 }
 
 .computer_section_bg_3{
@@ -12,6 +13,7 @@
     padding: 20px;
     height: 400px !important;
     /* background-image: linear-gradient(to right, #232921, #202220) !important; */
+    overflow: hidden;
     
 }
 .computer_section{
@@ -233,6 +235,7 @@
   display: flex !important;
   column-gap: 15px;
   flex-wrap: nowrap !important;
+  
 }
 .believe-h1-service{
   color: #ffffff;
@@ -248,6 +251,25 @@
   font-weight: bold;
 }
  @media  screen and (min-width:0px) and (max-width:900px) {
+  .card-row-align{
+    display: flex !important;
+    column-gap: 15px;
+    flex-wrap: nowrap !important;
+    padding: 15px;
+  }
+  .believe-h1-service {
+    color: #ffffff;
+    font-family: "Barlow", sans-serif;
+    font-size: 24px !important;
+    font-weight: bold;
+}
+.believe-h1-service span{
+  color: #cafe15;
+  font-family: "Barlow", sans-serif;
+  font-size: 24px;
+  text-transform: capitalize !important;
+  font-weight: bold;
+}
   .text-content {
     text-align: center;
     display: flex;
