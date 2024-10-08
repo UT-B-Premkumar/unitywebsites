@@ -511,6 +511,9 @@
 .working-process .accordion-item .accordion-button{
   padding: 20px;
 }
+.working-process .accordion-item .accordion-collapse .accordion-body{
+  padding: 20px ;
+}
 .faq_section {
   padding-top: 30px;
 }
