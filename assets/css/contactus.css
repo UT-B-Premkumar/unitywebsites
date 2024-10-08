@@ -51,7 +51,7 @@ input[type=text] {
   color: #fff !important;
   opacity: 0.4;
   font-size: 12px;
-  padding-left: 3px;
+  padding-left: 0px;
 }
 .form-group textarea::placeholder{
   padding-top: 2px;
@@ -388,6 +388,9 @@ input[type=text] {
     color: #fff;
     opacity: 0.6;
   }
+  .about-banner-btn{
+    display: none !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -446,6 +449,9 @@ input[type=text] {
   .email-btn-content {
     position: relative;
     left: -36px;
+  }
+  .about-banner-btn{
+    display: none !important;
   }
 }
 @media (min-width: 998px) and (max-width: 1200px) {

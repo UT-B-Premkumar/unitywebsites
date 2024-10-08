@@ -241,6 +241,14 @@ body {
     font-size: 40px !important;
     padding: 0 16px !important;
   }
+
+  .feature-box{
+    height: 80px !important;
+    margin-bottom: 8px !important;
+  }
+  .about-banner-btn{
+    display: none !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 997px) {
   .image-box {
@@ -274,6 +282,9 @@ body {
   .responsive {
     display: block !important;
     margin-left: 0px;
+  }
+  .about-banner-btn{
+    display: none !important;
   }
 }
 @media (min-width: 998px) and (max-width: 1200px) {
