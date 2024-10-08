@@ -1679,7 +1679,6 @@
           var innovation_section = $(".innovation_section"); // "about" section container
           var faq_section = $(".faq_section"); // "about" section container
           var customer_care = $(".customer_care"); // "about" section container
-          
 
           // *************sections ofsets  *************
 
@@ -1689,7 +1688,6 @@
           var innovation_sectionOffset = innovation_section.offset().top;
           var faq_sectionOffset = faq_section.offset().top;
           var customer_careOffset = customer_care.offset().top;
-          
 
           var windowHeight = $(window).height();
           var scrollPos = $(window).scrollTop();
@@ -1728,17 +1726,18 @@
           }
 
           if (
-            scrollPos + windowHeight > faq_sectionOffset + 300  &&
+            scrollPos + windowHeight > faq_sectionOffset + 300 &&
             screen.width > 1300
           ) {
             $(".faq_section").addClass("active");
           }
-          if ( scrollPos + windowHeight > customer_careOffset    &&
-        screen.width > 1300) {
-          $(".customer_care").addClass("active");
+          if (
+            scrollPos + windowHeight > customer_careOffset &&
+            screen.width > 1300
+          ) {
+            $(".customer_care").addClass("active");
+          }
         }
-        }
-       
 
         // Run the check on page load
         checkAboutSection();
