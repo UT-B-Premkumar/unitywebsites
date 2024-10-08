@@ -502,6 +502,12 @@
   .slider-section .slick-next {
     bottom: -55px;
 }
+.working-process .accordion-item .accordion-button{
+  font-size: 16px;
+}
+.working-process .accordion-item .accordion-collapse .accordion-body{
+  font-size: 14px;
+}
  
 }
 
