@@ -288,6 +288,19 @@
           </div>
       </div>
     </section>
+    <style>
+      .about-2
+        h6 img{
+          transform: translate(0) !important;
+          opacity: 0;
+          transition: ease .5s;
+        }
+        h6 img.visible{
+          transform: translate(0) !important;
+          opacity: 1;
+        }
+      
+    </style>
 
     <section class="about-section"> 
       <div class="container bg-background">
@@ -301,7 +314,7 @@
         </div>
       </div>
 
-      <section id="about-2" class="about-2">
+      <section id="about-2" class="about-2 about-gif">
         <div class="container">
           <h4 class="underline_title title">
             <h3 class="title2">
@@ -358,9 +371,7 @@
            <h6>
                <img
                 src="./assets/img/underline.svg"
-                data-aos="fade-left"
-                data-aos-delay="100"
-                alt=""
+              
                 class="header-underline"
               />
            </h6>
@@ -405,8 +416,8 @@
                 class="col-sm-12 col-lg-6 "
              
               >
-              <h1 class="shake-about">
-                <span class="shaking-text">   Making Technology That </span>
+              <h1 class="shake-about making text-center" style="color: #ffffff;">
+                <span class="shaking-text ">   Making Technology That </span>
 
                 <span class="shaking-text">  Exceeds Expectations</span>
               </h1>
@@ -477,7 +488,7 @@
         </div>
       </div>
 
-      <section id="about-2" class="about-2">
+      <section id="about-2" class="about-2 about-believe-card">
         <div class="container">
           <h1 class="our-services-1">
             <span>
@@ -591,7 +602,6 @@
       src="./assets/img/under-2.svg"
       alt="header-underline"
       class="header-underline-1"
-      data-aos="fade-left"
     />
   </h6>
           </h1>
@@ -796,16 +806,14 @@
     src="./assets/img/under-2.svg"
     alt="header-underline"
     class="header-underline-2"
-    data-aos="fade-left"
   />
 </h6>
           </h1>
-          <h1 class="believe-h1 shaking-heading text-align" data-aos="fade-right" data-aos-delay="200">
-            Tapping Into The Best Ideas For
-          </h1>
-          <h1 class="believe-h1 shaking-heading text-align" data-aos="fade-right" data-aos-delay="400">
-            <div>Your <span>Website Redesign </span></div>
-          </h1>
+          <h1 class="shake-about">
+            <span class="shaking-text believe-h1 d-block">Tapping Into The Best Ideas For </span>
+            <span class="shaking-text believe-h1"> <div>Your <span>Website Redesign </span></div></span>
+         </h1>
+    
           <br>
           <h6 class="text-center mt-2">
             <img
@@ -1077,6 +1085,62 @@
         }
       });
       
+
+      $(document).ready(function () {
+        function checkAboutSection() {
+          // *************sections *************
+          var aboutSection = $(".card-bg-about"); // "about" section container
+       
+          var aboutBelieveCard = $(".about-believe-card"); 
+
+          var ourServicesCard = $(".our-services-ideas"); 
+          // *************sections ofsets  *************
+
+          var aboutOffset = aboutSection.offset().top;
+          var aboutBelieveCardOffset = aboutBelieveCard.offset().top;
+          var ourServicesCard = ourServicesCard.offset().top;
+          var windowHeight = $(window).height();
+          var scrollPos = $(window).scrollTop();
+
+          // Check if the about section is visible from the bottom of the screen
+          if (scrollPos + windowHeight > aboutOffset + 200) {
+            // Add the animation with a delay
+            setTimeout(() => {
+              $(".shake-about").addClass("active"); // Shake effect on specific element
+              $(".about-gif h6 img").addClass("visible"); // Make the image visible
+
+            }, 700);
+          }
+    
+
+          if (scrollPos + windowHeight > aboutBelieveCardOffset + 200) {
+            // Add the animation with a delay
+            setTimeout(() => {
+              $(".shake-about").addClass("active"); // Shake effect on specific element
+              $(".about-believe-card h6 img").addClass("visible"); // Make the image visible
+              $(".about-believe-card h6 img").addClass("visible"); 
+            }, 2000);
+          }
+    
+          if (scrollPos + windowHeight > ourServicesCard + 200) {
+            // Add the animation with a delay
+            setTimeout(() => {
+              $(".shake-about").addClass("active"); // Shake effect on specific element
+              $(".our-services-ideas h6 img").addClass("visible"); 
+            }, 2000);
+          }
+         
+        }
+
+        // Run the check on page load
+        checkAboutSection();
+
+        // Run the check on scroll
+        $(window).on("scroll", function () {
+          checkAboutSection();
+        });
+      });
+   
       </script>
   </body>
 </html>
