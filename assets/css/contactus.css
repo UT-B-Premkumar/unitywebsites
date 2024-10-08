@@ -282,6 +282,7 @@ input[type=text] {
   margin-right: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
+  overflow: hidden !important;
 }
 .email-btn{
   background-color: #121212;
