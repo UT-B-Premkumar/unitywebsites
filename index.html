@@ -1588,21 +1588,21 @@
         if (scrollPosition < 140) {
           $("header").removeClass("fixed");
         }
-        if (scrollPosition > 200) {
-          setTimeout(() => {
-            $(".shake-about").addClass("active");
-            $(".about-section h3 img").addClass("visible");
-          }, 700);
-        }
+        // if (scrollPosition > 200) {
+        //   setTimeout(() => {
+        //     $(".shake-about").addClass("active");
+        //     $(".about-section h3 img").addClass("visible");
+        //   }, 700);
+        // }
 
-        if (scrollPosition > 1000) {
-          setTimeout(function () {
-            $(".shake-services").addClass("active");
-            $(".fade-img-serv").addClass("visible");
-          }, 1200);
-        }
+        // if (scrollPosition > 1000) {
+        //   setTimeout(function () {
+        //     $(".shake-services").addClass("active");
+        //     $(".fade-img-serv").addClass("visible");
+        //   }, 1200);
+        // }
 
-        console.log(scrollPosition);
+        // console.log(scrollPosition);
 
         if (
           scrollPosition > 3700 &&
@@ -1634,20 +1634,20 @@
           $(".customer_care").addClass("active");
         }
 
-        if (scrollPosition > 1200) {
-          var delay = 200; // Base delay in milliseconds
-          var cardCount = $(".our_service-card").length; // Total number of cards
+        // if (scrollPosition > 1200) {
+        //   var delay = 200; // Base delay in milliseconds
+        //   var cardCount = $(".our_service-card").length; // Total number of cards
 
-          // Loop through each card and apply the flip class with a delay
-          $(".our_service-card").each(function (index) {
-            var card = $(this); // Get the current card
+        //   // Loop through each card and apply the flip class with a delay
+        //   $(".our_service-card").each(function (index) {
+        //     var card = $(this); // Get the current card
 
-            // Set a timeout to add the 'flip' class with a staggered delay
-            setTimeout(function () {
-              card.addClass("flip");
-            }, delay * index); // Multiply delay by the index to stagger
-          });
-        }
+        //     // Set a timeout to add the 'flip' class with a staggered delay
+        //     setTimeout(function () {
+        //       card.addClass("flip");
+        //     }, delay * index); // Multiply delay by the index to stagger
+        //   });
+        // }
 
         // Check if the scroll position has reached the scroll point
       });
@@ -1667,6 +1667,57 @@
           }
           $(".baner-right").addClass("animate");
         }, 700);
+      });
+
+      $(document).ready(function () {
+        function checkAboutSection() {
+          var aboutSection = $(".bg-about"); // "about" section container
+          var our_service_section = $(".our_service_section"); // "about" section container
+          var our_service_card = $(".our_service-card"); // "about" section container
+
+          var aboutOffset = aboutSection.offset().top;
+          var our_service_sectionOffSet = our_service_section.offset().top;
+          var our_service_card = our_service_section.offset().top;
+          var windowHeight = $(window).height();
+          var scrollPos = $(window).scrollTop();
+
+          // Check if the about section is visible from the bottom of the screen
+          if (scrollPos + windowHeight > aboutOffset + 200) {
+            // Add the animation with a delay
+            setTimeout(() => {
+              $(".shake-about").addClass("active"); // Shake effect on specific element
+              $(".about-section h3 img").addClass("visible"); // Make the image visible
+            }, 700);
+          }
+          if (scrollPos + windowHeight > our_service_sectionOffSet) {
+            setTimeout(function () {
+              $(".shake-services").addClass("active");
+              $(".fade-img-serv").addClass("visible");
+            }, 1200);
+          }
+          if (scrollPos + windowHeight > our_service_card + 200) {
+            var delay = 200; // Base delay in milliseconds
+            var cardCount = $(".our_service-card").length; // Total number of cards
+
+            // Loop through each card and apply the flip class with a delay
+            $(".our_service-card").each(function (index) {
+              var card = $(this); // Get the current card
+
+              // Set a timeout to add the 'flip' class with a staggered delay
+              setTimeout(function () {
+                card.addClass("flip");
+              }, delay * index); // Multiply delay by the index to stagger
+            });
+          }
+        }
+
+        // Run the check on page load
+        checkAboutSection();
+
+        // Run the check on scroll
+        $(window).on("scroll", function () {
+          checkAboutSection();
+        });
       });
     </script>
   </body>

@@ -36,348 +36,175 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <style>
-    *{
-      color: rgb(35, 35, 35);
-    }
+      * {
+        color: rgb(35, 35, 35);
+      }
+      h2,
+      p {
+        color: white;
+      }
+      .animate {
+        color: red;
+      }
     </style>
   </head>
 
   <body>
-    <style>
-      .box {
-        width: 50px;
-        height: 50px;
-        background: greenyellow;
-        border-radius: 50%;
-        position: relative;
-        transition: ease 0.5s;
-      }
-      .center {
-        width: 100%;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: rgb(212, 212, 212);
-      }
-      .box span {
-        border: solid red 1px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: block;
-        position: absolute;
-        transform: scale(0.7);
-        transition: ease 0.5s;
-      }
-      .box:hover span {
-        animation: line 1s infinite;
-      }
-      .box:hover span:nth-child(1) {
-        animation: line 0.5s infinite;
-      }
-      .box:hover span:nth-child(2) {
-        animation: line 0.5s infinite;
-      }
-      .box:hover span:nth-child(2) {
-        animation: line 1s infinite;
-      }
-
-      /* span:hover{
-
-  } */
-      @keyframes line {
-        0% {
-          transform: scale(0.7);
-        }
-        100% {
-          transform: scale(3);
-        }
-      }
-    </style>
-
     <div class="container">
-      <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-8">
-        <div class="card">
-          <table
-          class="display pending-table dataTable"
-          id="datatable"
-          cellspacing="0"
-          style="width: 1400px"
-          aria-describedby="datatable_info"
-        >
-          <colgroup>
-            <col
-              data-dt-column="0"
-              style="width: 83.925px; min-width: 83.925px"
-            />
-            <col
-              data-dt-column="1"
-              style="width: 117.825px; min-width: 117.825px"
-            />
-            <col
-              data-dt-column="2"
-              style="width: 141.462px; min-width: 141.463px"
-            />
-            <col
-              data-dt-column="3"
-              style="width: 217.637px; min-width: 217.637px"
-            />
-            <col
-              data-dt-column="4"
-              style="width: 194.087px; min-width: 194.088px"
-            />
-            <col
-              data-dt-column="5"
-              style="width: 140.85px; min-width: 140.85px"
-            />
-            <col
-              data-dt-column="6"
-              style="width: 189.312px; min-width: 189.312px"
-            />
-            <col
-              data-dt-column="7"
-              style="width: 186.988px; min-width: 186.988px"
-            />
-            <col
-              data-dt-column="8"
-              style="width: 127.912px; min-width: 127.912px"
-            />
-          </colgroup>
-          <thead>
-            <tr role="row">
-              <th
-                data-dt-column="0"
-                rowspan="1"
-                colspan="1"
-                class="dt-orderable-none dt-ordering-asc"
-                aria-sort="ascending"
-                aria-label="Si No: Activate to invert sorting"
-              >
-                <div class="dt-scroll-sizing">
-                  <span class="dt-column-title" role="button">Si No</span
-                  ><span class="dt-column-order"></span>
-                </div>
-              </th>
-              <th
-                data-dt-column="1"
-                rowspan="1"
-                colspan="1"
-                class="dt-orderable-asc dt-orderable-desc"
-                aria-label="Date: Activate to sort: Activate to sort: Activate to sort: Activate to sort: Activate to sort"
-              >
-                <div class="dt-scroll-sizing">
-                  <span class="dt-column-title" role="button">Date</span
-                  ><span class="dt-column-order"></span>
-                </div>
-              </th>
-              <th
-                data-dt-column="2"
-                rowspan="1"
-                colspan="1"
-                class="dt-orderable-asc dt-orderable-desc"
-                aria-label="Project: Activate to sort: Activate to sort: Activate to sort: Activate to sort: Activate to sort"
-              >
-                <div class="dt-scroll-sizing">
-                  <span class="dt-column-title" role="button">Project</span
-                  ><span class="dt-column-order"></span>
-                </div>
-              </th>
-              <th
-                data-dt-column="3"
-                rowspan="1"
-                colspan="1"
-                class="dt-orderable-none"
-                aria-label="Sub Task: Activate to sort"
-              >
-                <div class="dt-scroll-sizing">
-                  <span class="dt-column-title" role="button">Sub Task</span
-                  ><span class="dt-column-order"></span>
-                </div>
-              </th>
-              <th
-                data-dt-column="4"
-                rowspan="1"
-                colspan="1"
-                class="dt-orderable-none"
-                aria-label="Employee Name: Activate to sort"
-              >
-                <div class="dt-scroll-sizing">
-                  <span class="dt-column-title" role="button"
-                    >Employee Name</span
-                  ><span class="dt-column-order"></span>
-                </div>
-              </th>
-              <th
-                data-dt-column="5"
-                rowspan="1"
-                colspan="1"
-                class="dt-orderable-none"
-                aria-label="Estimated Time: Activate to sort"
-              >
-                <div class="dt-scroll-sizing">
-                  <span class="dt-column-title" role="button"
-                    >Estimated Time</span
-                  ><span class="dt-column-order"></span>
-                </div>
-              </th>
-              <th
-                data-dt-column="6"
-                rowspan="1"
-                colspan="1"
-                class="dt-orderable-none"
-                aria-label="Start Time: Activate to sort"
-              >
-                <div class="dt-scroll-sizing">
-                  <span class="dt-column-title" role="button">Start Time</span
-                  ><span class="dt-column-order"></span>
-                </div>
-              </th>
-              <th
-                data-dt-column="7"
-                rowspan="1"
-                colspan="1"
-                class="dt-orderable-none"
-                aria-label="End Time: Activate to sort"
-              >
-                <div class="dt-scroll-sizing">
-                  <span class="dt-column-title" role="button">End Time</span
-                  ><span class="dt-column-order"></span>
-                </div>
-              </th>
-              <th
-                data-dt-column="8"
-                rowspan="1"
-                colspan="1"
-                class="dt-orderable-none"
-                aria-label="Task Duration: Activate to sort"
-              >
-                <div class="dt-scroll-sizing">
-                  <span class="dt-column-title" role="button"
-                    >Task Duration</span
-                  ><span class="dt-column-order"></span>
-                </div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="sorting_1">1</td>
-              <td>09-09-2024</td>
-              <td>7 Up 7 Down</td>
-              <td>Place bet</td>
-              <td>Manikandan</td>
-              <td>06:00:00</td>
-              <td>09-09-2024 12:06:35</td>
-              <td>09-09-2024 17:56:27</td>
-              <td>05:01:53</td>
-            </tr>
-            <tr>
-              <td class="sorting_1">2</td>
-              <td>09-09-2024</td>
-              <td>Lootrix Website</td>
-              <td>Ludo and roulette banner</td>
-              <td>Shomnaath</td>
-              <td>06:00:00</td>
-              <td>09-09-2024 12:10:27</td>
-              <td>09-09-2024 17:41:44</td>
-              <td>04:24:34</td>
-            </tr>
-            <tr>
-              <td class="sorting_1">3</td>
-              <td>09-09-2024</td>
-              <td>Big small</td>
-              <td>Ingame BG</td>
-              <td>Balamurugan</td>
-              <td>04:00:00</td>
-              <td>09-09-2024 12:13:17</td>
-              <td>09-09-2024 16:47:04</td>
-              <td>03:28:58</td>
-            </tr>
-            <tr>
-              <td class="sorting_1">4</td>
-              <td>09-09-2024</td>
-              <td>Bingo</td>
-              <td>End to End Testing</td>
-              <td>Adithya Ramakrishnan</td>
-              <td>02:00:00</td>
-              <td>09-09-2024 12:23:05</td>
-              <td>09-09-2024 17:35:57</td>
-              <td>00:41:04</td>
-            </tr>
-            <tr>
-              <td class="sorting_1">5</td>
-              <td>09-09-2024</td>
-              <td>Windrop</td>
-              <td>End to End Testing</td>
-              <td>Naveen Kumar</td>
-              <td>02:00:00</td>
-              <td>09-09-2024 12:24:34</td>
-              <td>09-09-2024 15:36:06</td>
-              <td>02:01:45</td>
-            </tr>
-            <tr>
-              <td class="sorting_1">6</td>
-              <td>09-09-2024</td>
-              <td>Hotline</td>
-              <td>End to End Testing</td>
-              <td>Varsha</td>
-              <td>02:00:00</td>
-              <td>09-09-2024 12:29:51</td>
-              <td>09-09-2024 16:58:31</td>
-              <td>02:02:42</td>
-            </tr>
-            <tr>
-              <td class="sorting_1">7</td>
-              <td>09-09-2024</td>
-              <td>Baccarat</td>
-              <td>End to End Testing</td>
-              <td>Amal K P</td>
-              <td>02:00:00</td>
-              <td>09-09-2024 12:30:16</td>
-              <td>09-09-2024 16:48:36</td>
-              <td>02:00:46</td>
-            </tr>
-            <tr>
-              <td class="sorting_1">8</td>
-              <td>09-09-2024</td>
-              <td>Big two</td>
-              <td>End to End Testing</td>
-              <td>Santhana krishnan R</td>
-              <td>02:00:00</td>
-              <td>09-09-2024 12:33:15</td>
-              <td>09-09-2024 17:00:32</td>
-              <td>01:00:52</td>
-            </tr>
-            <tr>
-              <td class="sorting_1">9</td>
-              <td>09-09-2024</td>
-              <td>Baccarat</td>
-              <td>Jira issues</td>
-              <td>Rohan Ashok Gaikwad</td>
-              <td>04:00:00</td>
-              <td>09-09-2024 12:37:20</td>
-              <td>10-09-2024 06:00:00</td>
-              <td>-15:57:37</td>
-            </tr>
-            <tr>
-              <td class="sorting_1">10</td>
-              <td>09-09-2024</td>
-              <td>Wheels</td>
-              <td>Jira issues</td>
-              <td>Bhuvanesh</td>
-              <td>02:00:00</td>
-              <td>09-09-2024 12:41:10</td>
-              <td>09-09-2024 17:52:14</td>
-              <td>01:15:13</td>
-            </tr>
-          </tbody>
-        </table>
-        </div>
-        </div>
-      </div>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h2>prem</h2>
+      <h1 id="about">About</h1>
+
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
+      <p>dsslmkdnsjkdbsjhbsjhdbdhvsbdjsvdghsvdghsvdsmcjbdx</p>
     </div>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(window).on("scroll", function () {
+          var aboutSection = $("#about"); // Replace with your "about" section ID or class
+          var aboutOffset = aboutSection.offset().top;
+          var windowHeight = $(window).height();
+          var scrollPos = $(window).scrollTop();
+
+          // Check if the about section is coming into view from the bottom of the screen
+          if (scrollPos + windowHeight > aboutOffset) {
+            aboutSection.addClass("animate"); // Add a class to trigger animation
+          }
+        });
+      });
+    </script>
   </body>
 </html>
