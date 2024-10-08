@@ -97,8 +97,8 @@
 .minute-hand {
   height: auto;
   position: absolute;
-  top: -25px;
-  left: 30%;
+  top: -24px;
+  left: 29%;
   transform: translate(150%, 30%);
   animation: rotateIcon 25s linear infinite;
 }
@@ -311,7 +311,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     padding-left: 15px;
 }
  
