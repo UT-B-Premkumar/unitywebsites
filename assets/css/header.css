@@ -9,6 +9,9 @@
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Body style */
 body {
