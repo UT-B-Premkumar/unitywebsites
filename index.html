@@ -1604,13 +1604,14 @@
 
         // console.log(scrollPosition);
 
-        if (
-          scrollPosition > 3700 &&
-          screen.width < 1024 &&
-          screen.width > 760
-        ) {
-          $(".innovation_section").addClass("active");
-        }
+        // if (
+        //   scrollPosition > 3700 &&
+        //   screen.width < 1024 &&
+        //   screen.width > 760
+        // ) {
+        //   $(".innovation_section").addClass("active");
+        // }
+
         if (scrollPosition > 2975 && screen.width < 575) {
           $(".innovation_section").addClass("active");
         }
@@ -1621,15 +1622,15 @@
           $(".faq_section").addClass("active");
         }
 
-        if (scrollPosition > 4870 && screen.width > 1300) {
-          $(".faq_section").addClass("active");
-        }
-        if (scrollPosition > 9121 && screen.width < 1024) {
-          $(".customer_care").addClass("active");
-        }
-        if (scrollPosition > 5500 && screen.width > 1300) {
-          $(".customer_care").addClass("active");
-        }
+        // if (scrollPosition > 4870 && screen.width > 1300) {
+        //   $(".faq_section").addClass("active");
+        // }
+        // if (scrollPosition > 9121 && screen.width < 1024) {
+        //   $(".customer_care").addClass("active");
+        // }
+        // if (scrollPosition > 5500 && screen.width > 1300) {
+        //   $(".customer_care").addClass("active");
+        // }
         if (scrollPosition > 7940 && screen.width < 575) {
           $(".customer_care").addClass("active");
         }
@@ -1671,13 +1672,23 @@
 
       $(document).ready(function () {
         function checkAboutSection() {
+          // *************sections *************
           var aboutSection = $(".bg-about"); // "about" section container
           var our_service_section = $(".our_service_section"); // "about" section container
           var our_service_card = $(".our_service-card"); // "about" section container
+          var innovation_section = $(".innovation_section"); // "about" section container
+          var faq_section = $(".faq_section"); // "about" section container
+          var customer_care = $(".customer_care"); // "about" section container
+
+          // *************sections ofsets  *************
 
           var aboutOffset = aboutSection.offset().top;
           var our_service_sectionOffSet = our_service_section.offset().top;
           var our_service_card = our_service_section.offset().top;
+          var innovation_sectionOffset = innovation_section.offset().top;
+          var faq_sectionOffset = faq_section.offset().top;
+          var customer_careOffset = customer_care.offset().top;
+
           var windowHeight = $(window).height();
           var scrollPos = $(window).scrollTop();
 
@@ -1708,6 +1719,23 @@
                 card.addClass("flip");
               }, delay * index); // Multiply delay by the index to stagger
             });
+          }
+
+          if (scrollPos + windowHeight > innovation_sectionOffset + 500) {
+            $(".innovation_section").addClass("active");
+          }
+
+          if (
+            scrollPos + windowHeight > faq_sectionOffset + 300 &&
+            screen.width > 1300
+          ) {
+            $(".faq_section").addClass("active");
+          }
+          if (
+            scrollPos + windowHeight > customer_careOffset &&
+            screen.width > 1300
+          ) {
+            $(".customer_care").addClass("active");
           }
         }
 

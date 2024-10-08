@@ -511,6 +511,9 @@
 .working-process .accordion-item .accordion-button{
   padding: 20px;
 }
+.working-process .accordion-item .accordion-collapse .accordion-body{
+  padding: 20px ;
+}
 .faq_section {
   padding-top: 30px;
 }
@@ -753,6 +756,10 @@
   }
   .our_service-card {
     border-bottom-left-radius: 0px;
+  }
+  .our_service-card:hover li {
+    color: var(--white);
+    opacity: 1;
   }
   .build-p {
     display: block;
