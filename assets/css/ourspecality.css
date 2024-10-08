@@ -242,7 +242,7 @@ body {
 }
 @media (max-width: 766px) {
   .feature-box-margin div{
-    padding: 0;
+    padding: 0 10px;
   }
   .speciality-text p{
     text-align: justify;
