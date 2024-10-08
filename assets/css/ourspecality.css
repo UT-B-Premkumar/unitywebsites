@@ -233,9 +233,6 @@ body {
   }
 }
 @media (max-width: 766px) {
-  main{
-    padding: 0  15px 0 10px;
-  }
   .speciality-text p {
     padding: 0 10px 0 10px;
     /* text-align: center; */
@@ -243,6 +240,14 @@ body {
   .designing-fonts {
     font-size: 40px !important;
     padding: 0 16px !important;
+  }
+
+  .feature-box{
+    height: 80px !important;
+    margin-bottom: 8px !important;
+  }
+  .about-banner-btn{
+    display: none !important;
   }
 }
 @media (min-width: 768px) and (max-width: 997px) {
@@ -277,6 +282,9 @@ body {
   .responsive {
     display: block !important;
     margin-left: 0px;
+  }
+  .about-banner-btn{
+    display: none !important;
   }
 }
 @media (min-width: 998px) and (max-width: 1200px) {
