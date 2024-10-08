@@ -508,7 +508,18 @@
 .working-process .accordion-item .accordion-collapse .accordion-body{
   font-size: 14px;
 }
- 
+.working-process .accordion-item .accordion-button{
+  padding: 20px;
+}
+.faq_section {
+  padding-top: 30px;
+}
+ .faster_section{
+  padding-top: 40px;
+ }
+ .bounce-1{
+  width: 80px;
+ }
 }
 
 @media screen and (max-width:400px) {
