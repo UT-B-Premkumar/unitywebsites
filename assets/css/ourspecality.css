@@ -241,6 +241,12 @@ body {
   }
 }
 @media (max-width: 766px) {
+  .speciality-text p{
+    text-align: justify;
+  }
+  .main-part{
+    padding: 0 15px;
+  }
   .business-padding{
     margin-right: 0rem !important;
       margin-left: 0rem !important;
