@@ -3,7 +3,7 @@
 body {
   background: #121212;
 }
-.about-section{
+.about-section {
   padding: 15px 0px;
 }
 .about-1 {
@@ -71,12 +71,12 @@ body {
   position: absolute;
   z-index: -1;
 } */
- .plus-container h6{
+.plus-container h6 {
   margin-top: -47px;
- }
+}
 .about-1:hover {
 }
-.about-banner-btn{
+.about-banner-btn {
   background: #191919 !important;
   font-family: "Barlow", sans-serif;
   border-radius: 8px !important;
@@ -91,7 +91,7 @@ body {
   color: #edeef0 !important;
   border: 1px solid #1e1e1e !important;
 }
-.about-banner-btn > span{
+.about-banner-btn > span {
   font-family: "Barlow", sans-serif;
   border-radius: 8px !important;
   padding: 4px !important;
@@ -105,8 +105,7 @@ body {
   background-color: #191919 !important; /* Background color */
   /* opacity: 0.5; */
 }
-.about-banner-btn > span{
-
+.about-banner-btn > span {
   color: #edeef081 !important; /* Initial text color */
 
   /* opacity: 0.5 !important; */
@@ -296,7 +295,7 @@ body {
   font-family: "Barlow", sans-serif;
   color: #ffffff;
 }
-.about-2 .para-about-top-align{
+.about-2 .para-about-top-align {
   margin-top: -10px !important;
   opacity: 0.6 !important;
   color: #ffffff;
@@ -314,7 +313,7 @@ body {
   position: relative;
   overflow: hidden; /* Ensure no overflow */
   /* Add other styles as needed */
-  transition: ease .5s;
+  transition: ease 0.5s;
 }
 .card-bg-about-1 h6 {
   margin: 0px 0px 30px 30px;
@@ -394,7 +393,6 @@ body {
   font-family: "Barlow", sans-serif;
   font-size: 36px;
   font-weight: bold;
-
 }
 .believe-h1 span {
   color: #cafe15;
@@ -491,9 +489,9 @@ body {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  border-top-left-radius: 27px; 
-  border-bottom-right-radius: 27px; 
-  border-bottom-left-radius: 27px; 
+  border-top-left-radius: 27px;
+  border-bottom-right-radius: 27px;
+  border-bottom-left-radius: 27px;
   border-top-right-radius: 45px; /* Rounded top-right corner */
   z-index: -100; /* Adjusted stacking order */
 }
@@ -505,14 +503,12 @@ body {
   position: relative;
   z-index: 1;
   height: auto !important;
-
 }
 .our_service-about .believe-content {
   position: absolute;
   z-index: 7;
   top: 0;
   padding-top: 80px;
-  
 }
 
 .our_service-about .bg-img img {
@@ -565,26 +561,24 @@ body {
 .our_service-about:hover .bg-img {
   border-radius: 20px !important;
   z-index: -100;
-  background-image: linear-gradient(to right, #000d14a2 , #010100, #141d0f);
-
+  background-image: linear-gradient(to right, #000d14a2, #010100, #141d0f);
 }
 .our_service-about:hover {
   margin-top: -15px;
   transition: ease 1s !important;
-  border-top-right-radius: 43px !important
+  border-top-right-radius: 43px !important;
 }
 
 .our_service-about:hover .bg-img::after {
-
   width: 200px;
   height: 200px;
   overflow: hidden;
   background: radial-gradient(
-    circle at top,  /* Circle shape with gradient starting at the center */
-    #29642d
-    #62b503, /* Yellowish-green towards the outer edges */
- 
-);
+    circle at top,
+    /* Circle shape with gradient starting at the center */ #29642d #62b503,
+
+    /* Yellowish-green towards the outer edges */
+  );
   /* background-image: linear-gradient(
     to bottom,
     #4ca852b6 90%,
@@ -605,7 +599,6 @@ body {
 }
 
 .bg-img::after {
-  
   content: "";
   position: absolute;
   top: 30%;
@@ -613,16 +606,16 @@ body {
   width: 80px; /* Initial size of the circle */
   height: 80px;
   background: radial-gradient(
-    circle at top,  /* Circle shape with gradient starting at the center */
-    #a1fe37, /* Yellowish-green towards the outer edges */
-    #25c458
-);
+    circle at top,
+    /* Circle shape with gradient starting at the center */ #a1fe37,
+    /* Yellowish-green towards the outer edges */ #25c458
+  );
   transform: translate(-50%, -50%) scale(0); /* Center and scale down */
   opacity: 0; /* Start invisible */
-  transition: transform 1s ease, opacity 0.5s ease; 
+  transition: transform 1s ease, opacity 0.5s ease;
   z-index: 6; /* Ensure it's behind the content */
   overflow: hidden;
- border-radius: 50%;
+  border-radius: 50%;
 }
 
 .our_service-about:hover .bg-img::after {
@@ -638,7 +631,7 @@ body {
   width: 880px; */
 }
 
-.our_service-about:hover{
+.our_service-about:hover {
   background-color: #000507;
 }
 .our_service-title {
@@ -679,7 +672,7 @@ body {
 .our_service-about:hover .bg-img img:nth-child(2) {
   display: block;
 }
-.our_service-about:hover .our_service-about{
+.our_service-about:hover .our_service-about {
   border-radius: 27px !important;
 }
 .believe-content p {
@@ -697,7 +690,7 @@ body {
 }
 .our_service-about:hover .mission {
   font-size: 24px;
-  background: linear-gradient(to right, #C7FB15 40%, #14ff33 78%);
+  background: linear-gradient(to right, #c7fb15 40%, #14ff33 78%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -717,9 +710,8 @@ body {
 .header-underline {
   opacity: 0; /* Initially hidden */
   transition: opacity 1s; /* Transition time for the fade-in */
-
 }
-.header-underline.aos-animate{
+.header-underline.aos-animate {
   animation-duration: 1s; /* Duration of the fade-in animation */
   animation-fill-mode: forwards; /* Keeps the element visible after the animation */
 }
@@ -727,7 +719,7 @@ body {
   opacity: 0; /* Initially hidden */
   transition: opacity 1s; /* Transition time for the fade-in */
 }
-.header-underline-1.aos-animate{
+.header-underline-1.aos-animate {
   animation-duration: 1s; /* Duration of the fade-in animation */
   animation-fill-mode: forwards; /* Keeps the element visible after the animation */
 }
@@ -735,7 +727,7 @@ body {
   opacity: 0; /* Initially hidden */
   transition: opacity 1s; /* Transition time for the fade-in */
 }
-.header-underline-2.aos-animate{
+.header-underline-2.aos-animate {
   animation-duration: 1s; /* Duration of the fade-in animation */
   animation-fill-mode: forwards; /* Keeps the element visible after the animation */
 }
@@ -743,7 +735,6 @@ body {
   animation-name: fadeIn; /* Triggers the fade-in animation */
   opacity: 1; /* Makes the element visible */
 }
-
 
 .shaking-text {
   display: inline-block !important;
@@ -783,7 +774,7 @@ body {
 }
 
 @media screen and (min-width: 0px) and (max-width: 900px) {
-  .making span{
+  .making span {
     text-align: center !important;
   }
   .bg-top-row {
@@ -796,7 +787,7 @@ body {
   }
   .about-section {
     padding: 35px 0px;
-}
+  }
   .our-services-1 {
     font-size: 17px;
     font-weight: 600;
@@ -905,7 +896,7 @@ body {
     margin-left: 65%;
     margin-top: -180px !important;
     /* transform: rotate(90deg); */
-}
+  }
   .top-left-bg {
     height: 130px;
     margin-left: -60px !important;
@@ -927,13 +918,13 @@ body {
     font-weight: 700;
     padding: 0px 30px 0px 30px;
   }
-  .about-1{
+  .about-1 {
     overflow: hidden !important;
   }
-  .about-section{
+  .about-section {
     overflow: hidden !important;
   }
-  .underline_title{
+  .underline_title {
     text-align: center !important;
   }
   .title2 {
@@ -942,11 +933,11 @@ body {
     font-weight: 600;
     text-align: center !important;
     color: var(--white);
-}
-.about-section h3 img {
-  left: 0;
-  text-align: center !important;
-}
+  }
+  .about-section h3 img {
+    left: 0;
+    text-align: center !important;
+  }
   .about-head {
     text-align: center !important;
     color: #fff;
@@ -1023,7 +1014,7 @@ body {
     font-size: 14px;
     text-align: center !important;
   }
-  .making span{
+  .making span {
     font-size: 24px;
   }
   .mobile-reverse {
@@ -1039,7 +1030,7 @@ body {
   .card-about-desktop {
     display: none !important;
   }
-  .text-align{
+  .text-align {
     text-align: center !important;
   }
 }
@@ -1049,25 +1040,25 @@ body {
     text-align: left !important;
   }
   /* Initially show the static image */
-.card-bg-about .scroll-static {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-}
+  .card-bg-about .scroll-static {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
 
-/* Initially hide the GIF */
-.card-bg-about .scroll-gif {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
+  /* Initially hide the GIF */
+  .card-bg-about .scroll-gif {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
 
-/* On hover, hide the static image and show the GIF */
-.card-bg-about:hover .scroll-static {
-  opacity: 0;
-}
+  /* On hover, hide the static image and show the GIF */
+  .card-bg-about:hover .scroll-static {
+    opacity: 0;
+  }
 
-.card-bg-about:hover .scroll-gif {
-  opacity: 1;
-}
+  .card-bg-about:hover .scroll-gif {
+    opacity: 1;
+  }
 
   .top-right-bg {
     right: 0 !important;
@@ -1104,3 +1095,166 @@ body {
     width: 150px;
   }
 }
+
+/* Tapping animation  start  */
+.idea_code_section-row .col-md-4 {
+  padding: 0;
+}
+.idea_code_section-row {
+  padding: 50px 0;
+}
+.idea-inner {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(270.23deg, #c7fb15 0%, #1dfb15 100%);
+  border-radius: 61px;
+  padding: 1px;
+  z-index: 1;
+  position: relative;
+}
+.idea-inner > div {
+  display: flex;
+  background: black;
+  align-items: center;
+  padding: 7px 8px;
+  border-radius: 61px;
+  gap: 10px;
+}
+.idea-inner p {
+  margin: 0;
+  font-weight: 600;
+  padding-left: 40px;
+}
+
+.idea-inner span {
+  opacity: 0.8;
+  font-size: 16px;
+  transition: ease 0.5s;
+  padding-left: 40px;
+  display: inline-block;
+}
+
+.idea-img-container {
+  background: linear-gradient(270.23deg, #c7fb15 0%, #1dfb15 100%);
+  border-radius: 50%;
+  padding: 1px;
+}
+.idea-img-container img {
+  /* padding: 13px; */
+  width: 45px;
+  height: 45px;
+  background: transparent;
+}
+
+.idea-img-container > div {
+  padding: 17px;
+  background: black;
+  border-radius: 50%;
+  transition: ease 0.5s;
+  /* opacity: 0.9; */
+}
+.idea-card {
+  max-width: 420px;
+  min-width: 420px;
+}
+.idea-card1 {
+  position: relative;
+  left: 55px;
+}
+.idea-card2 .idea-inner p,
+.idea-card2 .idea-inner span,
+.idea-card4 .idea-inner span,
+.idea-card4 .idea-inner p {
+  padding: 0 !important;
+}
+
+.idea-card:hover .idea-img-container > div {
+  background-color: #458038;
+  /* opacity: 1; */
+}
+.idea-card:hover .idea-inner span {
+  opacity: 1;
+}
+.idea-card .line {
+  /* overflow: hidden; */
+}
+.idea-card .line.left {
+  height: 1px;
+  position: relative;
+  right: -100%;
+  transform: rotate(53deg) translate(-10px, 48px);
+  width: 215px;
+}
+.line {
+  height: 1px;
+  position: relative;
+  background: #335f2a;
+}
+
+.line.right {
+  left: 0;
+  transform: rotate(130deg) translate(129px, 100px);
+  width: 215px;
+}
+.line.center-left {
+  right: -100%;
+  transform: rotate(0) translate(-0, -59px);
+  width: 83px;
+}
+.line.center-right {
+  left: -89px;
+  transform: rotate(180deg) translate(-28px, 54px);
+  width: 70px;
+}
+
+.line.bottom-left {
+  height: 1px;
+  position: relative;
+  right: -100%;
+  transform: rotate(-42deg) translate(76px, -132px);
+  width: 225px;
+}
+.line.bottom-right {
+  height: 1px;
+  position: relative;
+  left: 0%;
+  transform: rotate(223deg) translate(223px, -34px);
+  width: 225px;
+}
+
+
+.idea-card2 {
+  position: relative;
+  right: 55px;
+}
+.line span {
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  left: 100%;
+  background: #68ff21;
+  top: -1px;
+  border-radius: 66px;
+  transition: ease 0.5s;
+}
+.line div {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(270.23deg, #35b317 0%, #3a5b38 100%);
+  border-radius: 50%;
+  right: -17px;
+  position: absolute;
+  top: -10px;
+}
+.idea-card:hover .line {
+  background-color: #3ccf1e;
+}
+.idea-card:hover .line div {
+  background: linear-gradient(270.23deg, #c7fb15 0%, #3ccf1e 100%);
+}
+
+.idea-card:hover .line span {
+  left: -10px;
+}
+
+/* Tapping animation  start  */
