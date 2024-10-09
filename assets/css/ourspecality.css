@@ -170,6 +170,10 @@ body {
   padding: 0 368px !important;
 }
 
+.hr-line {
+  color: #fff;
+  display: none;
+}
 @media (max-width: 992px) {
   .fluid-video {
     width: 100%; /* Ensure the video takes up the full width of the container */
@@ -241,18 +245,22 @@ body {
   }
 }
 @media (max-width: 766px) {
-  .feature-box-margin div{
+  .hr-line {
+    color: #fff;
+    display: block;
+  }
+  .feature-box-margin div {
     padding: 0 20px 0 5px;
   }
-  .speciality-text p{
+  .speciality-text p {
     text-align: justify;
   }
-  .main-part{
+  .main-part {
     padding: 0 15px;
   }
-  .business-padding{
+  .business-padding {
     margin-right: 0rem !important;
-      margin-left: 0rem !important;
+    margin-left: 0rem !important;
   }
   .speciality-text p {
     padding: 0 10px 0 10px;
