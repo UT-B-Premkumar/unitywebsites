@@ -150,8 +150,8 @@
   /* section about   end*/
 
   /* our_service_section start */
-  .about-section .aos-animate .shaking-text:nth-child(1){
-      display: block !important;
+  .about-section .aos-animate .shaking-text:nth-child(1) {
+    display: block !important;
   }
   .our_service_section h4,
   .our_service_section h3 {
@@ -182,6 +182,9 @@
   /* our_service_section end */
 
   /* innovation section  */
+  .innovation_section .img-container {
+    display: none;
+  }
   .innovation_section .title2 img {
     display: none;
   }
@@ -232,30 +235,29 @@
   .innovation_section.active .img-container .yellow-box {
     transform: rotate(-3deg);
   }
-  .power-mobile{
+  .power-mobile {
     display: block !important;
   }
-  .power-card{
+  .power-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     justify-content: center;
     align-items: center;
   }
-  
-  .power-card > div{
-  max-width: 100%;
-  width: 100%;
+
+  .power-card > div {
+    max-width: 100%;
+    width: 100%;
   }
-  div.power-desktop{
-    display: none ;
+  div.power-desktop {
+    display: none;
   }
   .power-card > div:nth-child(odd) {
     text-align: end;
   }
   .power-card > div:nth-child(even) {
     text-align: start;
-  
   }
   /* animation end  */
 
@@ -264,6 +266,9 @@
 
   /* innovation section  end*/
 
+  .faster_section .img-container {
+    display: none;
+  }
   .faster_section {
     padding: 0;
     text-align: center;
@@ -310,7 +315,6 @@
   }
 
   /* faster end */
-
 
   /* testimoniel start */
 
@@ -364,11 +368,11 @@
   .content-main h2 {
     font-size: 22px;
   }
-  .customer_care_content{
+  .customer_care_content {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .working-process .accordion-item .accordian-numbers{
+  .working-process .accordion-item .accordian-numbers {
     display: none;
   }
 }
@@ -428,12 +432,16 @@
     padding: 0;
   }
   .about-section {
-    padding-top: 60px  !important;
+    padding-top: 60px !important;
     padding-bottom: 60px !important;
   }
   .innovation_section {
     padding-top: 40px;
   }
+  .innovation_section .content-img {
+    padding: 30px 0 !important;
+  }
+
   .services_games {
     margin-top: 50px;
   }
@@ -443,7 +451,7 @@
   .innovation_section {
     padding: 0 10px;
     padding-top: 60px;
-        padding-bottom: 60px;
+    padding-bottom: 60px;
   }
 
   .innovation_section .img-container {
@@ -453,16 +461,16 @@
   .innovation_section .green-box {
     height: 270px;
   }
-    .innovation_right h6{
+  .innovation_right h6 {
     font-size: 14px !important;
   }
-  .innovation_right h4{
+  .innovation_right h4 {
     font-size: 22px !important;
   }
-  .development_section h3{
+  .development_section h3 {
     font-size: 22px;
   }
-  .development_section h4{
+  .development_section h4 {
     font-size: 15px;
   }
   section.landing,
@@ -486,61 +494,62 @@
   .services_games h3 {
     font-size: 18px;
   }
-  .services_games h4{
+  .services_games h4 {
     font-size: 25px;
   }
   .slider-section .slick-next {
     bottom: -55px;
-}
-.working-process .accordion-item .accordion-button{
-  font-size: 16px;
-}
-.working-process .accordion-item .accordion-collapse .accordion-body{
-  font-size: 14px;
-}
-.working-process .accordion-item .accordion-button{
-  padding: 20px;
-}
-.working-process .accordion-item .accordion-collapse .accordion-body{
-  padding: 20px ;
-}
-.faq_section {
-  padding-top: 30px;
-}
- .faster_section{
-  padding-top: 40px;
- }
- .bounce-1{
-  width: 80px;
- }
- .development_card .top img:nth-child(1) ,  .development_card:hover .top img:nth-child(2) {
-  transform: rotate(0deg) !important;
- }
- .development_card .top img:nth-child(2) {
-   visibility: visible !important;
- }
- .development_card:hover .top img:nth-child(1) ,  .development_card .top img:nth-child(1){
-   display: none !important; 
-   opacity: 0 !important;
- }
+  }
+  .working-process .accordion-item .accordion-button {
+    font-size: 16px;
+  }
+  .working-process .accordion-item .accordion-collapse .accordion-body {
+    font-size: 14px;
+  }
+  .working-process .accordion-item .accordion-button {
+    padding: 20px;
+  }
+  .working-process .accordion-item .accordion-collapse .accordion-body {
+    padding: 20px;
+  }
+  .faq_section {
+    padding-top: 30px;
+  }
+  .faster_section {
+    padding-top: 40px;
+  }
+  .bounce-1 {
+    width: 80px;
+  }
+  .development_card .top img:nth-child(1),
+  .development_card:hover .top img:nth-child(2) {
+    transform: rotate(0deg) !important;
+  }
+  .development_card .top img:nth-child(2) {
+    visibility: visible !important;
+  }
+  .development_card:hover .top img:nth-child(1),
+  .development_card .top img:nth-child(1) {
+    display: none !important;
+    opacity: 0 !important;
+  }
 }
 
-@media screen and (max-width:400px) {
-  .development_card_content .top img{
+@media screen and (max-width: 400px) {
+  .development_card_content .top img {
     width: 35px;
   }
-  .development_section .icons img{
+  .development_section .icons img {
     width: 25px;
   }
-  .innovation_section .img-container{
+  .innovation_section .img-container {
     margin-top: 30px;
     height: 255px;
   }
-  .innovation_section .yellow-box, .innovation_section .green-box{
+  .innovation_section .yellow-box,
+  .innovation_section .green-box {
     height: 255px;
-
   }
-
 }
 @media screen and (min-width: 980px) {
   .learn-more {
@@ -572,11 +581,11 @@
     font-weight: 700;
   }
 }
-@media  (min-width: 1024px) {
-
-
-  
-  .power-mobile{
+@media (min-width: 1024px) {
+  .content-img {
+    display: none;
+  }
+  .power-mobile {
     display: none !important;
   }
 }
@@ -724,7 +733,6 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1400px) {
-
   .about-right {
     padding-left: 10px !important;
   }
@@ -757,7 +765,6 @@
 }
 
 @media (min-width: 1300px) {
-
   .services_games_col:nth-child(4) .services_games_card,
   .services_games_col:nth-child(8) .services_games_card {
     border-right: 0px;
@@ -835,4 +842,3 @@
     max-width: 800px !important;
   }
 }
-
