@@ -110,7 +110,7 @@
     height: 50px !important;
   }
   .about-right {
-    padding: 60px 15px 0px 15px !important;
+    padding: 0px 15px 0px 15px !important;
     text-align: center;
   }
   .about-right h3 {
@@ -560,6 +560,9 @@
   .faster_section .img-container img:nth-child(2) {
     display: none;
   }
+  .flicker{
+    display: none;
+  }
   .learn-more {
     display: none;
   }
@@ -761,6 +764,9 @@
 @media (min-width: 1025px) and (max-width: 1200px) {
   div.bg-about {
     padding: 66px 0;
+  }
+  .about-right h3{
+    font-size: 29px;
   }
 }
 
