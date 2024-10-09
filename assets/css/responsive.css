@@ -232,7 +232,31 @@
   .innovation_section.active .img-container .yellow-box {
     transform: rotate(-3deg);
   }
-
+  .power-mobile{
+    display: block !important;
+  }
+  .power-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .power-card > div{
+  max-width: 100%;
+  width: 100%;
+  }
+  div.power-desktop{
+    display: none ;
+  }
+  .power-card > div:nth-child(odd) {
+    text-align: end;
+  }
+  .power-card > div:nth-child(even) {
+    text-align: start;
+  
+  }
   /* animation end  */
 
   /* innovation section  end*/
@@ -287,38 +311,7 @@
 
   /* faster end */
 
-  /* development_section start */
-  .development_section .row.magap20 {
-    gap: 40px;
-  }
-  .development_section {
-    padding-top: 50px;
-  }
-  .development_section h4 {
-    font-size: 16px;
-  }
-  .development_section h3 {
-    font-size: 24px;
-    padding-bottom: 35px;
-  }
-  .development_card_content {
-    padding-top: 20px;
-    margin-bottom: 28px;
-  }
-  .development_card_content p {
-    margin: 11px 0;
-    line-height: 20px;
-    font-size: 13px;
-  }
-  .development_card_content .top img {
-    width: 50px;
-  }
-  .development_card_content .top {
-    font-size: 18px;
-  }
 
-
-  /* development_section end */
   /* testimoniel start */
 
   .testimoniel_section h4 {
@@ -579,7 +572,14 @@
     font-weight: 700;
   }
 }
+@media  (min-width: 1024px) {
 
+
+  
+  .power-mobile{
+    display: none !important;
+  }
+}
 @media (min-width: 767px) and (max-width: 1024px) {
   .m-rev {
     flex-direction: column-reverse;
@@ -757,6 +757,7 @@
 }
 
 @media (min-width: 1300px) {
+
   .services_games_col:nth-child(4) .services_games_card,
   .services_games_col:nth-child(8) .services_games_card {
     border-right: 0px;
@@ -834,3 +835,4 @@
     max-width: 800px !important;
   }
 }
+

@@ -98,6 +98,10 @@ nav ul li a {
 nav ul li:hover a {
   transform: translate(0, -25px); /* Move the element upwards on hover */
 }
+nav ul li:hover a.active  {
+ transform:  translate(0, 0);
+}
+
 
 /* Apply styles for all li elements */
 nav ul li:nth-child(1),
