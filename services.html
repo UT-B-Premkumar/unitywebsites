@@ -51,7 +51,7 @@
               </li>
               <li>
                 <a href="./services.html"   class="active">Services</a>
-                <a href="./services.html">Services</a>
+                <a href="./services.html"  class="active">Services</a>
               </li>
               <li>
                 <a href="ourspecality.html">OUR SPECIALITY</a>
@@ -708,7 +708,10 @@
 
     <script src="./assets/js/aos.js"></script>
     <script>
-      AOS.init();
+        // Initialize AOS with 'once' set to true so the animation happens only once
+        AOS.init({
+        once: true, // restrict animation to single load
+      });
     </script>
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
     <script src="./assets/js/particles.min.js"></script>
