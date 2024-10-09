@@ -248,6 +248,10 @@ body {
   font-weight: 500;
   margin-left: 10px;
 }
+.about-conntainer img{
+  width: 45px;
+
+}
 .about-conntainer div {
   margin: 10px 0;
 }
