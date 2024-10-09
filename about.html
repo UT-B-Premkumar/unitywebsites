@@ -43,11 +43,11 @@
           <nav class="desktop">
             <ul>
               <li>
-                <a href="index.html" class="active"> Home </a>
+                <a href="index.html"> Home </a>
                 <a href="index.html"> Home </a>
               </li>
               <li>
-                <a href="./about.html">About US</a>
+                <a href="./about.html"  class="active">About US</a>
                 <a href="./about.html">About US</a>
               </li>
               <li>
@@ -79,13 +79,13 @@
             <nav class="mobile-nav-container">
               <ul>
                 <li>
-                  <a href="index.html" class="active">
+                  <a href="index.html" >
                     <img src="./assets/img/icon/mob_home.png" alt="" />
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="./about.html">
+                  <a href="./about.html" class="active">
                     <img src="./assets/img/icon/about_mobile.png" alt="" />
 
                     About US</a
@@ -290,12 +290,12 @@
     </section>
     <style>
       .about-2
-        h6 img{
+        .underline-fade-up img{
           transform: translate(0) !important;
           opacity: 0;
           transition: ease .5s;
         }
-        h6 img.visible{
+        .underline-fade-up img.visible{
           transform: translate(0) !important;
           opacity: 1;
         }
@@ -368,7 +368,7 @@
               >
                 S</span
               >
-           <h6>
+           <h6 class="underline-fade-up">
                <img
                 src="./assets/img/underline.svg"
               
@@ -416,8 +416,8 @@
                 class="col-sm-12 col-lg-6 "
              
               >
-              <h1 class="shake-about making text-center" style="color: #ffffff;">
-                <span class="shaking-text ">   Making Technology That </span>
+              <h1 class="shake-about making padding-head" style="color: #ffffff;">
+                <span class="shaking-text d-block">   Making Technology That </span>
 
                 <span class="shaking-text">  Exceeds Expectations</span>
               </h1>
@@ -597,7 +597,7 @@
                               Y
                                  </span>
   </span>
-  <h6>
+  <h6 class="underline-fade-up">
     <img
       src="./assets/img/under-2.svg"
       alt="header-underline"
@@ -801,7 +801,7 @@
             E
                </span>
 </span>
-<h6>
+<h6 class="underline-fade-up">
   <img
     src="./assets/img/under-2.svg"
     alt="header-underline"
@@ -1107,7 +1107,7 @@
             // Add the animation with a delay
             setTimeout(() => {
               $(".shake-about").addClass("active"); // Shake effect on specific element
-              $(".about-gif h6 img").addClass("visible"); // Make the image visible
+              $(".about-gif .underline-fade-up img").addClass("visible"); // Make the image visible
 
             }, 700);
           }
@@ -1117,8 +1117,8 @@
             // Add the animation with a delay
             setTimeout(() => {
               $(".shake-about").addClass("active"); // Shake effect on specific element
-              $(".about-believe-card h6 img").addClass("visible"); // Make the image visible
-              $(".about-believe-card h6 img").addClass("visible"); 
+              $(".about-believe-card .underline-fade-up img").addClass("visible"); // Make the image visible
+              $(".about-believe-card .underline-fade-up img").addClass("visible"); 
             }, 2000);
           }
     
@@ -1126,7 +1126,7 @@
             // Add the animation with a delay
             setTimeout(() => {
               $(".shake-about").addClass("active"); // Shake effect on specific element
-              $(".our-services-ideas h6 img").addClass("visible"); 
+              $(".our-services-ideas .underline-fade-up img").addClass("visible"); 
             }, 2000);
           }
          
