@@ -1111,15 +1111,18 @@ body {
   padding: 1px;
   z-index: 1;
   position: relative;
+  z-index: 2;
 }
 
 .idea-inner > div {
+  background: url("../img/about/idea-bg.png");
   display: flex;
-  background: black;
   align-items: center;
   padding: 7px 8px;
   border-radius: 61px;
   gap: 10px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .idea-inner p {
   margin: 0;
@@ -1128,7 +1131,7 @@ body {
 }
 
 .idea-inner span {
-  opacity: 0.8;
+  opacity: 0.7;
   font-size: 16px;
   transition: ease 0.5s;
   padding-left: 40px;
@@ -1176,25 +1179,33 @@ body {
 .idea-card:hover .idea-inner span {
   opacity: 1;
 }
-.idea-card .line {
-  /* overflow: hidden; */
+.idea-card:hover .idea-inner p {
+  background: rgb(20, 255, 135);
+  background: linear-gradient(
+    310deg,
+    rgba(20, 255, 135, 1) 76%,
+    rgba(202, 254, 21, 1) 95%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .idea-card .line.left {
   height: 1px;
   position: relative;
   right: -100%;
-  transform: rotate(53deg) translate(-10px, 48px);
-  width: 215px;
+  transform: rotate(53deg) translate(-10px, 65px);
+  width: 211px;
 }
 .line {
   height: 1px;
   position: relative;
   background: #335f2a;
+  z-index: 1;
 }
 
 .line.right {
   left: 0;
-  transform: rotate(130deg) translate(129px, 100px);
+  transform: rotate(130deg) translate(122px, 100px);
   width: 215px;
 }
 .line.center-left {
@@ -1212,17 +1223,16 @@ body {
   height: 1px;
   position: relative;
   right: -100%;
-  transform: rotate(-42deg) translate(76px, -132px);
-  width: 225px;
+  transform: rotate(-42deg) translate(65px, -128px);
+  width: 220px;
 }
 .line.bottom-right {
   height: 1px;
   position: relative;
   left: 0%;
-  transform: rotate(223deg) translate(223px, -34px);
+  transform: rotate(223deg) translate(227px, -32px);
   width: 225px;
 }
-
 
 .idea-card2 {
   position: relative;
@@ -1258,7 +1268,155 @@ body {
   left: -10px;
 }
 
-.idea-card2  .idea-inner span , .idea-card4  .idea-inner span , .idea-card6  .idea-inner span {
+.idea-card2 .idea-inner span,
+.idea-card4 .idea-inner span,
+.idea-card6 .idea-inner span {
   padding-right: 15px !important;
+}
+
+.idea_code_section-row {
+  position: relative;
+  height: 200px;
+}
+.idea_code_section_col1 {
+  position: absolute;
+  top: 27px;
+  left: 0;
+}
+.idea_code_section_col2 {
+  position: absolute;
+  right: 0;
+  top: 27px;
+}
+
+.idea_code_section-row:nth-child(2) {
+  height: 400px;
+}
+.idea_code_section_col3 {
+  position: absolute;
+  left: -15px;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.idea_code_section_col4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.idea_code_section_col5 {
+  position: absolute;
+  right: 10px;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.idea_code_section_col6 {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.idea_code_section_col7 {
+  position: absolute;
+  right: 10px;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .idea-inner > div {
+    background-size: cover;
+  }
+  .idea-card {
+    max-width: 300px;
+    min-width: 300px;
+  }
+  .idea-card1 {
+    left: 0;
+  }
+  .idea-card .line.left {
+    height: 1px;
+    position: relative;
+    right: -100%;
+    transform: rotate(69deg) translate(-10px, 71px);
+    width: 190px;
+  }
+  .idea-card2 {
+    right: 0;
+  }
+  .idea-inner span {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+  .line.right {
+    left: 0;
+    transform: rotate(109deg) translate(62px, 94px);
+    width: 165px;
+  }
+  .idea_code_section_col5 {
+    right: -20px;
+  }
+  .line.center-right {
+    transform: rotate(180deg) translate(-60px, 54px);
+  }
+  .line.center-left {
+    transform: rotate(0) translate(-59px, -59px);
+  }
+  .idea_code_section-row {
+    height: 158px;
+  }
+  .line.bottom-left {
+    transform: rotate(-55deg) translate(93px, -117px);
+    width: 160px;
+  }
+  .line.bottom-right {
+    transform: rotate(245deg) translate(156px, -75px);
+    width: 225px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .idea-card {
+    max-width: 385px;
+    min-width: 385px;
+  }
+  .idea-inner > div{
+    background-size: cover;
+  }
+  .idea-card .line.left{
+    transform: rotate(65deg) translate(-28px, 87px);
+    width: 211px;
+  }
+  .line.right{
+    transform: rotate(114deg) translate(63px, 108px);
+  }
+  .idea_code_section_col3{
+    left: -35px;
+  }
+  .idea_code_section_col5{
+    right: -35px;
+  }
+  .line.center-right{
+    transform: rotate(180deg) translate(-40px, 54px);
+  }
+  .line.center-left{
+    transform: rotate(0) translate(-33px, -59px);
+  }
+  .line.bottom-left{
+    transform: rotate(-49deg) translate(55px, -127px);
+  }
+  .line.bottom-right{
+    transform: rotate(237deg) translate(179px, -50px);
+  }
+}
+
+
+@media screen and (max-width:1024px) {
+  .idea_code_section{
+    display: none;
+  }
 }
 /* Tapping animation  start  */
