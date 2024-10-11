@@ -248,6 +248,10 @@ body {
   font-weight: 500;
   margin-left: 10px;
 }
+.about-conntainer img{
+  width: 45px;
+
+}
 .about-conntainer div {
   margin: 10px 0;
 }
@@ -462,6 +466,8 @@ body {
   transform: rotate(-5deg);
   transition: ease 0.3s;
 }
+
+
 
 .img-container {
   position: relative;
