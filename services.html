@@ -50,8 +50,8 @@
                 <a href="./about.html">About US</a>
               </li>
               <li>
-                <a href="./services.html"   class="active">Services</a>
-                <a href="./services.html"  class="active">Services</a>
+                <a href="./services.html" class="active">Services</a>
+                <a href="./services.html" class="active">Services</a>
               </li>
               <li>
                 <a href="ourspecality.html">OUR SPECIALITY</a>
@@ -91,7 +91,7 @@
                   >
                 </li>
                 <li>
-                  <a href="./services.html"  class="active">
+                  <a href="./services.html" class="active">
                     <img src="./assets/img/icon/service.png" alt="" />
 
                     Services</a
@@ -703,13 +703,53 @@
         class="arrow-active"
       />
     </a>
+    <div class="footer-section">
+      <div class="nav-bar">
+        <div class="footer-section">
+          <div class="nav-bar">
+            <!-- Home -->
+            <a href="./index.html" class="active" onclick="setActive(this, 0)">
+              <img src="./assets/img/icon/active.svg" width="0" alt="Home" />
+            </a>
+            <!-- About -->
+            <a href="./about.html" onclick="setActive(this, 1)">
+              <img src="./assets/img/icon/about.svg" width="0" alt="User" />
+            </a>
+            <!-- Services -->
+            <a href="./services.html" onclick="setActive(this, 2)">
+              <img
+                src="./assets/img/icon/services.svg"
+                width="0"
+                alt="Rocket"
+              />
+            </a>
+            <!-- Speciality -->
+            <a href="./ourspecality.html" onclick="setActive(this, 3)">
+              <img
+                src="./assets/img/icon/speciality_inactive.svg"
+                width="0"
+                alt="Settings"
+              />
+            </a>
+            <!-- Contact Us -->
+            <a href="./contactus.html" onclick="setActive(this, 4)">
+              <img
+                src="./assets/img/icon/contactus.svg"
+                width="0"
+                alt="Envelope"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <script src="./assets/js/aos.js"></script>
     <script>
-        // Initialize AOS with 'once' set to true so the animation happens only once
-        AOS.init({
+      // Initialize AOS with 'once' set to true so the animation happens only once
+      AOS.init({
         once: true, // restrict animation to single load
       });
     </script>
@@ -717,6 +757,80 @@
     <script src="./assets/js/particles.min.js"></script>
     <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script>
+      function setActive(element, index) {
+        var links = document.querySelectorAll(".nav-bar a");
+
+        // Define the active and inactive icons for each menu item
+        var icons = [
+          {
+            active: "./assets/img/icon/active.svg",
+            inactive: "./assets/img/icon/inactive.svg",
+          }, // Home
+          {
+            active: "./assets/img/icon/about_active.svg",
+            inactive: "./assets/img/icon/about.svg",
+          }, // About
+          {
+            active: "./assets/img/icon/services_active.svg",
+            inactive: "./assets/img/icon/services.svg",
+          }, // Services
+          {
+            active: "./assets/img/icon/speciality_active.svg",
+            inactive: "./assets/img/icon/speciality_inactive.svg",
+          }, // Speciality
+          {
+            active: "./assets/img/icon/contactus_active.svg",
+            inactive: "./assets/img/icon/contactus.svg",
+          }, // Contact Us
+        ];
+
+        // Remove the 'active' class and reset all icons to inactive state
+        links.forEach(function (link, i) {
+          link.classList.remove("active");
+          var img = link.querySelector("img");
+          img.src = icons[i].inactive; // Set the inactive icon for each link
+        });
+
+        // Set the clicked link as active and update its icon
+        element.classList.add("active");
+        var activeImg = element.querySelector("img");
+        activeImg.src = icons[index].active; // Set the active icon for the clicked link
+
+        // If you have a highlighter, update its position (optional)
+        var highlighter = document.querySelector(".highlighter");
+        if (highlighter) {
+          var linkWidth = element.offsetWidth;
+          var highlighterPosition = index * linkWidth;
+          highlighter.style.transform =
+            "translateX(" + highlighterPosition + "px)";
+          highlighter.style.width = linkWidth + "px";
+        }
+      }
+
+      // Set the correct link as active based on the URL
+      window.onload = function () {
+        var url = window.location.href;
+        var activeIndex = 0; // Default is the first link (Home)
+
+        // Check URL and determine the active menu index
+        if (url.includes("about.html")) {
+          activeIndex = 1; // User icon active
+        } else if (url.includes("services.html")) {
+          activeIndex = 2; // Rocket icon active
+        } else if (url.includes("ourspecality.html")) {
+          activeIndex = 3; // Settings icon active
+        } else if (url.includes("contactus.html")) {
+          activeIndex = 4; // Envelope icon active
+        } else {
+          activeIndex = 0; // Home icon active (default for index.html)
+        }
+
+        // Activate the appropriate link
+        var activeLink = document.querySelectorAll(".nav-bar a")[activeIndex];
+        setActive(activeLink, activeIndex);
+      };
+    </script>
     <script type="text/javascript" src="assets/js/common.js" defer></script>
   </body>
 </html>
