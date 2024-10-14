@@ -12,6 +12,9 @@
     }
 }
 @media screen and (width: 540px) and (height:720px){
+    .desktop-view{
+        display: none;
+    }
     .para-banner {
         padding: 0px 100px 0px 100px !important;
     }
