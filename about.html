@@ -596,7 +596,7 @@
                         <div class="our_service-about">
                            <div class="bg-img">
                               <img src="./assets/img/bg-img-2.svg" alt="" class="">
-                              <img src="./assets/img/svg-hover.svg" alt=""  class="">
+                              <img src="./assets/img/svg-hover.svg" alt=""  class="hover-bg">
                            </div>
                            <div class="believe-content">
                               <div style="height: 70px" >
@@ -1007,6 +1007,37 @@
       <img src="assets/img/icon/arrow_inactive.svg" alt="Back to Top Inactive" class="arrow-inactive">
       <img src="assets/img/icon/arrow_active.svg" alt="Back to Top Active" class="arrow-active">
       </a>
+      <div class="footer-section">
+        <div class="nav-bar">
+          <a href="./index.html">
+            <img src="./assets/img/icon/inactive.svg" width="0" alt="Home" />
+          </a>
+          <a href="./about.html" class="active">
+            <img src="./assets/img/icon/about_active.svg" width="0" alt="Home" />
+          </a>
+          <a href="./services.html" >
+            <img
+              src="./assets/img/icon/services.svg"
+              width="0"
+              alt="Home"
+            />
+          </a>
+          <a href="./ourspecality.html" >
+            <img
+              src="./assets/img/icon/speciality_inactive.svg"
+              width="0"
+              alt="Home"
+            />
+          </a>
+          <a href="./contactus.html">
+            <img
+              src="./assets/img/icon/contactus.svg"
+              width="0"
+              alt="Home"
+            />
+          </a>
+        </div>
+      </div>
       <!-- <script src="assets/js/backtotop.js"></script> -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -1034,139 +1065,7 @@
       <script src="./assets/js/particles.min.js"></script>
       <!-- stats.js lib -->
       <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
-      <script>
-         particlesJS("particles-js", {
-           particles: {
-             number: {
-               value: 1000,
-               density: {
-                 enable: true,
-                 value_area: 500,
-               },
-             },
-             color: {
-               value: "#dcfc36",
-             },
-             shape: {
-               type: "circle",
-               stroke: {
-                 width: 0,
-                 color: "#dcfc36",
-               },
-               polygon: {
-                 nb_sides: 1,
-               },
-               image: {
-                 src: "img/github.svg",
-                 width: 0.001,
-                 height: 0.001,
-               },
-             },
-             opacity: {
-               value: 0.5517792882846864,
-               random: false,
-               anim: {
-                 enable: false,
-                 speed:.3,
-                 opacity_min: 0.01,
-                 sync: false,
-               },
-             },
-             size: {
-               value: 1.998400639744104,
-               random: true,
-               anim: {
-                 enable: false,
-                 speed:.3,
-                 size_min: 0.1,
-                 sync: false,
-               },
-             },
-             line_linked: {
-               enable: false,
-               distance: 0,
-               color: "#ffffff",
-               opacity: 0.4,
-               width: 1,
-             },
-             move: {
-               enable: true,
-               speed:.3,
-               direction: "top",
-               random: false,
-               straight: false,
-               out_mode: "out",
-               bounce: false,
-               attract: {
-                 enable: false,
-                 rotateX: 600,
-                 rotateY: 1200,
-               },
-             },
-           },
-           interactivity: {
-             detect_on: "canvas",
-             events: {
-               onhover: {
-                 enable: false,
-                 mode: "repulse",
-               },
-               onclick: {
-                 enable: true,
-                 mode: "push",
-               },
-               resize: true,
-             },
-             modes: {
-               grab: {
-                 distance: 100,
-                 line_linked: {
-                   opacity: 1,
-                 },
-               },
-               bubble: {
-                 distance: 10,
-                 size: 1,
-                 duration: 1,
-                 opacity: 5,
-                 speed:.3,
-               },
-               repulse: {
-                 distance: 200,
-                 duration: 0.4,
-               },
-               push: {
-                 particles_nb: 4,
-               },
-               remove: {
-                 particles_nb: 2,
-               },
-             },
-           },
-           retina_detect: true,
-         });
-         var count_particles, stats, update;
-         stats = new Stats();
-         stats.setMode(0);
-         stats.domElement.style.position = "absolute";
-         stats.domElement.style.left = "0px";
-         stats.domElement.style.top = "0px";
-         document.body.appendChild(stats.domElement);
-         count_particles = document.querySelector(".js-count-particles");
-         update = function () {
-           stats.begin();
-           stats.end();
-           if (
-             window.pJSDom[0].pJS.particles &&
-             window.pJSDom[0].pJS.particles.array
-           ) {
-             count_particles.innerText =
-               window.pJSDom[0].pJS.particles.array.length;
-           }
-           requestAnimationFrame(update);
-         };
-         requestAnimationFrame(update);
-      </script>
+      
       <script>
          // Animate function
          function stepAnimateText(element, animationIn, animationOut, delay) {

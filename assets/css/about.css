@@ -592,7 +592,7 @@ body {
   ) !important; */
   z-index: -100;
   /* border: 2px solid #191919 !important; */
-  border-top-right-radius: 45px !important; /* Rounded top-right corner */
+  border-top-right-radius: 50px !important; /* Rounded top-right corner */
   border-top-left-radius: 20px !important;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
@@ -604,8 +604,8 @@ body {
   position: absolute;
   top: 30%;
   left: 50%;
-  width: 80px; /* Initial size of the circle */
-  height: 80px;
+  width: 50px; /* Initial size of the circle */
+  height: 50px;
   background: radial-gradient(
     circle at top,
     /* Circle shape with gradient starting at the center */ #a1fe37,
@@ -618,7 +618,10 @@ body {
   overflow: hidden;
   border-radius: 50%;
 }
+.our_service-about:hover .bg-img .hover-bg{
 
+  height: 520px;
+}
 .our_service-about:hover .bg-img::after {
   transform: translate(-50%, -50%) scale(5); /* Expand the circle on hover */
   opacity: 0.5; /* Adjust the opacity for hover effect */
@@ -651,6 +654,7 @@ body {
 /* Handle hover effects */
 .our_service-about img:nth-child(2) {
   opacity: 0;
+
 }
 
 .our_service-about:hover img:nth-child(1) {
@@ -672,6 +676,7 @@ body {
 
 .our_service-about:hover .bg-img img:nth-child(2) {
   display: block;
+  height: 520px;
 }
 .our_service-about:hover .our_service-about {
   border-radius: 27px !important;
@@ -685,6 +690,9 @@ body {
 .our_service-about:hover .believe-content p {
   color: #fff;
   opacity: 1;
+}
+.our_service-about:hover .believe-content{
+  border-top-right-radius: 47px !important;
 }
 .bg-img:hover {
   border-top-right-radius: 40px !important;
