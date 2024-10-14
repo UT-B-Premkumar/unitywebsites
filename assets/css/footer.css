@@ -175,7 +175,12 @@
   width: 100px !important;
   transition: transform 0.3s ease;
 }
-
+.desktop-views{
+  display: block ;
+}
+.mobile-views{
+  display: none;
+}
 @media (max-width: 576px) {
   .nav-bar {
     padding: 23px;
@@ -208,4 +213,24 @@ position: relative;
     transition: transform 0.3s ease;
     left: -37px;
   } 
+   .footer-section{
+    height: 72px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 10px;
+  }
+  .nav-bar.fixed{
+    width: 100% !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .desktop-views{
+    display: none ;
+  }
+  .mobile-views{
+    display: block;
+  }
 }
