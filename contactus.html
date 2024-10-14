@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/about.css" />
     <link rel="stylesheet" href="./assets/css/responsive_s.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
 
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link
@@ -29,6 +30,21 @@
 
     <!-- Your existing CSS files -->
     <link rel="stylesheet" href="path/to/your/styles.css" />
+
+    <style>
+      nav ul li a.active {
+        color: black !important;
+      }
+      .left-contact-section h3 span {
+        display: inline-block !important;
+      }
+      .left-contact-section h6 span {
+        display: inline-block !important;
+      }
+      .left-contact-section p span {
+        display: inline-block !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -60,7 +76,7 @@
                   <a href="ourspecality.html">OUR SPECIALITY</a>
                 </li>
                 <li>
-                  <a href="contactus.html" class="btn-1 px-4">
+                  <a href="contactus.html" class="btn-1 px-4 active">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -120,216 +136,34 @@
           </div>
         </div>
       </header>
-      <section id="about-1" class="about-1">
-        <div class="container-about">
-          <div class="row bg-top-row">
-            <div class="col-md-4">
-              <img
-                src="./assets/img/left-top-bg-glow.png"
-                alt="tl-bg"
-                class="top-left-bg"
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-              />
-            </div>
-            <div class="col-md-4 text-end">
-              <img
-                src="./assets/img/top_right_glow.png"
-                alt="tr-bg"
-                class="top-right-bg"
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-              />
-            </div>
-          </div>
-          <img
-            src="./assets/img/bottom-banner.svg"
-            alt="top-bg"
-            class="top-bg"
-          />
-          <div class="row row-content-about">
-            <div class="col-4 arrow-left-content">
-              <button
-                class="about-banner-btn"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
-                <span>Talk to us</span>
-              </button>
-              <h6>
-                <img
-                  src="./assets/img/left.png"
-                  alt="left-arrow-up"
-                  class="left-up-arrow"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                />
-              </h6>
-            </div>
-            <div class="col-4 img-particles-container">
-              <h6
-                class="img-center-about"
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
-                data-aos-duration="1500"
-              >
-                <img
-                  src="./assets/img/icon/contactsvg.svg"
-                  alt="center-icon"
-                  data-aos="fade-up"
-                  data-aos-anchor-placement="center-bottom"
-                  data-aos-duration="1500"
-                  data-aos-delay="100"
-                />
-              </h6>
-              <!-- particles.js container -->
-              <div
-                id="particles-js"
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
-                data-aos-duration="1500"
-                class="particles"
-              ></div>
-              <!-- stats - count particles -->
-              <div
-                class="count-particles"
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
-                data-aos-duration="1500"
-                data-aos-delay="500"
-              >
-                <span
-                  class="js-count-particles"
-                  data-aos="fade-up"
-                  data-aos-anchor-placement="center-bottom"
-                  data-aos-duration="1500"
-                  data-aos-delay="500"
-                ></span>
-              </div>
-            </div>
-            <div class="col-4 arrow-right-content">
-              <h6>
-                <img
-                  src="./assets/img/right.png"
-                  alt="right-arrow-up"
-                  class="right-up-arrow"
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                />
-              </h6>
-              <button
-                class="about-banner-btn"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
-                <span>Email Us</span>
-              </button>
-            </div>
-          </div>
-          <br />
-          <div class="row row-content-about">
-            <div class="col-3 arrow-left-content-1">
-              <button
-                class="about-banner-btn"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
-                <span>Feedback</span>
-              </button>
-              <h6>
-                <img
-                  src="./assets/img/left.png"
-                  alt="left-arrow-up"
-                  class="left-up-arrow"
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                />
-              </h6>
-            </div>
-            <div class="col-6 arrow-space-center"></div>
-            <div class="col-3 arrow-right-content-1">
-              <h6>
-                <img
-                  src="./assets/img/right.png"
-                  alt="right-arrow-up"
-                  class="right-up-arrow"
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                />
-              </h6>
-              <button
-                class="about-banner-btn"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
-                <span>Help</span>
-              </button>
-            </div>
-          </div>
-          <h1
-            class="about-head"
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-duration="1500"
-            data-aos-delay="300"
-          >
-            CONTACT US
-          </h1>
-          <br />
-          <h4
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-duration="1500"
-            data-aos-delay="300"
-            class="designing-font"
-          >
-            Designing the Realm of Imagination
-          </h4>
-          <div class="row justify-content-center d-flex bottom-bg">
-            <div class="col-md-2"></div>
-            <div
-              class="col-md-6"
-              data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom"
-              data-aos-duration="1500"
-              data-aos-delay="300"
-            >
-              <p
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
-                data-aos-delay="300"
-                class="para-banner"
-              >
-                We revolutionize the world of creativity with intricate
-                detailing and ingenious technology that makes for an ultimate
-                gaming experience
-              </p>
-            </div>
-            <div class="col-md-2"></div>
-          </div>
-        </div>
-      </section>
-      <section class="">
+
+      <section class="py-5">
         <section class="mt-5">
           <div class="container">
             <div class="row d-flex align-items-center">
               <div
+                data-aos="fade-up"
                 class="col-xl-6 col-lg-12 col-md-12 align-items-center left-contact-section underline_title"
               >
-                <style>
-                  .left-contact-section h3 span {
-                    display: inline-block !important;
-                  }
-                  .left-contact-section h6 span {
-                    display: inline-block !important;
-                  }
-                  .left-contact-section p span {
-                    display: inline-block !important;
-                  }
-                </style>
+                <h1 class="contactus shake-contactus">
+                  <span class="shaking-text">CONTACT US </span>
+                </h1>
 
+                <h6 class="mb-3">
+                  <span data-aos="fade-left" data-aos-delay="100">Decode</span>
+                  <span data-aos="fade-left" data-aos-delay="200">Your</span>
+                  <span data-aos="fade-left" data-aos-delay="300"
+                    >Thoughts</span
+                  >
+                  <span
+                    data-aos="fade-left"
+                    data-aos-delay="400"
+                    class="highlight"
+                    >With</span
+                  >
+                  <span data-aos="fade-left" data-aos-delay="500">Us</span>
+                  <span data-aos="fade-left" data-aos-delay="600">Now</span>
+                </h6>
                 <h3 class="mb-3">
                   <span data-aos="fade-up" data-aos-delay="100">Call</span>
                   <span class="highlighted-text"
@@ -345,21 +179,6 @@
                     >Memorable</span
                   >
                 </h3>
-                <h6 class="mb-3">
-                  <span data-aos="fade-left" data-aos-delay="100">DECODE</span>
-                  <span data-aos="fade-left" data-aos-delay="200">YOUR</span>
-                  <span data-aos="fade-left" data-aos-delay="300"
-                    >THOUGHTS</span
-                  >
-                  <span
-                    data-aos="fade-left"
-                    data-aos-delay="400"
-                    class="highlight"
-                    >WITH</span
-                  >
-                  <span data-aos="fade-left" data-aos-delay="500">US</span>
-                  <span data-aos="fade-left" data-aos-delay="600">NOW</span>
-                </h6>
                 <p class="contact-left-content">
                   <span data-aos="fade-left" data-aos-delay="100">We</span>
                   <span data-aos="fade-left" data-aos-delay="200">provide</span>
@@ -738,6 +557,46 @@
           class="arrow-active"
         />
       </a>
+      <div class="footer-section">
+        <div class="nav-bar">
+          <div class="footer-section">
+            <div class="nav-bar">
+              <!-- Home -->
+              <a href="./index.html" class="active" onclick="setActive(this, 0)">
+                <img src="./assets/img/icon/active.svg" width="0" alt="Home" />
+              </a>
+              <!-- About -->
+              <a href="./about.html" onclick="setActive(this, 1)">
+                <img src="./assets/img/icon/about.svg" width="0" alt="User" />
+              </a>
+              <!-- Services -->
+              <a href="./services.html" onclick="setActive(this, 2)">
+                <img
+                  src="./assets/img/icon/services.svg"
+                  width="0"
+                  alt="Rocket"
+                />
+              </a>
+              <!-- Speciality -->
+              <a href="./ourspecality.html" onclick="setActive(this, 3)">
+                <img
+                  src="./assets/img/icon/speciality_inactive.svg"
+                  width="0"
+                  alt="Settings"
+                />
+              </a>
+              <!-- Contact Us -->
+              <a href="./contactus.html" onclick="setActive(this, 4)">
+                <img
+                  src="./assets/img/icon/contactus.svg"
+                  width="0"
+                  alt="Envelope"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
@@ -761,6 +620,138 @@
       });
     </script>
     <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const letters = document.querySelectorAll(".flip-letter");
+
+        letters.forEach((letter, index) => {
+          setTimeout(() => {
+            letter.classList.add("show");
+          }, 300); // Delay the flip of each letter by 100ms
+        });
+      });
+
+      $(window).on("scroll", function () {
+        // Get the scroll position of the window
+        var scrollPosition = $(this).scrollTop();
+        if (scrollPosition > 140) {
+          $("header").addClass("fixed");
+        }
+        if (scrollPosition < 140) {
+          $("header").removeClass("fixed");
+        }
+        // if (scrollPosition > 200) {
+        //   setTimeout(() => {
+        //     $(".shake-about").addClass("active");
+        //     $(".about-section h3 img").addClass("visible");
+        //   }, 700);
+        // }
+
+        // if (scrollPosition > 1000) {
+        //   setTimeout(function () {
+        //     $(".shake-services").addClass("active");
+        //     $(".fade-img-serv").addClass("visible");
+        //   }, 1200);
+        // }
+
+        // console.log(scrollPosition);
+
+        // if (
+        //   scrollPosition > 3700 &&
+        //   screen.width < 1024 &&
+        //   screen.width > 760
+        // ) {
+        //   $(".innovation_section").addClass("active");
+        // }
+
+        if (scrollPosition > 2975 && screen.width < 575) {
+          $(".innovation_section").addClass("active");
+        }
+        if (scrollPosition > 8800 && screen.width < 1024) {
+          $(".faq_section").addClass("active");
+        }
+        if (scrollPosition > 7400 && screen.width < 575) {
+          $(".faq_section").addClass("active");
+        }
+
+        // if (scrollPosition > 4870 && screen.width > 1300) {
+        //   $(".faq_section").addClass("active");
+        // }
+        // if (scrollPosition > 9121 && screen.width < 1024) {
+        //   $(".customer_care").addClass("active");
+        // }
+        // if (scrollPosition > 5500 && screen.width > 1300) {
+        //   $(".customer_care").addClass("active");
+        // }
+        if (scrollPosition > 7940 && screen.width < 575) {
+          $(".customer_care").addClass("active");
+        }
+
+        // if (scrollPosition > 1200) {
+        //   var delay = 200; // Base delay in milliseconds
+        //   var cardCount = $(".our_service-card").length; // Total number of cards
+
+        //   // Loop through each card and apply the flip class with a delay
+        //   $(".our_service-card").each(function (index) {
+        //     var card = $(this); // Get the current card
+
+        //     // Set a timeout to add the 'flip' class with a staggered delay
+        //     setTimeout(function () {
+        //       card.addClass("flip");
+        //     }, delay * index); // Multiply delay by the index to stagger
+        //   });
+        // }
+
+        // Check if the scroll position has reached the scroll point
+      });
+
+      $(window).on("load", function () {
+        setTimeout(() => {
+          $(".floating-container").addClass("active");
+          $(".landing .wave-letter").addClass("animate");
+          $(".underline-fade").addClass("visible");
+          $(".bounce-2").addClass("visible");
+
+          setTimeout(() => {
+            $(".fadep ").addClass("fadepactive");
+          }, 2200);
+          if (window.innerWidth < 500) {
+            $(".fadep ").addClass("fadepactive");
+          }
+          $(".baner-right").addClass("animate");
+        }, 700);
+      });
+
+      $(document).ready(function () {
+        function checkAboutSection() {
+          // *************sections *************
+          var shakeContactus = $(".shake-contactus"); // "about" section container
+
+          // *************sections ofsets  *************
+
+          var shakeContactOffset = shakeContactus.offset().top;
+
+          var windowHeight = $(window).height();
+          var scrollPos = $(window).scrollTop();
+
+          // Check if the about section is visible from the bottom of the screen
+          if (scrollPos + windowHeight > shakeContactOffset) {
+            // Add the animation with a delay
+            setTimeout(() => {
+              $(".shake-contactus").addClass("active"); // Shake effect on specific element
+            }, 1000);
+          }
+        }
+
+        // Run the check on page load
+        checkAboutSection();
+
+        // Run the check on scroll
+        $(window).on("scroll", function () {
+          checkAboutSection();
+        });
+      });
+    </script>
+    <script>
       // Initialize AOS with 'once' set to true so the animation happens only once
       AOS.init({
         once: true, // restrict animation to single load
@@ -769,6 +760,80 @@
     <script src="./assets/js/particles.min.js"></script>
     <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-    <script src="./assets/js/common.js"></script>
+    <script>
+      function setActive(element, index) {
+        var links = document.querySelectorAll(".nav-bar a");
+
+        // Define the active and inactive icons for each menu item
+        var icons = [
+          {
+            active: "./assets/img/icon/active.svg",
+            inactive: "./assets/img/icon/inactive.svg",
+          }, // Home
+          {
+            active: "./assets/img/icon/about_active.svg",
+            inactive: "./assets/img/icon/about.svg",
+          }, // About
+          {
+            active: "./assets/img/icon/services_active.svg",
+            inactive: "./assets/img/icon/services.svg",
+          }, // Services
+          {
+            active: "./assets/img/icon/speciality_active.svg",
+            inactive: "./assets/img/icon/speciality_inactive.svg",
+          }, // Speciality
+          {
+            active: "./assets/img/icon/contactus_active.svg",
+            inactive: "./assets/img/icon/contactus.svg",
+          }, // Contact Us
+        ];
+
+        // Remove the 'active' class and reset all icons to inactive state
+        links.forEach(function (link, i) {
+          link.classList.remove("active");
+          var img = link.querySelector("img");
+          img.src = icons[i].inactive; // Set the inactive icon for each link
+        });
+
+        // Set the clicked link as active and update its icon
+        element.classList.add("active");
+        var activeImg = element.querySelector("img");
+        activeImg.src = icons[index].active; // Set the active icon for the clicked link
+
+        // If you have a highlighter, update its position (optional)
+        var highlighter = document.querySelector(".highlighter");
+        if (highlighter) {
+          var linkWidth = element.offsetWidth;
+          var highlighterPosition = index * linkWidth;
+          highlighter.style.transform =
+            "translateX(" + highlighterPosition + "px)";
+          highlighter.style.width = linkWidth + "px";
+        }
+      }
+
+      // Set the correct link as active based on the URL
+      window.onload = function () {
+        var url = window.location.href;
+        var activeIndex = 0; // Default is the first link (Home)
+
+        // Check URL and determine the active menu index
+        if (url.includes("about.html")) {
+          activeIndex = 1; // User icon active
+        } else if (url.includes("services.html")) {
+          activeIndex = 2; // Rocket icon active
+        } else if (url.includes("ourspecality.html")) {
+          activeIndex = 3; // Settings icon active
+        } else if (url.includes("contactus.html")) {
+          activeIndex = 4; // Envelope icon active
+        } else {
+          activeIndex = 0; // Home icon active (default for index.html)
+        }
+
+        // Activate the appropriate link
+        var activeLink = document.querySelectorAll(".nav-bar a")[activeIndex];
+        setActive(activeLink, activeIndex);
+      };
+    </script>
+    <script type="text/javascript" src="./assets/js/common.js" defer></script>
   </body>
 </html>
