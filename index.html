@@ -31,6 +31,18 @@
     />
     <link rel="stylesheet" type="text/css" href="./assets/css/slick.css" />
     <link href="./assets/css/aos.css" rel="stylesheet" />
+    <!-- <style>
+      @media screen and (max-width: 768px){
+        .back-to-top:hover img.arrow-inactive {
+        display: block !important;
+      }
+
+      .back-to-top:hover img.arrow-active {
+        display: none !important;
+      }
+      }
+     
+    </style> -->
   </head>
   <body>
     <header>
@@ -71,14 +83,9 @@
             </ul>
           </nav>
 
-          <div class="mobile-nav hamburger">
+          <!-- <div class="mobile-nav hamburger">
             <img src="./assets/img/ham.svg" alt="" />
             <img src="./assets/img/ham2.svg" alt="" />
-            <!-- <button>
-              <span></span>
-              <span></span>
-              <span></span>
-            </button> -->
             <nav class="mobile-nav-container">
               <ul>
                 <li>
@@ -88,7 +95,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="./about.html" >
+                  <a href="./about.html">
                     <img src="./assets/img/icon/about_mobile.png" alt="" />
 
                     About US</a
@@ -116,7 +123,7 @@
                 </li>
               </ul>
             </nav>
-          </div>
+          </div> -->
         </div>
       </div>
     </header>
@@ -333,8 +340,6 @@
                   alt=""
                   class="img-fluid"
                 />
-
-              
               </div>
               <div class="team-strenth" data-aos="fade-down">
                 <img
@@ -354,9 +359,15 @@
                 <h3 class="shake-about">
                   <span class="shaking-text">Together We Can, </span>
 
-                  <span class="shaking-text"> <span class="text-gradient">Conquer</span> Any Challenge </span>
+                  <span class="shaking-text">
+                    <span class="text-gradient">Conquer</span> Any Challenge
+                  </span>
                 </h3>
-                <img src="assets/img/icon/flicker.gif" alt="" class="flicker img-fluid" />
+                <img
+                  src="assets/img/icon/flicker.gif"
+                  alt=""
+                  class="flicker img-fluid"
+                />
                 <p class="opacity6">
                   Our team of highly-trained, experienced developers delivers
                   great user experiences on mobile and web apps. Through the
@@ -378,13 +389,12 @@
                     <img src="./assets/img/icon/game.svg" alt="game" />
                     <span>Game Development</span>
                   </div>
-                  
-                 <div class="d-flex mt-3">
-                  <a href="about.html" class="btn-1   text-decoration-none ">
-                    <span class="m-0"></span>
+                  <!-- <div class="d-flex mt-3">
+                  <a href="" class="btn-1  d-inline-block text-decoration-none ">
                     <span></span>
                     <span></span>
-                    <span class="m-0"></span>
+                    <span></span>
+                    <span></span>
                     KNOW MORE
                   </a>
                  </div>
@@ -654,10 +664,13 @@
                 </h4>
                 <!-- </div> -->
 
-<div class="content-img py-5">
-  <img src="./assets/img/mobile-inno-gif.gif" alt="" class="img-fluid">
-</div>
-
+                <div class="content-img py-5">
+                  <img
+                    src="./assets/img/mobile-inno-gif.gif"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
 
                 <div class="build-p">
                   <p data-aos="fade-up" data-aos-delay="350" class="opacity6">
@@ -920,7 +933,11 @@
                   Stronger, and Better than you imagine
                 </h4>
                 <div class="content-img py-5">
-                  <img src="./assets/img/mobile-hacker.gif" alt="" class="img-fluid">
+                  <img
+                    src="./assets/img/mobile-hacker.gif"
+                    alt=""
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="hacker-p">
                   <p data-aos="fade-up" data-aos-delay="300" class="opacity6">
@@ -1412,6 +1429,29 @@
         class="arrow-active"
       />
     </a>
+    <div class="footer-section">
+      <div class="nav-bar">
+        <a href="./index.html" class="active">
+          <img src="./assets/img/icon/active.svg" width="0" alt="Home" />
+        </a>
+        <a href="./about.html">
+          <img src="./assets/img/icon/about.svg" width="0" alt="Home" />
+        </a>
+        <a href="./services.html">
+          <img src="./assets/img/icon/services.svg" width="0" alt="Home" />
+        </a>
+        <a href="./ourspecality.html">
+          <img
+            src="./assets/img/icon/speciality_inactive.svg"
+            width="0"
+            alt="Home"
+          />
+        </a>
+        <a href="./contactus.html">
+          <img src="./assets/img/icon/contactus.svg" width="0" alt="Home" />
+        </a>
+      </div>
+    </div>
     <script src="assets/js/backtotop.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -1637,9 +1677,7 @@
             $(".innovation_section").addClass("active");
           }
 
-          if (
-            scrollPos + windowHeight > faq_sectionOffset + 300 
-          ) {
+          if (scrollPos + windowHeight > faq_sectionOffset + 300) {
             $(".faq_section").addClass("active");
           }
           if (scrollPos + windowHeight > customer_careOffset + 100) {
@@ -1656,5 +1694,7 @@
         });
       });
     </script>
+    <script type="text/javascript" src="./assets/js/common.js" defer></script>
+
   </body>
 </html>
