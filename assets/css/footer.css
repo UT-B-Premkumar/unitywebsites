@@ -157,7 +157,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(/assets/img/icon/navbar_dark.svg);
+  /* background-image: url(/assets/img/icon/navbar_dark.svg); */
+  background-color: black;
+  border-top: 2px solid #414141;
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -202,7 +204,7 @@
 }
 @media (max-width: 576px) {
   .nav-bar {
-    padding: 23px;
+    padding: 20px;
   }
   .footer-section {
     display: block !important;
@@ -220,7 +222,7 @@ position: relative;
   .nav-bar a.active::before{
     content: "";
     position: absolute;
-    top: -10px;
+    top: -11px;
     height: 3px;
     background: radial-gradient(
       50% 31250% at 50% 50%,
