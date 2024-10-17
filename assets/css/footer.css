@@ -89,6 +89,9 @@
   display: block;
 }
 @media screen and (max-width: 900px) {
+  .footer .footer-links{
+    margin-bottom: 70px;
+  }
   .footer .logo {
     text-align: center;
     max-width: 100%;
@@ -100,7 +103,13 @@
   .footer .footer-links li {
     font-size: 16px;
   }
+  .nav-bar {
+    display: flex !important;
+  }
 }
+
+
+
 
 @media screen and (max-width: 768px) {
   .logo-box {
@@ -160,9 +169,10 @@
   /* background-image: url(/assets/img/icon/navbar_dark.svg); */
   background-color: black;
   border-top: 2px solid #414141;
-  display: flex;
+    display: none;
   justify-content: space-between;
   padding: 10px;
+  z-index: 100;
 }
 .footer .nav-bar a {
   color: #fff;
@@ -209,9 +219,7 @@
   .footer-section {
     display: block !important;
   }
-  .footer .container {
-    display: none !important;
-  }
+ 
   
 .highlighter{
   display: none;

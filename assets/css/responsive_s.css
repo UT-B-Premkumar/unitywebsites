@@ -884,6 +884,14 @@
     text-align: center !important;
     letter-spacing: -2px;
 }
+
+.shake-about.active .shaking-text:nth-child(1){
+    text-align: center !important;
+}
+  .shake-about.active .shaking-text:nth-child(2){
+    text-align: center !important; 
+    display: block !important;
+  }
 .about-2 .header-underline-2{
     margin-left: 22% !important;
     text-align: center !important;
@@ -992,3 +1000,21 @@
         margin-top: 0 !important;
     }
  }
+
+
+
+
+ @media screen and (min-width:900px) and (max-width:1400px) {
+    .about-2 .header-underline {
+            text-align: left !important;
+            margin: 0  !important;
+        }
+ }
+
+ @media screen and (min-width:2000px)  {
+    .mobile-view{
+        display: none;
+     }
+ }
+
+

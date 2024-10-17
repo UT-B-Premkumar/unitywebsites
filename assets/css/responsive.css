@@ -50,7 +50,10 @@
   .learn-more {
     text-align: center;
     margin-top: 40px;
-    display: block;
+    display: none;
+  }
+  .learn-more.active{
+     display: block !important;
   }
   .learn-more a {
     display: inline-block;
@@ -390,6 +393,9 @@
   .desktop-show {
     display: none !important;
   }
+  .about-right h3{
+    margin-bottom: 30px;
+  }
   .mobile-show img {
     width: 90% !important;
     margin: 0 auto;
@@ -409,6 +415,12 @@
     border: dashed 1px #373737;
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
+  }
+  .power-card{
+    padding : 10px  !important;
+  }
+  .power-card > div{
+    padding: 5px;
   }
 }
 @media screen and (max-width: 575px) {
