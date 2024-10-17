@@ -268,10 +268,7 @@ input[type="text"] {
   transform: translate(0px, -30px);
 }
 
-
-.email-btn:hover .moving2 .rocket-arrow:nth-child(1)
-{
-
+.email-btn:hover .moving2 .rocket-arrow:nth-child(1) {
   transform: translate(42px, -23px);
 }
 .rocket-arrow {
@@ -379,9 +376,9 @@ input[type="text"] {
   .contact-card:hover .moving img {
     transform: translateY(0px) !important;
   }
-  .moving2:hover img:nth-child(2) , .moving2:hover img:nth-child(1){
+  .moving2:hover img:nth-child(2),
+  .moving2:hover img:nth-child(1) {
     transform: translateY(0px) !important;
-
   }
   .address-section {
     font-size: 9px !important;
@@ -471,7 +468,10 @@ input[type="text"] {
   .form-section {
     flex-direction: column;
   }
-
+  section.contact-last {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .info-text {
     text-align: center;
     font-size: 1.5rem;
