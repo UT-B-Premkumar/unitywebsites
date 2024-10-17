@@ -803,12 +803,14 @@ body {
     text-align: center !important;
     font-weight: bold;
   }
-  .bg-top-row {
+  .row.bg-top-row {
     position: absolute !important;
     display: flex !important;
     justify-content: space-between !important;
-    width: auto;
-    max-width: max-content !important;
+    width: 100%;
+    margin-left: 0 ;
+    margin-right: 0;
+    /* max-width: max-content !important; */
     overflow: hidden !important;
   }
   .about-section {
@@ -945,7 +947,7 @@ body {
     padding: 0px 30px 0px 30px;
   }
   .about-1 {
-    overflow: hidden !important;
+    /* overflow: hidden !important; */
   }
   .about-section {
     overflow: hidden !important;
