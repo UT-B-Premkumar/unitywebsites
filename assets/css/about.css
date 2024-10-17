@@ -813,6 +813,15 @@ body {
     /* max-width: max-content !important; */
     overflow: hidden !important;
   }
+  .about-2 .para-about-top-align{
+    padding: 0;
+    text-align: center;
+  }
+  .about-2 .para-about-top-align li {
+    padding-left: 10px;
+    padding-right: 0;
+    text-align: justify;
+  }
   .about-section {
     padding: 35px 0px;
   }

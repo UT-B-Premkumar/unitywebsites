@@ -180,7 +180,10 @@ body {
   display: none;
 }
 @media (max-width: 992px) {
+ 
+  
   .fluid-video {
+    
     width: 100%; /* Ensure the video takes up the full width of the container */
     height: auto !important; /* Maintain aspect ratio */
     display: block; /* Removes any default margins */
@@ -190,8 +193,11 @@ body {
     box-sizing: border-box; /* Include the border in the element’s total width and height */
   }
 
-  .section-padding {
-    padding: 0px 0px !important;
+  .section-padding , .business-padding {
+    padding: 0px 15px !important;
+  }
+  .business-padding{
+    margin-top: 30px;
   }
   .fluid-video source {
     display: block;
@@ -269,7 +275,7 @@ body {
     text-align: justify;
   }
   .main-part {
-    padding: 0 15px;
+    /* padding: 0 15px; */
   }
   .business-padding {
     margin-right: 0rem !important;
