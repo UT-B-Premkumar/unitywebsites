@@ -377,7 +377,11 @@ input[type="text"] {
     padding-right: 0 !important;
   }
   .contact-card:hover .moving img {
-    transform: translateY(0px);
+    transform: translateY(0px) !important;
+  }
+  .moving2:hover img:nth-child(2) , .moving2:hover img:nth-child(1){
+    transform: translateY(0px) !important;
+
   }
   .address-section {
     font-size: 9px !important;
