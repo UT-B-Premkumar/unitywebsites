@@ -541,6 +541,19 @@ input[type="text"] {
   margin-right: 0rem !important;
   margin-left: 0rem !important;
 }
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance:none) {
+    /* Safari-specific CSS */
+    .rocket-arrow {
+      position: relative;
+      top: -4px;
+      left: -4px;
+    }
+    .moving {
+      gap: 13px;
+  }
+  }
+}
 /* .moving2 {
   display: flex;
   overflow: hidden;
