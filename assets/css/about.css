@@ -7,6 +7,7 @@ body {
   padding: 15px 0px;
 }
 .about-1 {
+  overflow-x: hidden;
   margin-left: -13px;
   background: #121212 !important;
   margin-bottom: -10px;
@@ -272,7 +273,7 @@ body {
   width: 170px;
 }
 .about-2 .card-bg-about {
-  background: url(/unitywebsites/assets/img/bg-about-page.svg);
+  background: url("../img/bg-about-page.svg");
   /* border-image: url(/unitywebsites/assets/img/scroll-project.png); */
   width: auto;
   height: 650px !important;
@@ -795,17 +796,35 @@ body {
   .mobile-view-heading h1{
     text-align: center !important;
   }
+  h1.m-text-center{
+    text-align: center !important;
+  }
+  .shake-about.active .shaking-text:nth-child(2){
+    text-align: center !important; 
+    display: block !important;
+  }
   .making span {
     text-align: center !important;
     font-weight: bold;
   }
-  .bg-top-row {
+  .row.bg-top-row {
     position: absolute !important;
     display: flex !important;
     justify-content: space-between !important;
-    width: auto;
-    max-width: max-content !important;
+    width: 100%;
+    margin-left: 0 ;
+    margin-right: 0;
+    /* max-width: max-content !important; */
     overflow: hidden !important;
+  }
+  .about-2 .para-about-top-align{
+    padding: 0;
+    text-align: center;
+  }
+  .about-2 .para-about-top-align li {
+    padding-left: 10px;
+    padding-right: 0;
+    text-align: justify;
   }
   .about-section {
     padding: 35px 0px;
@@ -941,7 +960,7 @@ body {
     padding: 0px 30px 0px 30px;
   }
   .about-1 {
-    overflow: hidden !important;
+    /* overflow: hidden !important; */
   }
   .about-section {
     overflow: hidden !important;

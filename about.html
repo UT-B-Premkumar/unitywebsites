@@ -29,6 +29,17 @@
          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
          />
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+      <style>
+         .particles{
+            visibility: hidden;
+            transition: ease .5s;
+         }
+
+         .particles.active{
+            visibility: visible;
+         }
+      </style>
    </head>
    <body>
       <header>
@@ -168,11 +179,13 @@
                         />
                   </h6>
                   <!-- particles.js container -->
+
+                  <!-- data-aos="fade-up"
+                     data-aos-anchor-placement="center-bottom"
+                     data-aos-duration="1500" -->
                   <div
                      id="particles-js"
-                     data-aos="fade-up"
-                     data-aos-anchor-placement="center-bottom"
-                     data-aos-duration="1500"
+                     
                      class="particles"
                      ></div>
                   <!-- stats - count particles -->
@@ -254,7 +267,7 @@
                data-aos-duration="1500"
                data-aos-delay="300"
                >
-               Designing the Realm of Imagination
+               Designing The Realm Of Imagination
             </h4>
          </div>
          <div class="row justify-content-center d-flex bottom-bg">
@@ -789,8 +802,8 @@
                         />
                   </h6>
                </h1>
-               <h1 class="shake-about text-center">
-                  <span class="shaking-text believe-h1 shaking-text-about">Tapping Into The Best Ideas For </span>
+               <h1 class="shake-about ">
+                  <span class="shaking-text believe-h1 shaking-text-about d-block m-text-center">Tapping Into The Best Ideas For </span>
                   <span class="shaking-text believe-h1 shaking-text-about">
                      <div class="shaking-text-about">Your <span>Website Redesign </span></div>
                   </span>
@@ -1042,11 +1055,7 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
       <script src="./assets/js/aos.js"></script>
-      <script>
-         AOS.init({
-        once: true,
-      });
-      </script>
+     
       <script>
          // Get the image element by its ID
          const serviceImage = document.getElementById("serviceImage");
@@ -1065,7 +1074,8 @@
       <script src="./assets/js/particles.min.js" defer></script>
       <!-- stats.js lib -->
       <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
-      
+      <script  type="text/javascript" src="assets/js/common.js" defer></script>
+
       <script>
          // Animate function
          function stepAnimateText(element, animationIn, animationOut, delay) {
@@ -1107,8 +1117,9 @@
            return false;
          });
       </script>
-      <script src="assets/js/common.js"></script>
-      <script>let hasFadedIn = false; // To track if fade-in has already happened
+      <script>
+      
+      let hasFadedIn = false; // To track if fade-in has already happened
          window.addEventListener('scroll', function() {
            // Select all elements with the given class names
            const underlineElements = document.querySelectorAll('.header-underline, .header-underline-1, .header-underline-2');
@@ -1180,6 +1191,17 @@
            });
          });
          
+      </script>
+       <script>
+         AOS.init({
+        once: true,
+      });
+
+      $(window).on("load", function () {
+         setTimeout(()=>{
+            $('.particles').addClass("active")
+         },  1500)
+      })
       </script>
    </body>
 </html>
