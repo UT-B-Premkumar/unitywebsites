@@ -3,6 +3,14 @@
   color: #fff;
   padding: 20px 0;
   text-align: center;
+      background-color: black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
 }
 
 .footer .logo img {
@@ -112,6 +120,14 @@
 
 
 @media screen and (max-width: 768px) {
+  .col-sm-12.col-lg-6.desktop-ss {
+    display: none;
+}
+      .footer {
+        text-align: center;
+        position: relative;
+        z-index: 0;
+    }
   .logo-box {
     text-align: center;
   }
@@ -262,4 +278,15 @@ position: relative;
   .mobile-views{
     display: block;
   }
+}
+
+.extradiv {
+    margin-top: 180px;
+}
+
+.col.mobileab {
+    margin: 10px 0px;
+}
+.mobab{
+  width: 100%;
 }
