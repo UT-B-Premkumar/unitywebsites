@@ -253,7 +253,7 @@ body {
   opacity: 0.5;
 }
 .bottom-bg {
-  background: url("/unitywebsites/assets/img/bottom-banner.svg") no-repeat
+  background: url("../img/bottom-banner.svg") no-repeat
     center center;
   background-size: cover;
   height: 150px;
