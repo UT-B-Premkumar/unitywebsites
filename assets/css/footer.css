@@ -3,6 +3,14 @@
   color: #fff;
   padding: 20px 0;
   text-align: center;
+      background-color: black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
 }
 
 .footer .logo img {
@@ -262,4 +270,8 @@ position: relative;
   .mobile-views{
     display: block;
   }
+}
+
+.extradiv {
+    margin-top: 180px;
 }
