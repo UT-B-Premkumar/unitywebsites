@@ -1,77 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unity Technology</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/common.css" />
-    <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
-    <link rel="stylesheet" href="./assets/css/animation.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css"
-    />
-    <link
-      rel="SHORTCUT ICON"
-      href="./assets/img/unity-logo.svg"
-      type="image/x-icon"
-    />
-    <link rel="icon" href="./assets/img/unity-logo.svg" type="image/ico" />
 
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" type="text/css" href="./assets/css/slick.css" />
-    <link href="./assets/css/aos.css" rel="stylesheet" />
-    <style>
-      @media screen and (max-width: 768px){
-        .back-to-top:hover img.arrow-inactive {
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unity Technology</title>
+  <link rel="stylesheet" href="assets/css/contactus.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/common.css" />
+  <link rel="stylesheet" href="./assets/css/header.css" />
+  <link rel="stylesheet" href="./assets/css/footer.css" />
+  <link rel="stylesheet" href="./assets/css/animation.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css" />
+  <link rel="SHORTCUT ICON" href="./assets/img/unity-logo.svg" type="image/x-icon" />
+  <link rel="icon" href="./assets/img/unity-logo.svg" type="image/ico" />
+  <link rel="stylesheet" href="assets/css/ourspecality.css" />
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/slick.css" />
+  <link rel="stylesheet" href="./assets/css/about.css" />
+  <link href="./assets/css/aos.css" rel="stylesheet" />
+
+
+
+
+
+
+  <link rel="stylesheet" href="./assets/css/about.css" />
+  <link rel="stylesheet" href="./assets/css/services.css" />
+
+
+  <style>
+    @media screen and (max-width: 768px) {
+      .back-to-top:hover img.arrow-inactive {
         display: block !important;
       }
+
       .back-to-top:hover img.arrow-active {
         display: none !important;
       }
-      }
-     
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="logo">
-            <a href="index.html"
-              ><img src="./assets/img/unity-logo.svg" alt=""
-            /></a>
-          </div>
-          <nav class="desktop">
-            <ul>
+    }
+
+    .page-content {
+      display: none;
+
+    }
+
+    .page-content.active {
+      display: block;
+    }
+
+    .page-content {
+      display: none;
+
+    }
+
+    .page-content.active {
+      display: block;
+    }
+
+    .particles {
+      visibility: hidden;
+      transition: ease .5s;
+    }
+
+    .particles.active {
+      visibility: visible;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <nav class="desktop">
+    <ul>
+      <li>
+        <a href="#" data-page="home" class="nav-link active">Home111</a>
+      </li>
+      <li>
+        <a href="#" data-page="about" class="nav-link">About US</a>
+      </li>
+      <li>
+        <a href="#" data-page="services" class="nav-link">Services</a>
+      </li>
+      <li>
+        <a href="#" data-page="speciality" class="nav-link">OUR SPECIALITY</a>
+      </li>
+      <li>
+        <a href="#" data-page="contact" class="nav-link btn-1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Contact US
+        </a>
+      </li>
+    </ul>
+  </nav> -->
+
+  <header>
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <a href="index.html"><img src="./assets/img/unity-logo.svg" alt="" /></a>
+        </div>
+        <nav class="desktop">
+        <ul>
               <li>
-                <a href="index.html" class="active"> Home </a>
-                <a href="index.html" class="active"> Home </a>
+                <a href="#home" data-page="home" class="Spassovnav newatadd">Home</a>
+               <a href="#home" data-page="home" class="Spassovnav newatadd"> Home </a>
               </li>
               <li>
-                <a href="./about.html">About US</a>
-                <a href="./about.html">About US</a>
+                <a href="#about" data-page="about" class="Spassovnav newat">About US</a>
+                <a href="#about" data-page="about" class="Spassovnav">About US</a>
               </li>
               <li>
-                <a href="./services.html">Services</a>
-                <a href="./services.html">Services</a>
+                <a href="#services" data-page="services" class="Spassovnav newat">Services</a>
+                <a href="#services" data-page="services" class="Spassovnav">Services</a>
               </li>
               <li>
-                <a href="ourspecality.html">OUR SPECIALITY</a>
-                <a href="ourspecality.html">OUR SPECIALITY</a>
+                <a href="#speciality" data-page="speciality" class="Spassovnav newat">OUR SPECIALITY</a>
+                <a href="#speciality" data-page="speciality" class="Spassovnav">OUR SPECIALITY</a>
               </li>
               <li>
-                <a href="contactus.html" class="btn-1 px-4">
+                <a href="#contact"  class="btn-1 px-4 Spassovnav "  data-page="contact"  >
                   <span></span>
                   <span></span>
                   <span></span>
@@ -79,82 +133,94 @@
                   Contact US
                 </a>
               </li>
-            </ul>
-          </nav>
+            </ul>   
 
-          <div class="mobile-nav hamburger">
-            <img src="./assets/img/ham.svg" alt="" />
-            <img src="./assets/img/ham2.svg" alt="" />
-            <!-- <button>
+         <!-- <ul>
+            <li>
+              <a href="#" data-page="home" class="active">Home</a>
+               <a href="#" data-page="home" class="active"> Home </a>
+            </li>
+            <li>
+              <a href="#" data-page="about" class="nav-link">About US</a>
+               <a href="#" data-page="about">About US</a>
+            </li>
+            <li>
+              <a href="#" data-page="services" class="nav-link">Services</a>
+               <a href="#" data-page="services">Services</a>
+            </li>
+            <li>
+              <a href="#" data-page="speciality" class="nav-link">OUR SPECIALITY</a>
+                         <a href="#" data-page="speciality">OUR SPECIALITY</a>
+            </li>
+            <li>
+              <a href="#" data-page="contact" class="nav-link btn-1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Contact US
+              </a>
+            </li>
+          </ul>  -->
+
+        </nav>
+
+        <div class="mobile-nav hamburger">
+          <img src="./assets/img/ham.svg" alt="" />
+          <img src="./assets/img/ham2.svg" alt="" />
+          <!-- <button>
               <span></span>
               <span></span>
               <span></span>
             </button> -->
-            <nav class="mobile-nav-container">
-              <ul>
-                <li>
-                  <a href="index.html" class="active">
-                    <img src="./assets/img/icon/mob_home.png" alt="" />
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="./about.html">
-                    <img src="./assets/img/icon/about_mobile.png" alt="" />
+          <nav class="mobile-nav-container">
+            <ul>
+              <li>
+                <a href="index.html" class="active">
+                  <img src="./assets/img/icon/mob_home.png" alt="" />
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="./about.html">
+                  <img src="./assets/img/icon/about_mobile.png" alt="" />
 
-                    About US</a
-                  >
-                </li>
-                <li>
-                  <a href="./services.html">
-                    <img src="./assets/img/icon/service.png" alt="" />
+                  About US</a>
+              </li>
+              <li>
+                <a href="./services.html">
+                  <img src="./assets/img/icon/service.png" alt="" />
 
-                    Services</a
-                  >
-                </li>
-                <li>
-                  <a href="ourspecality.html">
-                    <img src="./assets/img/icon/our_speciality.png" alt="" />
-                    OUR SPECIALITY</a
-                  >
-                </li>
-                <li>
-                  <a href="contactus.html" class="">
-                    <img src="./assets/img/icon/contact_us.png" alt="" />
+                  Services</a>
+              </li>
+              <li>
+                <a href="ourspecality.html">
+                  <img src="./assets/img/icon/our_speciality.png" alt="" />
+                  OUR SPECIALITY</a>
+              </li>
+              <li>
+                <a href="contactus.html" class="">
+                  <img src="./assets/img/icon/contact_us.png" alt="" />
 
-                    Contact US
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+                  Contact US
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
+  <!-- Page Content Containers -->
+  <div id="home" class="page-content active">
     <div class="main">
       <section class="landing">
         <div class="floating-container">
-          <img
-            src="./assets/img/bounce-1.svg"
-            alt="bounce-img"
-            class="bounce-1"
-          />
-          <img
-            src="./assets/img/bounce-3.svg"
-            alt="bounce-img"
-            class="bounce-3"
-          />
-          <img
-            src="./assets/img/bounce-4.svg"
-            alt="bounce-img"
-            class="bounce-4"
-          />
-          <img
-            src="./assets/img/bounce-5.svg"
-            alt="bounce-img"
-            class="bounce-5"
-          />
+          <img src="./assets/img/bounce-1.svg" alt="bounce-img" class="bounce-1" />
+          <img src="./assets/img/bounce-3.svg" alt="bounce-img" class="bounce-3" />
+          <img src="./assets/img/bounce-4.svg" alt="bounce-img" class="bounce-4" />
+          <img src="./assets/img/bounce-5.svg" alt="bounce-img" class="bounce-5" />
         </div>
         <div class="container mt-3">
           <div class="row">
@@ -220,16 +286,9 @@
               <h2 class="d-none">
                 <span data-aos="fade-left" data-aos-delay="50"> Let's </span>
                 <span data-aos="fade-left" data-aos-delay="200">help</span>
-                <span data-aos="fade-left" data-aos-delay="350"
-                  >technology</span
-                >
+                <span data-aos="fade-left" data-aos-delay="350">technology</span>
                 <span data-aos="fade-left" data-aos-delay="400"> meet</span>
-                <span
-                  class="text-gradient"
-                  data-aos="fade-left"
-                  data-aos-delay="450"
-                  >innovations</span
-                >
+                <span class="text-gradient" data-aos="fade-left" data-aos-delay="450">innovations</span>
               </h2>
 
               <p class="fadep opacity6">
@@ -238,16 +297,8 @@
                 possible it's all about potential.
               </p>
 
-              <img
-                src="./assets/img/bounce-2.svg"
-                alt="bounce-img"
-                class="bounce-2"
-              />
-              <img
-                src="./assets/img/bounce-small.svg"
-                alt="bounce-img"
-                class="bounce-2 bounce-small"
-              />
+              <img src="./assets/img/bounce-2.svg" alt="bounce-img" class="bounce-2" />
+              <img src="./assets/img/bounce-small.svg" alt="bounce-img" class="bounce-2 bounce-small" />
 
               <a href="services.html" class="btn-1 fadep">
                 <span></span>
@@ -258,16 +309,10 @@
               </a>
             </div>
             <div class="col-md-12 col-lg-6 text-end landing-right">
-              <img
-                src="./assets/img/banner-right.svg"
-                alt=""
-                class="img-fluid baner-right"
-              />
+              <img src="./assets/img/banner-right.svg" alt="" class="img-fluid baner-right" />
               <div class="learn-more">
                 <a href="#" class="btn-1">
-                  <span></span><span></span><span></span
-                  ><span></span> EXPLORE</a
-                >
+                  <span></span><span></span><span></span><span></span> EXPLORE</a>
               </div>
             </div>
           </div>
@@ -278,84 +323,33 @@
         <div class="container">
           <h4 class="underline_title title">
             <h3 class="title2">
-              <span
-                data-aos="fade-left"
-                data-aos="fade-left"
-                data-aos-delay="100"
-              >
-                A</span
-              >
-              <span
-                data-aos="fade-left"
-                data-aos="fade-left"
-                data-aos-delay="200"
-              >
-                B</span
-              >
-              <span
-                data-aos="fade-left"
-                data-aos="fade-left"
-                data-aos-delay="300"
-              >
-                O</span
-              >
-              <span
-                data-aos="fade-left"
-                data-aos="fade-left"
-                data-aos-delay="400"
-              >
-                U</span
-              >
-              <span
-                data-aos="fade-left"
-                data-aos="fade-left"
-                data-aos-delay="500"
-              >
-                T</span
-              >
+              <span data-aos="fade-left" data-aos="fade-left" data-aos-delay="100">
+                A</span>
+              <span data-aos="fade-left" data-aos="fade-left" data-aos-delay="200">
+                B</span>
+              <span data-aos="fade-left" data-aos="fade-left" data-aos-delay="300">
+                O</span>
+              <span data-aos="fade-left" data-aos="fade-left" data-aos-delay="400">
+                U</span>
+              <span data-aos="fade-left" data-aos="fade-left" data-aos-delay="500">
+                T</span>
               <span> &nbsp;</span>
-              <span
-                data-aos="fade-left"
-                data-aos="fade-left"
-                data-aos-delay="600"
-              >
-                U</span
-              >
-              <span
-                data-aos="fade-left"
-                data-aos="fade-left"
-                data-aos-delay="600"
-              >
-                S</span
-              >
+              <span data-aos="fade-left" data-aos="fade-left" data-aos-delay="600">
+                U</span>
+              <span data-aos="fade-left" data-aos="fade-left" data-aos-delay="600">
+                S</span>
               <img src="./assets/img/underline.svg" class="" alt="" />
             </h3>
           </h4>
           <div class="row bg-about">
             <div class="col-md-12 col-lg-6 position-relative">
               <div class="about-main" data-aos="fade-down">
-                <img
-                  src="./assets/img/about-left.svg"
-                  alt=""
-                  class="img-fluid"
-                />
-                <img
-                  src="./assets/img/about-left2.svg"
-                  alt=""
-                  class="img-fluid"
-                />
+                <img src="./assets/img/about-left.svg" alt="" class="img-fluid" />
+                <img src="./assets/img/about-left2.svg" alt="" class="img-fluid" />
               </div>
               <div class="team-strenth" data-aos="fade-down">
-                <img
-                  src="./assets/img/white-border.png"
-                  alt=""
-                  class="img-fluid"
-                />
-                <img
-                  src="./assets/img/green-border-team-ss.png"
-                  alt=""
-                  class="img-fluid"
-                />
+                <img src="./assets/img/white-border.png" alt="" class="img-fluid" />
+                <img src="./assets/img/green-border-team-ss.png" alt="" class="img-fluid" />
               </div>
             </div>
             <div class="col-md-12 col-lg-6 about-right">
@@ -367,11 +361,7 @@
                     <span class="text-gradient">Conquer</span> Any Challenge
                   </span>
                 </h3>
-                <img
-                  src="assets/img/icon/flicker.gif"
-                  alt=""
-                  class="flicker img-fluid"
-                />
+                <img src="assets/img/icon/flicker.gif" alt="" class="flicker img-fluid" />
                 <p class="opacity6">
                   Our team of highly-trained, experienced developers delivers
                   great user experiences on mobile and web apps. Through the
@@ -394,14 +384,14 @@
                     <span>Game Development</span>
                   </div>
                   <div class="d-flex mt-3">
-                  <a href="about.html" class="btn-1  d-inline-block text-decoration-none ">
-                    <span class="m-0"></span>
-                    <span></span>
-                    <span></span>
-                    <span class="m-0"></span>
-                    KNOW MORE
-                  </a>
-                 </div>
+                    <a href="about.html" class="btn-1  d-inline-block text-decoration-none ">
+                      <span class="m-0"></span>
+                      <span></span>
+                      <span></span>
+                      <span class="m-0"></span>
+                      KNOW MORE
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -414,92 +404,33 @@
           <h4 class="title2 underline_title">
             <!-- OUR SERVICES -->
 
-            <span
-              data-aos="fade-right"
-              data-aos="fade-right"
-              data-aos-delay="100"
-            >
-              O</span
-            >
-            <span
-              data-aos="fade-right"
-              data-aos="fade-right"
-              data-aos-delay="200"
-            >
-              U</span
-            >
-            <span
-              data-aos="fade-right"
-              data-aos="fade-right"
-              data-aos-delay="300"
-            >
-              R</span
-            >
+            <span data-aos="fade-right" data-aos="fade-right" data-aos-delay="100">
+              O</span>
+            <span data-aos="fade-right" data-aos="fade-right" data-aos-delay="200">
+              U</span>
+            <span data-aos="fade-right" data-aos="fade-right" data-aos-delay="300">
+              R</span>
             <span>&nbsp;</span>
-            <span
-              data-aos="fade-right"
-              data-aos="fade-right"
-              data-aos-delay="400"
-            >
-              W</span
-            >
+            <span data-aos="fade-right" data-aos="fade-right" data-aos-delay="400">
+              W</span>
 
-            <span
-              data-aos="fade-right"
-              data-aos="fade-right"
-              data-aos-delay="500"
-            >
-              O</span
-            >
-            <span
-              data-aos="fade-right"
-              data-aos="fade-right"
-              data-aos-delay="600"
-            >
-              R</span
-            >
-            <span
-              data-aos="fade-right"
-              data-aos="fade-right"
-              data-aos-delay="700"
-            >
-              K</span
-            >
+            <span data-aos="fade-right" data-aos="fade-right" data-aos-delay="500">
+              O</span>
+            <span data-aos="fade-right" data-aos="fade-right" data-aos-delay="600">
+              R</span>
+            <span data-aos="fade-right" data-aos="fade-right" data-aos-delay="700">
+              K</span>
             <span>&nbsp;</span>
 
-            <span
-              data-aos="fade-right"
-              data-aos="fade-right"
-              data-aos-delay="800"
-            >
-              L</span
-            >
-            <span
-              data-aos="fade-right"
-              data-aos="fade-right"
-              data-aos-delay="900"
-            >
-              I</span
-            >
-            <span
-              data-aos="fade-right"
-              data-aos="fade-right"
-              data-aos-delay="1000"
-            >
-              F</span
-            >
-            <span
-              data-aos="fade-right"
-              data-aos="fade-right"
-              data-aos-delay="1100"
-            >
-              E</span
-            >
-            <img
-              src="./assets/img/underline.svg"
-              alt=""
-              class="d-inline fade-img-serv"
-            />
+            <span data-aos="fade-right" data-aos="fade-right" data-aos-delay="800">
+              L</span>
+            <span data-aos="fade-right" data-aos="fade-right" data-aos-delay="900">
+              I</span>
+            <span data-aos="fade-right" data-aos="fade-right" data-aos-delay="1000">
+              F</span>
+            <span data-aos="fade-right" data-aos="fade-right" data-aos-delay="1100">
+              E</span>
+            <img src="./assets/img/underline.svg" alt="" class="d-inline fade-img-serv" />
           </h4>
 
           <h3 class="shake-services">
@@ -516,16 +447,8 @@
                   <img src="./assets/img/servicebg-2.svg" alt="" />
                 </div>
                 <div style="height: 85px">
-                  <img
-                    src="./assets/img/agile.svg"
-                    alt=""
-                    class="our_service-title img-fluid"
-                  />
-                  <img
-                    src="./assets/img/agile2.svg"
-                    alt=""
-                    class="our_service-title img-fluid"
-                  />
+                  <img src="./assets/img/agile.svg" alt="" class="our_service-title img-fluid" />
+                  <img src="./assets/img/agile2.svg" alt="" class="our_service-title img-fluid" />
                 </div>
                 <ul>
                   <li>
@@ -546,16 +469,8 @@
                   <img src="./assets/img/servicebg-2.svg" alt="" />
                 </div>
                 <div style="height: 85px">
-                  <img
-                    src="./assets/img/trans-1.svg"
-                    alt=""
-                    class="our_service-title img-fluid"
-                  />
-                  <img
-                    src="./assets/img/trans-2.svg"
-                    alt=""
-                    class="our_service-title img-fluid"
-                  />
+                  <img src="./assets/img/trans-1.svg" alt="" class="our_service-title img-fluid" />
+                  <img src="./assets/img/trans-2.svg" alt="" class="our_service-title img-fluid" />
                 </div>
                 <ul>
                   <li>
@@ -576,16 +491,8 @@
                   <img src="./assets/img/servicebg-2.svg" alt="" />
                 </div>
                 <div style="height: 85px">
-                  <img
-                    src="./assets/img/user-friendly1.svg"
-                    alt=""
-                    class="our_service-title img-fluid"
-                  />
-                  <img
-                    src="./assets/img/user-friendly2.svg"
-                    alt=""
-                    class="our_service-title img-fluid"
-                  />
+                  <img src="./assets/img/user-friendly1.svg" alt="" class="our_service-title img-fluid" />
+                  <img src="./assets/img/user-friendly2.svg" alt="" class="our_service-title img-fluid" />
                 </div>
                 <ul>
                   <li>
@@ -600,31 +507,16 @@
           <div class="mobile-show">
             <div class="row magap30">
               <div class="col-md-12 col-lg-4 d-block text-center">
-                <img
-                  src="./assets/img/card_1_agile.png"
-                  alt=""
-                  class="img-fluid w-100"
-                  data-aos="flip-left"
-                  data-aos-delay="50"
-                />
+                <img src="./assets/img/card_1_agile.png" alt="" class="img-fluid w-100" data-aos="flip-left"
+                  data-aos-delay="50" />
               </div>
               <div class="col-md-12 col-lg-4 text-center">
-                <img
-                  src="./assets/img/our_service_new.png"
-                  alt=""
-                  class="img-fluid w-100"
-                  data-aos="flip-left"
-                  data-aos-delay="150"
-                />
+                <img src="./assets/img/our_service_new.png" alt="" class="img-fluid w-100" data-aos="flip-left"
+                  data-aos-delay="150" />
               </div>
               <div class="col-md-12 col-lg-4 text-center">
-                <img
-                  src="./assets/img/user_friendly.png"
-                  alt=""
-                  class="img-fluid w-100"
-                  data-aos="flip-left"
-                  data-aos-delay="200"
-                />
+                <img src="./assets/img/user_friendly.png" alt="" class="img-fluid w-100" data-aos="flip-left"
+                  data-aos-delay="200" />
               </div>
             </div>
           </div>
@@ -637,27 +529,19 @@
               <div class="img-container">
                 <div class="green-box"></div>
                 <div class="yellow-box"></div>
-                <img
-                  src="./assets/img/innovation.svg"
-                  alt="innovation_section"
-                  class="img-fluid"
-                />
+                <img src="./assets/img/innovation.svg" alt="innovation_section" class="img-fluid" />
               </div>
             </div>
-            <div
-              class="col-md-12 col-lg-7 d-flex align-items-center innovation_right"
-            >
+            <div class="col-md-12 col-lg-7 d-flex align-items-center innovation_right">
               <div>
                 <h6 class="title2 underline_title mt-0">
                   <span data-aos="fade-left" data-aos-delay="100"> BLAZE</span>
                   <span data-aos="fade-left" data-aos-delay="200"> A</span>
                   <span data-aos="fade-left" data-aos-delay="300"> TRAIL</span>
                   <span data-aos="fade-left" data-aos-delay="400">
-                    TO CREATIVE</span
-                  >
+                    TO CREATIVE</span>
                   <span data-aos="fade-left" data-aos-delay="500">
-                    SUCCESS</span
-                  >
+                    SUCCESS</span>
                 </h6>
                 <!-- <div style="max-height: 68px; overflow: hidden;"> -->
                 <h4 class="d-block">
@@ -669,11 +553,7 @@
                 <!-- </div> -->
 
                 <div class="content-img py-5">
-                  <img
-                    src="./assets/img/mobile-inno-gif.gif"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <img src="./assets/img/mobile-inno-gif.gif" alt="" class="img-fluid" />
                 </div>
 
                 <div class="build-p">
@@ -687,12 +567,8 @@
                     React.Js, HTML5, CSS3, Magento, and more.
                   </p>
                 </div>
-                <a
-                  href=""
-                  class="btn-1 width-fit text-decoration-none fadeup-animation"
-                  data-aos="fade-up"
-                  data-aos-delay="1200"
-                >
+                <a href="" class="btn-1 width-fit text-decoration-none fadeup-animation" data-aos="fade-up"
+                  data-aos-delay="1200">
                   <span></span>
                   <span></span>
                   <span></span>
@@ -865,83 +741,37 @@
             <div class="col-md-12 col-lg-5">
               <div class="img-container">
                 <div class="gradient_box"></div>
-                <img
-                  src="./assets/img/fater-img.webp"
-                  alt="faster image"
-                  class="img-fluid"
-                />
+                <img src="./assets/img/fater-img.webp" alt="faster image" class="img-fluid" />
 
-                <img
-                  src="./assets/img/star-img.svg"
-                  alt="faster star"
-                  class="img-fluid"
-                />
-                <img
-                  src="./assets/img/fater-img.svg"
-                  alt="faster image"
-                  class="img-fluid"
-                />
+                <img src="./assets/img/star-img.svg" alt="faster star" class="img-fluid" />
+                <img src="./assets/img/fater-img.svg" alt="faster image" class="img-fluid" />
                 <div class="img-container-2">
-                  <img
-                    src="./assets/img/faster-animate1.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                  <img
-                    src="./assets/img/faster-animate2.png"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <img src="./assets/img/faster-animate1.png" alt="" class="img-fluid" />
+                  <img src="./assets/img/faster-animate2.png" alt="" class="img-fluid" />
                 </div>
               </div>
             </div>
-            <div
-              class="col-md-12 col-lg-7 d-flex align-items-center innovation_right"
-            >
+            <div class="col-md-12 col-lg-7 d-flex align-items-center innovation_right">
               <div>
                 <h6 class="title2 underline_title mt-0">
                   <!-- Unity Empowers you to excel everywhere -->
 
-                  <span
-                    data-aos="fade-left"
-                    data-aos="fade-left"
-                    data-aos-delay="50"
-                  >
-                    Unity</span
-                  >
-                  <span
-                    data-aos="fade-left"
-                    data-aos="fade-left"
-                    data-aos-delay="150"
-                  >
-                    Empowers</span
-                  >
-                  <span
-                    data-aos="fade-left"
-                    data-aos="fade-left"
-                    data-aos-delay="200"
-                  >
-                    you to excel</span
-                  >
+                  <span data-aos="fade-left" data-aos="fade-left" data-aos-delay="50">
+                    Unity</span>
+                  <span data-aos="fade-left" data-aos="fade-left" data-aos-delay="150">
+                    Empowers</span>
+                  <span data-aos="fade-left" data-aos="fade-left" data-aos-delay="200">
+                    you to excel</span>
 
-                  <span
-                    data-aos="fade-left"
-                    data-aos="fade-left"
-                    data-aos-delay="250"
-                  >
-                    everywhere</span
-                  >
+                  <span data-aos="fade-left" data-aos="fade-left" data-aos-delay="250">
+                    everywhere</span>
                 </h6>
                 <h4 data-aos="fade-up" data-aos-delay="300">
                   Our designs are <span class="text-gradient">Faster</span>,
                   Stronger, and Better than you imagine
                 </h4>
                 <div class="content-img py-5">
-                  <img
-                    src="./assets/img/mobile-hacker.gif"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <img src="./assets/img/mobile-hacker.gif" alt="" class="img-fluid" />
                 </div>
                 <div class="hacker-p">
                   <p data-aos="fade-up" data-aos-delay="300" class="opacity6">
@@ -961,40 +791,18 @@
       <section class="testimoniel_section">
         <div class="container">
           <h4>
-            <span data-aos="fade-left" data-aos-delay="0" class="d-inline-block"
-              >Your
+            <span data-aos="fade-left" data-aos-delay="0" class="d-inline-block">Your
             </span>
-            <span
-              data-aos="fade-left"
-              data-aos-delay="100"
-              class="d-inline-block"
-              class="text-gradient"
-              >word
+            <span data-aos="fade-left" data-aos-delay="100" class="d-inline-block" class="text-gradient">word
             </span>
-            <span
-              data-aos="fade-left"
-              data-aos-delay="150"
-              class="d-inline-block"
-              >speaks
+            <span data-aos="fade-left" data-aos-delay="150" class="d-inline-block">speaks
             </span>
             <br />
-            <span
-              data-aos="fade-left"
-              data-aos-delay="200"
-              class="d-inline-block"
-              >our
+            <span data-aos="fade-left" data-aos-delay="200" class="d-inline-block">our
             </span>
-            <span
-              data-aos="fade-left"
-              data-aos-delay="250"
-              class="d-inline-block"
-              >technology
+            <span data-aos="fade-left" data-aos-delay="250" class="d-inline-block">technology
             </span>
-            <span
-              data-aos="fade-left"
-              data-aos-delay="300"
-              class="d-inline-block"
-              >better
+            <span data-aos="fade-left" data-aos-delay="300" class="d-inline-block">better
             </span>
 
             <!-- Your word speaks
@@ -1005,11 +813,7 @@
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever
           </p>
-          <div
-            class="star-container mt-3"
-            data-aos="fade-up"
-            data-aos-delay="350"
-          >
+          <div class="star-container mt-3" data-aos="fade-up" data-aos-delay="350">
             <img src="./assets/img/icon/star.svg" alt="" />
             <img src="./assets/img/icon/star.svg" alt="" />
             <img src="./assets/img/icon/star.svg" alt="" />
@@ -1018,19 +822,11 @@
           </div>
           <p data-aos="fade-up" data-aos-delay="350">100+ Customer Reviews</p>
 
-          <div
-            class="slider-section mt-4"
-            data-aos="fade-right"
-            data-aos-delay="500"
-          >
+          <div class="slider-section mt-4" data-aos="fade-right" data-aos-delay="500">
             <div class="m-2">
               <div class="slider-card">
                 <div class="slider-bg">
-                  <img
-                    src="./assets/img/slider-card.svg"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <img src="./assets/img/slider-card.svg" alt="" class="img-fluid" />
                 </div>
                 <div class="slider-content">
                   <img src="./assets/img/coute.svg" alt="" class="coute" />
@@ -1056,11 +852,7 @@
             <div class="m-2">
               <div class="slider-card">
                 <div class="slider-bg">
-                  <img
-                    src="./assets/img/slider-card.svg"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <img src="./assets/img/slider-card.svg" alt="" class="img-fluid" />
                 </div>
                 <div class="slider-content">
                   <img src="./assets/img/coute.svg" alt="" class="coute" />
@@ -1087,11 +879,7 @@
             <div class="m-2">
               <div class="slider-card">
                 <div class="slider-bg">
-                  <img
-                    src="./assets/img/slider-card.svg"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <img src="./assets/img/slider-card.svg" alt="" class="img-fluid" />
                 </div>
                 <div class="slider-content">
                   <img src="./assets/img/coute.svg" alt="" class="coute" />
@@ -1118,11 +906,7 @@
             <div class="m-2">
               <div class="slider-card">
                 <div class="slider-bg">
-                  <img
-                    src="./assets/img/slider-card.svg"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <img src="./assets/img/slider-card.svg" alt="" class="img-fluid" />
                 </div>
                 <div class="slider-content">
                   <img src="./assets/img/coute.svg" alt="" class="coute" />
@@ -1148,11 +932,7 @@
             <div class="m-2">
               <div class="slider-card">
                 <div class="slider-bg">
-                  <img
-                    src="./assets/img/slider-card.svg"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <img src="./assets/img/slider-card.svg" alt="" class="img-fluid" />
                 </div>
                 <div class="slider-content">
                   <img src="./assets/img/coute.svg" alt="" class="coute" />
@@ -1179,11 +959,7 @@
             <div class="m-2">
               <div class="slider-card">
                 <div class="slider-bg">
-                  <img
-                    src="./assets/img/slider-card.svg"
-                    alt=""
-                    class="img-fluid"
-                  />
+                  <img src="./assets/img/slider-card.svg" alt="" class="img-fluid" />
                 </div>
                 <div class="slider-content">
                   <img src="./assets/img/coute.svg" alt="" class="coute" />
@@ -1220,24 +996,14 @@
                 <div class="accordion mt-5" id="accordionExample">
                   <div class="accordion-item mb-1">
                     <h2 class="accordion-header" id="headingOne">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <span class="accordian-numbers">01</span> How do I get
                         going with my website?
                       </button>
                     </h2>
-                    <div
-                      id="collapseOne"
-                      class="accordion-collapse collapse show"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordionExample"
-                    >
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         Telling us what you need is important in starting your
                         web application development project. After you contact
@@ -1249,24 +1015,14 @@
                   </div>
                   <div class="accordion-item mb-1">
                     <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <span class="accordian-numbers">02</span> Will you take
                         care of my website?
                       </button>
                     </h2>
-                    <div
-                      id="collapseTwo"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         A website needs regular maintenance to keep its
                         flexibility and dependability. Maintenance would help
@@ -1280,24 +1036,14 @@
                   </div>
                   <div class="accordion-item mb-1">
                     <h2 class="accordion-header" id="headingThree">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                      >
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <span class="accordian-numbers">03</span> Will my
                         website work well on mobile devices?
                       </button>
                     </h2>
-                    <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
-                      data-bs-parent="#accordionExample"
-                    >
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         We build responsive websites that appeal to your
                         visitors and give them the best browsing experience.
@@ -1310,24 +1056,14 @@
                   </div>
                   <div class="accordion-item mb-1">
                     <h2 class="accordion-header" id="headingFour">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour"
-                        aria-expanded="false"
-                        aria-controls="collapseFour"
-                      >
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         <span class="accordian-numbers">04</span>What if I need
                         help in the future with my website?
                       </button>
                     </h2>
-                    <div
-                      id="collapseFour"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingFour"
-                      data-bs-parent="#accordionExample"
-                    >
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                      data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         At Unity, we try to figure out what happened and then
                         check all the technical settings to find the best way to
@@ -1341,24 +1077,14 @@
                   </div>
                   <div class="accordion-item mb-1">
                     <h2 class="accordion-header" id="headingFive">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive"
-                        aria-expanded="false"
-                        aria-controls="collapseFive"
-                      >
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         <span class="accordian-numbers">05</span>Can I make
                         changes to the website myself after it's been made?
                       </button>
                     </h2>
-                    <div
-                      id="collapseFive"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingFive"
-                      data-bs-parent="#accordionExample"
-                    >
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                      data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         Yes, you can keep making changes to your website after
                         it's been made, and we recommend you do the same. It is
@@ -1384,321 +1110,2833 @@
               friendly team.
             </p>
             <button class="btn-1">
-              <a href="contactus.html" style="all: unset"
-                ><span></span><span></span><span></span><span></span> GET IN
-                TOUCH</a
-              >
+              <a href="contactus.html" style="all: unset"><span></span><span></span><span></span><span></span> GET IN
+                TOUCH</a>
             </button>
           </div>
         </div>
       </div>
     </div>
-    <br />
-    <br /><br /><br />
-    <footer class="footer">
-      <div class="container">
-        <div class="d-flex justify-content-between f-row">
-          <!-- Logo and Description -->
-          <div class="logo-box">
-            <img src="./assets/img/unity-logo.svg" alt="Logo" />
+  </div>
+
+  <div id="about" class="page-content">
+
+    <section id="about-1" class="about-1">
+      <div class="container-about">
+        <div class="row bg-top-row">
+          <div class="col-md-4">
+            <img src="./assets/img/left-glow.svg" alt="tl-bg" class="top-left-bg" data-aos="fade-down"
+              data-aos-easing="linear" data-aos-duration="1500" />
           </div>
+          <div class="col-md-4 text-end">
+            <img src="./assets/img/right-glow.svg" alt="tr-bg" class="top-right-bg" data-aos="fade-down"
+              data-aos-easing="linear" data-aos-duration="1500" />
+          </div>
+        </div>
+        <img src="./assets/img/bottom-banner.svg" alt="top-bg" class="top-bg" />
+        <div class="row row-content-about">
+          <div class="col-4 arrow-left-content">
+            <button class="about-banner-btn" data-aos="fade-up" data-aos-duration="2000"><span>Our Story</span></button>
+            <h6>
+              <img src="./assets/img/left.png" alt="left-arrow-up" class="left-up-arrow" data-aos="fade-up"
+                data-aos-duration="1500" />
+            </h6>
+          </div>
+          <div class="col-4 img-particles-container">
+            <h6 class="img-center-about" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500">
+              <img src="./assets/img/about-center-1.svg" alt="center-icon" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos-delay="100" />
+            </h6>
+            <!-- particles.js container -->
 
-          <!-- Quick Links -->
-
-          <!-- Policy Links -->
-          <div class="">
-            <div class="d-block">
-              <ul class="list-unstyled footer-links">
-                <li>
-                  <a href="terms-and-condition.html">Terms and Conditions</a>
-                </li>
-                <li><a href="refund.html">Refund Policy</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-              </ul>
+            <!-- data-aos="fade-up"
+                     data-aos-anchor-placement="center-bottom"
+                     data-aos-duration="1500" -->
+            <div id="particles-js" class="particles">
+              
+            </div>
+            <!-- stats - count particles -->
+            <div class="count-particles" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500" data-aos-delay="500">
+              <span class="js-count-particles" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1500" data-aos-delay="500"></span>
             </div>
           </div>
-          <!-- Address Section -->
+          <div class="col-4 arrow-right-content">
+            <h6>
+              <img src="./assets/img/right.png" alt="right-arrow-up" class="right-up-arrow" data-aos="fade-up"
+                data-aos-duration="2000" />
+            </h6>
+            <button class="about-banner-btn" data-aos="fade-up" data-aos-duration="2000"><span>Our
+                Values</span></button>
+          </div>
+        </div>
+        <br />
+        <div class="row row-content-about">
+          <div class="col-3 arrow-left-content-1">
+            <button class="about-banner-btn" data-aos="fade-up" data-aos-duration="2000"><span>Our
+                Mission</span></button>
+            <h6>
+              <img src="./assets/img/left.png" alt="left-arrow-up" class="left-up-arrow" data-aos="fade-up"
+                data-aos-duration="2000" />
+            </h6>
+          </div>
+          <div class="col-6 arrow-space-center"></div>
+          <div class="col-3 arrow-right-content-1">
+            <h6>
+              <img src="./assets/img/right.png" alt="right-arrow-up" class="right-up-arrow" data-aos="fade-up"
+                data-aos-duration="2000" />
+            </h6>
+            <button class="about-banner-btn" data-aos="fade-up" data-aos-duration="2000"><span>Our
+                Vision</span></button>
+          </div>
+        </div>
+        <h1 class="about-head" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"
+          data-aos-delay="300">
+          ABOUT US
+        </h1>
+        <br />
+        <h4 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" data-aos-delay="300">
+          Designing The Realm Of Imagination
+        </h4>
+      </div>
+      <div class="row justify-content-center d-flex bottom-bg">
+        <div class="col-md-2"></div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+          <p data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500" class="para-banner">
+            We provide our clients with custom integrated solutions and solutions that fill the
+            technical gaps in their business processes.
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+  </section>
+
+
+  <style>
+    .about-2 .underline-fade-up img {
+      transform: translate(0) !important;
+      opacity: 0;
+      transition: ease .5s;
+    }
+
+    .underline-fade-up img.visible {
+      transform: translate(0) !important;
+      opacity: 1;
+    }
+  </style>
+   <section class="about-section">
+         <div class="container bg-background">
+            <div class="row plus-container">
+               <div class="col-md-5">
+                  <h6 class="text-end">
+                     <img src="./assets/img/plus.png" alt="plus-bg" class="plus-bg" />
+                  </h6>
+               </div>
+               <div class="col-md-6"></div>
+            </div>
+         </div>
+         <section id="about-2" class="about-2 about-gif">
+            <div class="container">
+               <h4 class="underline_title title">
+                  <h3 class="title2">
+                     <span
+                        data-aos="fade-left"
+                        data-aos="fade-left"
+                        data-aos-delay="50"
+                        >
+                     A</span
+                        >
+                     <span
+                        data-aos="fade-left"
+                        data-aos="fade-left"
+                        data-aos-delay="100"
+                        >
+                     B</span
+                        >
+                     <span
+                        data-aos="fade-left"
+                        data-aos="fade-left"
+                        data-aos-delay="150"
+                        >
+                     O</span
+                        >
+                     <span
+                        data-aos="fade-left"
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                        >
+                     U</span
+                        >
+                     <span
+                        data-aos="fade-left"
+                        data-aos="fade-left"
+                        data-aos-delay="250"
+                        >
+                     T</span
+                        >
+                     <span> &nbsp;</span>
+                     <span
+                        data-aos="fade-left"
+                        data-aos="fade-left"
+                        data-aos-delay="300"
+                        >
+                     U</span
+                        >
+                     <span
+                        data-aos="fade-left"
+                        data-aos="fade-left"
+                        data-aos-delay="350"
+                        >
+                     S</span
+                        >
+                     <h6 class="underline-fade-up">
+                        <img
+                           src="./assets/img/underline.svg"
+                           class="header-underline"
+                           />
+                     </h6>
+                  </h3>
+               </h4>
+            <div class="mobile-view-heading">
+              <h1 class="shake-about making padding-head mobile-view text-center" style="color: #ffffff;">
+                <span class="shaking-text shaking-text-about">   Making Technology That </span>
+                <span class="shaking-text shaking-text-about" >  <span class="text-gradient">Exceeds</span> Expectations</span>
+             </h1>
+            </div>
+               <div class="container card-bg-about mt-0">
+                  <div class="row card-bg-about-1">
+                     <div class="col-sm-12 col-lg-6 desktop-ss">
+                        <h6 class="scroll-container" data-aos="fade-down">
+                           <img
+                              src="./assets/img/scroll-project 2.png"
+                              alt="project-image"
+                              class="project-img"
+                              />
+                           <img
+                              src="./assets/img/3-scroll.png"
+                              alt="scroll-gif"
+                              class="scroll-bg position-absolute"
+                              />
+                           <img
+                              src="./assets/img/scroll gif.gif"
+                              alt="scroll-gif"
+                              class="scroll-bg scroll-gif position-absolute"
+                              />
+                        </h6>
+                     </div>
+                     <div class="col-sm-12 col-lg-6 mobile-view-card1">
+                        <h6 class="scroll-container" data-aos="fade-down">
+                           <img
+                              src="./assets/img/scroll-project 2.png"
+                              alt="project-image"
+                              class="project-img"
+                              />
+                           <img
+                              src="./assets/img/scroll gif.gif"
+                              alt="scroll-gif"
+                              class="scroll-bg position-absolute"
+                              />
+                        </h6>
+                     </div>
+                     <div
+                        class="col-sm-12 col-lg-6 "
+                        >
+                        <h1 class="shake-about making padding-head desktop-view" style="color: #ffffff;">
+                           <span class="shaking-text shaking-text-about">   Making Technology That </span>
+                           <span class="shaking-text  shaking-text-about" >  <span class="text-gradient">Exceeds</span> Expectations</span>
+                        </h1>
+                        <!-- <h1 class="text-heading padding-head shaking-heading opacity-100" data-aos="fade-right"     data-aos-delay="2000" >
+                           </h1> -->
+                        <p class="padding-head pt-2 para-about-ipad mt-0 para-about-top-align"    data-aos="fade-up"
+                           data-aos-duration="1000">
+                           Unity is a provider of comprehensive business technology
+                           solutions focusing on bespoke software development and
+                           business process automation. Small companies to large
+                           corporations rely on the software we develop and administer to
+                           handle billions of dollars yearly. We set out to automate
+                           enterprises to aid in their scalability and efficiency.
+                        </p>
+                        <ul class="mt-0 para-about-top-align"    data-aos="fade-up"
+                           data-aos-duration="1000">
+                           <li>
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="16"
+                                 height="16"
+                                 fill="#ffffff"
+                                 class="bi bi-dot"
+                                 viewBox="0 0 16 16"
+                                 >
+                                 <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                              </svg>
+                              We always stay ahead of industry trends and emerging
+                              technologies to create unique and innovative gaming
+                              experiences.
+                           </li>
+                           <li class="mt-2">
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="16"
+                                 height="16"
+                                 fill="#ffffff"
+                                 class="bi bi-dot"
+                                 viewBox="0 0 16 16"
+                                 >
+                                 <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                              </svg>
+                              Our team is composed of avid gamers and creative
+                              professionals who love what they do, ensuring every project
+                              is filled with passion and creativity.
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="container  bg-background">
+            <div class="row">
+               <div class="col-md-6"></div>
+               <div class="col-md-6">
+                  <h6 class="text-end">
+                     <img
+                        src="./assets/img/plus.png"
+                        alt="plus-bg"
+                        class="plus-bg-1"
+                        />
+                  </h6>
+               </div>
+            </div>
+         </div>
+         <section id="about-2" class="about-2 about-believe-card">
+            <div class="container">
+               <h1 class="our-services-1">
+                  <span>
+                  <span data-aos="fade-left" data-aos-delay="50">
+                  U
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="100">
+                  N
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="150">
+                  I
+                  </span>  
+                  <span data-aos="fade-left" data-aos-delay="200">
+                  T
+                  </span> 
+                  <span data-aos="fade-left" data-aos-delay="250">
+                  Y
+                  </span> 
+                  </span>
+                  <span class="mx-1">
+                  <span data-aos="fade-left" data-aos-delay="350">
+                  C
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="400">
+                  R
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="450">
+                  A
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="500">
+                  V
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="550">
+                  E
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="600">
+                  S
+                  </span>
+                  </span>
+                  <span class="mx-1">
+                  <span data-aos="fade-left" data-aos-delay="650">
+                  T
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="700">
+                  H
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="750">
+                  E
+                  </span>
+                  </span>
+                  <span class="mx-1">
+                  <span data-aos="fade-left" data-aos-delay="850">
+                  P
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="900">
+                  A
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="950">
+                  T
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1050">
+                  H
+                  </span>
+                  </span>
+                  <span class="mx-1">
+                  <span data-aos="fade-left" data-aos-delay="1150">
+                  O
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1200">
+                  F
+                  </span>
+                  </span>
+                  <span class="mx-1">
+                  <span data-aos="fade-left" data-aos-delay="1300">
+                  C
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1350">
+                  R
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1400">
+                  E
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1450">
+                  A
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1550">
+                  T
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1600">
+                  I
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1650">
+                  V
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1700">
+                  I
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1750">
+                  T
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1800">
+                  Y
+                  </span>
+                  </span>
+                  <h6 class="underline-fade-up">
+                     <img
+                        src="./assets/img/under-2.svg"
+                        alt="header-underline"
+                        class="header-underline-1"
+                        />
+                  </h6>
+               </h1>
+               <h1 class="believe-h1 shaking-heading text-align" data-aos="fade-right">We <span>Believe </span>In Possibilities</h1>
+               <br>
+               <div class="row card-about-desktop mt-5">
+                  <div class="col-lg-4 col-md-12">
+                     <div class="card card-believe border-0 " data-aos="flip-left" data-aos-duration="300">
+                        <div class="our_service-about">
+                           <div class="bg-img">
+                              <img src="./assets/img/bg-img-2.svg" alt="" class="">
+                              <img src="./assets/img/svg-hover.svg" alt=""  class="hover-bg">
+                           </div>
+                           <div class="believe-content">
+                              <div style="height: 70px" >
+                                 <img
+                                    src="./assets/img/bow-arrow-g.png"
+                                    alt=""
+                                    class="our_service-title"
+                                    />
+                                 <img
+                                    src="./assets/img/black-bg-bow.svg"
+                                    alt=""
+                                    class="our_service-title"
+                                    />
+                              </div>
+                              <br>
+                              <h1 class="mission">MISSION</h1>
+                              <p class="text-center">
+                                 We provide innovative, scalable, and value-added IT solutions.
+                                 Maintaining lifelong client relationships and expanding client
+                                 circles around the world is one of our goals.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                     <div class="card card-believe border-0" data-aos="flip-left" data-aos-duration="800">
+                        <div class="our_service-about">
+                           <div class="bg-img">
+                              <img src="./assets/img/bg-img-2.svg" alt="" class="">
+                              <img src="./assets/img/inverted-curved-border.svg" alt=""  class="">
+                           </div>
+                           <div class="believe-content">
+                              <div style="height: 70px">
+                                 <img
+                                    src="./assets/img/eye-g.png"
+                                    alt=""
+                                    class="our_service-title"
+                                    />
+                                 <img
+                                    src="./assets/img/black-bg-eye.svg"
+                                    alt=""
+                                    class="our_service-title"
+                                    />
+                              </div>
+                              <br>
+                              <h1 class="mission">VISION</h1>
+                              <p class="text-center">
+                                 Unity provides unsurpassed IT services by creating a good work culture, valuing relationships, and transforming client requirements into innovative approaches.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                     <div class="card card-believe border-0" data-aos="flip-left" data-aos-duration="1000">
+                        <div class="our_service-about">
+                           <div class="bg-img">
+                              <img src="./assets/img/bg-img-2.svg" alt="" class="vector-card-bg">
+                              <!-- <img src="./assets/img/servicebg-2.svg" alt=""> -->
+                              <img src="./assets/img/inverted-curved-border.svg" alt=""  class="">
+                           </div>
+                           <div class="believe-content">
+                              <div style="height: 70px">
+                                 <img
+                                    src="./assets/img/react-g.png"
+                                    alt=""
+                                    class="our_service-title"
+                                    />
+                                 <img
+                                    src="./assets/img/black-bg-react.svg"
+                                    alt=""
+                                    class="our_service-title"
+                                    />
+                              </div>
+                              <br>
+                              <h1 class="mission mt-2">VALUES</h1>
+                              <p class="text-center"> 
+                                 Digital products require more than smart code. Innovation and ideation must work together. Our team is transparent, proactive, and projects well managed.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="mobile-view row flex-column card-about-mobile">
+                  <div class="col">
+                     <img src="./assets/img/our_service_new.svg" alt="mission" class="w-100" data-aos="flip-left" data-aos-duration="250">
+                  </div>
+                  <div class="col">
+                     <img src="./assets/img/our_service_new_2.svg" alt="vision" class="w-100" data-aos="flip-left" data-aos-duration="350">
+                  </div>
+                  <div class="col">
+                     <img src="./assets/img/our_service_new_3.svg" alt="vaules" class="w-100" data-aos="flip-left" data-aos-duration="450">
+                  </div>
+               </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container our-services-ideas">
+               <h1 class="our-services-1 mt-0">
+                  <span>
+                  <span data-aos="fade-left" data-aos-delay="100">
+                  I
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="200">D</span>
+                  <span data-aos="fade-left" data-aos-delay="300">
+                  E
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="400">
+                  A
+                  </span>  
+                  <span data-aos="fade-left" data-aos-delay="500">
+                  S
+                  </span> 
+                  </span>
+                  <span class="mx-1">
+                  <span data-aos="fade-left" data-aos-delay="700">
+                  T
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="800">
+                  O
+                  </span>
+                  </span>
+                  <span class="mx-1">
+                  <span data-aos="fade-left" data-aos-delay="1000">
+                  C
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1100">
+                  O
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1200">
+                  D
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1300">
+                  E 
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1300">
+                  ,
+                  </span>
+                  </span>
+                  <span class="mx-1">
+                  <span data-aos="fade-left" data-aos-delay="1400">
+                  C
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1500">
+                  O
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1600">
+                  D
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="1700">
+                  E
+                  </span>
+                  </span>
+                  <span class="mx-1">
+                  <span data-aos="fade-left" data-aos-delay="1900">
+                  I
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="2000">
+                  N
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="2100">
+                  T
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="2200">
+                  O
+                  </span>
+                  </span>
+                  <span class="mx-1">
+                  <span data-aos="fade-left" data-aos-delay="2400">
+                  L
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="2500">
+                  I
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="2600">
+                  F
+                  </span>
+                  <span data-aos="fade-left" data-aos-delay="2700">
+                  E
+                  </span>
+                  </span>
+                  <h6 class="underline-fade-up">
+                     <img
+                        src="./assets/img/under-2.svg"
+                        alt="header-underline"
+                        class="header-underline-2"
+                        />
+                  </h6>
+               </h1>
+               <h1 class="shake-about ">
+                  <span class="shaking-text believe-h1 shaking-text-about d-block m-text-center">Tapping Into The Best Ideas For </span>
+                  <span class="shaking-text believe-h1 shaking-text-about">
+                     <div class="shaking-text-about">Your <span>Website Redesign </span></div>
+                  </span>
+               </h1>
+               <br>
+               <!-- <h6 class="text-center mt-2">
+                  <img
+                     src="./assets/img/circle-services.png"
+                     alt="circle-services"
+                     class="circle-services"
+                     id="serviceImage"
+                     />
+               </h6> -->
+               <h2 class="text-center">
+                  <img src="/unitywebsites/assets/img/Group 1686559843.svg" alt="circle-service" class="circle-mob">
+               </h2>
+               <h2 class="text-center circle-tab-align">
+                  <img src="/unitywebsites/assets/img/for tab.svg" class="circle-tab"/>
+               </h2>
+            </div>
+          
+         </section>
+         <section class="idea_code_section ">
+            <div class="container">
+               <div class="idea_code_section-row">
+                  <div class="idea_code_section_col1">
+                     <div class="idea-card idea-card1">
+                        <div class="idea-inner">
+                            <div>
+                              <div >
+                                <p>Animation</p>
+                                <span>
+                                The creation of two - dimensional and
+                                three - dimensional visual concepts and design
+                                </span>
+                             </div>
+                            <div class="idea-img-container">
+                              <div>
+                                <img src="./assets/img/about/animate-icon.svg" alt="">
+
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="line left">
+                          <span></span>
+                          <div class=""></div>
+                         </div>
+                     
+                      </div>
+                    
+                  </div>
+                  <div class="idea_code_section_col2" >
+
+                    <div class="idea-card idea-card2">
+                      <div class="idea-inner">
+                          <div class="flex-row-reverse">
+                            <div >
+                              <p>2D & 3D Concept Design</p>
+                              <span>
+                                 The creation of two - dimensional and
+                                 three - dimensional visual concepts and design
+                              </span>
+                           </div>
+                          <div class="idea-img-container">
+                            <div>
+                              <img src="./assets/img/about/animate-icon2.svg" alt="">
+
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="line right">
+                        <span></span>
+                        <div class=""></div>
+                       </div>
+                   </div>
+                  </div>
+               </div>
+               <div class="idea_code_section-row  ">
+                <div class="idea_code_section_col3">
+                   <div class="idea-card idea-card3">
+                      <div class="idea-inner">
+                          <div>
+                            <div >
+                              <p>User Experience Design</p>
+                              <span>
+                                 Creating on enjoyable, efficient and effective user experience for a product or service.
+                              </span>
+                           </div>
+                          <div class="idea-img-container">
+                            <div>
+                              <img src="./assets/img/about/animate-icon3.svg" alt="">
+
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="line center-left">
+                        <span></span>
+                        <div class=""></div>
+                       </div>
+                   </div>
+                </div>
+                <div class="idea_code_section_col4">
+
+                  <div class="center-img text-center">
+                    <img src="./assets/img/about/center-img.png" alt="">
+                 </div>
+                </div>
+                <div class="idea_code_section_col5">
+                  <div class="idea-card idea-card4 ">
+                     <div class="idea-inner">
+                         <div class="d-flex flex-row-reverse">
+                           <div >
+                             <p>Unity Development</p>
+                             <span>
+                              Developing games, apps and other interactive experiences using the Unity game engine.
+                             </span>
+                          </div>
+                         <div class="idea-img-container">
+                           <div>
+                             <img src="./assets/img/about/animate-icon4.svg" alt="">
+
+                           </div>
+                         </div>
+                         </div>
+                     </div>
+                     <div class="line center-right">
+                      <span></span>
+                      <div class=""></div>
+                     </div>
+                  </div>
+               </div>
+               
+             </div>
+             <div class=" idea_code_section-row">
+              <div class="idea_code_section_col6">
+                 <div class="idea-card">
+                    <div class="idea-inner">
+                        <div>
+                          <div >
+                            <p>User Interface Design</p>
+                            <span>
+                              Developing visual and interactive elements of software interface to enhance usability.
+                            </span>
+                         </div>
+                        <div class="idea-img-container">
+                          <div>
+                            <img src="./assets/img/about/animate-icon5.svg" alt="">
+
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="line bottom-left">
+                      <span></span>
+                      <div class=""></div>
+                     </div>
+                 </div>
+              </div>
+              <div class="idea_code_section_col7">
+
+                <div class="idea-card idea-card6">
+                  <div class="idea-inner">
+                      <div class="flex-row-reverse">
+                        <div >
+                          <p class="p-0">3D Assets Design & Development</p>
+                          <span class="p-0">
+                           Modelling, textured and animating 3D objects for use in games, films, and other media.
+                          </span>
+                       </div>
+                      <div class="idea-img-container">
+                        <div>
+                          <img src="./assets/img/about/animate-icon6.png" alt="">
+
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="line bottom-right">
+                    <span></span>
+                    <div class=""></div>
+                   </div>
+               </div>
+              </div>
+           </div>
+            </div>
+         </section>
+      </section>
+  </div>
+
+  <div id="services" class="page-content">
+    <section id="services-1" class="about-1">
+      <div class="container-about">
+        <div class="row bg-top-row">
+          <div class="col-md-4">
+            <img src="./assets/img/left-glow.svg" alt="tl-bg" class="top-left-bg" data-aos="fade-down"
+              data-aos-easing="linear" data-aos-duration="1500" />
+          </div>
+          <div class="col-md-4 text-end">
+            <img src="./assets/img/right-glow.svg" alt="tr-bg" class="top-right-bg" data-aos="fade-down"
+              data-aos-easing="linear" data-aos-duration="1500" />
+          </div>
+        </div>
+        <img src="./assets/img/bottom-banner.svg" alt="top-bg" class="top-bg" />
+        <div class="row row-content-about">
+          <div class="col-4 arrow-left-content">
+            <button class="about-banner-btn" data-aos="fade-up" data-aos-duration="2000">
+              <span>Expertise</span>
+            </button>
+            <h6>
+              <img src="./assets/img/left.png" alt="left-arrow-up" class="left-up-arrow" data-aos="fade-up"
+                data-aos-duration="2000" />
+            </h6>
+          </div>
+          <div class="col-4 img-particles-container">
+            <h6 class="img-center-about" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+              data-aos-duration="2000">
+              <img src="./assets/img/services-center-banner.svg" alt="center-icon" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="2000" />
+            </h6>
+            <div id="particles-js" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"
+              class="particles"></div>
+            <div class="count-particles" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500">
+              <span class="js-count-particles" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1500"></span>
+            </div>
+          </div>
+
+          <div class="col-4 arrow-right-content">
+            <h6>
+              <img src="./assets/img/right.png" alt="right-arrow-up" class="right-up-arrow" data-aos="fade-up"
+                data-aos-duration="2000" />
+            </h6>
+            <button class="about-banner-btn" data-aos="fade-up" data-aos-duration="2000">
+              <span>Skillset</span>
+            </button>
+          </div>
+        </div>
+        <br />
+        <div class="row row-content-about">
+          <div class="col-3 arrow-left-content-1">
+            <button class="about-banner-btn" data-aos="fade-up" data-aos-duration="2000">
+              <span>Mastery</span>
+            </button>
+            <h6>
+              <img src="./assets/img/left.png" alt="left-arrow-up" class="left-up-arrow" data-aos="fade-up"
+                data-aos-duration="2000" />
+            </h6>
+          </div>
+          <div class="col-6 arrow-space-center"></div>
+          <div class="col-3 arrow-right-content-1">
+            <h6>
+              <img src="./assets/img/right.png" alt="right-arrow-up" class="right-up-arrow" data-aos="fade-up"
+                data-aos-duration="2000" />
+            </h6>
+            <button class="about-banner-btn" data-aos="fade-up" data-aos-duration="2000">
+              <span>Ability</span>
+            </button>
+          </div>
+        </div>
+        <h1 class="about-head" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+          SERVICES
+        </h1>
+        <br />
+        <h4 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+          Our Innovations Are Infused With Soul
+        </h4>
+        <div class="row justify-content-center d-flex bottom-bg">
+          <div class="col-md-2"></div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+            <p data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"
+              class="para-banner">
+              We provide our clients with custom integrated solutions and
+              solutions that fill the technical gaps in their business
+              processes.
+            </p>
+          </div>
+          <div class="col-md-2"></div>
         </div>
       </div>
-    </footer>
-    <a href="#" class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
-      <img
-        src="assets/img/icon/arrow_inactive.svg"
-        alt="Back to Top Inactive"
-        class="arrow-inactive"
-      />
-      <img
-        src="assets/img/icon/arrow_active.svg"
-        alt="Back to Top Active"
-        class="arrow-active"
-      />
-    </a>
-    <div class="footer-section"></div>
-      <div class="nav-bar">
-        <a href="./index.html" class="active">
-          <img src="./assets/img/icon/active.svg" width="0" alt="Home" />
-        </a>
-        <a href="./about.html">
-          <img src="./assets/img/icon/about.svg" width="0" alt="Home" />
-        </a>
-        <a href="./services.html">
-          <img src="./assets/img/icon/services.svg" width="0" alt="Home" />
-        </a>
-        <a href="./ourspecality.html">
+      <br />
+      <br />
+
+      <!-- <section class="computer_section">
+        <div class="container computer_section_bg mt-5">
+          <div class="row">
+            <div class="col-sm-12 col-lg-7">
+          <div class="left-content">
+            <h1 class="believe-h1">
+              <span data-aos="fade-left" data-aos-duration="200" class="web-text">Web </span>
+              <span data-aos="fade-left"  data-aos-delay="300" class="text-light">
+                Development
+              </span>
+            </h1>
+            <h1 class="service-computer-para-1 mt-0 opacity-100 pt-3">
+              <span data-aos="fade-right" data-aos-delay="200">
+                UNITY EMPOWERS YOU TO EXCEL EVERYWHERE</span
+              >
+            </h1>
+            <br>
+            <p class="service-computer-para">
+              Unity is committed to providing clients with web development services that 
+              are optimal, scalable, secure, and custom-tailored.
+            </p>
+            
+            <p class="service-computer-para pt-1">
+              Our professional web developers are proficient in cutting-edge technologies such as PHP, Laravel, CakePHP, WordPress, JavaScript, Node.Js, Angular.Js, Vue.Js, React.Js, HTML5, CSS3, 
+              Magento, among others.
+            </p>
+          </div>
+            </div>
+            <div class="col-sm-12 col-lg-5">
+             <div class="right-content">
+               <div class="img-container-service border-rounded">
+                <div class="image-box  border-rounded">
+                  <video class="img-fluid fluid-video mt-5" autoplay muted loop>
+                    <source src="./assets/img/1-service-gif.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="computer_section pt-5">
+        <div class="container computer_section_bg_2">
+          <div class="row mobile-reverse">
+            <div class="col-sm-12 col-lg-5">
+          <div class="left-content-mobile ">
+            <div class="image-box border-rounded mx-4">
+              <video class="img-fluid fluid-video mt-5" autoplay muted loop>
+                <source src="./assets/img/2-services.gif.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+            </div>
+            <div class="col-sm-12 col-lg-7">
+             <div class="right-content-mobile">
+              <h1 class="believe-h1">
+                <span data-aos="fade-left"  data-aos-delay="300" class="text-light">
+              Mobile
+                </span>
+                <span data-aos="fade-left" data-aos-delay="500" class="web-text">App</span>
+                <span data-aos="fade-left"  data-aos-delay="700" class="text-light">
+                  Development
+                </span>
+              </h1>
+              <h1 class="service-computer-para-1 mt-0 opacity-100 pt-3">
+                <span data-aos="fade-right" data-aos-delay="200">
+                  UNITY EMPOWERS YOU TO EXCEL EVERYWHERE</span
+                >
+              </h1>
+              <br>
+              <p class="service-computer-para para-service-2-1">
+                Top-tier mobile app development company Unitytech helps companies rule
+                the fiercely competitive app market.
+              </p>
+              
+              <p class="service-computer-para pt-1">
+                We combine our creative and coding skills to produce a combination of beautiful, fluid, and efficient apps. The result is an app that is both  gorgeous and powerful! We have a dedicated 
+                team to ensure it.
+              </p>
+             </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="computer_section pt-5">
+        <div class="container computer_section_bg_3">
+          <div class="row">
+            <div class="col-sm-12 col-lg-7">
+          <div class="left-content-system">
+            <h1 class="believe-h1">
+              <span data-aos="fade-left" data-aos-duration="200" class="web-text">UI & UX </span>
+              <span data-aos="fade-left"  data-aos-delay="300" class="text-light">
+            Designing
+              </span>
+            </h1>
+            <h1 class="service-computer-para-1 mt-0 opacity-100 pt-3">
+              <span data-aos="fade-right" data-aos-delay="200">
+                UNITY EMPOWERS YOU TO EXCEL EVERYWHERE</span
+              >
+            </h1>
+            <br>
+            <p class="service-computer-para">
+              The UI is driven by UX design. Our team of UX designers has years of  experience in the 
+              fundamental areas of user experience.
+            </p>
+            
+            <p class="service-computer-para pt-1">
+              This lets them collaborate on the finer points of usability and functionality  in line with corporate objectives and end-user requirements. We take 
+              great pride in our designing prowess.
+            </p>
+          </div>
+            </div>
+            <div class="col-sm-12 col-lg-5">
+              <div class="right-content-system">
+                <div class="image-box border-rounded">
+                  <video class="img-fluid fluid-video mt-5" autoplay muted loop>
+                    <source src="./assets/img/3-services.gif.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    -->
+    </section>
+    <br />
+    <br />
+    <section class="overflow-hidden">
+      <h1 class="believe-h1-service text-center p-2" data-aos="fade-up" data-aos-duration="1000">
+        Innovative <span>Services </span> to <span>Elevate </span>Your Digital Presence
+      </h1>
+
+      <div class="row justify-content-center d-flex">
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+          <p class="service-para" data-aos="fade-up" data-aos-duration="1500">
+            Our team delivers cutting-edge technology services tailored to meet your unique needs. From development to
+            deployment,
+
+            we ensure seamless integration and top performance
+            <!-- <span>technical gaps in their business processes.</span> -->
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <br />
+      <div class="container">
+        <div class="row card-row-align">
+          <div class="col-md-4 " data-aos="flip-right" data-aos-duration="300">
+            <div class="bg-padding">
+              <div class="computer_section_bg_3">
+                <div class="div_img">
+                  <h6 class="text-center icon-bg">
+                    <img src="./assets/img/yellowish-bg.svg" alt="bg-yellowish" class="bg-yellowish" />
+                    <img src="./assets/img/minute-hand.svg" alt="bg-service-icon" class="minute-hand" />
+                    <img src="./assets/img/icon-service.svg" alt="bg-service-icon" class="icon-service" />
+                    <div class="box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </h6>
+                </div>
+                <div class="mobile-view-root">
+                  <div class="div_img_mob">
+                    <h6 class="text-center icon-bg">
+                      <img src="./assets/img/yellowish-bg.svg" alt="bg-yellowish" class="bg-yellowish" />
+                      <img src="./assets/img/minute-hand.svg" alt="bg-service-icon" class="minute-hand" />
+                      <img src="./assets/img/icon-service.svg" alt="bg-service-icon" class="icon-service" />
+                      <div class="circle delay1"></div>
+                      <div class="circle delay2"></div>
+                      <div class="circle delay3"></div>
+                      <div class="circle delay4"></div>
+                    </h6>
+                  </div>
+                </div>
+                <div class="text-content">
+                  <h1 class="believe-h1 text-center text-nowrap">
+                    <span>Web</span>
+                    Development
+                  </h1>
+                  <p>
+                    Our professional web developers are proficient in cutting-edge
+                    technologies such as PHP, Laravel, CakePHP, WordPress,
+                    JavaScript, Node.Js, Angular.Js, Vue.Js, React.Js, HTML5, CSS3,
+                    Magento, among others.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4" data-aos="flip-right" data-aos-duration="500">
+            <div class="bg-padding">
+              <div class="computer_section_bg_3">
+                <div class="div_img">
+                  <h6 class="text-center icon-bg">
+                    <img src="./assets/img/yellowish-bg.svg" alt="bg-yellowish" class="bg-yellowish" />
+                    <img src="./assets/img/minute-hand.svg" alt="minute-hand" class="minute-hand" />
+                    <img src="./assets/img/2-bg-service.svg" alt="bg-service-icon" class="icon-service" />
+                    <div class="box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </h6>
+                </div>
+                <div class="mobile-view-root">
+                  <div class="div_img_mob">
+                    <h6 class="text-center icon-bg">
+                      <img src="./assets/img/yellowish-bg.svg" alt="bg-yellowish" class="bg-yellowish" />
+                      <img src="./assets/img/minute-hand.svg" alt="bg-service-icon" class="minute-hand" />
+                      <img src="./assets/img/2-bg-service.svg" alt="bg-service-icon" class="icon-service" />
+                      <div class="circle delay1"></div>
+                      <div class="circle delay2"></div>
+                      <div class="circle delay3"></div>
+                      <div class="circle delay4"></div>
+                    </h6>
+                  </div>
+                </div>
+                <div class="text-content">
+                  <h1 class="believe-h1 text-center text-nowrap">
+                    <span>Mobile</span>
+                    App Development
+                  </h1>
+                  <p>
+                    We combine our creative and coding skills to produce a
+                    combination of beautiful, fluid, and efficient apps. The
+                    result is an app that is both gorgeous and powerful! We have
+                    a dedicated team to ensure it.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="flip-right" data-aos-duration="700">
+            <div class="bg-padding">
+              <div class="computer_section_bg_3">
+                <div class="div_img">
+                  <h6 class="text-center icon-bg">
+                    <img src="./assets/img/yellowish-bg.svg" alt="bg-yellowish" class="bg-yellowish" />
+                    <img src="./assets/img/minute-hand.svg" alt="bg-service-icon" class="minute-hand" />
+                    <img src="./assets/img/3-bg-service.svg" alt="bg-service-icon" class="icon-service" />
+                    <div class="box">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </h6>
+                </div>
+                <div class="mobile-view-root">
+                  <div class="div_img_mob">
+                    <h6 class="text-center icon-bg">
+                      <img src="./assets/img/yellowish-bg.svg" alt="bg-yellowish" class="bg-yellowish" />
+                      <img src="./assets/img/minute-hand.svg" alt="bg-service-icon" class="minute-hand" />
+                      <img src="./assets/img/3-bg-service.svg" alt="bg-service-icon" class="icon-service" />
+                      <div class="circle delay1"></div>
+                      <div class="circle delay2"></div>
+                      <div class="circle delay3"></div>
+                      <div class="circle delay4"></div>
+                    </h6>
+                  </div>
+                </div>
+                <div class="text-content">
+                  <h1 class="believe-h1 text-center text-nowrap">
+                    <span>Game</span>
+                    Development
+                  </h1>
+                  <p>
+                    Game development is a complex and collaborative process that transforms ideas into interactive
+                    experiences. It begins with concept and planning, where developers outline the game’s vision,
+                    including its genre, story, and mechanics.
+
+
+
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="speciality" class="page-content">
+  <section class="main-part">
+      <section id="about-1" class="about-1">
+        <div class="container-about">
+          <div class="row bg-top-row">
+            <div class="col-md-4">
+              <img
+                src="./assets/img/left-top-bg-glow.png"
+                alt="tl-bg"
+                class="top-left-bg"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              />
+            </div>
+            <div class="col-md-4 text-end">
+              <img
+                src="./assets/img/top_right_glow.png"
+                alt="tr-bg"
+                class="top-right-bg"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              />
+            </div>
+          </div>
           <img
-            src="./assets/img/icon/speciality_inactive.svg"
-            width="0"
-            alt="Home"
+            src="./assets/img/bottom-banner.svg"
+            alt="top-bg"
+            class="top-bg"
           />
-        </a>
-        <a href="./contactus.html">
-          <img src="./assets/img/icon/contactus.svg" width="0" alt="Home" />
-        </a>
+          <div class="row row-content-about">
+            <div class="col-4 arrow-left-content">
+              <button
+                class="about-banner-btn"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                <span>Our Story</span>
+              </button>
+              <h6>
+                <img
+                  src="./assets/img/left.png"
+                  alt="left-arrow-up"
+                  class="left-up-arrow"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                />
+              </h6>
+            </div>
+            <div class="col-4 img-particles-container">
+              <h6
+                class="img-center-about"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1500"
+              >
+                <img
+                  src="./assets/img/icon/specialitiessvg.svg"
+                  alt="center-icon"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
+                  data-aos-duration="1500"
+                  data-aos-delay="100"
+                />
+              </h6>
+              <!-- particles.js container -->
+              <div
+                id="particles-js"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1500"
+                class="particles"
+              ></div>
+              <!-- stats - count particles -->
+              <div
+                class="count-particles"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+              >
+                <span
+                  class="js-count-particles"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
+                  data-aos-duration="1500"
+                  data-aos-delay="500"
+                ></span>
+              </div>
+            </div>
+            <div class="col-4 arrow-right-content">
+              <h6>
+                <img
+                  src="./assets/img/right.png"
+                  alt="right-arrow-up"
+                  class="right-up-arrow"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                />
+              </h6>
+              <button
+                class="about-banner-btn"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                <span>Our Work</span>
+              </button>
+            </div>
+          </div>
+          <br />
+          <div class="row row-content-about">
+            <div class="col-3 arrow-left-content-1">
+              <button
+                class="about-banner-btn"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                <span> Our Mission</span>
+              </button>
+              <h6>
+                <img
+                  src="./assets/img/left.png"
+                  alt="left-arrow-up"
+                  class="left-up-arrow"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                />
+              </h6>
+            </div>
+            <div class="col-6 arrow-space-center"></div>
+            <div class="col-3 arrow-right-content-1">
+              <h6>
+                <img
+                  src="./assets/img/right.png"
+                  alt="right-arrow-up"
+                  class="right-up-arrow"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                />
+              </h6>
+              <button
+                class="about-banner-btn"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                <span>Our Vision</span>
+              </button>
+            </div>
+          </div>
+          <h1
+            class="about-head"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            OUR SPECIALITY
+          </h1>
+          <br />
+          <h4
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+            class="designing-fonts"
+          >
+            Offering solutions to revitalize your business.
+          </h4>
+          <div class="row justify-content-center d-flex bottom-bg">
+            <div class="col-md-2"></div>
+            <div
+              class="col-md-6"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1500"
+              data-aos-delay="300"
+            >
+              <p
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="300"
+                class="para-banner"
+              >
+                Innovative IT solutions and services that enable your business
+                to function more effectively and efficiently through the use of
+                the latest technologies.
+              </p>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- Section 1: Fantasy Sport App Development -->
+        <div class="container section-padding">
+          <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12 specializations">
+              <div class="speciality-text">
+                <h2 class="section-title" data-aos="fade-up">
+                  Fantasy Sport <span class="highlight">App Development</span>
+                </h2>
+                <div
+                  class="col-xl-6 col-lg-12 col-md-12 video-file d-mobile"
+                  data-aos="fade-up"
+                >
+                  <div class="image-box">
+                    <div class="border-wrapper">
+                      <video class="img-fluid fluid-video" autoplay muted loop>
+                        <source
+                          src="assets/img/fantacy sport.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="special-content"
+                  data-aos="fade-up"
+                  style="opacity: 0.7"
+                >
+                  Our company is known for developing innovative fantasy sports
+                  apps that can make a lasting impression on existing markets.
+                  Our fantasy sports app development services are tailored to
+                  meet client needs entering the fantasy sports market.
+                </p>
+              </div>
+              <div class="row feature-box-margin">
+                <div class="col-md-6">
+                  <div
+                    class="d-flex justify-content-start feature-box"
+                    data-aos="fade-up"
+                  >
+                    <img
+                      src="assets/img/icon/user_experience.svg"
+                      alt="user_experience"
+                      class=""
+                    />
+                    <p class="mt-3 first-point">Customizable User Experience</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="d-flex justify-content-start feature-box"
+                    data-aos="fade-up"
+                  >
+                    <img
+                      src="assets/img/icon/advance_analytics.svg"
+                      alt="user_experience"
+                      class=""
+                    />
+                    <p class="mt-3">Advanced Analytics & Real-Time Updates</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="d-flex justify-content-start feature-box"
+                    data-aos="fade-up"
+                  >
+                    <img
+                      src="assets/img/icon/scalable.svg"
+                      alt="user_experience"
+                      class=""
+                    />
+                    <p class="mt-3">
+                      Scalable infrastructure with robust security
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="d-flex justify-content-start feature-box"
+                    data-aos="fade-up"
+                  >
+                    <img
+                      src="assets/img/icon/cross_platform.svg"
+                      alt="user_experience"
+                      class=""
+                    />
+                    <p class="mt-3">
+                      Designed for Cross-Platform Compatibility
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-6 col-lg-12 col-md-12 video-file d-desktop"
+              data-aos="fade-up"
+            >
+              <div class="image-box">
+                <div class="border-wrapper">
+                  <video class="img-fluid fluid-video" autoplay muted loop>
+                    <source
+                      src="assets/img/fantacy sport.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: E-Commerce & Retail -->
+        <div class="container section-padding">
+          <div class="row">
+            <div
+              class="col-xl-6 col-lg-12 col-md-12 video-file d-desktop"
+              data-aos="fade-up"
+            >
+              <div class="image-box" style="border-radius: 17px">
+                <video class="img-fluid fluid-video" autoplay muted loop>
+                  <source
+                    src="assets/img/ecommerce_video.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12 specializations">
+              <div class="speciality-text">
+                <h2 class="section-title" data-aos="fade-up">
+                  E-Commerce <span class="highlight">&</span> Retail
+                </h2>
+                <div
+                  class="col-xl-6 col-lg-12 col-md-12 video-file d-mobile"
+                  data-aos="fade-up"
+                >
+                  <div class="image-box" style="border-radius: 17px">
+                    <video class="img-fluid fluid-video" autoplay muted loop>
+                      <source
+                        src="assets/img/ecommerce_video.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <p data-aos="fade-up" style="opacity: 0.6">
+                  Our e-commerce store solutions are known for their world-class
+                  quality at an affordable price. With our Omnichannel shopping
+                  portals, you can serve your customers to the best of your
+                  ability and dominate the digital world. (Website name) offers
+                  business-centric app development services to address and solve
+                  complex industry-specific problems.
+                </p>
+              </div>
+              <div class="row feature-box-margin">
+                <div class="col-md-6" data-aos="fade-up">
+                  <div class="d-flex justify-content-start feature-box">
+                    <img
+                      src="assets/img/icon/user_experience.svg"
+                      alt="user_experience"
+                      class=""
+                    />
+                    <p class="mt-3 first-point">Seamless Payment Integration</p>
+                  </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up">
+                  <div class="d-flex justify-content-start feature-box">
+                    <img
+                      src="assets/img/icon/advance_analytics.svg"
+                      alt="user_experience"
+                      class=""
+                    />
+                    <p class="mt-3 first-point">
+                      Personalized Shopping Experience
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up">
+                  <div class="d-flex justify-content-start feature-box">
+                    <img
+                      src="assets/img/icon/quality.svg"
+                      alt="user_experience"
+                      class=""
+                    />
+                    <p class="mt-3">
+                      World-class Quality at An Affordable Price
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up">
+                  <div class="d-flex justify-content-start feature-box">
+                    <img
+                      src="assets/img/icon/cross_platform.svg"
+                      alt="user_experience"
+                      class=""
+                    />
+                    <p class="mt-3 first-point">
+                      Seamless Shopping On Any Device
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container section-padding">
+          <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12 specializations">
+              <div class="speciality-text">
+                <h2 class="section-title" data-aos="fade-up">
+                  Banking <span class="highlight">&</span> Finance
+                </h2>
+                <div
+                  class="col-xl-6 col-lg-12 col-md-12 video-file d-mobile"
+                  data-aos="fade-up"
+                >
+                  <div class="image-box">
+                    <video class="img-fluid fluid-video" autoplay muted loop>
+                      <source src="assets/img/banking.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <p data-aos="fade-up" style="opacity: 0.7">
+                  Unity provides a comprehensive range of banking and financing
+                  apps to help businesses surpass their market competitors. With
+                  an e-wallet app, we increase customer engagement and return on
+                  investment, and we work closely with our developers and UX/UI
+                  designers to design and develop responsive, scalable and
+                  interactive banking portals.
+                </p>
+              </div>
+
+              <div class="row feature-box-margin">
+                <div class="col-md-6" data-aos="fade-up">
+                  <div class="d-flex justify-content-start feature-box">
+                    <img
+                      src="assets/img/icon/authentication.svg"
+                      alt="user_experience"
+                      class=""
+                    />
+                    <p class="mt-3 first-point">
+                      Advanced Encryption and Multi-factor Authentication
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up">
+                  <div class="d-flex justify-content-start feature-box">
+                    <img
+                      src="assets/img/icon/payment_systems.svg"
+                      alt="user_experience"
+                      class=""
+                    />
+                    <p class="mt-3">
+                      Integrated Seamless Digital Payment Systems
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up">
+                  <div class="d-flex justify-content-start feature-box">
+                    <img
+                      src="assets/img/icon/data.svg"
+                      alt="user_experience"
+                      class=""
+                    />
+                    <p class="mt-3 first-points">Real-time Data Insights</p>
+                  </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up">
+                  <div class="d-flex justify-content-start feature-box">
+                    <img
+                      src="assets/img/icon/standards.svg"
+                      alt="user_experience"
+                      class=""
+                    />
+                    <p class="mt-3">Meets Industry Regulations and Standards</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-6 col-lg-12 col-md-12 video-file d-desktop"
+              data-aos="fade-up"
+            >
+              <div class="image-box">
+                <video class="img-fluid fluid-video" autoplay muted loop>
+                  <source src="assets/img/banking.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="business-padding">
+        <div class="container business-section">
+          <h1 data-aos="fade-up">
+            Shaking Up the <span>Way</span> You Do Business
+          </h1>
+          <p data-aos="fade-up" style="opacity: 0.7">
+            A defined plan and quantifiable goals are the foundation of every
+            successful project. We create a website that works for your company
+            in order to maximize your return on investment.
+          </p>
+          <a href="./contactus.html" class="btn-1 px-5" data-aos="fade-up">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            JOIN US
+          </a>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <div id="contact" class="page-content">
+   <section class="py-5">
+        <section class="pt-5 min-h">
+          <div class="container">
+            <div class="row d-flex align-items-center">
+              <div
+                data-aos="fade-up "
+                class="col-xl-6 col-lg-12 col-md-12 align-items-center left-contact-section underline_title desktop-views"
+              >
+                <h1 class="contactus shake-contactus">
+                  <span class="shaking-text">CONTACT US </span>
+                </h1>
+
+                <h6 class="mb-3">
+                  <span data-aos="fade-left" data-aos-delay="100">Decode</span>
+                  <span data-aos="fade-left" data-aos-delay="200">Your</span>
+                  <span data-aos="fade-left" data-aos-delay="300"
+                    >Thoughts</span
+                  >
+                  <span
+                    data-aos="fade-left"
+                    data-aos-delay="400"
+                    class="highlight"
+                    >With</span
+                  >
+                  <span data-aos="fade-left" data-aos-delay="500">Us</span>
+                  <span data-aos="fade-left" data-aos-delay="600">Now</span>
+                </h6>
+                <h3 class="mb-3">
+                  <span data-aos="fade-up" data-aos-delay="100">Call</span>
+                  <span class="highlighted-text"
+                    ><span data-aos="fade-left" data-aos-delay="200">The</span>
+                    <span data-aos="fade-left" data-aos-delay="300"
+                      >Future</span
+                    ></span
+                  >
+                  <span data-aos="fade-left" data-aos-delay="400">To</span>
+                  <span data-aos="fade-left" data-aos-delay="500">Make</span>
+                  <span data-aos="fade-left" data-aos-delay="600">Present</span>
+                  <span data-aos="fade-left" data-aos-delay="700"
+                    >Memorable</span
+                  >
+                </h3>
+                <p class="contact-left-content">
+                  <span data-aos="fade-left" data-aos-delay="100">We</span>
+                  <span data-aos="fade-left" data-aos-delay="200">provide</span>
+                  <span data-aos="fade-left" data-aos-delay="300"
+                    >comprehensive</span
+                  >
+                  <span data-aos="fade-left" data-aos-delay="400">web</span>
+                  <span data-aos="fade-left" data-aos-delay="500"
+                    >development</span
+                  >
+                  <span data-aos="fade-left" data-aos-delay="600"
+                    >services</span
+                  >
+                  <span data-aos="fade-left" data-aos-delay="700">to</span>
+                  <span data-aos="fade-left" data-aos-delay="800"
+                    >companies</span
+                  >
+                  <span data-aos="fade-left" data-aos-delay="900">with</span>
+                  <span data-aos="fade-left" data-aos-delay="1000"
+                    >brilliant</span
+                  >
+                  <span data-aos="fade-left" data-aos-delay="1100"
+                    >business</span
+                  >
+                  <span data-aos="fade-left" data-aos-delay="1200"
+                    >concepts</span
+                  >
+                  <span data-aos="fade-left" data-aos-delay="1300">under</span>
+                  <span data-aos="fade-left" data-aos-delay="1400">one</span>
+                  <span data-aos="fade-left" data-aos-delay="1500">roof.</span>
+                </p>
+              </div>
+              <div
+                class="col-xl-6 col-lg-12 col-md-12 align-items-center left-contact-section underline_title mobile-views"
+              >
+                <h1 class="contactus">
+                  <span class="shaking-text">CONTACT US </span>
+                </h1>
+
+                <h6 class="mb-3">
+                  <span>Decode</span>
+                  <span>Your</span>
+                  <span>Thoughts</span>
+                  <span class="highlight">With</span>
+                  <span>Us</span>
+                  <span>Now</span>
+                </h6>
+                <h3 class="mb-3">
+                  <span>Call</span>
+                  <span class="highlighted-text"
+                    ><span>The</span> <span>Future</span></span
+                  >
+                  <span>To</span>
+                  <span>Make</span>
+                  <span>Present</span>
+                  <span>Memorable</span>
+                </h3>
+                <p class="contact-left-content">
+                  <span>We</span>
+                  <span>provide</span>
+                  <span>comprehensive</span>
+                  <span>web</span>
+                  <span>development</span>
+                  <span>services</span>
+                  <span>to</span>
+                  <span>companies</span>
+                  <span>with</span>
+                  <span>brilliant</span>
+                  <span>business</span>
+                  <span>concepts</span>
+                  <span>under</span>
+                  <span>one</span>
+                  <span>roof.</span>
+                </p>
+              </div>
+              <div class="col-xl-6 col-lg-12 col-md-12 contact-us-form">
+                <div class="form-section p-2">
+                  <form>
+                    <div class="card">
+                      <div class="row px-4 py-3">
+                        <div class="col-xl-6 col-lg-6 col-md-6 mb-2">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1 mb-2 " class="mb-2"
+                              >First Name</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control first-name-input"
+                              id="exampleInputEmail1 mb-2"
+                              aria-describedby="emailHelp"
+                              placeholder="First Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 mb-2">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1 mb-2" class="mb-2"
+                              >Last Name</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control last-name-input"
+                              id="exampleInputEmail1 mb-2"
+                              aria-describedby="emailHelp"
+                              placeholder="Last Name "
+                            />
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 mb-2">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1 mb-2" class="mb-2"
+                              >Phone Number</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control phone-number-input"
+                              id="exampleInputEmail1 mb-2"
+                              aria-describedby="emailHelp"
+                              placeholder="Phone Number"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 mb-2">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1 mb-2" class="mb-2"
+                              >Email Address</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control email-input"
+                              id="exampleInputEmail1 mb-2"
+                              aria-describedby="emailHelp"
+                              placeholder="Email Address"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label
+                              for="exampleFormControlTextarea1"
+                              class="mb-2"
+                              >Message</label
+                            >
+                            <textarea
+                              class="form-control message-textarea"
+                              id="exampleFormControlTextarea1"
+                              rows="3"
+                              placeholder="Type your message"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12 text-center experience-font mt-3">
+                          <p class="mb-0" style="opacity: 0.5">
+                            Rate your experience with us!
+                          </p>
+                          <p class="my-0" style="opacity: 0.5">
+                            Your feedback helps us improve and deliver better
+                            service.
+                          </p>
+                        </div>
+                        <div class="mt-3" id="center">
+                          <img
+                            src="assets/img/icon/normal-star.svg"
+                            class="star mx-2"
+                            id="star1"
+                            alt="star1"
+                          />
+                          <img
+                            src="assets/img/icon/normal-star.svg"
+                            class="star mx-2"
+                            id="star2"
+                            alt="star2"
+                          />
+                          <img
+                            src="assets/img/icon/normal-star.svg"
+                            class="star mx-2"
+                            id="star3"
+                            alt="star3"
+                          />
+                          <img
+                            src="assets/img/icon/normal-star.svg"
+                            class="star mx-2"
+                            id="star4"
+                            alt="star4"
+                          />
+                          <img
+                            src="assets/img/icon/normal-star.svg"
+                            class="star mx-2"
+                            id="star5"
+                            alt="star5"
+                          />
+                        </div>
+
+                        <!-- <button
+                        class="submit-btn mt-3 py-0"
+                        style="display: block; width: 95%; padding: 5px 20px"
+                      >
+                        Submit
+                      </button> -->
+
+                        <a
+                          href="#"
+                          class="px-4 text-center mt-3 py-1 text-center submit-button"
+                        >
+                          <!-- <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> -->
+                          <span class="text-center sub-btn">SUBMIT</span>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact-last main-part">
+          <div class="container">
+            <div class="email-call">
+              <div class="row text-center no-gutters">
+                <!-- Added no-gutters -->
+                <!-- Message Us Section -->
+                <div
+                  class="col-xl-4 col-lg-4 col-md-4 contact-card"
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                >
+                  <div class="card card-padding shadow-sm text-light bg-dark">
+                    <div class="card-body">
+                      <div
+                        class="icon mb-3 d-flex justify-content-start icon-rotate"
+                      >
+                        <div class="moving">
+                          <img
+                            src="assets/img/icon/messenger.svg"
+                            class="contact-icons"
+                          />
+                          <img
+                            src="assets/img/icon/messenger.svg"
+                            class="contact-icons"
+                          />
+                        </div>
+                        <h6 class="card-title mt-2 ms-2">Mail us</h6>
+                      </div>
+                      <p
+                        class="card-text text-left tab-cards"
+                        style="text-align: left; font-size: 12px; opacity: 0.5"
+                      >
+                        Message us using our online chat system for quick and
+                        efficient support.
+                      </p>
+                      <div class="d-flex justify-content-start email-btn">
+                        <p class="mx-2 py-2 ps-3 email">
+                          support@theunitytech.com
+                        </p>
+                        <div class="round-moving">
+                          <div class="moving2">
+                            <img
+                              src="assets/img/icon/arrow_icon.svg"
+                              alt="arrow"
+                              class="mx-2 rocket-arrow"
+                            />
+                            <img
+                              src="assets/img/icon/arrow_icon.svg"
+                              alt="arrow"
+                              class="mx-2 rocket-arrow"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Call Us Section -->
+                <div
+                  class="col-xl-4 col-lg-4 col-md-4 contact-card"
+                  data-aos="fade-up"
+                  data-aos-duration="700"
+                >
+                  <div class="card card-padding shadow-sm text-light bg-dark">
+                    <div class="card-body">
+                      <div class="icon mb-3 d-flex justify-content-start">
+                        <div class="moving">
+                          <img
+                            src="assets/img/icon/caller.svg"
+                            class="contact-icons"
+                          />
+                          <img
+                            src="assets/img/icon/caller.svg"
+                            class="contact-icons"
+                          />
+                        </div>
+                        <h6 class="card-title mt-2 ms-2">Call us</h6>
+                      </div>
+                      <p
+                        class="card-text phone-text phone-mob"
+                        style="text-align: left; font-size: 12px; opacity: 0.6"
+                      >
+                        Let's have a chat – there's nothing quite like talking
+                        to another person.
+                      </p>
+                      <div
+                        class="d-flex justify-content-start email-btn email-btns"
+                      >
+                        <p class="mx-2 py-2 ps-3">+1(438) 000-0000</p>
+                        <div class="round-moving">
+                          <div class="moving2">
+                            <img
+                              src="assets/img/icon/arrow_icon.svg"
+                              alt="arrow"
+                              class="rocket-arrow mx-2"
+                            />
+                            <img
+                              src="assets/img/icon/arrow_icon.svg"
+                              alt="arrow"
+                              class="rocket-arrow mx-2"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Address Section -->
+                <div
+                  class="col-xl-4 col-lg-4 col-md-4 contact-card"
+                  data-aos="fade-up"
+                  data-aos-duration="900"
+                >
+                  <div class="card card-padding shadow-sm text-light bg-dark">
+                    <div class="card-body">
+                      <div class="icon mb-3 d-flex justify-content-start">
+                        <div class="moving">
+                          <img
+                            src="assets/img/icon/locator.svg"
+                            class="contact-icons"
+                          />
+                          <img
+                            src="assets/img/icon/locator.svg"
+                            class="contact-icons"
+                          />
+                        </div>
+                        <h6 class="card-title mt-2 ms-2">Address</h6>
+                      </div>
+                      <p
+                        class="card-text phone-mob"
+                        style="text-align: left; font-size: 12px; opacity: 0.6"
+                      >
+                        We'd be delighted to welcome you to our Head Office.
+                      </p>
+                      <p
+                        class="address-section"
+                        style="
+                          text-align: left;
+                          font-size: 12px;
+                          opacity: 0.9;
+                          padding-right: 13px;
+                        "
+                      >
+                        2-21 A, Unity Technologies Private Limited, Kanjilakodi,
+                        Addoor, Mangaluru, Dakshina Kannada, Karnataka, 574145.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+  </div>
+
+
+
+
+
+
+
+<div class="extradiv"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="d-flex justify-content-between f-row">
+        <!-- Logo and Description -->
+        <div class="logo-box">
+          <img src="./assets/img/unity-logo.svg" alt="Logo" />
+        </div>
+
+        <!-- Quick Links -->
+
+        <!-- Policy Links -->
+        <div class="">
+          <div class="d-block">
+            <ul class="list-unstyled footer-links">
+              <li>
+                <a href="terms-and-condition.html">Terms and Conditions</a>
+              </li>
+              <li><a href="refund.html">Refund Policy</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Address Section -->
       </div>
     </div>
-    <script src="assets/js/backtotop.js"></script>
-    <script src="./assets/js/aos.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/slick.min.js"></script>
-    <script type="text/javascript" src="assets/js/wow.js"></script>
+  </footer>
+  <a href="#" class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <img src="assets/img/icon/arrow_inactive.svg" alt="Back to Top Inactive" class="arrow-inactive" />
+    <img src="assets/img/icon/arrow_active.svg" alt="Back to Top Active" class="arrow-active" />
+  </a>
+  <div class="footer-section"></div>
+  <div class="nav-bar">
+    <a href="./index.html" class="active">
+      <img src="./assets/img/icon/active.svg" width="0" alt="Home" />
+    </a>
+    <a href="./about.html">
+      <img src="./assets/img/icon/about.svg" width="0" alt="Home" />
+    </a>
+    <a href="./services.html">
+      <img src="./assets/img/icon/services.svg" width="0" alt="Home" />
+    </a>
+    <a href="./ourspecality.html">
+      <img src="./assets/img/icon/speciality_inactive.svg" width="0" alt="Home" />
+    </a>
+    <a href="./contactus.html">
+      <img src="./assets/img/icon/contactus.svg" width="0" alt="Home" />
+    </a>
+  </div>
+  </div>
+  <script src="assets/js/backtotop.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/slick.min.js"></script>
+  <script type="text/javascript" src="assets/js/wow.js"></script>
+    <script src="./assets/js/particles.min.js" defer></script>
 
-    <script>
-      $(document).ready(function () {
-        $(".hamburger").click(function () {
-          $(this).toggleClass("active");
-          $(".mobile-nav-container").toggle();
-        });
-        // $(document).on("click", function (event) {
-        //   // Check if the click was outside the .hamburger and .mobile-nav-container
-        //   if (
-        //     !$(event.target).closest(".hamburger").length &&
-        //     !$(event.target).closest(".mobile-nav-container").length
-        //   ) {
-        //     // Close the menu
-        //     $(".hamburger").removeClass("active");
-        //     $(".mobile-nav-container").hide();
-        //   }
-        // });
+    
+ <script>
+  $(function () {
+    $(".hamburger").off("click").on("click", function () {
+      $(this).toggleClass("active");
+      $(".mobile-nav-container").toggle();
+    });
 
-        $(".slider-section").slick({
-          dots: false, // Display navigation dots
-          infinite: true, // Infinite loop sliding
-          speed: 300, // Transition speed
-          slidesToShow: 3, // Number of slides to show
-          slidesToScroll: 1, // Number of slides to scroll at a time
-          // autoplay: true, // Enable autoplay
-          autoplaySpeed: 2000, // Autoplay speed (2 seconds)
-          prevArrow:
-            "<button type='button' class='slick-prev '><img src='assets/img/prev2.svg' class=''> <img src='assets/img/icon/prev.svg' class=''></button>",
-          // "",
-          nextArrow:
-            "<button type='button' class='slick-next pull-right'><img class=''src='assets/img/next2.svg'><img src='assets/img/icon/next.svg' class=''></button> ",
-          responsive: [
-            {
-              breakpoint: 1008,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-              },
-            },
-            {
-              breakpoint: 800,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
+    if (!$(".slider-section").hasClass("slick-initialized")) {
+      $(".slider-section").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000,
+        prevArrow:
+          "<button type='button' class='slick-prev'><img src='./assets/img/prev2.svg'><img src='assets/img/icon/prev.svg'></button>",
+        nextArrow:
+          "<button type='button' class='slick-next pull-right'><img src='assets/img/next2.svg'><img src='assets/img/icon/next.svg'></button>",
+        responsive: [
+          { breakpoint: 1008, settings: { slidesToShow: 2 } },
+          { breakpoint: 800, settings: { slidesToShow: 1 } },
+        ],
       });
-    </script>
+    }
+  });
+</script>
 
-    <script>
-      AOS.init({
-        once: true,
-      });
-    </script>
-    <script>
-      new WOW().init();
-    </script>
 
-    <!-- text animation part -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const letters = document.querySelectorAll(".flip-letter");
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
+  <script>
+    new WOW().init();
+  </script>
 
-        letters.forEach((letter, index) => {
-          setTimeout(() => {
-            letter.classList.add("show");
-          }, 300); // Delay the flip of each letter by 100ms
-        });
-      });
+  <!-- text animation part -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const letters = document.querySelectorAll(".flip-letter");
 
-      $(window).on("scroll", function () {
-        // Get the scroll position of the window
-        var scrollPosition = $(this).scrollTop();
-        if (scrollPosition > 140) {
-          $("header").addClass("fixed");
-        }
-        if (scrollPosition < 140) {
-          $("header").removeClass("fixed");
-        }
-        // if (scrollPosition > 200) {
-        //   setTimeout(() => {
-        //     $(".shake-about").addClass("active");
-        //     $(".about-section h3 img").addClass("visible");
-        //   }, 700);
-        // }
-
-        // if (scrollPosition > 1000) {
-        //   setTimeout(function () {
-        //     $(".shake-services").addClass("active");
-        //     $(".fade-img-serv").addClass("visible");
-        //   }, 1200);
-        // }
-
-        // console.log(scrollPosition);
-
-        // if (
-        //   scrollPosition > 3700 &&
-        //   screen.width < 1024 &&
-        //   screen.width > 760
-        // ) {
-        //   $(".innovation_section").addClass("active");
-        // }
-
-        // if (scrollPosition > 2975 && screen.width < 575) {
-        //   $(".innovation_section").addClass("active");
-        // }
-        // if (scrollPosition > 8800 && screen.width < 1024) {
-        //   $(".faq_section").addClass("active");
-        // }
-        // if (scrollPosition > 7400 && screen.width < 575) {
-        //   $(".faq_section").addClass("active");
-        // }
-
-        // if (scrollPosition > 4870 && screen.width > 1300) {
-        //   $(".faq_section").addClass("active");
-        // }
-        // if (scrollPosition > 9121 && screen.width < 1024) {
-        //   $(".customer_care").addClass("active");
-        // }
-        // if (scrollPosition > 5500 && screen.width > 1300) {
-        //   $(".customer_care").addClass("active");
-        // }
-        // if (scrollPosition > 7940 && screen.width < 575) {
-        //   $(".customer_care").addClass("active");
-        // }
-
-        // if (scrollPosition > 1200) {
-        //   var delay = 200; // Base delay in milliseconds
-        //   var cardCount = $(".our_service-card").length; // Total number of cards
-
-        //   // Loop through each card and apply the flip class with a delay
-        //   $(".our_service-card").each(function (index) {
-        //     var card = $(this); // Get the current card
-
-        //     // Set a timeout to add the 'flip' class with a staggered delay
-        //     setTimeout(function () {
-        //       card.addClass("flip");
-        //     }, delay * index); // Multiply delay by the index to stagger
-        //   });
-        // }
-
-        // Check if the scroll position has reached the scroll point
-      });
-
-      $(window).on("load", function () {
+      letters.forEach((letter, index) => {
         setTimeout(() => {
-          $(".floating-container").addClass("active");
-          $(".landing .wave-letter").addClass("animate");
-          $(".underline-fade").addClass("visible");
-          $(".bounce-2").addClass("visible");
-
-          setTimeout(() => {
-            $(".fadep ").addClass("fadepactive");
-          }, 2200);
-          if (window.innerWidth < 500) {
-            $(".fadep ").addClass("fadepactive");
-          }
-          $(".baner-right").addClass("animate");
-          $('.learn-more').addClass('active');
-        }, 700);
+          letter.classList.add("show");
+        }, 300); // Delay the flip of each letter by 100ms
       });
+    });
 
-      $(document).ready(function () {
-        function checkAboutSection() {
-          // *************sections *************
-          var aboutSection = $(".bg-about"); // "about" section container
-          var our_service_section = $(".our_service_section"); // "about" section container
-          var our_service_card = $(".our_service-card"); // "about" section container
-          var innovation_section = $(".innovation_section"); // "about" section container
-          var faq_section = $(".faq_section"); // "about" section container
-          var customer_care = $(".customer_care"); // "about" section container
+    $(window).on("scroll", function () {
+      // Get the scroll position of the window
+      var scrollPosition = $(this).scrollTop();
+      if (scrollPosition > 140) {
+        $("header").addClass("fixed");
+      }
+      if (scrollPosition < 140) {
+        $("header").removeClass("fixed");
+      }
+      // if (scrollPosition > 200) {
+      //   setTimeout(() => {
+      //     $(".shake-about").addClass("active");
+      //     $(".about-section h3 img").addClass("visible");
+      //   }, 700);
+      // }
 
-          // *************sections ofsets  *************
+      // if (scrollPosition > 1000) {
+      //   setTimeout(function () {
+      //     $(".shake-services").addClass("active");
+      //     $(".fade-img-serv").addClass("visible");
+      //   }, 1200);
+      // }
 
-          var aboutOffset = aboutSection.offset().top;
-          var our_service_sectionOffSet = our_service_section.offset().top;
-          var our_service_card = our_service_section.offset().top;
-          var innovation_sectionOffset = innovation_section.offset().top;
-          var faq_sectionOffset = faq_section.offset().top;
-          var customer_careOffset = customer_care.offset().top;
+      // console.log(scrollPosition);
 
-          var windowHeight = $(window).height();
-          var scrollPos = $(window).scrollTop();
+      // if (
+      //   scrollPosition > 3700 &&
+      //   screen.width < 1024 &&
+      //   screen.width > 760
+      // ) {
+      //   $(".innovation_section").addClass("active");
+      // }
 
-          // Check if the about section is visible from the bottom of the screen
-          if (scrollPos + windowHeight > aboutOffset + 200) {
-            // Add the animation with a delay
-            setTimeout(() => {
-              $(".shake-about").addClass("active"); // Shake effect on specific element
-              $(".about-section h3 img").addClass("visible"); // Make the image visible
-            }, 1000);
-          }
-          if (scrollPos + windowHeight > our_service_sectionOffSet) {
+      // if (scrollPosition > 2975 && screen.width < 575) {
+      //   $(".innovation_section").addClass("active");
+      // }
+      // if (scrollPosition > 8800 && screen.width < 1024) {
+      //   $(".faq_section").addClass("active");
+      // }
+      // if (scrollPosition > 7400 && screen.width < 575) {
+      //   $(".faq_section").addClass("active");
+      // }
+
+      // if (scrollPosition > 4870 && screen.width > 1300) {
+      //   $(".faq_section").addClass("active");
+      // }
+      // if (scrollPosition > 9121 && screen.width < 1024) {
+      //   $(".customer_care").addClass("active");
+      // }
+      // if (scrollPosition > 5500 && screen.width > 1300) {
+      //   $(".customer_care").addClass("active");
+      // }
+      // if (scrollPosition > 7940 && screen.width < 575) {
+      //   $(".customer_care").addClass("active");
+      // }
+
+      // if (scrollPosition > 1200) {
+      //   var delay = 200; // Base delay in milliseconds
+      //   var cardCount = $(".our_service-card").length; // Total number of cards
+
+      //   // Loop through each card and apply the flip class with a delay
+      //   $(".our_service-card").each(function (index) {
+      //     var card = $(this); // Get the current card
+
+      //     // Set a timeout to add the 'flip' class with a staggered delay
+      //     setTimeout(function () {
+      //       card.addClass("flip");
+      //     }, delay * index); // Multiply delay by the index to stagger
+      //   });
+      // }
+
+      // Check if the scroll position has reached the scroll point
+    });
+
+    $(window).on("load", function () {
+      setTimeout(() => {
+        $(".floating-container").addClass("active");
+        $(".landing .wave-letter").addClass("animate");
+        $(".underline-fade").addClass("visible");
+        $(".bounce-2").addClass("visible");
+
+        setTimeout(() => {
+          $(".fadep ").addClass("fadepactive");
+        }, 2200);
+        if (window.innerWidth < 500) {
+          $(".fadep ").addClass("fadepactive");
+        }
+        $(".baner-right").addClass("animate");
+        $('.learn-more').addClass('active');
+      }, 700);
+    });
+
+    $(document).ready(function () {
+      function checkAboutSection() {
+        // *************sections *************
+        var aboutSection = $(".bg-about"); // "about" section container
+        var our_service_section = $(".our_service_section"); // "about" section container
+        var our_service_card = $(".our_service-card"); // "about" section container
+        var innovation_section = $(".innovation_section"); // "about" section container
+        var faq_section = $(".faq_section"); // "about" section container
+        var customer_care = $(".customer_care"); // "about" section container
+
+        // *************sections ofsets  *************
+
+        var aboutOffset = aboutSection.offset().top;
+        var our_service_sectionOffSet = our_service_section.offset().top;
+        var our_service_card = our_service_section.offset().top;
+        var innovation_sectionOffset = innovation_section.offset().top;
+        var faq_sectionOffset = faq_section.offset().top;
+        var customer_careOffset = customer_care.offset().top;
+
+        var windowHeight = $(window).height();
+        var scrollPos = $(window).scrollTop();
+
+        // Check if the about section is visible from the bottom of the screen
+        if (scrollPos + windowHeight > aboutOffset + 200) {
+          // Add the animation with a delay
+          setTimeout(() => {
+            $(".shake-about").addClass("active"); // Shake effect on specific element
+            $(".about-section h3 img").addClass("visible"); // Make the image visible
+          }, 1000);
+        }
+        if (scrollPos + windowHeight > our_service_sectionOffSet) {
+          setTimeout(function () {
+            $(".shake-services").addClass("active");
+            $(".fade-img-serv").addClass("visible");
+          }, 1200);
+        }
+        if (scrollPos + windowHeight > our_service_card + 200) {
+          var delay = 200; // Base delay in milliseconds
+          var cardCount = $(".our_service-card").length; // Total number of cards
+
+          // Loop through each card and apply the flip class with a delay
+          $(".our_service-card").each(function (index) {
+            var card = $(this); // Get the current card
+
+            // Set a timeout to add the 'flip' class with a staggered delay
             setTimeout(function () {
-              $(".shake-services").addClass("active");
-              $(".fade-img-serv").addClass("visible");
-            }, 1200);
-          }
-          if (scrollPos + windowHeight > our_service_card + 200) {
-            var delay = 200; // Base delay in milliseconds
-            var cardCount = $(".our_service-card").length; // Total number of cards
-
-            // Loop through each card and apply the flip class with a delay
-            $(".our_service-card").each(function (index) {
-              var card = $(this); // Get the current card
-
-              // Set a timeout to add the 'flip' class with a staggered delay
-              setTimeout(function () {
-                card.addClass("flip");
-              }, delay * index); // Multiply delay by the index to stagger
-            });
-          }
-
-          if (scrollPos + windowHeight > innovation_sectionOffset + 500) {
-            $(".innovation_section").addClass("active");
-          }
-
-          if (scrollPos + windowHeight > faq_sectionOffset + 300) {
-            $(".faq_section").addClass("active");
-          }
-          if (scrollPos + windowHeight > customer_careOffset + 100) {
-            $(".customer_care").addClass("active");
-          }
+              card.addClass("flip");
+            }, delay * index); // Multiply delay by the index to stagger
+          });
         }
 
-        // Run the check on page load
-        checkAboutSection();
+        if (scrollPos + windowHeight > innovation_sectionOffset + 500) {
+          $(".innovation_section").addClass("active");
+        }
 
-        // Run the check on scroll
-        $(window).on("scroll", function () {
-          checkAboutSection();
+        if (scrollPos + windowHeight > faq_sectionOffset + 300) {
+          $(".faq_section").addClass("active");
+        }
+        if (scrollPos + windowHeight > customer_careOffset + 100) {
+          $(".customer_care").addClass("active");
+        }
+      }
+
+      // Run the check on page load
+      checkAboutSection();
+
+      // Run the check on scroll
+      $(window).on("scroll", function () {
+        checkAboutSection();
+      });
+    });
+  </script>
+  <script type="text/javascript" src="./assets/js/common.js" defer></script>
+
+
+
+ 
+  <script>
+    $(document).ready(function () {
+      // Load default page
+      $("#content").load("home.html");
+
+      // Handle clicks
+      $(".Spassovnav").on("click", function (e) {
+        e.preventDefault();
+        var pageUrl = $(this).attr("href");
+
+        // Load new page content
+        $("#content").load(pageUrl);
+
+        // Update active class
+        $(".Spassovnav").removeClass("active");
+        $(".newat").removeClass("newatadd");
+        $(this).addClass("active");
+
+        // Update browser URL without reload
+        window.history.pushState(null, null, pageUrl);
+      });
+
+      // Handle back/forward browser buttons
+      $(window).on("popstate", function () {
+        $("#content").load(location.pathname.substring(1));
+      });
+    });
+  </script>
+
+<script>
+  // Single Page Application Navigation
+  // Enhanced SPA Navigator with AOS support
+  class SPANavigator {
+    constructor() {
+      this.currentPage = 'home';
+      this.init();
+    }
+
+    init() {
+      // Add click event listeners to navigation links
+      document.querySelectorAll('.Spassovnav').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetPage = e.target.getAttribute('data-page');
+          this.navigateTo(targetPage);
         });
       });
-    </script>
-     <script type="text/javascript" src="./assets/js/common.js" defer></script>
-  </body>
+
+      // Handle browser back/forward buttons
+      window.addEventListener('popstate', (e) => {
+        const page = e.state?.page || 'home';
+        this.navigateTo(page, false);
+      });
+
+      // Set initial state
+      history.replaceState({ page: 'home' }, '', '#home');
+
+      // Initialize AOS properly
+      this.initializeAOS();
+    }
+
+    navigateTo(pageName, updateHistory = true) {
+      // Hide current page with fade out
+      const currentPage = document.querySelector('.page-content.active');
+      if (currentPage) {
+        currentPage.style.opacity = '0';
+
+        setTimeout(() => {
+          // Hide all pages
+          document.querySelectorAll('.page-content').forEach(page => {
+            page.classList.remove('active');
+            page.style.display = 'none';
+          });
+
+          // Show target page
+          const targetPage = document.getElementById(pageName);
+          if (targetPage) {
+            targetPage.style.display = 'block';
+            targetPage.classList.add('active');
+            targetPage.classList.add('active');
+
+            // Force image loading and AOS refresh
+            this.refreshPageContent(targetPage);
+
+            // Fade in new page
+            setTimeout(() => {
+              targetPage.style.opacity = '1';
+            }, 50);
+          }
+        }, 150);
+      } else {
+        // Initial load - no animation needed
+        document.querySelectorAll('.page-content').forEach(page => {
+          page.classList.remove('active');
+          page.style.display = 'none';
+        });
+
+        const targetPage = document.getElementById(pageName);
+        if (targetPage) {
+          targetPage.style.display = 'block';
+          targetPage.classList.add('active');
+          targetPage.style.opacity = '1';
+          this.refreshPageContent(targetPage);
+        }
+      }
+
+      // Update navigation active states
+      // document.querySelectorAll('.Spassovnav').forEach(link => {
+      //   link.classList.remove('active', 'newatadd');
+      // });
+
+      const activeLink = document.querySelector(`[data-page="${pageName}"]`);
+      if (activeLink) {
+        activeLink.classList.add('active');
+
+        // Always add .newatadd to the first link with .newat in the same <li>
+        const parentLi = activeLink.closest('li');
+        if (parentLi) {
+          const firstLink = parentLi.querySelector('.Spassovnav.newat');
+          if (firstLink) {
+            // firstLink.classList.add('newatadd');
+          }
+        }
+      }
+
+      // Update browser history
+      if (updateHistory) {
+        history.pushState({ page: pageName }, '', `#${pageName}`);
+      }
+
+      this.currentPage = pageName;
+      this.onPageChange(pageName);
+    }
+
+    refreshPageContent(pageElement) {
+      // Force image loading
+      const images = pageElement.querySelectorAll('img[src]');
+      images.forEach(img => {
+        if (!img.complete) {
+          // Force reload if not loaded
+          const src = img.src;
+          img.src = '';
+          img.src = src;
+        }
+      });
+
+      // Refresh AOS for new content
+      if (typeof AOS !== 'undefined') {
+        // Remove existing AOS classes
+        pageElement.querySelectorAll('[data-aos]').forEach(el => {
+          el.classList.remove('aos-init', 'aos-animate');
+        });
+
+        // Reinitialize AOS
+        setTimeout(() => {
+          AOS.refresh();
+
+          // Force trigger AOS animations for visible elements
+          const aosElements = pageElement.querySelectorAll('[data-aos]');
+          aosElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+              el.classList.add('aos-init', 'aos-animate');
+            }
+          });
+        }, 100);
+      }
+
+      // Refresh other animations
+      this.refreshCustomAnimations(pageElement);
+    }
+
+    refreshCustomAnimations(pageElement) {
+      // Reset and retrigger flip animations
+      const flipElements = pageElement.querySelectorAll('.flip-letter');
+      flipElements.forEach((letter, index) => {
+        letter.classList.remove('show');
+        setTimeout(() => {
+          letter.classList.add('show');
+        }, 100 + (index * 50));
+      });
+
+      // Reset wave animations
+      const waveElements = pageElement.querySelectorAll('.wave-letter');
+      waveElements.forEach((letter, index) => {
+        letter.classList.remove('animate');
+        setTimeout(() => {
+          letter.classList.add('animate');
+        }, 200 + (index * 30));
+      });
+
+      // Reset shaking text
+      const shakingElements = pageElement.querySelectorAll('.shake-about, .shake-services');
+      shakingElements.forEach(el => {
+        el.classList.remove('active');
+        setTimeout(() => {
+          el.classList.add('active');
+        }, 300);
+      });
+
+      // Reset particles if on about page
+      if (pageElement.id === 'about' && typeof particlesJS !== 'undefined') {
+        setTimeout(() => {
+          const particlesContainer = pageElement.querySelector('#particles-js');
+          if (particlesContainer) {
+            particlesContainer.classList.add('active');
+          }
+        }, 500);
+      }
+    }
+
+    initializeAOS() {
+      if (typeof AOS !== 'undefined') {
+        AOS.init({
+          once: false, // Allow animations to trigger multiple times
+          duration: 1000,
+          easing: 'ease-in-out',
+          delay: 100,
+          disable: false
+        });
+      }
+    }
+
+    onPageChange(pageName) {
+      console.log(`Navigated to: ${pageName}`);
+
+      // Scroll to top on page change
+      window.scrollTo(0, 0);
+
+      // Page-specific logic
+      switch (pageName) {
+        case 'home':
+          this.initHomePage();
+          break;
+        case 'about':
+          this.initAboutPage();
+          break;
+        case 'services':
+          this.loadServicesData();
+          break;
+        case 'contact':
+          this.initContactForm();
+          break;
+      }
+    }
+
+    initHomePage() {
+      // Reinitialize slick slider if needed
+      const slider = document.querySelector('.slider-section');
+      if (slider && typeof $ !== 'undefined' && $.fn.slick) {
+        if ($(slider).hasClass('slick-initialized')) {
+          $(slider).slick('destroy');
+        }
+        setTimeout(() => {
+          $(slider).slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplaySpeed: 2000,
+            responsive: [
+              {
+                breakpoint: 1008,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                },
+              },
+              {
+                breakpoint: 800,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                },
+              },
+            ],
+          });
+        }, 200);
+      }
+    }
+
+    initAboutPage() {
+      // Initialize particles.js if needed
+      if (typeof particlesJS !== 'undefined') {
+        setTimeout(() => {
+          const particlesContainer = document.querySelector('#particles-js');
+          if (particlesContainer && !particlesContainer.querySelector('canvas')) {
+            // Initialize particles here if you have the config
+          }
+        }, 300);
+      }
+    }
+
+    loadServicesData() {
+      console.log('Loading services data...');
+    }
+
+    initContactForm() {
+      const form = document.querySelector('#contact form');
+      if (form) {
+        form.onsubmit = (e) => {
+          e.preventDefault();
+          alert('Message sent! (This is a demo)');
+        };
+      }
+    }
+  }
+
+  // Enhanced initialization
+  document.addEventListener('DOMContentLoaded', () => {
+    // Add transition styles for smooth page changes
+    const style = document.createElement('style');
+    style.textContent = `
+      .page-content {
+          transition: opacity 0.3s ease-in-out;
+      }
+      
+      .page-content:not(.active) {
+          display: none !important;
+      }
+      
+      /* Force image loading */
+      .page-content img {
+          opacity: 0;
+          transition: opacity 0.3s ease;
+      }
+      
+      .page-content.active img {
+          opacity: 1;
+      }
+      
+      /* Ensure AOS works properly */
+      [data-aos] {
+          pointer-events: none;
+      }
+      
+      [data-aos].aos-animate {
+          pointer-events: auto;
+      }
+  `;
+    document.head.appendChild(style);
+
+    // Initialize SPA
+    new SPANavigator();
+
+    // Force image preloading
+    const preloadImages = () => {
+      const images = document.querySelectorAll('img[src]');
+      images.forEach(img => {
+        const newImg = new Image();
+        newImg.src = img.src;
+      });
+    };
+
+    preloadImages();
+  });
+
+  // Handle window load events
+  window.addEventListener('load', () => {
+    // Your existing load animations
+    setTimeout(() => {
+      document.querySelector('.floating-container')?.classList.add('active');
+      document.querySelectorAll('.landing .wave-letter').forEach(el => el.classList.add('animate'));
+      document.querySelector('.underline-fade')?.classList.add('visible');
+      document.querySelector('.bounce-2')?.classList.add('visible');
+
+      setTimeout(() => {
+        document.querySelectorAll('.fadep').forEach(el => el.classList.add('fadepactive'));
+      }, 2200);
+
+      document.querySelector('.baner-right')?.classList.add('animate');
+      document.querySelector('.learn-more')?.classList.add('active');
+    }, 700);
+  });
+</script>
+
+<script>
+$(document).ready(function () {
+  $(".Spassovnav").on("click", function(e) {
+    e.preventDefault();
+    let $clicked = $(this);
+    let page = $clicked.data("page");
+
+    // Remove newatadd from all links except the clicked page
+    $(".Spassovnav").each(function() {
+      if ($(this).data("page") !== page) {
+        $(this).removeClass("newatadd");
+      }
+    });
+
+    // Always add newatadd to all links of the clicked page
+    $(".Spassovnav").each(function() {
+      if ($(this).data("page") === page) {
+        $(this).addClass("newatadd");
+      }
+    });
+
+    // Update active class
+    $(".Spassovnav").removeClass("active");
+    $clicked.addClass("active");
+  });
+});
+</script>
+
+
+
+</body>
+
 </html>

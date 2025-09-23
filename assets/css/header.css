@@ -99,13 +99,18 @@ nav ul li a {
 }
 
 nav ul li:hover a {
-  transform: translate(0, -25px); /* Move the element upwards on hover */
+  transform: translate(0, -25px); 
 }
-nav ul li:hover a.active  {
+/* nav ul li:hover a.active  {
  transform:  translate(0, 0);
+} */
+
+a.Spassovnav.newatadd {
+    color: #c7fb15;
 }
-
-
+a.Spassovnav.newatadd:hover {
+    color: white;
+}
 /* Apply styles for all li elements */
 nav ul li:nth-child(1),
 nav ul li:nth-child(2),
@@ -253,4 +258,9 @@ nav.mobile-nav-container ul img {
   .hamburger > img {
     height: 45px;
   }
+}
+
+
+h1.shake-about.making.padding-head.mobile-view.text-center.active {
+    display: none;
 }
