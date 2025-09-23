@@ -253,7 +253,7 @@ body {
   opacity: 0.5;
 }
 .bottom-bg {
-  background: url("/unitywebsites/assets/img/bottom-banner.svg") no-repeat
+  background: url("../img/bottom-banner.svg") no-repeat
     center center;
   background-size: cover;
   height: 150px;
@@ -1472,4 +1472,9 @@ body {
   .circle-tab{
     display: none;
   }
+}
+
+
+.extradiv {
+    margin-top: 40px;
 }
