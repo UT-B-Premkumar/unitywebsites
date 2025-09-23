@@ -11,7 +11,6 @@ body {
   margin-left: -13px;
   background: #121212 !important;
   margin-bottom: -10px;
- 
 }
 .about-1::-webkit-scrollbar {
   display: none !important;
@@ -623,8 +622,7 @@ body {
   overflow: hidden;
   border-radius: 50%;
 }
-.our_service-about:hover .bg-img .hover-bg{
-
+.our_service-about:hover .bg-img .hover-bg {
   height: 520px;
 }
 .our_service-about:hover .bg-img::after {
@@ -659,7 +657,6 @@ body {
 /* Handle hover effects */
 .our_service-about img:nth-child(2) {
   opacity: 0;
-
 }
 
 .our_service-about:hover img:nth-child(1) {
@@ -696,7 +693,7 @@ body {
   color: #fff;
   opacity: 1;
 }
-.our_service-about:hover .believe-content{
+.our_service-about:hover .believe-content {
   border-top-right-radius: 47px !important;
 }
 .bg-img:hover {
@@ -786,21 +783,21 @@ body {
     transform: translateX(7px);
   }
 }
-.shaking-text-about{
+.shaking-text-about {
   display: block;
 }
 @media screen and (min-width: 0px) and (max-width: 900px) {
-  .desktop-view{
+  .desktop-view {
     display: none !important;
   }
-  .mobile-view-heading h1{
+  .mobile-view-heading h1 {
     text-align: center !important;
   }
-  h1.m-text-center{
+  h1.m-text-center {
     text-align: center !important;
   }
-  .shake-about.active .shaking-text:nth-child(2){
-    text-align: center !important; 
+  .shake-about.active .shaking-text:nth-child(2) {
+    text-align: center !important;
     display: block !important;
   }
   .making span {
@@ -812,12 +809,12 @@ body {
     display: flex !important;
     justify-content: space-between !important;
     width: 100%;
-    margin-left: 0 ;
+    margin-left: 0;
     margin-right: 0;
     /* max-width: max-content !important; */
     overflow: hidden !important;
   }
-  .about-2 .para-about-top-align{
+  .about-2 .para-about-top-align {
     padding: 0;
     text-align: center;
   }
@@ -1076,7 +1073,7 @@ body {
 }
 
 @media screen and (min-width: 810px) and (max-width: 2000px) {
-  .mobile-view{
+  .mobile-view {
     display: none !important;
   }
   .believe-h1 {
@@ -1132,7 +1129,6 @@ body {
   .circle-tab {
     display: none;
   }
-
 }
 @media screen and (max-width: 1024px) {
   .logo img {
@@ -1427,40 +1423,53 @@ body {
     max-width: 385px;
     min-width: 385px;
   }
-  .idea-inner > div{
+  .idea-inner > div {
     background-size: cover;
   }
-  .idea-card .line.left{
+  .idea-card .line.left {
     transform: rotate(65deg) translate(-28px, 87px);
     width: 211px;
   }
-  .line.right{
+  .line.right {
     transform: rotate(114deg) translate(63px, 108px);
   }
-  .idea_code_section_col3{
+  .idea_code_section_col3 {
     left: -35px;
   }
-  .idea_code_section_col5{
+  .idea_code_section_col5 {
     right: -35px;
   }
-  .line.center-right{
+  .line.center-right {
     transform: rotate(180deg) translate(-40px, 54px);
   }
-  .line.center-left{
+  .line.center-left {
     transform: rotate(0) translate(-33px, -59px);
   }
-  .line.bottom-left{
+  .line.bottom-left {
     transform: rotate(-49deg) translate(55px, -127px);
   }
-  .line.bottom-right{
+  .line.bottom-right {
     transform: rotate(237deg) translate(179px, -50px);
   }
 }
 
-
-@media screen and (max-width:1024px) {
-  .idea_code_section{
+@media screen and (max-width: 1024px) {
+  .idea_code_section {
     display: none;
   }
 }
 /* Tapping animation  start  */
+@media screen and (min-width: 2000px) {
+  .mobile-view-card1 {
+    display: none;
+  }
+  .card-about-mobile {
+    display: none !important;
+  }
+  .circle-mob {
+    display: none !important;
+  }
+  .circle-tab{
+    display: none;
+  }
+}

@@ -391,3 +391,8 @@
     opacity: 0;
   }
 }
+@media screen and (min-width:2000px){
+  .mobile-view-root{
+    display: none;
+  }
+}
